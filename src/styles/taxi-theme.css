@@ -1,0 +1,275 @@
+/**
+ * 🚗 THÈME TAXI - Orange dynamique et professionnel
+ * Appliqué automatiquement quand data-service-type="taxi"
+ */
+
+:root[data-service-type="taxi"] {
+  /* Couleurs primaires taxi - Orange moderne */
+  --primary: 24 95% 53%; /* Orange vibrant */
+  --primary-foreground: 0 0% 100%;
+  --primary-glow: 24 100% 60%;
+  --primary-light: 24 100% 70%;
+  
+  /* Accent taxi */
+  --accent: 24 100% 95%;
+  --accent-foreground: 24 95% 40%;
+  
+  /* Gradients taxi */
+  --service-gradient: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(32, 90%, 50%) 100%);
+  --service-gradient-subtle: linear-gradient(180deg, hsl(24, 95%, 53%, 0.1) 0%, transparent 100%);
+  --service-glow: 0 0 40px hsl(24, 95%, 53%, 0.3);
+  
+  /* Shadows taxi */
+  --shadow-service: 0 10px 30px -10px hsl(24, 95%, 53%, 0.25);
+  --shadow-service-lg: 0 20px 60px -15px hsl(24, 95%, 53%, 0.35);
+  
+  /* Borders */
+  --service-border: hsl(24, 95%, 53%, 0.2);
+  
+  /* Status colors */
+  --status-active: 142 76% 36%; /* Vert pour "En course" */
+  --status-waiting: 48 96% 53%; /* Jaune pour "En attente" */
+  
+  /* Icône du service */
+  --service-icon: '🚗';
+  --service-name: 'Chauffeur VTC';
+}
+
+/* Dark mode overrides for taxi */
+.dark[data-service-type="taxi"],
+.dark :root[data-service-type="taxi"] {
+  --primary: 24 90% 55%;
+  --primary-glow: 24 95% 65%;
+}
+
+/* Animations spécifiques taxi */
+@keyframes taxi-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(24, 95%, 53%, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px hsl(24, 95%, 53%, 0);
+  }
+}
+
+@keyframes taxi-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(24, 95%, 53%, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(24, 95%, 53%, 0.5), 0 0 60px hsl(24, 95%, 53%, 0.3);
+  }
+}
+
+@keyframes online-breathing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+:root[data-service-type="taxi"] .service-pulse {
+  animation: taxi-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+:root[data-service-type="taxi"] .service-glow {
+  animation: taxi-glow 3s ease-in-out infinite;
+}
+
+/* Bouton toggle online taxi */
+:root[data-service-type="taxi"] .toggle-online-active {
+  background: var(--service-gradient);
+  box-shadow: var(--service-glow);
+  animation: online-breathing 2s ease-in-out infinite;
+}
+
+/* ===== GLASSMORPHISM DRIVER CARDS ===== */
+
+:root[data-service-type="taxi"] .driver-card-glass {
+  background: hsl(var(--card) / 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid hsl(24, 95%, 53%, 0.15);
+  box-shadow: 
+    0 4px 24px hsl(24, 95%, 53%, 0.08),
+    inset 0 1px 0 hsl(0 0% 100% / 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-service-type="taxi"] .driver-card-glass:hover {
+  border-color: hsl(24, 95%, 53%, 0.3);
+  box-shadow: 
+    0 8px 32px hsl(24, 95%, 53%, 0.15),
+    inset 0 1px 0 hsl(0 0% 100% / 0.15);
+  transform: translateY(-2px);
+}
+
+.dark[data-service-type="taxi"] .driver-card-glass,
+.dark :root[data-service-type="taxi"] .driver-card-glass {
+  background: hsl(var(--card) / 0.4);
+  border-color: hsl(24, 95%, 53%, 0.1);
+}
+
+/* Cards avec effet taxi */
+:root[data-service-type="taxi"] .service-card {
+  background: linear-gradient(
+    135deg, 
+    hsl(24, 95%, 53%, 0.05) 0%, 
+    hsl(var(--card)) 100%
+  );
+  border: 1px solid hsl(24, 95%, 53%, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+:root[data-service-type="taxi"] .service-card:hover {
+  box-shadow: var(--shadow-service);
+  border-color: hsl(24, 95%, 53%, 0.25);
+}
+
+/* Stats badge taxi */
+:root[data-service-type="taxi"] .stats-badge {
+  background: var(--service-gradient);
+  color: white;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+/* ===== DRIVER STATS CARDS ===== */
+
+:root[data-service-type="taxi"] .driver-stat-card {
+  background: hsl(var(--card) / 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border) / 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+:root[data-service-type="taxi"] .driver-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px hsl(24, 95%, 53%, 0.15);
+}
+
+:root[data-service-type="taxi"] .driver-stat-card .stat-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root[data-service-type="taxi"] .driver-stat-card .stat-icon.blue {
+  background: hsl(221, 83%, 53%, 0.1);
+  color: hsl(221, 83%, 53%);
+}
+
+:root[data-service-type="taxi"] .driver-stat-card .stat-icon.green {
+  background: hsl(142, 76%, 36%, 0.1);
+  color: hsl(142, 76%, 36%);
+}
+
+:root[data-service-type="taxi"] .driver-stat-card .stat-icon.orange {
+  background: hsl(24, 95%, 53%, 0.1);
+  color: hsl(24, 95%, 53%);
+}
+
+/* ===== RIDE REQUEST SHEET STYLES ===== */
+
+:root[data-service-type="taxi"] .ride-request-sheet {
+  background: hsl(var(--background));
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: 0 -20px 60px hsl(var(--foreground) / 0.15);
+}
+
+:root[data-service-type="taxi"] .ride-request-countdown {
+  stroke: hsl(24, 95%, 53%);
+}
+
+:root[data-service-type="taxi"] .ride-request-countdown.urgent {
+  stroke: hsl(0, 84%, 60%);
+  animation: taxi-pulse 1s ease-in-out infinite;
+}
+
+/* ===== ONLINE STATUS INDICATOR ===== */
+
+:root[data-service-type="taxi"] .online-indicator {
+  position: relative;
+}
+
+:root[data-service-type="taxi"] .online-indicator::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  background: hsl(142, 76%, 36%);
+  border-radius: 50%;
+  border: 2px solid hsl(var(--background));
+  animation: online-breathing 2s ease-in-out infinite;
+}
+
+/* ===== EMPTY STATE ANIMATIONS ===== */
+
+@keyframes waiting-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes waiting-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+:root[data-service-type="taxi"] .waiting-animation {
+  animation: waiting-rotate 20s linear infinite;
+}
+
+:root[data-service-type="taxi"] .waiting-glow {
+  animation: waiting-pulse 3s ease-in-out infinite;
+}
+
+/* Progress bars taxi */
+:root[data-service-type="taxi"] .progress-bar {
+  background: var(--service-gradient);
+  border-radius: 9999px;
+}
+
+/* ===== QUICK ACTIONS ===== */
+
+:root[data-service-type="taxi"] .quick-action-btn {
+  background: hsl(var(--card) / 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid hsl(var(--border) / 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+:root[data-service-type="taxi"] .quick-action-btn:hover {
+  background: hsl(24, 95%, 53%, 0.1);
+  border-color: hsl(24, 95%, 53%, 0.3);
+  transform: scale(1.02);
+}
+
+:root[data-service-type="taxi"] .quick-action-btn:active {
+  transform: scale(0.98);
+}

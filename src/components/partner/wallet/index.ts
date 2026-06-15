@@ -1,0 +1,1 @@
+export { ModernPartnerWallet } from './ModernPartnerWallet';

@@ -1,0 +1,289 @@
+project_id = "wddlktajnhwhyquwcdgf"
+
+[functions.process-client-referral]
+verify_jwt = false
+
+# Configuration optimisée Kwenda - Fonctions actives uniquement
+
+[functions.driver-profile-photo-upload]
+verify_jwt = false
+
+[functions.google-maps-proxy]
+verify_jwt = true
+
+[functions.admin-operations]
+verify_jwt = true
+
+[functions.admin-analytics]
+verify_jwt = true
+
+[functions.admin-notifications]
+verify_jwt = true
+
+[functions.notification-dispatcher]
+verify_jwt = false
+
+[functions.auto-dispatch-system]
+verify_jwt = false
+
+[functions.lottery-system]
+verify_jwt = true
+
+[functions.partner-validation-notification]
+verify_jwt = true
+
+[functions.function-monitor]
+verify_jwt = true
+
+[functions.rental-moderation]
+verify_jwt = true
+
+[functions.taxi-moderation]
+verify_jwt = true
+
+[functions.auto-cancel-expired-orders]
+verify_jwt = false
+
+[functions.verify-user-account]
+verify_jwt = true
+
+[functions.geocode-proxy]
+verify_jwt = true
+
+[functions.get-google-maps-key]
+verify_jwt = false
+
+[functions.google-maps-security-monitor]
+verify_jwt = true
+
+[functions.google-places-autocomplete]
+verify_jwt = true
+
+[functions.google-place-details]
+verify_jwt = true
+
+[functions.wallet-topup]
+verify_jwt = true
+
+[functions.mobile-money-payment]
+verify_jwt = true
+
+[functions.orange-money-webhook]
+verify_jwt = false
+
+[functions.orange-money-cashout-webhook]
+verify_jwt = false
+
+[functions.orange-money-retry]
+verify_jwt = false
+
+[functions.push-notifications]
+verify_jwt = true
+
+[functions.push-notifications-v2]
+verify_jwt = true
+
+[functions.push-notifications-broadcast]
+verify_jwt = true
+
+
+[functions.intelligent-driver-matching]
+verify_jwt = true
+
+[functions.smart-notification-dispatcher]
+verify_jwt = true
+
+[functions.send-sms-notification]
+verify_jwt = true
+
+[functions.partner-notifications]
+verify_jwt = true
+
+[functions.delivery-dispatcher]
+verify_jwt = true
+
+[functions.ride-dispatcher]
+verify_jwt = true
+
+[functions.auto-renew-subscriptions]
+verify_jwt = false
+
+[functions.subscription-manager]
+verify_jwt = true
+
+[functions.admin-grant-trial]
+verify_jwt = true
+
+[functions.auto-grant-trial-new-drivers]
+verify_jwt = false
+
+[functions.mobile-money-subscription]
+verify_jwt = true
+
+[functions.consume-ride]
+verify_jwt = true
+
+[functions.driver-arrival-confirmation]
+verify_jwt = true
+
+[functions.moderate-product]
+verify_jwt = true
+
+[functions.admin-get-user-metadata]
+verify_jwt = true
+
+[functions.calculate-promo-discount]
+verify_jwt = true
+
+[functions.credit-promo-driver-compensation]
+verify_jwt = false
+
+[functions.voice-navigation]
+verify_jwt = true
+
+[functions.geocode-order]
+verify_jwt = true
+
+[functions.partner-subscription-commission]
+verify_jwt = false
+
+[functions.admin-subscription-commission]
+verify_jwt = false
+
+[functions.vendor-subscription-manager]
+verify_jwt = true
+
+[functions.auto-retry-delivery-dispatch]
+verify_jwt = false
+
+[functions.auto-retry-assignment]
+verify_jwt = false
+
+[functions.refresh-admin-cache]
+verify_jwt = false
+
+[functions.notify-admin-new-product]
+verify_jwt = true
+
+[functions.vendor-verify-request]
+verify_jwt = true
+
+[functions.food-order-processor]
+verify_jwt = true
+
+[functions.validate-promo-and-referral]
+verify_jwt = true
+
+[functions.validate-transfer-recipient]
+verify_jwt = true
+
+[functions.wallet-transfer]
+verify_jwt = true
+
+[functions.process-marketplace-sale]
+verify_jwt = false
+
+[functions.accept-delivery-fee]
+verify_jwt = true
+
+[functions.assign-food-delivery]
+verify_jwt = true
+
+[functions.admin-approve-all-rentals]
+verify_jwt = true
+
+[functions.partner-vehicle-notification]
+verify_jwt = false
+
+[functions.admin-approve-vehicle]
+verify_jwt = true
+
+[functions.admin-reject-vehicle]
+verify_jwt = true
+
+[functions.validate-driver-service-type]
+verify_jwt = true
+
+[functions.driver-notification-router]
+verify_jwt = false
+
+[functions.complete-ride-with-commission]
+verify_jwt = true
+
+[functions.detect-cancellation-fraud]
+verify_jwt = false
+
+[functions.notify-drivers-bidding]
+verify_jwt = true
+
+[functions.process-marketplace-payment]
+verify_jwt = true
+
+[functions.complete-marketplace-order]
+verify_jwt = true
+
+[functions.auto-release-escrow]
+verify_jwt = false
+
+[functions.wallet-restaurant-topup]
+verify_jwt = true
+
+[functions.mobile-money-webhook]
+verify_jwt = false
+
+[functions.process-marketplace-checkout]
+verify_jwt = true
+
+[functions.approve-delivery-fee]
+verify_jwt = true
+
+[functions.orange-money-webpay-callback]
+verify_jwt = false
+
+[functions.orange-money-webpay-webhook]
+verify_jwt = false
+
+[functions.admin-process-withdrawal-request]
+verify_jwt = true
+
+[functions.vendor-withdrawal]
+verify_jwt = true
+
+[functions.vendor-wallet-manager]
+verify_jwt = true
+
+[functions.release-food-escrow]
+verify_jwt = true
+
+[functions.process-marketplace-escrow]
+verify_jwt = true
+
+[functions.digital-download]
+verify_jwt = true
+
+[functions.rental-subscription-manager]
+verify_jwt = true
+
+[functions.admin-escrow-management]
+verify_jwt = true
+
+[functions.send-push-notification]
+verify_jwt = true
+
+[functions.release-escrow-payment]
+verify_jwt = true
+
+[functions.handle-order-status-change]
+verify_jwt = true
+
+[functions.restaurant-withdrawal]
+verify_jwt = true
+
+[functions.accept-food-delivery-fee]
+verify_jwt = true
+
+[functions.geocode-reverse]
+verify_jwt = false
+
+[functions.emergency-dispatcher]
+verify_jwt = false

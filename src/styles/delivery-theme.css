@@ -1,0 +1,99 @@
+/**
+ * 📦 THÈME DELIVERY - Vert/Orange dynamique et énergique
+ * Appliqué automatiquement quand data-service-type="delivery"
+ */
+
+:root[data-service-type="delivery"] {
+  /* Couleurs primaires delivery */
+  --primary: 142 76% 36%; /* Vert émeraude */
+  --primary-foreground: 210 40% 98%;
+  --primary-glow: 142 71% 45%;
+  
+  /* Accent delivery - Orange pour l'urgence */
+  --accent: 48 96% 53%;
+  --accent-foreground: 26 83% 14%;
+  
+  /* Gradients delivery */
+  --service-gradient: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(48, 96%, 53%) 100%);
+  --service-gradient-subtle: linear-gradient(180deg, hsl(142, 76%, 36%, 0.1) 0%, transparent 100%);
+  --service-glow: 0 0 40px hsl(142, 76%, 36%, 0.3);
+  
+  /* Shadows delivery */
+  --shadow-service: 0 10px 30px -10px hsl(142, 76%, 36%, 0.25);
+  --shadow-service-lg: 0 20px 60px -15px hsl(142, 76%, 36%, 0.35);
+  
+  /* Borders */
+  --service-border: hsl(142, 76%, 36%, 0.2);
+  
+  /* Status colors */
+  --status-active: 48 96% 53%; /* Orange pour "En livraison" */
+  --status-waiting: 142 76% 36%; /* Vert pour "Disponible" */
+  
+  /* Icône du service */
+  --service-icon: '📦';
+  --service-name: 'Livreur Express';
+  
+  /* Types de livraison */
+  --flash-color: 0 84% 60%; /* Rouge Flash */
+  --flex-color: 142 76% 36%; /* Vert Flex */
+  --maxicharge-color: 262 83% 58%; /* Violet Maxicharge */
+}
+
+/* Animations spécifiques delivery */
+@keyframes delivery-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(142, 76%, 36%, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px hsl(142, 76%, 36%, 0);
+  }
+}
+
+:root[data-service-type="delivery"] .service-pulse {
+  animation: delivery-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Bouton toggle online delivery */
+:root[data-service-type="delivery"] .toggle-online-active {
+  background: var(--service-gradient);
+  box-shadow: var(--service-glow);
+}
+
+/* Cards avec effet delivery */
+:root[data-service-type="delivery"] .service-card {
+  background: linear-gradient(135deg, hsl(142, 76%, 36%, 0.05) 0%, hsl(48, 96%, 53%, 0.05) 100%);
+  border-color: var(--service-border);
+}
+
+:root[data-service-type="delivery"] .service-card:hover {
+  box-shadow: var(--shadow-service);
+  border-color: hsl(142, 76%, 36%, 0.4);
+}
+
+/* Stats badge delivery */
+:root[data-service-type="delivery"] .stats-badge {
+  background: var(--service-gradient);
+  color: white;
+  font-weight: 600;
+}
+
+/* Progress bars delivery */
+:root[data-service-type="delivery"] .progress-bar {
+  background: var(--service-gradient);
+}
+
+/* Badges par type de livraison */
+:root[data-service-type="delivery"] .delivery-flash {
+  background: linear-gradient(135deg, hsl(0, 84%, 60%) 0%, hsl(0, 84%, 70%) 100%);
+  color: white;
+}
+
+:root[data-service-type="delivery"] .delivery-flex {
+  background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(142, 76%, 46%) 100%);
+  color: white;
+}
+
+:root[data-service-type="delivery"] .delivery-maxicharge {
+  background: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(262, 83%, 68%) 100%);
+  color: white;
+}

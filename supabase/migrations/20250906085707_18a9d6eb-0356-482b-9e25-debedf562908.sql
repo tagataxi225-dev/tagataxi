@@ -1,0 +1,42 @@
+-- Fixer les problèmes de sécurité détectés par le linter Supabase
+
+-- 1. Corriger les fonctions avec SECURITY DEFINER manquant search_path
+ALTER FUNCTION public.check_global_email_phone_uniqueness() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.check_location_search_rate_limit() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.anonymize_old_location_data(integer) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.calculate_rental_price(numeric, text, uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.intelligent_places_search(text, text, numeric, numeric, integer, boolean) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.is_current_user_admin() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_current_user_role() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.has_user_role(text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.validate_email_format() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.log_security_event(text, text, uuid, boolean, text, jsonb) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.update_delivery_assignment_timestamp() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_zone_for_coordinates(numeric, numeric) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.bump_unified_conversation_last_message_at() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.log_sensitive_access(text, text, uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.process_orange_money_payment(uuid, numeric, text, text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.link_payment_to_subscription(uuid, uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.intelligent_places_search(text, text, text, numeric, numeric, integer, integer) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.update_delivery_order_pricing() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_current_user_admin_status() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.calculate_zone_statistics(uuid, date, integer) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_zone_pricing(uuid, text, timestamp with time zone) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.has_admin_permission(text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.search_places(text, text, text, integer) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.log_driver_location_access(uuid, text, text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.generate_driver_code() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.update_profiles_timestamp() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_user_roles(uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.has_permission(uuid, text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_notification_stats(uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.calculate_delivery_estimate(uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.calculate_delivery_price(text, numeric, text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.log_sensitive_data_access(text, text, uuid, jsonb) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_delivery_zone_info(uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.get_driver_delivery_coordinates(uuid) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.log_delivery_coordinates_access() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.notify_order_status_change() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.activate_approved_vehicles() SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.find_nearby_drivers(numeric, numeric, numeric, text) SECURITY DEFINER SET search_path TO 'public';
+ALTER FUNCTION public.process_escrow_release(uuid) SECURITY DEFINER SET search_path TO 'public';

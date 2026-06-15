@@ -1,0 +1,13 @@
+{
+  "version": "1.24.0",
+  "buildDate": "2026-03-08T00:00:00Z",
+  "forceUpdate": false,
+  "minVersion": "1.23.0",
+  "features": [
+    "Système de mise à jour stable",
+    "Protection anti-boucle infinie",
+    "Détection intelligente de version",
+    "Pause automatique pendant l'authentification",
+    "Gestion des versions depuis l'admin"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "versions": [
+    {
+      "version": "2.0.0",
+      "date": "2025-11-08",
+      "severity": "major",
+      "changes": [
+        { "type": "feature", "icon": "🚀", "text": "Système de mise à jour automatique intelligent" },
+        { "type": "feature", "icon": "🗑️", "text": "Vidage automatique de tous les caches" },
+        { "type": "feature", "icon": "⚡", "text": "Détection instantanée des nouvelles versions" },
+        { "type": "feature", "icon": "🔄", "text": "Rechargement transparent sans intervention" },
+        { "type": "performance", "icon": "⚡", "text": "Durées de cache optimisées (7 jours max)" },
+        { "type": "feature", "icon": "🔧", "text": "Outils de debug pour développeurs (window.kwenda)" }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "date": "2025-11-03",
+      "severity": "major",
+      "changes": [
+        { "type": "feature", "icon": "✨", "text": "Nouveau système de mise à jour automatique" },
+        { "type": "feature", "icon": "✨", "text": "Bannière d'installation moderne sur landing page" },
+        { "type": "fix", "icon": "🐛", "text": "Correction des problèmes de cache" },
+        { "type": "performance", "icon": "⚡", "text": "Amélioration de la vitesse de chargement" }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2025-10-20",
+      "severity": "minor",
+      "changes": [
+        { "type": "feature", "icon": "✨", "text": "Support multi-villes (Kinshasa, Lubumbashi, Kolwezi)" },
+        { "type": "feature", "icon": "✨", "text": "Système de loterie intégré" },
+        { "type": "fix", "icon": "🐛", "text": "Correction du calcul de tarif dynamique" }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2025-10-01",
+      "severity": "major",
+      "changes": [
+        { "type": "feature", "icon": "🎉", "text": "Lancement de Kwenda Taxi" },
+        { "type": "feature", "icon": "✨", "text": "Transport VTC multimodal" },
+        { "type": "feature", "icon": "✨", "text": "Livraison express" },
+        { "type": "feature", "icon": "✨", "text": "Marketplace intégrée" }
+      ]
+    }
+  ]
+}

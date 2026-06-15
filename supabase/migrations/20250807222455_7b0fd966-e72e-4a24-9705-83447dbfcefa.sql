@@ -1,0 +1,104 @@
+-- Create pricing_rules table
+CREATE TABLE IF NOT EXISTS public.pricing_rules (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  service_type TEXT NOT NULL CHECK (service_type IN ('transport', 'delivery')),
+  vehicle_class TEXT NOT NULL,
+  base_price NUMERIC NOT NULL,
+  price_per_km NUMERIC NOT NULL,
+  currency TEXT NOT NULL DEFAULT 'CDF',
+  is_active BOOLEAN NOT NULL DEFAULT true,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  created_by UUID
+);
+
+-- Ensure only one active rule per (service_type, vehicle_class)
+CREATE UNIQUE INDEX IF NOT EXISTS uq_active_pricing_rule
+ON public.pricing_rules (service_type, vehicle_class)
+WHERE is_active = true;
+
+-- Trigger to update updated_at
+CREATE TRIGGER update_pricing_rules_updated_at
+BEFORE UPDATE ON public.pricing_rules
+FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+
+-- Enable RLS
+ALTER TABLE public.pricing_rules ENABLE ROW LEVEL SECURITY;
+
+-- Public can read active pricing rules
+CREATE POLICY IF NOT EXISTS "Everyone can view active pricing rules"
+ON public.pricing_rules FOR SELECT
+USING (is_active = true);
+
+-- Only admins can modify pricing rules (any admin_role via get_user_roles)
+CREATE POLICY IF NOT EXISTS "Admins can insert pricing rules"
+ON public.pricing_rules FOR INSERT
+WITH CHECK (
+  EXISTS (
+    SELECT 1 FROM public.get_user_roles(auth.uid()) gr
+    WHERE gr.admin_role IS NOT NULL
+  )
+);
+
+CREATE POLICY IF NOT EXISTS "Admins can update pricing rules"
+ON public.pricing_rules FOR UPDATE
+USING (
+  EXISTS (
+    SELECT 1 FROM public.get_user_roles(auth.uid()) gr
+    WHERE gr.admin_role IS NOT NULL
+  )
+);
+
+CREATE POLICY IF NOT EXISTS "Admins can delete pricing rules"
+ON public.pricing_rules FOR DELETE
+USING (
+  EXISTS (
+    SELECT 1 FROM public.get_user_roles(auth.uid()) gr
+    WHERE gr.admin_role IS NOT NULL
+  )
+);
+
+-- Seed initial pricing rules (upsert-like: insert if not exists)
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'transport', 'eco', 2500, 1500
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='transport' AND vehicle_class='eco' AND is_active=true
+);
+
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'transport', 'premium', 3200, 1800
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='transport' AND vehicle_class='premium' AND is_active=true
+);
+
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'transport', 'first_class', 4300, 2300
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='transport' AND vehicle_class='first_class' AND is_active=true
+);
+
+-- Provide a default for 'standard' used in existing UI (align with eco)
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'transport', 'standard', 2500, 1500
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='transport' AND vehicle_class='standard' AND is_active=true
+);
+
+-- Delivery rules
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'delivery', 'flash', 5000, 1000
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='delivery' AND vehicle_class='flash' AND is_active=true
+);
+
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'delivery', 'flex', 55000, 2500
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='delivery' AND vehicle_class='flex' AND is_active=true
+);
+
+INSERT INTO public.pricing_rules (service_type, vehicle_class, base_price, price_per_km)
+SELECT 'delivery', 'maxicharge', 100000, 5000
+WHERE NOT EXISTS (
+  SELECT 1 FROM public.pricing_rules WHERE service_type='delivery' AND vehicle_class='maxicharge' AND is_active=true
+);

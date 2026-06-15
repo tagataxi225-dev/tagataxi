@@ -1,0 +1,151 @@
+/* KwendaPay Wallet Theme - Inspired by Congo colors */
+
+:root {
+  /* Congo-inspired color palette */
+  --wallet-primary: 217 91% 60%; /* Sky blue from flag */
+  --wallet-accent: 45 93% 58%; /* Golden yellow from flag */
+  --wallet-danger: 0 84% 60%; /* Red from flag */
+  
+  /* Glassmorphism variables */
+  --wallet-glass-bg: rgba(255, 255, 255, 0.1);
+  --wallet-glass-border: rgba(255, 255, 255, 0.2);
+  --wallet-glass-blur: 12px;
+  
+  /* Shadows */
+  --wallet-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --wallet-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --wallet-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --wallet-shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+  
+  /* Wallet-specific gradients */
+  --wallet-gradient-primary: linear-gradient(135deg, 
+    hsl(var(--primary)) 0%, 
+    hsl(var(--primary-light)) 100%);
+  
+  --wallet-gradient-congo: linear-gradient(135deg,
+    hsl(217, 91%, 60%) 0%,
+    hsl(45, 93%, 58%) 50%,
+    hsl(0, 84%, 60%) 100%);
+  
+  --wallet-gradient-success: linear-gradient(135deg,
+    hsl(142, 71%, 45%) 0%,
+    hsl(142, 71%, 55%) 100%);
+}
+
+.dark {
+  --wallet-glass-bg: rgba(0, 0, 0, 0.2);
+  --wallet-glass-border: rgba(255, 255, 255, 0.1);
+  
+  --wallet-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --wallet-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --wallet-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --wallet-shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* Glassmorphism utility classes */
+.wallet-glass {
+  background: var(--wallet-glass-bg);
+  backdrop-filter: blur(var(--wallet-glass-blur));
+  -webkit-backdrop-filter: blur(var(--wallet-glass-blur));
+  border: 1px solid var(--wallet-glass-border);
+}
+
+/* Congo pattern background - Zebra inspired */
+.wallet-pattern-bg {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--congo-yellow) / 0.03) 10px,
+      hsl(var(--congo-yellow) / 0.03) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--congo-red) / 0.02) 10px,
+      hsl(var(--congo-red) / 0.02) 20px
+    );
+}
+
+.dark .wallet-pattern-bg {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--congo-yellow) / 0.05) 10px,
+      hsl(var(--congo-yellow) / 0.05) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--congo-red) / 0.04) 10px,
+      hsl(var(--congo-red) / 0.04) 20px
+    );
+}
+
+/* Animated gradient backgrounds */
+.wallet-gradient-animated {
+  background: var(--wallet-gradient-congo);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Shimmer loading effect */
+.wallet-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.wallet-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Success pulse animation */
+.wallet-success-pulse {
+  animation: successPulse 0.6s ease-out;
+}
+
+@keyframes successPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}

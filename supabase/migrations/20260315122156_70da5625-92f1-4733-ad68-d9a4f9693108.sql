@@ -1,0 +1,1 @@
+DELETE FROM service_configurations WHERE service_category = 'taxi' AND service_type IN ('moto', 'eco', 'confort', 'premium');

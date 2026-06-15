@@ -1,0 +1,602 @@
+/* ============================================
+   🇨🇩 KWENDA GRATTA - Styles Congolais
+   ============================================ */
+
+/* Couleurs RDC officielles */
+:root {
+  --kwenda-blue: 207 100% 50%;     /* #007FFF - Bleu RDC */
+  --kwenda-yellow: 51 100% 48%;    /* #F7D000 - Jaune RDC */
+  --kwenda-red: 352 89% 44%;       /* #CE1126 - Rouge RDC */
+  --kwenda-green: 168 100% 24%;    /* #007A5E - Vert complémentaire */
+}
+
+/* ============================================
+   Motifs Wax Africains
+   ============================================ */
+
+/* Lottery Dashboard Responsiveness */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area handling for mobile */
+@supports (padding: max(0px)) {
+  .lottery-modal {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Lottery animations */
+@keyframes lottery-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(var(--primary), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(var(--primary), 0.5), 0 0 30px rgba(var(--primary), 0.3);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--lottery-glow, rgba(var(--primary), 0.3));
+  }
+  50% {
+    box-shadow: 0 0 40px var(--lottery-glow, rgba(var(--primary), 0.5)), 
+                0 0 60px var(--lottery-glow, rgba(var(--primary), 0.3));
+  }
+}
+
+.lottery-glow {
+  animation: lottery-glow 2s ease-in-out infinite;
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Responsive grid for lottery cards */
+.lottery-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .lottery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lottery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Modal backdrop blur for better performance */
+.lottery-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Dark mode optimizations */
+.dark .lottery-card {
+  background: linear-gradient(180deg, 
+    hsl(240 10% 9%) 0%, 
+    hsl(240 10% 7%) 100%
+  );
+  border-color: hsl(240 10% 15%);
+}
+
+.dark .lottery-stats-card {
+  background: linear-gradient(135deg,
+    hsla(var(--primary) / 0.05) 0%,
+    hsla(var(--secondary) / 0.05) 100%
+  );
+  border-color: hsl(240 10% 12%);
+}
+
+/* Light mode subtle */
+.light .lottery-card {
+  background: hsl(0 0% 100%);
+  border-color: hsl(240 9% 89%);
+}
+
+.light .lottery-stats-card {
+  background: linear-gradient(135deg,
+    hsla(var(--primary) / 0.03) 0%,
+    hsla(var(--secondary) / 0.03) 100%
+  );
+}
+
+/* Improve canvas scratch contrast in dark mode */
+.dark .scratch-canvas {
+  filter: brightness(1.1);
+}
+
+/* Glow ring for scratch cards */
+.lottery-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, 
+    transparent 0%, 
+    hsla(var(--primary) / 0.1) 50%, 
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.wax-pattern-blue {
+  background: 
+    linear-gradient(135deg, hsl(var(--kwenda-blue) / 0.1) 25%, transparent 25%),
+    linear-gradient(225deg, hsl(var(--kwenda-blue) / 0.15) 25%, transparent 25%),
+    repeating-linear-gradient(
+      45deg, 
+      hsl(var(--kwenda-blue) / 0.05) 0px, 
+      hsl(var(--kwenda-blue) / 0.05) 10px, 
+      transparent 10px, 
+      transparent 20px
+    );
+}
+
+.wax-pattern-green {
+  background: 
+    radial-gradient(circle at 20% 20%, hsl(142 71% 45% / 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, hsl(160 84% 39% / 0.15) 0%, transparent 40%),
+    linear-gradient(135deg, hsl(142 71% 45% / 0.08), hsl(160 84% 39% / 0.08));
+}
+
+.wax-pattern-purple {
+  background:
+    linear-gradient(60deg, hsl(271 91% 65% / 0.1) 25%, transparent 25%),
+    linear-gradient(-60deg, hsl(280 87% 55% / 0.1) 25%, transparent 25%),
+    radial-gradient(ellipse at center, hsl(271 91% 65% / 0.05), transparent 70%);
+}
+
+.wax-pattern-gold {
+  background: 
+    radial-gradient(circle at 25% 25%, hsl(var(--kwenda-yellow) / 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, hsl(38 92% 50% / 0.2) 0%, transparent 50%),
+    linear-gradient(135deg, hsl(var(--kwenda-yellow) / 0.15), hsl(25 95% 53% / 0.15));
+}
+
+/* ============================================
+   Animations Kwenda Gratta
+   ============================================ */
+
+@keyframes ching-flash {
+  0% { transform: scale(1); filter: brightness(1); box-shadow: 0 0 0 rgba(247, 208, 0, 0); }
+  25% { transform: scale(1.05); filter: brightness(1.3); box-shadow: 0 0 30px rgba(247, 208, 0, 0.5); }
+  50% { transform: scale(1.08); filter: brightness(1.5); box-shadow: 0 0 50px rgba(247, 208, 0, 0.8); }
+  75% { transform: scale(1.05); filter: brightness(1.3); box-shadow: 0 0 30px rgba(247, 208, 0, 0.5); }
+  100% { transform: scale(1); filter: brightness(1); box-shadow: 0 0 0 rgba(247, 208, 0, 0); }
+}
+.ching-animation { animation: ching-flash 0.6s ease-out; }
+
+@keyframes gold-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, transparent 0%, hsl(var(--kwenda-yellow) / 0.4) 25%, hsl(var(--kwenda-yellow) / 0.6) 50%, hsl(var(--kwenda-yellow) / 0.4) 75%, transparent 100%);
+  background-size: 200% auto;
+  animation: gold-shimmer 2s linear infinite;
+}
+
+@keyframes daily-card-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--kwenda-yellow) / 0.4); }
+  50% { box-shadow: 0 0 0 10px hsl(var(--kwenda-yellow) / 0); }
+}
+.daily-card-pulse { animation: daily-card-pulse 2s ease-in-out infinite; }
+
+@keyframes rdc-glow {
+  0%, 100% { box-shadow: 0 0 10px hsl(var(--kwenda-blue) / 0.3), 0 0 20px hsl(var(--kwenda-blue) / 0.1); }
+  33% { box-shadow: 0 0 10px hsl(var(--kwenda-yellow) / 0.4), 0 0 20px hsl(var(--kwenda-yellow) / 0.2); }
+  66% { box-shadow: 0 0 10px hsl(var(--kwenda-red) / 0.3), 0 0 20px hsl(var(--kwenda-red) / 0.1); }
+}
+.rdc-glow { animation: rdc-glow 4s ease-in-out infinite; }
+
+@keyframes card-stagger-in {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.card-stagger-in { animation: card-stagger-in 0.4s ease-out forwards; }
+
+@keyframes card-3d-hover {
+  0% { transform: perspective(1000px) rotateY(0deg); }
+  50% { transform: perspective(1000px) rotateY(5deg); }
+  100% { transform: perspective(1000px) rotateY(0deg); }
+}
+.gratta-card:hover { animation: card-3d-hover 0.5s ease-in-out; }
+
+/* ============================================
+   🆕 Holographic Surface Animation
+   ============================================ */
+
+@keyframes holographic-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.scratch-holographic {
+  background: linear-gradient(
+    135deg,
+    hsl(0 0% 78%) 0%,
+    hsl(200 30% 82%) 15%,
+    hsl(280 25% 80%) 30%,
+    hsl(40 40% 82%) 45%,
+    hsl(160 25% 80%) 60%,
+    hsl(320 20% 82%) 75%,
+    hsl(0 0% 78%) 100%
+  );
+  background-size: 300% 300%;
+  animation: holographic-shift 4s ease-in-out infinite;
+}
+
+/* ============================================
+   🆕 Rarity Glow Pulses
+   ============================================ */
+
+@keyframes rarity-glow-common {
+  0%, 100% { box-shadow: 0 0 8px hsl(220 10% 60% / 0.2); }
+  50% { box-shadow: 0 0 16px hsl(220 10% 60% / 0.35); }
+}
+
+@keyframes rarity-glow-rare {
+  0%, 100% { box-shadow: 0 0 10px hsl(217 91% 60% / 0.3), 0 0 20px hsl(217 91% 60% / 0.1); }
+  50% { box-shadow: 0 0 20px hsl(217 91% 60% / 0.5), 0 0 40px hsl(217 91% 60% / 0.2); }
+}
+
+@keyframes rarity-glow-epic {
+  0%, 100% { box-shadow: 0 0 10px hsl(271 91% 65% / 0.3), 0 0 20px hsl(271 91% 65% / 0.1); }
+  50% { box-shadow: 0 0 25px hsl(271 91% 65% / 0.5), 0 0 50px hsl(271 91% 65% / 0.2); }
+}
+
+@keyframes rarity-glow-legendary {
+  0%, 100% { box-shadow: 0 0 12px hsl(43 96% 56% / 0.4), 0 0 24px hsl(43 96% 56% / 0.15); }
+  50% { box-shadow: 0 0 30px hsl(43 96% 56% / 0.6), 0 0 60px hsl(43 96% 56% / 0.25); }
+}
+
+.rarity-glow-common { animation: rarity-glow-common 3s ease-in-out infinite; }
+.rarity-glow-rare { animation: rarity-glow-rare 2.5s ease-in-out infinite; }
+.rarity-glow-epic { animation: rarity-glow-epic 2s ease-in-out infinite; }
+.rarity-glow-legendary { animation: rarity-glow-legendary 1.8s ease-in-out infinite; }
+
+/* ============================================
+   🆕 Finger Slide Instruction
+   ============================================ */
+
+@keyframes finger-slide {
+  0%, 100% { transform: translateX(-8px); opacity: 0.5; }
+  50% { transform: translateX(8px); opacity: 1; }
+}
+
+.finger-slide-anim {
+  animation: finger-slide 1.8s ease-in-out infinite;
+}
+
+/* ============================================
+   🆕 Shimmer Text (gold moving highlight)
+   ============================================ */
+
+@keyframes text-shimmer-gold {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.text-shimmer-gold {
+  background: linear-gradient(
+    90deg,
+    hsl(0 0% 35%) 0%,
+    hsl(43 80% 55%) 40%,
+    hsl(43 96% 70%) 50%,
+    hsl(43 80% 55%) 60%,
+    hsl(0 0% 35%) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-gold 2.5s linear infinite;
+}
+
+/* ============================================
+   🆕 Animated Progress Bar
+   ============================================ */
+
+@keyframes progress-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.progress-bar-animated {
+  background: linear-gradient(90deg, hsl(var(--kwenda-blue)), hsl(var(--kwenda-yellow)), hsl(var(--kwenda-red)));
+  background-size: 200% 100%;
+  animation: holographic-shift 3s ease-in-out infinite;
+}
+
+.progress-bar-glow::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  width: 8px;
+  border-radius: 999px;
+  background: white;
+  animation: progress-glow 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   🆕 Claim Button Gradient Animation
+   ============================================ */
+
+@keyframes btn-gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-gradient-animated {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--kwenda-blue)),
+    hsl(var(--kwenda-green)),
+    hsl(var(--kwenda-blue))
+  );
+  background-size: 200% 200%;
+  animation: btn-gradient-shift 3s ease-in-out infinite;
+}
+
+/* ============================================
+   Styles des Cartes Kwenda Gratta
+   ============================================ */
+
+.gratta-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gratta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gratta-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  transform: rotate(45deg) translateX(-100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gratta-card:hover::after {
+  transform: rotate(45deg) translateX(100%);
+}
+
+.gratta-card-standard {
+  border: 2px solid hsl(var(--kwenda-blue) / 0.3);
+  background: linear-gradient(135deg, hsl(var(--kwenda-blue) / 0.1) 0%, hsl(217 91% 60% / 0.05) 100%);
+}
+
+.gratta-card-active {
+  border: 2px solid hsl(142 71% 45% / 0.3);
+  background: linear-gradient(135deg, hsl(142 71% 45% / 0.1) 0%, hsl(160 84% 39% / 0.05) 100%);
+}
+
+.gratta-card-rare {
+  border: 2px solid hsl(271 91% 65% / 0.4);
+  background: linear-gradient(135deg, hsl(271 91% 65% / 0.15) 0%, hsl(280 87% 55% / 0.08) 100%);
+}
+
+.gratta-card-mega {
+  border: 2px solid hsl(var(--kwenda-yellow) / 0.5);
+  background: linear-gradient(135deg, hsl(var(--kwenda-yellow) / 0.2) 0%, hsl(38 92% 50% / 0.1) 100%);
+}
+
+/* ============================================
+   Badge de Carte
+   ============================================ */
+
+.card-type-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.card-type-badge-standard { background: hsl(var(--kwenda-blue) / 0.2); color: hsl(var(--kwenda-blue)); border: 1px solid hsl(var(--kwenda-blue) / 0.3); }
+.card-type-badge-active { background: hsl(142 71% 45% / 0.2); color: hsl(142 71% 45%); border: 1px solid hsl(142 71% 45% / 0.3); }
+.card-type-badge-rare { background: hsl(271 91% 65% / 0.2); color: hsl(271 91% 65%); border: 1px solid hsl(271 91% 65% / 0.3); }
+.card-type-badge-mega { background: linear-gradient(135deg, hsl(var(--kwenda-yellow) / 0.3), hsl(38 92% 50% / 0.3)); color: hsl(38 92% 40%); border: 1px solid hsl(var(--kwenda-yellow) / 0.5); }
+
+/* ============================================
+   Banner Carte du Jour
+   ============================================ */
+
+.daily-card-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, hsl(var(--kwenda-blue) / 0.15) 0%, hsl(var(--kwenda-yellow) / 0.15) 50%, hsl(var(--kwenda-red) / 0.1) 100%);
+  border: 1px solid hsl(var(--kwenda-yellow) / 0.3);
+  border-radius: 16px;
+}
+
+.daily-card-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, hsl(var(--kwenda-blue)), hsl(var(--kwenda-yellow)), hsl(var(--kwenda-red)));
+}
+
+/* ============================================
+   Effet de Grattage
+   ============================================ */
+
+.scratch-area {
+  position: relative;
+  cursor: crosshair;
+  touch-action: none;
+  user-select: none;
+}
+
+.scratch-area canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: 16px;
+}
+
+@keyframes scratch-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.scratch-surface-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 100%);
+  animation: scratch-shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+@keyframes progress-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.scratch-progress-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  animation: progress-shimmer 2s linear infinite;
+  pointer-events: none;
+}
+
+.scratch-overlay {
+  background: 
+    linear-gradient(45deg, hsl(var(--kwenda-blue)) 25%, transparent 25%),
+    linear-gradient(-45deg, hsl(var(--kwenda-yellow)) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, hsl(var(--kwenda-red)) 75%),
+    linear-gradient(-45deg, transparent 75%, hsl(var(--kwenda-blue)) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.scratch-metallic-surface {
+  background: linear-gradient(135deg, #E8E8EC 0%, #FAFAFA 20%, #D8D8DC 40%, #F5F5F7 60%, #E0E0E4 80%, #CFCFD5 100%);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scratch-metallic-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 200, 200, 0.05) 0%, rgba(255, 255, 200, 0.06) 25%, rgba(200, 255, 200, 0.05) 50%, rgba(200, 200, 255, 0.06) 75%, rgba(255, 200, 255, 0.05) 100%);
+  pointer-events: none;
+}
+
+/* ============================================
+   Confettis RDC
+   ============================================ */
+
+.confetti-rdc {
+  --confetti-color-1: hsl(var(--kwenda-blue));
+  --confetti-color-2: hsl(var(--kwenda-yellow));
+  --confetti-color-3: hsl(var(--kwenda-red));
+}
+
+/* ============================================
+   Statistiques
+   ============================================ */
+
+.gratta-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.gratta-stat-card { position: relative; padding: 12px; border-radius: 12px; text-align: center; overflow: hidden; transition: transform 0.2s ease; }
+.gratta-stat-card:hover { transform: translateY(-2px); }
+.gratta-stat-card::before { content: ''; position: absolute; inset: 0; opacity: 0.1; border-radius: inherit; }
+.gratta-stat-blue::before { background: hsl(var(--kwenda-blue)); }
+.gratta-stat-green::before { background: hsl(142 71% 45%); }
+.gratta-stat-purple::before { background: hsl(271 91% 65%); }
+.gratta-stat-gold::before { background: hsl(var(--kwenda-yellow)); }
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 640px) {
+  .gratta-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .gratta-card { border-radius: 12px; }
+}
+
+/* ============================================
+   Dark Mode
+   ============================================ */
+
+.dark .gratta-card { background-color: hsl(240 10% 8%); }
+.dark .gratta-card::before { background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%); }
+.dark .daily-card-banner { background: linear-gradient(135deg, hsl(var(--kwenda-blue) / 0.1) 0%, hsl(var(--kwenda-yellow) / 0.1) 50%, hsl(var(--kwenda-red) / 0.05) 100%); }
+
+.dark .scratch-holographic {
+  background: linear-gradient(135deg, hsl(0 0% 25%) 0%, hsl(200 20% 30%) 15%, hsl(280 15% 28%) 30%, hsl(40 25% 30%) 45%, hsl(160 15% 28%) 60%, hsl(320 12% 30%) 75%, hsl(0 0% 25%) 100%);
+  background-size: 300% 300%;
+  animation: holographic-shift 4s ease-in-out infinite;
+}
+
+/* ============================================
+   Totem Africain
+   ============================================ */
+
+.african-totem-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 5L35 15H25L30 5ZM30 55L25 45H35L30 55ZM5 30L15 25V35L5 30ZM55 30L45 35V25L55 30Z' fill='%23F7D000' fill-opacity='0.05'/%3E%3Ccircle cx='30' cy='30' r='8' fill='none' stroke='%23007FFF' stroke-opacity='0.08' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}

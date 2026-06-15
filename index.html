@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Tembea - Courses abordables tous les jours</title>
+    <meta name="description" content="Application VTC innovante - Transport fiable, livraison, marketplace et bien encore">
+    <meta name="author" content="Tembea" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#DC2626" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tembea" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" id="app-manifest" href="/manifest.json" />
+    <script>
+      // Sélection dynamique du manifest selon le contexte
+      (function() {
+        const appType = new URLSearchParams(window.location.search).get('app');
+        let manifestPath = '/manifest.json';
+        
+        if (appType === 'client') manifestPath = '/manifest.client.json';
+        else if (appType === 'driver') manifestPath = '/manifest.driver.json';
+        else if (appType === 'partner') manifestPath = '/manifest.partner.json';
+        
+        document.getElementById('app-manifest').setAttribute('href', manifestPath);
+      })();
+    </script>
+    
+    <!-- Montserrat Font - Complete weight range for Yango interface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Satisfy&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Satisfy&display=swap"></noscript>
+
+    <!-- Preconnect to critical API origins for faster network requests -->
+    <link rel="preconnect" href="https://wddlktajnhwhyquwcdgf.supabase.co">
+    <link rel="preconnect" href="https://maps.googleapis.com">
+    <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+
+    <!-- Favicons et PWA Icons -->
+    <link rel="icon" type="image/png" href="/kwenda-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/kwenda-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/kwenda-logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/kwenda-logo.png">
+    <link rel="apple-touch-icon" href="/kwenda-logo.png">
+    <link rel="apple-touch-startup-image" href="/kwenda-logo.png">
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/BNTJhFW6Z4egSB1UyhH2SUin6b32/social-images/social-1762848179992-evenement facebook TS.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/BNTJhFW6Z4egSB1UyhH2SUin6b32/social-images/social-1762848179992-evenement facebook TS.png">
+    
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Tembea - Courses abordables tous les jours">
+  <meta name="twitter:title" content="Tembea - Courses abordables tous les jours">
+  <meta property="og:description" content="Application VTC innovante - Transport fiable, livraison, marketplace et bien encore">
+  <meta name="twitter:description" content="Application VTC innovante - Transport fiable, livraison, marketplace et bien encore">
+  <script>
+// Force unregister ALL service workers and clear ALL caches
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    registrations.forEach(function(registration) {
+      registration.unregister();
+      console.log('SW unregistered');
+    });
+  });
+}
+if ('caches' in window) {
+  caches.keys().then(function(names) {
+    names.forEach(function(name) {
+      caches.delete(name);
+      console.log('Cache deleted:', name);
+    });
+  });
+}
+</script>
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

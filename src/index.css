@@ -1,0 +1,1108 @@
+/* Import all CSS files BEFORE Tailwind directives and other rules */
+@import 'leaflet/dist/leaflet.css';
+@import './styles/performance.css';
+@import './styles/dark-mode-improvements.css';
+@import './styles/taxi-theme.css';
+@import './styles/delivery-theme.css';
+@import './styles/marketplace-cards.css';
+@import './styles/auth-theme.css';
+@import './styles/wallet-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  .swipe-thumb {
+    transition: none;
+  }
+}
+
+/* Global utility - scrollbar hide (used across the app) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Feature-specific styles are lazy-loaded in their respective components:
+ * - lottery.css: loaded in lottery components
+ * - marketplace.css: loaded in marketplace components  
+ * - wallet-theme.css: loaded in wallet components
+ */
+
+/* Force light mode as default before JS loads */
+:root:not(.dark) {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+}
+
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  /* Apply Montserrat globally for consistent typography */
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Smooth scroll global pour toute l'app */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    /* Kwenda Taxi Congo Design System - Couleurs Congo vibrantes */
+    
+    /* Border Radius System */
+    --radius-lg: 1rem;        /* 16px - Cards, containers */
+    --radius: 0.75rem;         /* 12px - Default */
+    --radius-sm: 0.5rem;       /* 8px - Small elements */
+
+    /* Shadow System - Congo Style */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 12px 24px 0 rgba(0, 0, 0, 0.12);
+    --shadow-elegant: 0 10px 30px -5px rgba(220, 38, 38, 0.2), 0 4px 12px -2px rgba(220, 38, 38, 0.1);
+    --shadow-glow: 0 0 20px rgba(220, 38, 38, 0.4), 0 0 40px rgba(220, 38, 38, 0.2);
+    --shadow-float: 0 20px 50px -10px rgba(0, 0, 0, 0.25);
+
+    /* Gradient System - Congo Colors */
+    --gradient-primary: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(0 84% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(45 96% 56%) 35%, hsl(142 76% 36%) 70%, hsl(217 91% 60%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 86% 46%) 100%);
+    --gradient-card: linear-gradient(180deg, hsla(var(--card), 0.8) 0%, hsla(var(--card), 1) 100%);
+    --gradient-congo-flag: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(0 79% 48%) 25%, hsl(45 96% 56%) 50%, hsl(142 76% 36%) 75%, hsl(217 91% 60%) 100%);
+    --gradient-congo-modern: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(45 96% 56%) 100%);
+    --gradient-congo-subtle: linear-gradient(180deg, hsla(0, 79%, 48%, 0.05) 0%, hsla(45, 96%, 56%, 0.05) 100%);
+
+    /* Transition System */
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: cubic-bezier(0.4, 0, 1, 1);
+    --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --background: 0 0% 100%;
+    --foreground: 220 25% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 5%;
+
+    /* Primary: Rouge Congo vibrant mais plus doux */
+    --primary: 357 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 357 85% 60%;
+    --primary-light: 357 85% 70%;
+
+    /* Secondary: Or Congo éclatant */
+    --secondary: 42 100% 50%;
+    --secondary-foreground: 220 25% 5%;
+    --secondary-light: 42 100% 60%;
+
+    --muted: 220 15% 85%;
+    --muted-foreground: 220 20% 25%;
+
+    /* Accent: Or Congo vibrant */
+    --accent: 42 100% 50%;
+    --accent-foreground: 220 25% 5%;
+    --accent-light: 42 100% 60%;
+
+    /* Congo Flag Colors - INTENSIFIED */
+    --congo-blue: 220 100% 50%;
+    --congo-red: 357 95% 55%;
+    --congo-yellow: 42 100% 60%;
+    --congo-green: 142 85% 45%;
+    
+    /* Congo Electric Variants - Intensité réduite pour plus de douceur */
+    --congo-red-electric: 357 88% 60%;
+    --congo-yellow-electric: 42 95% 65%;
+    --congo-green-electric: 142 80% 50%;
+    --congo-blue-electric: 220 90% 55%;
+    
+    /* Congo Vibrant Variants - Interactive elements plus doux */
+    --congo-red-vibrant: 357 82% 48%;
+    --congo-yellow-vibrant: 42 90% 55%;
+    --congo-green-vibrant: 142 75% 40%;
+    --congo-blue-vibrant: 220 85% 45%;
+    
+    /* Congo Glow Variants - Focus states */
+    --congo-red-glow: 357 85% 70%;
+    --congo-yellow-glow: 42 95% 75%;
+    --congo-green-glow: 142 80% 60%;
+    --congo-blue-glow: 220 90% 70%;
+
+    /* Success/Warning/Info semantic colors using Congo palette */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 42 89% 52%;
+    --warning-foreground: 220 13% 13%;
+    --info: 220 100% 40%;
+    --info-foreground: 0 0% 100%;
+
+    /* Greys modernes */
+    --grey-50: 240 9% 97%;
+    --grey-100: 240 9% 93%;
+    --grey-200: 240 9% 89%;
+    --grey-300: 240 6% 83%;
+    --grey-400: 240 5% 65%;
+    --grey-500: 240 4% 46%;
+    --grey-600: 240 5% 34%;
+    --grey-700: 240 5% 26%;
+    --grey-800: 240 4% 16%;
+    --grey-900: 240 6% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 357 79% 54%;
+
+    /* Safe area and responsive utilities */
+    --safe-area-top: env(safe-area-inset-top, 0px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-area-left: env(safe-area-inset-left, 0px);
+    --safe-area-right: env(safe-area-inset-right, 0px);
+    
+    /* Bottom Nav System - DOIT être dans @layer base pour fonctionner */
+    --bottom-nav-height: 72px;
+    --bottom-nav-height-safe: calc(72px + env(safe-area-inset-bottom, 0px));
+    
+    /* Header height system */
+    --header-height: 60px;
+    --header-height-safe: calc(60px + env(safe-area-inset-top, 0px));
+  }
+
+  .dark {
+    /* Base - gris-bleu profond, pas noir pur */
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+
+    /* Cards différenciées du fond - elevated for depth */
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 98%;
+
+    /* Popovers légèrement plus clairs */
+    --popover: 222 45% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary: Orange Congo - excellent en dark */
+    --primary: 22.38 91.89% 55.1%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 22.38 91.89% 65%;
+    --primary-light: 22.38 80% 40%;
+
+    /* Secondary & Accent */
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-light: 42 80% 45%;
+
+    --accent: 217 33% 20%;
+    --accent-foreground: 210 40% 98%;
+    --accent-light: 42 80% 45%;
+
+    /* Muted - différencié de border */
+    --muted: 222 25% 20%;
+    --muted-foreground: 215 20% 68%;
+
+    /* Destructive */
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders - plus visibles pour meilleur contraste */
+    --border: 215 25% 20%;
+    --input: 215 25% 27%;
+    --ring: 22.38 91.89% 55.1%;
+
+    /* Congo Flag Colors - dark adapted */
+    --congo-blue: 220 90% 55%;
+    --congo-red: 357 85% 55%;
+    --congo-yellow: 42 90% 55%;
+    --congo-green: 142 70% 45%;
+
+    /* Congo Electric Variants */
+    --congo-red-electric: 357 80% 55%;
+    --congo-yellow-electric: 42 85% 55%;
+    --congo-green-electric: 142 70% 48%;
+    --congo-blue-electric: 220 80% 55%;
+
+    /* Congo Vibrant */
+    --congo-red-vibrant: 357 75% 50%;
+    --congo-yellow-vibrant: 42 80% 50%;
+    --congo-green-vibrant: 142 65% 42%;
+    --congo-blue-vibrant: 220 75% 50%;
+
+    /* Congo Glow */
+    --congo-red-glow: 357 80% 65%;
+    --congo-yellow-glow: 42 85% 65%;
+    --congo-green-glow: 142 70% 55%;
+    --congo-blue-glow: 220 80% 65%;
+
+    /* Success/Warning/Info */
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 42 75% 50%;
+    --warning-foreground: 220 25% 5%;
+    --info: 220 80% 50%;
+    --info-foreground: 0 0% 100%;
+
+    /* Greys inversées pour dark */
+    --grey-50: 224 30% 10%;
+    --grey-100: 224 25% 14%;
+    --grey-200: 224 20% 18%;
+    --grey-300: 224 15% 25%;
+    --grey-400: 220 12% 40%;
+    --grey-500: 220 10% 55%;
+    --grey-600: 220 8% 70%;
+    --grey-700: 220 8% 78%;
+    --grey-800: 220 10% 88%;
+    --grey-900: 220 15% 95%;
+
+    /* Shadows for dark */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.35);
+    --shadow-xl: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+    --shadow-elegant: 0 10px 30px -5px rgba(234, 88, 12, 0.15), 0 4px 12px -2px rgba(234, 88, 12, 0.08);
+    --shadow-glow: 0 0 20px rgba(234, 88, 12, 0.3), 0 0 40px rgba(234, 88, 12, 0.15);
+    --shadow-float: 0 20px 50px -10px rgba(0, 0, 0, 0.5);
+
+    /* Gradients dark */
+    --gradient-primary: linear-gradient(135deg, hsl(22 92% 55%) 0%, hsl(22 92% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(22 92% 50%) 0%, hsl(42 90% 50%) 35%, hsl(142 60% 40%) 70%, hsl(220 80% 50%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 60% 35%) 0%, hsl(142 60% 45%) 100%);
+    --gradient-congo-subtle: linear-gradient(180deg, hsla(22, 92%, 55%, 0.08) 0%, hsla(42, 90%, 55%, 0.08) 100%);
+
+    /* Charts */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer utilities {
+  /* Typography Scale - Montserrat Expressive */
+  
+  /* Display Sizes - Hero & Landing */
+  .text-display-2xl {
+    font-size: clamp(3.5rem, 8vw, 6rem); /* 56px → 96px */
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-display-xl {
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* 40px → 72px */
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  
+  .text-display-lg {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* 32px → 56px */
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  
+  .text-display-md {
+    font-size: clamp(1.75rem, 4vw, 2.5rem); /* 28px → 40px */
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  /* Headings - Sections */
+  .text-heading-xl {
+    font-size: clamp(1.5rem, 3vw, 2rem); /* 24px → 32px */
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .text-heading-lg {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px → 28px */
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  
+  .text-heading-md {
+    font-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px → 24px */
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  /* Body Text */
+  .text-body-lg {
+    font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px → 18px */
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .text-body-md {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .text-body-sm {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Support des zones sûres iOS (notch, home indicator) */
+  .safe-area-inset-bottom {
+    padding-bottom: max(var(--safe-area-bottom), 0px);
+  }
+
+  .safe-area-inset-top {
+    padding-top: max(var(--safe-area-top), 0px);
+  }
+
+  .safe-area-inset-left {
+    padding-left: max(var(--safe-area-left), 0px);
+  }
+
+  .safe-area-inset-right {
+    padding-right: max(var(--safe-area-right), 0px);
+  }
+
+  /* ═══ SAFE AREA STANDARD CLASSES ═══
+   * PRIMARY (use these):
+   *   .pt-safe-top  → padding-top: env(safe-area-inset-top)     — exact notch height
+   *   .pt-safe      → padding-top: calc(1rem + safe-area)        — notch + spacing
+   *   .pb-safe-bottom → padding-bottom: env(safe-area-inset-bottom)
+   *   .pb-safe      → padding-bottom: calc(1rem + safe-area)
+   *
+   * ALIASES (kept for backward compat — prefer primary classes):
+   *   .safe-top, .safe-area-top, .safe-area-inset-top → same as .pt-safe-top
+   *   .safe-bottom, .safe-area-bottom → same as .pb-safe-bottom
+   *   .safe-area-inset → top + bottom
+   */
+  .pb-safe {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .pt-safe {
+    padding-top: calc(1rem + env(safe-area-inset-top, 0px));
+  }
+
+  .pt-safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Aliases */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .safe-area-inset {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Empêcher le scroll élastique iOS sur les conteneurs scrollables */
+  .no-overscroll {
+    overscroll-behavior: contain;
+  }
+
+  /* Scroll smooth pour meilleure UX */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Animation shimmer pour effets de luxe */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s infinite;
+  }
+
+  /* Scrollbar personnalisée pour le scroll horizontal des images */
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-muted rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+
+  /* Animation du pin rouge sur la carte */
+  @keyframes pulse-pin {
+    0% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+  }
+
+  .pulsing-pin {
+    animation: pulse-pin 2s infinite;
+  }
+
+  /* Animations blob pour backgrounds modernes */
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  /* Vendor Card Glassmorphism */
+  .vendor-card-glass {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border) / 0.5);
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.1);
+  }
+
+  .dark .vendor-card-glass {
+    background: hsl(var(--card) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: 0 8px 32px hsl(var(--background) / 0.3);
+  }
+
+  /* Vendor Card Hover Effect */
+  .vendor-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .vendor-card-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px hsl(var(--primary) / 0.3),
+                0 0 20px hsl(var(--primary) / 0.2);
+  }
+
+  /* Badge Glow Animation */
+  @keyframes badge-glow {
+    0%, 100% { 
+      box-shadow: 0 0 10px hsl(var(--primary) / 0.4); 
+    }
+    50% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.8); 
+    }
+  }
+
+  .badge-glow {
+    animation: badge-glow 2s ease-in-out infinite;
+  }
+
+  /* Parallax Avatar */
+  .vendor-avatar-float {
+    transition: transform 0.3s ease;
+  }
+
+  .vendor-card-hover:hover .vendor-avatar-float {
+    transform: translateY(-12px) scale(1.1);
+  }
+
+  /* Particle burst animation for cart */
+  @keyframes particle-burst {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--tx), var(--ty)) scale(0);
+      opacity: 0;
+    }
+  }
+
+  .cart-particle {
+    animation: particle-burst 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* Garantir l'espace pour bottom nav sur toutes les pages */
+  .page-with-bottom-nav {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0px));
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* ===== KWENDA FOOD FOOTER SECURITY ===== */
+  
+  /* Force le positionnement correct du footer Food */
+  footer[data-food-footer] {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 200 !important;
+  }
+
+  /* Empêche les conflits de hauteur */
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh; /* Support mobile moderne */
+  }
+
+  /* ===== RENTAL LUXURY STYLES ===== */
+  
+  /* Golden gradient premium for rental partners */
+  .gold-gradient-premium {
+    background: linear-gradient(
+      135deg,
+      #f4a460 0%,
+      #daa520 25%,
+      #ffd700 50%,
+      #daa520 75%,
+      #b8860b 100%
+    );
+    background-size: 200% 200%;
+    animation: shimmer-gold 3s infinite;
+  }
+
+  @keyframes shimmer-gold {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* ===== SLIDER DOT GLOW EFFECT ===== */
+  .slider-dot-glow {
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  /* ===== SERVICE ICON FLOAT EFFECT ===== */
+  .service-icon-float {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+  }
+  
+  .service-icon-float:hover {
+    transform: translateY(-6px) scale(1.05);
+  }
+
+  /* ===== HEADER GLASSMORPHISM ===== */
+  .header-actions-glass {
+    background: hsl(var(--muted) / 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 9999px;
+    border: 1px solid hsl(var(--border) / 0.2);
+    padding: 4px;
+  }
+
+  /* ===== MODERN CAROUSEL STYLES ===== */
+  .carousel-container-modern {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2), 0 4px 20px -8px rgba(0, 0, 0, 0.15);
+    border: 1px solid hsl(var(--border) / 0.15);
+  }
+
+  /* Scale-115 utility class */
+  .group-hover\:scale-115:hover {
+    transform: scale(1.15);
+  }
+  
+  .group:hover .group-hover\:scale-115 {
+    transform: scale(1.15);
+  }
+
+  /* Premium rental cards with luxury shadows */
+  .rental-card-premium {
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 0 0 1px rgba(218, 165, 32, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .rental-card-premium:hover {
+    box-shadow: 
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04),
+      0 0 0 2px rgba(218, 165, 32, 0.3);
+    transform: translateY(-4px);
+  }
+
+  /* Glassmorphism for rental stats cards */
+  .glassmorphism {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .dark .glassmorphism {
+    background: hsl(var(--card) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  /* ===== KWENDA FOOD STYLES ===== */
+  
+  /* Gradient food signature */
+  .food-gradient {
+    background: linear-gradient(135deg, #FF6347 0%, #FFA500 50%, #FFD700 100%);
+  }
+
+  /* Animation "steam" pour les plats chauds */
+  .steam-effect::before {
+    content: '💨';
+    position: absolute;
+    animation: steam 2s ease-in-out infinite;
+  }
+
+  /* Effet "pulse" pour les nouveautés */
+  .new-restaurant {
+    animation: food-pulse 2s infinite;
+  }
+
+  /* Food loading animation */
+  @keyframes food-spin {
+    0%, 100% { 
+      transform: rotate(0deg) scale(1); 
+    }
+    50% { 
+      transform: rotate(180deg) scale(1.2); 
+    }
+  }
+
+  .food-loading {
+    animation: food-spin 2s ease-in-out infinite;
+  }
+
+  /* ===== BIDDING INTERFACE MODERN STYLES ===== */
+  
+  /* Glassmorphism effect for cards */
+  .glass-card {
+    background: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.08);
+  }
+
+  .dark .glass-card {
+    background: hsl(var(--card) / 0.4);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: 0 8px 32px hsl(var(--background) / 0.3);
+  }
+
+  /* Gradient border animated */
+  @keyframes gradient-border-rotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .gradient-border-animated {
+    position: relative;
+    background: linear-gradient(90deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--primary-glow)) 25%, 
+      hsl(var(--primary)) 50%,
+      hsl(var(--primary-glow)) 75%,
+      hsl(var(--primary)) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradient-border-rotate 3s ease infinite;
+    padding: 2px;
+    border-radius: 1.5rem;
+  }
+
+  /* Shadow glow effects */
+  .shadow-glow-green {
+    box-shadow: 0 0 20px hsl(142 76% 36% / 0.4), 
+                0 0 40px hsl(142 76% 36% / 0.2);
+  }
+
+  .shadow-glow-red {
+    box-shadow: 0 0 20px hsl(0 84% 60% / 0.4), 
+                0 0 40px hsl(0 84% 60% / 0.2);
+  }
+
+  /* Ripple effect on tap */
+  @keyframes ripple-effect {
+    0% {
+      transform: scale(0);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  .ripple-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: hsl(var(--foreground) / 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .ripple-container:active::after {
+    animation: ripple-effect 0.6s ease-out;
+  }
+
+  /* ===== SYSTÈME DE LAYOUT BOTTOM NAV UNIVERSEL ===== */
+
+  /* Container principal avec bottom nav */
+  .mobile-safe-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh; /* Support mobile moderne */
+    max-height: 100vh;
+    max-height: 100dvh;
+    overflow: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  /* Header iOS-safe universel */
+  .ios-header-safe {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  /* Zone de contenu avec padding pour bottom nav */
+  .content-with-bottom-nav {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+    touch-action: pan-y;
+    padding-bottom: var(--bottom-nav-height-safe, 72px);
+  }
+
+  /* Main content scroll - entre header fixe et footer fixe */
+  .main-content-scroll {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+    padding-top: var(--header-height-safe);
+    padding-bottom: var(--bottom-nav-height-safe);
+  }
+
+  /* Zone scrollable sans padding (pour layouts complexes) */
+  .content-scrollable {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+    touch-action: pan-y;
+  }
+
+  /* Scrollable avec padding bottom nav */
+  .content-with-bottom-nav-scrollable {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+    touch-action: pan-y;
+    padding-bottom: var(--bottom-nav-height-safe, 72px);
+  }
+
+  /* Footer bottom nav standardisé - Glassmorphism moderne avec background VISIBLE */
+  .bottom-nav-standard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    height: auto;
+    min-height: 72px;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: content-box;
+    will-change: transform;
+    isolation: isolate;
+    /* Background et glassmorphism intégrés pour garantir visibilité */
+    background: hsl(var(--background) / 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid hsl(var(--border) / 0.5);
+    box-shadow: 0 -4px 20px hsl(var(--foreground) / 0.08);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* === iOS/Android Responsive Utilities === */
+  .min-h-dvh {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .touch-target-ios {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .dark .bottom-nav-standard {
+    background: hsl(var(--background) / 0.92);
+    box-shadow: 0 -4px 30px hsl(var(--background) / 0.5);
+  }
+
+  /* RESPONSIVE: Style floating island pour desktop/tablette */
+  @media (min-width: 768px) {
+    .bottom-nav-standard {
+      /* Centré avec largeur max */
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(720px, calc(100% - 32px));
+      right: auto;
+      
+      /* Décollé du bas pour effet floating */
+      bottom: 16px;
+      
+      /* Coins arrondis premium */
+      border-radius: 28px;
+      
+      /* Bordure subtile tout autour */
+      border: 1px solid hsl(var(--border) / 0.4);
+      
+      /* Ombre plus prononcée pour effet floating */
+      box-shadow: 
+        0 8px 32px hsl(var(--foreground) / 0.12),
+        0 4px 16px hsl(var(--foreground) / 0.08),
+        inset 0 1px 0 hsl(var(--background) / 0.5);
+    }
+    
+    .dark .bottom-nav-standard {
+      border: 1px solid hsl(var(--border) / 0.25);
+      box-shadow: 
+        0 8px 40px hsl(0 0% 0% / 0.4),
+        0 4px 20px hsl(0 0% 0% / 0.3),
+        inset 0 1px 0 hsl(var(--foreground) / 0.05);
+    }
+  }
+
+  /* ===== FLOATING BOTTOM NAV - Modern Island Design ===== */
+  .bottom-nav-floating {
+    position: fixed;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    left: 16px;
+    right: 16px;
+    z-index: 110;
+    height: auto;
+    padding: 8px 4px;
+    will-change: transform;
+    isolation: isolate;
+    
+    /* Glassmorphism premium */
+    background: hsl(var(--background) / 0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    
+    /* Coins arrondis - effet île flottante */
+    border-radius: 28px;
+    
+    /* Bordure subtile avec glow */
+    border: 1px solid hsl(var(--border) / 0.3);
+    
+    /* Ombre prononcée avec effet de flottement */
+    box-shadow: 
+      0 8px 40px hsl(var(--foreground) / 0.12),
+      0 4px 20px hsl(var(--foreground) / 0.08),
+      0 2px 8px hsl(var(--foreground) / 0.04),
+      inset 0 1px 0 hsl(var(--background) / 0.5);
+  }
+  
+  .dark .bottom-nav-floating {
+    background: hsl(var(--background) / 0.75);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: 
+      0 8px 40px hsl(0 0% 0% / 0.4),
+      0 4px 20px hsl(0 0% 0% / 0.3),
+      0 0 60px hsl(var(--primary) / 0.1),
+      inset 0 1px 0 hsl(var(--foreground) / 0.05);
+  }
+
+  /* Variante avec safe area intégrée */
+  .bottom-nav-safe {
+    height: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Classes utilitaires pour headers et compensations */
+  .pt-header {
+    padding-top: 4rem; /* 64px - compensation header fixe */
+  }
+
+  .pb-bottom-nav {
+    padding-bottom: var(--bottom-nav-height-safe);
+  }
+
+  /* Padding pour contenu avec nav flottante */
+  .pb-floating-nav {
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Layout avec header fixe */
+  .layout-with-fixed-header {
+    padding-top: 4rem;
+  }
+}
+
+/* ===== SYSTÈME DE THÈMES SAISONNIERS ===== */
+
+/* Variables saisonnières par défaut */
+:root {
+  --seasonal-primary: 0 84% 50%;
+  --seasonal-accent: 142 71% 45%;
+  --seasonal-glow: 35 91% 47%;
+}
+
+/* Thème Noël */
+.season-christmas {
+  --seasonal-primary: 0 84% 50%;
+  --seasonal-accent: 142 71% 45%;
+  --seasonal-glow: 43 96% 56%;
+}
+
+/* Effets subtils pour Noël */
+.season-christmas .seasonal-effects-enabled {
+  /* Légère teinte festive sur les éléments primaires */
+}
+
+.season-christmas header {
+  border-bottom-color: hsl(var(--seasonal-glow) / 0.15);
+}
+
+.season-christmas .bottom-nav-standard {
+  border-top-color: hsl(var(--seasonal-accent) / 0.2);
+}
+
+/* Thème Nouvel An */
+.season-newYear {
+  --seasonal-primary: 43 96% 56%;
+  --seasonal-accent: 280 100% 70%;
+  --seasonal-glow: 220 14% 80%;
+}
+
+/* Thème Saint-Valentin */
+.season-valentine {
+  --seasonal-primary: 340 82% 52%;
+  --seasonal-accent: 0 84% 60%;
+  --seasonal-glow: 340 100% 76%;
+}
+
+.season-valentine header {
+  border-bottom-color: hsl(var(--seasonal-primary) / 0.2);
+}
+
+/* Animations festives globales */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes gentle-glow {
+  0%, 100% { box-shadow: 0 0 10px hsl(var(--seasonal-glow) / 0.2); }
+  50% { box-shadow: 0 0 20px hsl(var(--seasonal-glow) / 0.4); }
+}
+
+/* Classe pour éléments avec lueur festive */
+.seasonal-glow {
+  animation: gentle-glow 3s ease-in-out infinite;
+}
+
+/* Amélioration du slider pour les thèmes festifs */
+.season-christmas .promo-slider,
+.season-newYear .promo-slider {
+  position: relative;
+}
+
+.season-christmas .promo-slider::before,
+.season-newYear .promo-slider::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 1rem;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--seasonal-primary) / 0.3),
+    hsl(var(--seasonal-accent) / 0.3),
+    hsl(var(--seasonal-glow) / 0.3)
+  );
+  z-index: -1;
+  opacity: 0.5;
+  animation: gentle-glow 4s ease-in-out infinite;
+}

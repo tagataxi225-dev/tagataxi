@@ -1,0 +1,7 @@
+.env
+.env.*
+node_modules
+dist
+android
+*.zip
+schema_tembea.sql

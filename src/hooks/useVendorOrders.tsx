@@ -1,0 +1,279 @@
+import { useState, useEffect } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from 'sonner';
+import { notificationSoundService } from '@/services/notificationSound';
+
+interface VendorOrder {
+  id: string;
+  product_id: string;
+  quantity: number;
+  total_price: number;
+  currency: string;
+  delivery_address: string;
+  buyer_contact: string;
+  vendor_confirmation_status: string;
+  status: string;
+  created_at: string;
+  product?: {
+    name: string;
+    price: number;
+  };
+}
+
+export const useVendorOrders = () => {
+  const [pendingOrders, setPendingOrders] = useState<VendorOrder[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  const loadPendingOrders = async () => {
+    try {
+      setLoading(true);
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        toast.error('Non authentifié');
+        return;
+      }
+
+      // ✅ PHASE 1: Récupérer d'abord les produits du vendeur
+      const { data: vendorProducts } = await supabase
+        .from('marketplace_products')
+        .select('id, title, price, images')
+        .eq('seller_id', user.id);
+
+      if (!vendorProducts || vendorProducts.length === 0) {
+        setPendingOrders([]);
+        return;
+      }
+
+      const vendorProductIds = vendorProducts.map((p: any) => p.id);
+
+      // ✅ CORRECTION: Récupérer les commandes SANS JOIN
+      const { data: orders, error } = await supabase
+        .from('marketplace_orders')
+        .select('*')
+        .in('product_id', vendorProductIds)
+        .eq('vendor_confirmation_status', 'awaiting_confirmation')
+        .in('status', ['pending', 'pending_payment', 'confirmed'])
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+
+      // ✅ CORRECTION: Récupérer les buyers séparément
+      const buyerIds = [...new Set(orders?.map(o => o.buyer_id).filter(Boolean))];
+      let buyersMap: Record<string, any> = {};
+
+      if (buyerIds.length > 0) {
+        const { data: buyers } = await supabase
+          .from('profiles')
+          .select('user_id, display_name, avatar_url, phone_number')
+          .in('user_id', buyerIds);
+        
+        if (buyers) {
+          buyersMap = buyers.reduce((acc, buyer) => ({
+            ...acc,
+            [buyer.user_id]: buyer
+          }), {});
+        }
+      }
+
+      // ✅ CORRECTION: Enrichir avec les données produit ET buyer
+      const enrichedOrders = orders?.map((order: any) => {
+        const product = vendorProducts.find((p: any) => p.id === order.product_id);
+        const buyer = buyersMap[order.buyer_id];
+        
+        return {
+          ...order,
+          product: product ? { 
+            id: product.id,
+            title: product.title,
+            price: product.price,
+            images: product.images || []
+          } : null,
+          buyer: buyer ? {
+            id: buyer.user_id,
+            display_name: buyer.display_name,
+            avatar_url: buyer.avatar_url,
+            phone_number: buyer.phone_number
+          } : null
+        };
+      }) || [];
+
+      console.log('📦 [useVendorOrders] Commandes chargées:', {
+        count: enrichedOrders.length,
+        firstOrder: enrichedOrders[0] ? {
+          id: enrichedOrders[0].id,
+          product_title: enrichedOrders[0].product?.title,
+          unit_price: enrichedOrders[0].unit_price,
+          buyer_name: enrichedOrders[0].buyer?.display_name,
+          has_pickup_coords: !!enrichedOrders[0].pickup_coordinates,
+          has_delivery_coords: !!enrichedOrders[0].delivery_coordinates
+        } : null
+      });
+
+      setPendingOrders(enrichedOrders);
+
+    } catch (error) {
+      console.error('Erreur chargement commandes vendeur:', error);
+      toast.error('Impossible de charger les commandes');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const confirmOrder = async (orderId: string): Promise<boolean> => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) throw new Error('Non authentifié');
+
+      // Récupérer les détails de la commande
+      const { data: order, error: fetchError } = await supabase
+        .from('marketplace_orders')
+        .select('*, marketplace_products(price)')
+        .eq('id', orderId)
+        .single();
+
+      if (fetchError || !order) throw new Error('Commande introuvable');
+
+      // Mettre à jour le statut de confirmation + initialiser vendor_delivery_method
+      const { error: updateError } = await supabase
+        .from('marketplace_orders')
+        .update({
+          vendor_confirmation_status: 'confirmed',
+          vendor_confirmed_at: new Date().toISOString(),
+          status: 'confirmed',
+          vendor_delivery_method: 'self', // Par défaut: livraison auto-gérée
+          updated_at: new Date().toISOString()
+        })
+        .eq('id', orderId);
+
+      if (updateError) throw updateError;
+
+      // ✅ PHASE 2.3: Créer transaction escrow automatique
+      let platformCommission = 0.05;
+      const { data: commissionSetting } = await supabase
+        .from('commission_settings')
+        .select('platform_rate')
+        .eq('service_type', 'marketplace')
+        .eq('is_active', true)
+        .single();
+      if (commissionSetting?.platform_rate != null) {
+        platformCommission = commissionSetting.platform_rate;
+      }
+      const platformFee = order.total_amount * platformCommission;
+      const sellerAmount = order.total_amount - platformFee;
+
+      const { error: escrowError } = await supabase
+        .from('escrow_transactions')
+        .insert({
+          order_id: orderId,
+          buyer_id: order.buyer_id,
+          seller_id: order.seller_id,
+          total_amount: order.total_amount,
+          platform_fee: platformFee,
+          seller_amount: sellerAmount,
+          status: 'held',
+          currency: 'CDF'
+        });
+
+      if (escrowError) {
+        console.error('⚠️ Erreur création escrow:', escrowError);
+        toast.error('Attention: La transaction escrow n\'a pas pu être créée. Contactez le support.');
+        // Ne pas bloquer la confirmation mais avertir
+      } else {
+        console.log('✅ Transaction escrow créée avec succès');
+      }
+
+      // ✅ PHASE 2.2: Notification au client
+      await supabase.from('delivery_notifications').insert({
+        user_id: order.buyer_id,
+        delivery_order_id: orderId,
+        notification_type: 'vendor_confirmed',
+        title: '✅ Commande confirmée',
+        message: 'Le vendeur a confirmé votre commande. Préparation en cours.',
+        read: false,
+        metadata: {
+          order_id: orderId,
+          vendor_id: user.id,
+          confirmed_at: new Date().toISOString()
+        }
+      });
+
+      // Logger l'activité
+      await supabase.from('activity_logs').insert({
+        activity_type: 'vendor_order_confirmed',
+        description: 'Vendeur a confirmé la commande',
+        metadata: { order_id: orderId, vendor_id: user.id }
+      });
+
+      return true;
+    } catch (error) {
+      console.error('Erreur confirmation commande:', error);
+      toast.error('Impossible de confirmer la commande');
+      return false;
+    }
+  };
+
+  const rejectOrder = async (orderId: string, reason: string): Promise<boolean> => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) throw new Error('Non authentifié');
+
+      const { error: updateError } = await supabase
+        .from('marketplace_orders')
+        .update({
+          vendor_confirmation_status: 'rejected',
+          status: 'cancelled',
+          updated_at: new Date().toISOString()
+        })
+        .eq('id', orderId);
+
+      if (updateError) throw updateError;
+
+      await supabase.from('activity_logs').insert({
+        activity_type: 'vendor_order_rejected',
+        description: `Vendeur a refusé la commande: ${reason}`,
+        metadata: { order_id: orderId, vendor_id: user.id, reason }
+      });
+
+      return true;
+    } catch (error) {
+      console.error('Erreur refus commande:', error);
+      toast.error('Impossible de refuser la commande');
+      return false;
+    }
+  };
+
+  // Real-time subscription
+  useEffect(() => {
+    const channel = supabase
+      .channel('vendor-orders-changes')
+      .on(
+        'postgres_changes',
+        {
+          event: 'INSERT',
+          schema: 'public',
+          table: 'marketplace_orders'
+        },
+        async (payload) => {
+          console.log('Nouvelle commande reçue:', payload);
+          
+          // 🔊 Jouer le son de notification
+          await notificationSoundService.playNotificationSound('newOrder');
+          
+          loadPendingOrders();
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, []);
+
+  return {
+    pendingOrders,
+    loading,
+    confirmOrder,
+    rejectOrder,
+    loadPendingOrders
+  };
+};

@@ -1,0 +1,109 @@
+import { lazy, Suspense } from 'react';
+import { Route } from 'react-router-dom';
+import ProtectedRoute from '@/components/auth/ProtectedRoute';
+
+
+const AdminApp = lazy(() => import('@/pages/AdminApp'));
+const AdminRatingsManager = lazy(() => import('@/components/admin/AdminRatingsManager'));
+const TaxiDashboard = lazy(() => import('@/pages/admin/TaxiDashboard'));
+const ProductionConfig = lazy(() => import('@/pages/admin/ProductionConfig'));
+const QRCodeManager = lazy(() => import('@/pages/admin/QRCodeManager'));
+const QRAnalytics = lazy(() => import('@/pages/admin/QRAnalytics'));
+const AdminFoodManagement = lazy(() => import('@/pages/admin/AdminFoodManagement'));
+const AdminRentalModerationEnhanced = lazy(() => import('@/pages/AdminRentalModerationEnhanced'));
+const AdminNotificationTestPage = lazy(() => import('@/pages/admin/AdminNotificationTestPage'));
+const VendorShopTestPage = lazy(() => import('@/pages/admin/VendorShopTestPage'));
+const AdminSuggestions = lazy(() => import('@/pages/admin/AdminSuggestions'));
+
+export const AdminRoutes = () => {
+
+  return (
+    <>
+      {/* Route principale admin - /operatorx/admin uniquement */}
+      <Route 
+        path="/operatorx/admin" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <AdminApp />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/operatorx/admin/taxi-dashboard" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <TaxiDashboard />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/operatorx/admin/production-config" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <ProductionConfig />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/operatorx/admin/qr-manager" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <QRCodeManager />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/operatorx/admin/qr-analytics" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <QRAnalytics />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/operatorx/admin/food" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <AdminFoodManagement />
+          </ProtectedRoute>
+        } 
+      />
+      <Route
+        path="/operatorx/admin/notification-test" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <AdminNotificationTestPage />
+          </ProtectedRoute>
+        } 
+      />
+      <Route
+        path="/operatorx/admin/vendor-shop-test" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <VendorShopTestPage />
+          </ProtectedRoute>
+        } 
+      />
+      <Route
+        path="/operatorx/admin/ratings"
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <Suspense fallback={<div>Chargement...</div>}>
+              <AdminRatingsManager />
+            </Suspense>
+          </ProtectedRoute>
+        }
+      />
+      <Route path="/operatorx/admin/suggestions" element={<ProtectedRoute requiredRole="admin"><AdminSuggestions /></ProtectedRoute>} />
+      {/* Route fallback pour toutes les sous-routes admin non définies */}
+      <Route 
+        path="/operatorx/admin/*" 
+        element={
+          <ProtectedRoute requiredRole="admin">
+            <AdminApp />
+          </ProtectedRoute>
+        } 
+      />
+    </>
+  );
+};

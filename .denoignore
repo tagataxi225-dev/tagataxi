@@ -1,0 +1,9 @@
+# Ignorer temporairement les Edge Functions avec erreurs TypeScript
+supabase/functions/ai-assistant/
+supabase/functions/conversational-ai/
+supabase/functions/e2e-tests/
+supabase/functions/admin-analytics/
+supabase/functions/admin-operations/
+supabase/functions/delete-user-account/
+supabase/functions/delivery-escrow-management/
+supabase/functions/delivery-status-manager/

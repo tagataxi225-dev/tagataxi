@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "VOTRE_PROJECT_NUMBER",
+    "project_id": "kwenda-app",
+    "storage_bucket": "kwenda-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:XXXXXXXXXXXX:android:XXXXXXXXXXXX",
+        "android_client_info": {
+          "package_name": "cd.kwenda.APP_TYPE"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "XXXXXXXXXXXX.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "VOTRE_API_KEY_ANDROID"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "XXXXXXXXXXXX.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

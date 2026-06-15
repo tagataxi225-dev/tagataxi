@@ -1,0 +1,574 @@
+/* =============================================
+   DARK MODE - Global Overrides & Improvements
+   ============================================= */
+
+/* ===== UTILITY CLASSES ===== */
+.text-readable {
+  @apply text-foreground/85;
+}
+
+.text-readable-muted {
+  @apply text-foreground/70;
+}
+
+.bg-subtle {
+  @apply bg-card/80 backdrop-blur-sm;
+}
+
+.border-visible {
+  @apply border-border/60;
+}
+
+/* ===== GLOBAL BG-WHITE OVERRIDE FOR DARK MODE ===== */
+/* This catches components using bg-white without dark: variants */
+.dark .bg-white {
+  background-color: hsl(var(--card)) !important;
+}
+
+.dark .bg-white\/50,
+.dark .bg-white\/80,
+.dark .bg-white\/90,
+.dark .bg-white\/95 {
+  background-color: hsl(var(--card) / 0.8) !important;
+}
+
+/* ===== TEXT COLOR OVERRIDES ===== */
+/* Fix gray text that becomes unreadable on dark backgrounds */
+.dark .text-gray-900,
+.dark .text-gray-800 {
+  color: hsl(var(--foreground)) !important;
+}
+
+.dark .text-gray-700 {
+  color: hsl(var(--foreground) / 0.9) !important;
+}
+
+.dark .text-gray-600 {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+.dark .text-gray-500 {
+  color: hsl(var(--muted-foreground) / 0.85) !important;
+}
+
+.dark .text-gray-400 {
+  color: hsl(var(--muted-foreground) / 0.7) !important;
+}
+
+/* ===== BORDER COLOR OVERRIDES ===== */
+.dark .border-gray-100,
+.dark .border-gray-200 {
+  border-color: hsl(var(--border)) !important;
+}
+
+.dark .border-gray-300 {
+  border-color: hsl(var(--border) / 0.8) !important;
+}
+
+/* ===== BACKGROUND COLOR OVERRIDES ===== */
+.dark .bg-gray-50,
+.dark .bg-gray-100 {
+  background-color: hsl(var(--muted)) !important;
+}
+
+.dark .bg-gray-200 {
+  background-color: hsl(var(--muted) / 0.7) !important;
+}
+
+/* ===== RADIX UI COMPONENTS DARK MODE ===== */
+
+/* Dialog / Sheet / Drawer */
+.dark [data-radix-dialog-content],
+.dark [data-radix-alert-dialog-content],
+.dark [vaul-drawer] {
+  background-color: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  border-color: hsl(var(--border));
+}
+
+/* Popover / Dropdown */
+.dark [data-radix-popper-content-wrapper] [role="menu"],
+.dark [data-radix-popper-content-wrapper] [role="listbox"],
+.dark [data-radix-popper-content-wrapper] [data-radix-popover-content] {
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  border-color: hsl(var(--border) / 0.6);
+}
+
+/* Select Content */
+.dark [data-radix-select-content] {
+  background-color: hsl(var(--popover));
+  border-color: hsl(var(--border) / 0.6);
+}
+
+.dark [data-radix-select-item][data-highlighted] {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+/* ===== ENHANCED COMPONENTS ===== */
+
+/* Dropdowns */
+.dropdown-content {
+  @apply bg-card/95 backdrop-blur-md border border-border/60;
+  z-index: 50;
+}
+
+/* Skeleton loading */
+.dark .animate-pulse {
+  background-color: hsl(var(--muted) / 0.6);
+}
+
+/* Table row hover */
+.dark .table-row-hover:hover {
+  @apply bg-muted/30;
+}
+
+/* Tabs */
+.dark .tabs-list {
+  @apply bg-muted/40;
+}
+
+.dark .tabs-trigger[data-state="active"] {
+  @apply bg-card text-foreground shadow-sm;
+}
+
+/* Toast */
+.dark .toast {
+  @apply bg-card/95 border-border/60 text-foreground;
+}
+
+/* Form labels */
+.dark .form-label {
+  @apply text-foreground/90;
+}
+
+/* Placeholders */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Modern cards */
+.dark .card-modern {
+  @apply bg-card/90 border-border/40;
+}
+
+.dark .card-modern:hover {
+  @apply border-border/60 bg-card/95;
+}
+
+/* Icons */
+.dark .icon-secondary {
+  @apply text-foreground/70;
+}
+
+.dark .icon-muted {
+  @apply text-foreground/50;
+}
+
+/* Badges */
+.dark .badge-secondary {
+  @apply bg-muted/60 text-foreground/85;
+}
+
+/* Select */
+.dark .select-content {
+  @apply bg-card/95 border-border/60;
+}
+
+.dark .select-item[data-highlighted] {
+  @apply bg-muted/40 text-foreground;
+}
+
+/* Utility classes */
+.text-secondary-visible {
+  @apply text-foreground/80;
+}
+
+.bg-elevated {
+  @apply bg-card/95 backdrop-blur-xl;
+}
+
+.border-elevated {
+  @apply border-border/70;
+}
+
+.dropdown-visible {
+  @apply bg-popover border-border/60 backdrop-blur-xl;
+}
+
+.card-shadow {
+  @apply shadow-lg dark:shadow-2xl;
+}
+
+/* Interactive hover */
+.dark .interactive-hover:hover {
+  @apply bg-muted/50 text-foreground;
+}
+
+.dark .text-emphasis {
+  @apply text-foreground/95;
+}
+
+/* ===== ADMIN LOGIN ===== */
+.dark .admin-login-bg {
+  @apply bg-gradient-to-br from-background via-card/50 to-background;
+}
+
+.dark .admin-login-icon-bg {
+  @apply bg-primary/20 backdrop-blur-md border border-primary/30;
+}
+
+.dark .admin-login-card {
+  @apply bg-card/95 border-border/60 backdrop-blur-xl;
+}
+
+/* Auth text */
+.dark .auth-description {
+  @apply text-foreground/85;
+}
+
+.dark .auth-title {
+  @apply text-foreground/95;
+}
+
+/* Dropdown & Popover */
+.dark .dropdown-menu {
+  @apply bg-card/95 border-border/60 backdrop-blur-xl;
+}
+
+.dark .popover-content {
+  @apply bg-card/95 border-border/60 backdrop-blur-xl text-foreground/95;
+}
+
+/* ===== COLORED BACKGROUNDS DARK ADAPTATION ===== */
+/* Fix blue-50, red-50, green-50, orange-50 etc. in dark mode */
+.dark .bg-blue-50 {
+  background-color: hsl(220 80% 50% / 0.1) !important;
+}
+
+.dark .bg-red-50,
+.dark .bg-rose-50 {
+  background-color: hsl(0 70% 50% / 0.1) !important;
+}
+
+.dark .bg-green-50,
+.dark .bg-emerald-50 {
+  background-color: hsl(142 60% 40% / 0.1) !important;
+}
+
+.dark .bg-orange-50,
+.dark .bg-amber-50 {
+  background-color: hsl(30 80% 50% / 0.1) !important;
+}
+
+.dark .bg-purple-50,
+.dark .bg-violet-50 {
+  background-color: hsl(270 60% 50% / 0.1) !important;
+}
+
+.dark .bg-yellow-50 {
+  background-color: hsl(45 80% 50% / 0.1) !important;
+}
+
+/* Fix colored text in dark mode */
+.dark .text-blue-700 {
+  color: hsl(220 80% 65%) !important;
+}
+
+.dark .text-red-700,
+.dark .text-rose-700 {
+  color: hsl(0 70% 65%) !important;
+}
+
+.dark .text-green-700,
+.dark .text-emerald-700 {
+  color: hsl(142 60% 55%) !important;
+}
+
+.dark .text-orange-700 {
+  color: hsl(30 80% 60%) !important;
+}
+
+/* ===== KWENDA FOOD DARK MODE ===== */
+.food-card-modern {
+  @apply bg-card dark:bg-card/95 border-2 border-border/50 dark:border-border/80;
+  @apply shadow-md dark:shadow-xl dark:shadow-primary/10;
+  @apply hover:border-primary/50 dark:hover:border-primary/70;
+  @apply transition-all duration-300;
+}
+
+.food-text-primary {
+  @apply text-foreground dark:text-foreground/95;
+}
+
+.food-text-secondary {
+  @apply text-muted-foreground dark:text-muted-foreground/90;
+}
+
+.food-price {
+  @apply text-primary dark:text-primary-glow font-bold;
+}
+
+.food-badge {
+  @apply shadow-md backdrop-blur-sm border-2 border-white/50;
+}
+
+.food-section-bg {
+  @apply bg-gradient-to-b from-primary/5 dark:from-primary/10 to-background dark:to-background;
+}
+
+.food-header-sticky {
+  @apply sticky top-0 z-10 bg-background dark:bg-background backdrop-blur-md;
+  @apply border-b border-border/60 dark:border-border/80 shadow-sm dark:shadow-lg;
+}
+
+.food-input {
+  @apply bg-background dark:bg-card;
+  @apply border-border/60 dark:border-border/80;
+  @apply text-foreground dark:text-foreground/95;
+  @apply placeholder:text-muted-foreground/60 dark:placeholder:text-muted-foreground/80;
+}
+
+.dark .food-skeleton {
+  @apply bg-muted/80;
+}
+
+.dark .food-skeleton-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+}
+
+.dark .category-pill-active {
+  @apply bg-primary/90 border-2 border-primary-glow;
+}
+
+.dark .category-pill-inactive {
+  @apply bg-muted/80 text-muted-foreground/90 border-2 border-transparent;
+}
+
+/* ===== RENTAL SECTION ===== */
+.rental-vehicle-card {
+  @apply bg-card border border-border/50;
+  @apply shadow-sm hover:shadow-md;
+  @apply transition-all duration-200;
+}
+
+.dark .rental-vehicle-card {
+  @apply bg-card/95 border-border/40;
+  @apply hover:border-border/60;
+}
+
+.rental-price-tag {
+  @apply bg-card text-emerald-600;
+  @apply border border-border/20;
+  @apply backdrop-blur-sm rounded-lg;
+}
+
+.dark .rental-price-tag {
+  @apply bg-card/95 text-emerald-400;
+  @apply border-border/50;
+}
+
+.rental-stat-card {
+  @apply bg-card border border-border/50;
+  @apply hover:shadow-md transition-shadow duration-200;
+}
+
+.dark .rental-stat-card {
+  @apply bg-card/90 border-border/40;
+}
+
+.rental-category-badge {
+  @apply bg-card text-foreground;
+  @apply shadow-sm border-0;
+}
+
+.dark .rental-category-badge {
+  @apply bg-card/95 text-foreground/90;
+}
+
+.rental-driver-badge {
+  @apply bg-emerald-500 text-white shadow-sm;
+}
+
+.dark .rental-driver-badge {
+  @apply bg-emerald-600;
+}
+
+.rental-spec-pill {
+  @apply bg-muted/50 px-2 py-1 rounded-md;
+  @apply text-muted-foreground;
+}
+
+.dark .rental-spec-pill {
+  @apply bg-muted/30;
+}
+
+.rental-btn-primary {
+  @apply bg-emerald-500 hover:bg-emerald-600;
+  @apply text-white border-0;
+}
+
+.dark .rental-btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-700;
+}
+
+.rental-search-input {
+  @apply border-border/50 bg-background;
+  @apply focus:border-emerald-500 focus:ring-emerald-500/20;
+}
+
+.dark .rental-search-input {
+  @apply border-border/40 bg-card/50;
+  @apply focus:border-emerald-400;
+}
+
+.rental-filter-chip {
+  @apply border-border/50 hover:bg-muted/50;
+}
+
+.dark .rental-filter-chip {
+  @apply border-border/40 hover:bg-muted/30;
+}
+
+.rental-filter-chip-active {
+  @apply bg-emerald-500 text-white border-0;
+}
+
+.dark .rental-filter-chip-active {
+  @apply bg-emerald-600;
+}
+
+.rental-store-header {
+  @apply bg-background;
+}
+
+.dark .rental-store-header {
+  @apply bg-background/95;
+}
+
+.rental-about-card {
+  @apply bg-card border border-border/50;
+}
+
+.dark .rental-about-card {
+  @apply bg-card/90 border-border/40;
+}
+
+.rental-contact-pill {
+  @apply bg-emerald-500/5 border border-emerald-500/20;
+  @apply hover:bg-emerald-500/10 transition-colors;
+}
+
+.dark .rental-contact-pill {
+  @apply bg-emerald-400/10 border-emerald-400/20;
+  @apply hover:bg-emerald-400/15;
+}
+
+/* ===== SCROLLBAR DARK MODE ===== */
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.3);
+}
+
+/* ===== SEPARATOR ===== */
+.dark [data-radix-separator],
+.dark hr {
+  border-color: hsl(var(--border));
+  background-color: hsl(var(--border));
+}
+
+/* ===== MARKETPLACE CARDS DARK MODE ===== */
+/* Catch hardcoded beige/cream backgrounds */
+.dark [class*="bg-[hsl(35"] {
+  background-color: hsl(var(--card)) !important;
+}
+
+.dark [class*="bg-[hsl(45"] {
+  background-color: hsl(var(--card)) !important;
+}
+
+/* Icon background colors adapted for dark */
+.dark .bg-red-50 { background-color: hsl(0 70% 50% / 0.15) !important; }
+.dark .bg-green-50 { background-color: hsl(142 60% 40% / 0.15) !important; }
+.dark .bg-orange-50 { background-color: hsl(30 80% 50% / 0.15) !important; }
+.dark .bg-blue-50 { background-color: hsl(220 80% 50% / 0.15) !important; }
+
+/* ===== MARKETPLACE PRODUCT CARDS DARK MODE ===== */
+/* Ensure product card text info area has proper dark background */
+.dark [data-product-id] > div {
+  background-color: hsl(var(--card)) !important;
+}
+
+/* Ensure product card titles are readable in dark mode */
+.dark [data-product-id] h3 {
+  color: hsl(var(--foreground)) !important;
+}
+
+/* Vendor name text contrast */
+.dark [data-product-id] .text-muted-foreground {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+/* Sort select styling in dark mode */
+.dark [data-section="all-products"] select {
+  background-color: hsl(var(--card)) !important;
+  border-color: hsl(var(--border)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.dark [data-section="all-products"] select option {
+  background-color: hsl(var(--card));
+  color: hsl(var(--foreground));
+}
+
+/* ===== SETTINGS PAGE DARK MODE ENHANCEMENTS ===== */
+/* Settings section cards - glass effect with elevation */
+.dark .settings-section-card,
+.dark [class*="rounded-xl"][class*="border"][class*="shadow-sm"] {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Switch inactive state - clearly visible in dark mode */
+.dark button[role="switch"][data-state="unchecked"] {
+  background-color: hsl(215 25% 30%) !important;
+}
+
+/* Switch active state - ensure primary color */
+.dark button[role="switch"][data-state="checked"] {
+  background-color: hsl(var(--primary)) !important;
+}
+
+/* Settings toggle separators - subtler in dark */
+.dark [class*="border-border"] {
+  border-color: hsl(var(--border) / 0.4);
+}
+
+/* ===== GLOBAL INPUT/SELECT DARK IMPROVEMENTS ===== */
+.dark input,
+.dark textarea,
+.dark select,
+.dark [data-radix-select-trigger] {
+  background-color: hsl(var(--card));
+  border-color: hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+
+/* Ensure consistent dark backgrounds on all pages */
+.dark .bg-background {
+  background-color: hsl(var(--background));
+}
