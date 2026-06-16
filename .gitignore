@@ -7,3 +7,17 @@ android
 schema_tembea.sql
 .claude/ 
 ios/App/App/public/ 
+
+pgtools/
+pg.zip
+schema_tembea.sql
+
+*.log
+apply_log*.txt
+build_log.txt
+cdf_*.txt
+errors_only.txt
+extract.ps1
+findstr
+fix_*.sql
+fix_*_log.txt

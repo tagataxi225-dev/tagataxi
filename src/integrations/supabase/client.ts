@@ -1,13 +1,13 @@
-// Client Supabase - Configuration Tembea (Safari/iOS optimisé)
+﻿// Client Supabase - Configuration Tembea (Safari/iOS optimisÃ©)
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 import { supabaseCircuitBreaker } from '@/lib/circuitBreaker';
 import { logger } from '@/utils/logger';
 
-const SUPABASE_URL = "https://wddlktajnhwhyquwcdgf.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkZGxrdGFqbmh3aHlxdXdjZGdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQxNDA1NjUsImV4cCI6MjA2OTcxNjU2NX0.rViBegpawtg1sFwafH_fczlB0oeA8E6V3MtDELcSIiU";
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://zdoaibbocwqanvmropri.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpkb2FpYmJvY3dxYW52bXJvcHJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1MjY2MjMsImV4cCI6MjA5NzEwMjYyM30.Ai5NTfBhHuQQckMPn5d5mAPzNTo38lJTg-bvs4XgCRk";
 
-// Détection Safari/iOS pour ajustements spécifiques
+// DÃ©tection Safari/iOS pour ajustements spÃ©cifiques
 const isSafari = typeof navigator !== 'undefined' && (
   /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
   /iPad|iPhone|iPod/.test(navigator.userAgent)
@@ -20,7 +20,7 @@ const safeStorage = (() => {
     localStorage.removeItem('__test__');
     return localStorage;
   } catch {
-    logger.warn('⚠️ localStorage not available, using in-memory fallback');
+    logger.warn('âš ï¸ localStorage not available, using in-memory fallback');
     const store: Record<string, string> = {};
     return {
       getItem: (key: string) => store[key] ?? null,
@@ -33,17 +33,17 @@ const safeStorage = (() => {
   }
 })();
 
-/** Fetch avec retry 1x pour erreurs réseau sur les requêtes auth */
+/** Fetch avec retry 1x pour erreurs rÃ©seau sur les requÃªtes auth */
 const fetchWithAuthRetry = async (url: string, options: RequestInit): Promise<Response> => {
   try {
     return await fetch(url, options);
   } catch (error: any) {
-    // Retry uniquement sur erreur réseau (pas HTTP), et seulement pour auth
+    // Retry uniquement sur erreur rÃ©seau (pas HTTP), et seulement pour auth
     const isNetworkError = error?.name === 'TypeError' && error?.message?.includes('Failed to fetch');
     const isAuthUrl = typeof url === 'string' && url.includes('/auth/v1/');
     
     if (isNetworkError && isAuthUrl) {
-      logger.warn('🔄 Auth fetch retry après erreur réseau...');
+      logger.warn('ðŸ”„ Auth fetch retry aprÃ¨s erreur rÃ©seau...');
       await new Promise(r => setTimeout(r, 500));
       return await fetch(url, options);
     }
@@ -57,7 +57,7 @@ const baseClient = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true,
-    flowType: 'implicit' // Compatible Safari ITP — pas d'OAuth utilisé
+    flowType: 'implicit' // Compatible Safari ITP â€” pas d'OAuth utilisÃ©
   },
   global: {
     headers: {
@@ -71,7 +71,7 @@ const baseClient = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY
       
       const executeFetch = async () => {
         const controller = new AbortController();
-        // 30s timeout (augmenté de 20s pour réseaux mobiles lents)
+        // 30s timeout (augmentÃ© de 20s pour rÃ©seaux mobiles lents)
         const timeoutId = setTimeout(() => controller.abort(), 30000);
         
         try {
@@ -84,13 +84,13 @@ const baseClient = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY
           clearTimeout(timeoutId);
           
           if (!response.ok && response.status >= 500) {
-            logger.warn(`⚠️ Supabase server error ${response.status}: ${urlStr}`);
+            logger.warn(`âš ï¸ Supabase server error ${response.status}: ${urlStr}`);
           }
           
           return response;
         } catch (error) {
           clearTimeout(timeoutId);
-          logger.error('❌ Supabase fetch error:', error);
+          logger.error('âŒ Supabase fetch error:', error);
           throw error;
         }
       };
@@ -112,10 +112,11 @@ const baseClient = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY
   }
 });
 
-// Export du client Supabase configuré pour l'application
+// Export du client Supabase configurÃ© pour l'application
 export const supabase = baseClient;
 
 // Attach to window for legacy components referencing window.supabase
 if (typeof window !== 'undefined') {
   (window as any).supabase = supabase;
 }
+

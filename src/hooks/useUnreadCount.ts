@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+﻿import { useState, useEffect, useRef, useCallback } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import { useAuth } from './useAuth';
 
-const supabaseUrl = 'https://wddlktajnhwhyquwcdgf.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkZGxrdGFqbmh3aHlxdXdjZGdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQxNDA1NjUsImV4cCI6MjA2OTcxNjU2NX0.rViBegpawtg1sFwafH_fczlB0oeA8E6V3MtDELcSIiU';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://zdoaibbocwqanvmropri.supabase.co';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpkb2FpYmJvY3dxYW52bXJvcHJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1MjY2MjMsImV4cCI6MjA5NzEwMjYyM30.Ai5NTfBhHuQQckMPn5d5mAPzNTo38lJTg-bvs4XgCRk';
 
 export const useUnreadCount = () => {
   const { user } = useAuth();
@@ -56,3 +56,4 @@ export const useUnreadCount = () => {
 
   return { unreadCount };
 };
+
