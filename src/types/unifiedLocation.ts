@@ -123,7 +123,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
       'Ndjili', 'Ngaba', 'Ngaliema', 'Ngiri-Ngiri', 'Nsele', 'Selembao'
     ],
     timezone: 'Africa/Kinshasa',
-    currency: 'XOF'
+    currency: 'CDF'
   },
   lubumbashi: {
     name: 'Lubumbashi',
@@ -133,7 +133,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
     bounds: { north: -11.4, south: -11.9, east: 27.8, west: 27.1 },
     communes: ['Annexe', 'Kampemba', 'Katuba', 'Kenya', 'Lubumbashi', 'Ruashi', 'Rwashi'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'XOF'
+    currency: 'CDF'
   },
   kolwezi: {
     name: 'Kolwezi',
@@ -143,7 +143,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
     bounds: { north: -10.5, south: -10.9, east: 25.8, west: 25.1 },
     communes: ['Dilala', 'Manika', 'Mutoshi'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'XOF'
+    currency: 'CDF'
   },
   abidjan: {
     name: 'Abidjan',
@@ -158,7 +158,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
 };
 
 // Variable module-level pour stocker la ville courante détectée
-let _currentCity: CityConfig = SUPPORTED_CITIES.kinshasa;
+let _currentCity: CityConfig = SUPPORTED_CITIES.abidjan;
 
 export const setCurrentCity = (city: CityConfig): void => {
   _currentCity = city;

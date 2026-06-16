@@ -53,7 +53,7 @@ const TIMEZONE_COORDS: Record<string, { lat: number; lng: number }> = {
   'Africa/Lubumbashi': { lat: -11.68, lng: 27.47 },
   'Africa/Abidjan':    { lat: 5.35,   lng: -4.00 },
 };
-const AFRICA_FALLBACK = { lat: -4.32, lng: 15.31 }; // Kinshasa par défaut
+const AFRICA_FALLBACK = { lat: 5.35, lng: -4.00 }; // Abidjan par defaut (TAGA)
 
 function resolveCoordinatesFromTimezone(): { lat: number; lng: number } {
   try {
@@ -142,7 +142,7 @@ export const useSmartGeolocation = (options: GeolocationOptions = {}) => {
             name: city.name, code: city.code,
             countryCode: city.countryCode || 'XX',
             defaultCoordinates: { lat: city.coordinates.lat, lng: city.coordinates.lng },
-            timezone: city.timezone || 'UTC', currency: city.currency || 'XOF'
+            timezone: city.timezone || 'UTC', currency: city.currency || 'CDF'
           });
         }
         
