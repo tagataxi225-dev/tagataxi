@@ -110,41 +110,6 @@ export const coordinatesEqual = (a: UnifiedCoordinates, b: UnifiedCoordinates, t
 
 // Villes supportées par Tembea (RDC + Côte d'Ivoire)
 export const SUPPORTED_CITIES: Record<string, CityConfig> = {
-  kinshasa: {
-    name: 'Kinshasa',
-    code: 'KIN',
-    countryCode: 'CD',
-    defaultCoordinates: { lat: -4.3217, lng: 15.3069 },
-    bounds: { north: -4.0, south: -4.7, east: 15.8, west: 14.8 },
-    communes: [
-      'Bandalungwa', 'Barumbu', 'Gombe', 'Kalamu', 'Kasa-Vubu',
-      'Kimbanseke', 'Kinshasa', 'Kintambo', 'Lemba', 'Limete',
-      'Lingwala', 'Makala', 'Maluku', 'Masina', 'Matete', 'Mont-Ngafula',
-      'Ndjili', 'Ngaba', 'Ngaliema', 'Ngiri-Ngiri', 'Nsele', 'Selembao'
-    ],
-    timezone: 'Africa/Kinshasa',
-    currency: 'CDF'
-  },
-  lubumbashi: {
-    name: 'Lubumbashi',
-    code: 'LUB',
-    countryCode: 'CD',
-    defaultCoordinates: { lat: -11.6792, lng: 27.4716 },
-    bounds: { north: -11.4, south: -11.9, east: 27.8, west: 27.1 },
-    communes: ['Annexe', 'Kampemba', 'Katuba', 'Kenya', 'Lubumbashi', 'Ruashi', 'Rwashi'],
-    timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
-  },
-  kolwezi: {
-    name: 'Kolwezi',
-    code: 'KOL',
-    countryCode: 'CD',
-    defaultCoordinates: { lat: -10.7147, lng: 25.4665 },
-    bounds: { north: -10.5, south: -10.9, east: 25.8, west: 25.1 },
-    communes: ['Dilala', 'Manika', 'Mutoshi'],
-    timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
-  },
   abidjan: {
     name: 'Abidjan',
     code: 'ABJ',
@@ -187,5 +152,5 @@ export const getCityByCoordinates = (coords: UnifiedCoordinates): CityConfig => 
       }
     }
   }
-  return SUPPORTED_CITIES.kinshasa; // Fallback
+  return SUPPORTED_CITIES.abidjan; // Fallback (TAGA mono-ville)
 };
