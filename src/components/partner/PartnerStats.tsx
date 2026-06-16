@@ -72,7 +72,7 @@ export const PartnerStats: React.FC = () => {
     {
       title: 'Commissions ce mois',
       value: `${(stats?.monthlyCommissions || 0).toLocaleString()}`,
-      suffix: 'CDF',
+      suffix: 'XOF',
       icon: DollarSign,
       trend: '+12%',
       trendUp: true,

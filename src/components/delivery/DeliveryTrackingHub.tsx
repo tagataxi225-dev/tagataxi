@@ -181,7 +181,7 @@ export default function DeliveryTrackingHub({ orderId, onBack }: DeliveryTrackin
         pickupLabel={order.pickup_location || ''}
         destinationLabel={order.delivery_location || ''}
         fareAmount={order.actual_price || order.estimated_price || 0}
-        currency={(currency || 'CDF') as 'CDF' | 'XOF'}
+        currency={(currency || 'XOF') as 'XOF' | 'XOF'}
         serviceLabel={getDeliveryTypeLabel(order.delivery_type || 'flex')}
         packageLabel={order.package_type || 'Standard'}
         driver={driverProfile ? {

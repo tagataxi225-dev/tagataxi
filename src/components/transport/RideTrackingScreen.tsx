@@ -24,7 +24,7 @@ interface RideTrackingProps {
   pickupLabel: string;
   destinationLabel: string;
   fareAmount: number;
-  fareCurrency: 'CDF' | 'XOF';
+  fareCurrency: 'XOF' | 'XOF';
   driverArrivedAt?: string | null;
   driver: Driver;
   bookingId?: string;

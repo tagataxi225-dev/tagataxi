@@ -113,7 +113,7 @@ export const useTransportBooking = () => {
             amount: paymentData.amount,
             provider: paymentData.provider,
             phoneNumber: paymentData.phoneNumber,
-            currency: 'CDF',
+            currency: 'XOF',
             orderId: bookingId,
             orderType: 'transport'
           }

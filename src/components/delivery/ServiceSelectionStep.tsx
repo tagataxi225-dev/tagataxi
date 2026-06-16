@@ -149,7 +149,7 @@ export const ServiceSelectionStep: React.FC<ServiceSelectionStepProps> = ({
     setSelectedService(service);
   };
 
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   return (
     <div className="min-h-screen bg-background p-4">

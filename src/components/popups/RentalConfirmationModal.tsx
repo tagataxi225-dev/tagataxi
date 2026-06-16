@@ -34,7 +34,7 @@ export const RentalConfirmationModal = ({
   onConfirm
 }: RentalConfirmationModalProps) => {
   const [acceptedTerms, setAcceptedTerms] = useState(false);
-  const currency = 'CDF';
+  const currency = 'XOF';
 
   const finalPrice = rentalData.isPromo && rentalData.promoDiscount
     ? rentalData.totalPrice * (1 - rentalData.promoDiscount / 100)

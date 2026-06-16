@@ -193,7 +193,7 @@ export const ActivityHistory = () => {
 
   const currency = (() => {
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    return tz === 'Africa/Abidjan' || tz === 'Africa/Dakar' || tz === 'Africa/Accra' ? 'XOF' : 'CDF';
+    return tz === 'Africa/Abidjan' || tz === 'Africa/Dakar' || tz === 'Africa/Accra' ? 'XOF' : 'XOF';
   })();
 
   const formatAmount = (amount: number) => {

@@ -131,7 +131,7 @@ export const ActivityDetailsSheet = ({ open, item, onOpenChange }: Props) => {
               {isTransfer && (isReceived ? '+' : '-')}{item.amount.toLocaleString()}
             </div>
             <div className="text-sm text-muted-foreground mt-1">
-              {item.currency || 'CDF'}
+              {item.currency || 'XOF'}
             </div>
           </div>
         )}

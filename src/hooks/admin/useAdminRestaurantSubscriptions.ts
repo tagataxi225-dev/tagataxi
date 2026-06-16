@@ -64,7 +64,7 @@ export const useAdminRestaurantSubscriptions = () => {
         payment_method: sub.payment_method || 'kwenda_pay',
         // Get amount and currency from the plan
         amount: sub.restaurant_subscription_plans?.monthly_price || 0,
-        currency: sub.restaurant_subscription_plans?.currency || 'CDF',
+        currency: sub.restaurant_subscription_plans?.currency || 'XOF',
         restaurant_name: sub.restaurant_profiles?.restaurant_name,
         plan_name: sub.restaurant_subscription_plans?.name,
       }));

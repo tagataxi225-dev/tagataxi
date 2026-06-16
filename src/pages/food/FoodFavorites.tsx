@@ -247,11 +247,11 @@ export default function FoodFavorites() {
                           <div className="flex items-baseline gap-1.5">
                             {dish.originalPrice && dish.originalPrice > dish.price && (
                               <span className="text-xs text-muted-foreground line-through">
-                                {formatCurrency(dish.originalPrice, 'CDF')}
+                                {formatCurrency(dish.originalPrice, 'XOF')}
                               </span>
                             )}
                             <span className="text-sm font-bold text-foreground">
-                              {formatCurrency(dish.price, 'CDF')}
+                              {formatCurrency(dish.price, 'XOF')}
                             </span>
                           </div>
                           <Button 

@@ -17,9 +17,6 @@ interface CityPricingManagerProps {
 }
 
 const AVAILABLE_CITIES = [
-  { value: 'Kinshasa', label: 'Kinshasa (RDC)', currency: 'CDF' },
-  { value: 'Lubumbashi', label: 'Lubumbashi (RDC)', currency: 'CDF' },
-  { value: 'Kolwezi', label: 'Kolwezi (RDC)', currency: 'CDF' },
   { value: 'Abidjan', label: 'Abidjan (Côte d\'Ivoire)', currency: 'XOF' }
 ];
 

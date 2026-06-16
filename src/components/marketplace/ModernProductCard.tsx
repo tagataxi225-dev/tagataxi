@@ -50,7 +50,7 @@ export const ModernProductCard = ({
   const rating = product.rating_average || 0;
   const reviewCount = product.review_count || 0;
 
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   const originalPrice = discount > 0 ? product.price / (1 - discount / 100) : null;
 

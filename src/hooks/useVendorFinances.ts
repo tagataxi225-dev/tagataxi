@@ -107,7 +107,7 @@ const fetchVendorFinances = async (): Promise<VendorFinanceStats> => {
     totalEarned: wallet?.total_earned || escrowReleased,
     totalWithdrawn: wallet?.total_withdrawn || 0,
     pendingWithdrawals: pendingWithdrawalAmount,
-    currency: wallet?.currency || 'CDF',
+    currency: wallet?.currency || 'XOF',
     walletId: wallet?.id || null
   };
 };
@@ -132,7 +132,7 @@ const fetchVendorTransactions = async (): Promise<VendorTransaction[]> => {
     id: t.id,
     type: t.transaction_type as VendorTransaction['type'],
     amount: t.amount,
-    currency: t.currency || 'CDF',
+    currency: t.currency || 'XOF',
     description: t.description || '',
     status: t.status || 'completed',
     createdAt: t.created_at,
@@ -165,7 +165,7 @@ const fetchEscrowPayments = async (): Promise<EscrowPayment[]> => {
     sellerAmount: Math.round((p.amount || 0) * 0.95),
     platformFee: Math.round((p.amount || 0) * 0.05),
     status: p.status as EscrowPayment['status'],
-    currency: p.currency || 'CDF',
+    currency: p.currency || 'XOF',
     createdAt: p.created_at,
     releasedAt: p.released_at
   }));
@@ -191,7 +191,7 @@ const fetchWithdrawalRequests = async (): Promise<WithdrawalRequest[]> => {
   return (requests || []).map(r => ({
     id: r.id,
     amount: r.amount,
-    currency: r.currency || 'CDF',
+    currency: r.currency || 'XOF',
     status: r.status,
     createdAt: r.created_at,
     processedAt: r.processed_at,
@@ -275,7 +275,7 @@ export const useVendorFinances = () => {
       totalEarned: 0,
       totalWithdrawn: 0,
       pendingWithdrawals: 0,
-      currency: 'CDF',
+      currency: 'XOF',
       walletId: null
     },
     transactions: transactions || [],

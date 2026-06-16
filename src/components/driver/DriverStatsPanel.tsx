@@ -73,7 +73,7 @@ export const DriverStatsPanel: React.FC<DriverStatsPanelProps> = ({
   stats,
   className
 }) => {
-  const currency = 'CDF';
+  const currency = 'XOF';
 
   return (
     <div className={cn('space-y-4', className)}>

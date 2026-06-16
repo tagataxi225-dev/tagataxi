@@ -5,8 +5,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function formatCurrency(amount: number, currency: string = 'CDF'): string {
-  if (currency === 'CDF') {
+export function formatCurrency(amount: number, currency: string = 'XOF'): string {
+  if (currency === 'XOF') {
     return new Intl.NumberFormat('fr-CD', {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0

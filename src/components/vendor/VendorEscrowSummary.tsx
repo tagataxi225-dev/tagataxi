@@ -57,7 +57,7 @@ export const VendorEscrowSummary: React.FC = () => {
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
     }).format(amount);
   };

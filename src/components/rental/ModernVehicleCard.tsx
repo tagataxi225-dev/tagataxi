@@ -101,7 +101,7 @@ export const ModernVehicleCard: React.FC<ModernVehicleCardProps> = ({
           <div className="absolute bottom-3 left-3">
             <div className="bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg border border-white/20 dark:border-slate-700/50">
               <div className="text-emerald-600 dark:text-emerald-400 font-bold text-lg leading-none">
-                {formatCurrency(dailyRate, 'CDF')}
+                {formatCurrency(dailyRate, 'XOF')}
               </div>
               <div className="text-xs text-muted-foreground mt-0.5">par jour</div>
             </div>

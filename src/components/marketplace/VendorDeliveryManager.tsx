@@ -212,7 +212,7 @@ export const VendorDeliveryManager = () => {
                 </div>
                 <div className="text-right">
                   <p className="font-bold text-success">
-                    {formatCurrency(order.total_amount, 'CDF')}
+                    {formatCurrency(order.total_amount, 'XOF')}
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Qté: {order.quantity}

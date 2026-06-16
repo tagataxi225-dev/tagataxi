@@ -139,7 +139,7 @@ export function usePartnerPromotions(partnerId?: string, userId?: string) {
           target_id: targetId || null,
           plan_key: planKey,
           amount_paid: amount,
-          currency: 'CDF',
+          currency: 'XOF',
           expires_at: expiresAt.toISOString(),
           metadata: { bonus_used: payment.bonusUsed, balance_used: payment.balanceUsed },
         } as any);

@@ -12,7 +12,7 @@ interface WalletBalanceProps {
 
 export const WalletBalance: React.FC<WalletBalanceProps> = ({
   balance,
-  currency = 'CDF',
+  currency = 'XOF',
   onTopUp,
   compact = false,
   loading = false,

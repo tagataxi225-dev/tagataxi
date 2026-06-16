@@ -64,7 +64,7 @@ export const HomeRecentActivity = memo(({ onServiceSelect }: HomeRecentActivityP
     || tz === 'Africa/Abidjan'
     || tz === 'Africa/Dakar'
     || tz === 'Africa/Accra';
-  const currency = isAbidjan ? 'XOF' : 'CDF';
+  const currency = isAbidjan ? 'XOF' : 'XOF';
 
   const { data: dishes, isLoading: dishesLoading } = usePopularDishes(cityName);
   const { data: products, isLoading: productsLoading } = useMarketplaceProducts();

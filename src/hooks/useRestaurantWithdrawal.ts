@@ -82,7 +82,7 @@ const fetchRestaurantFinances = async (): Promise<RestaurantFinanceStats> => {
     totalEarned: wallet?.total_earned || escrowReleased,
     totalWithdrawn: wallet?.total_withdrawn || 0,
     pendingWithdrawals: pendingWithdrawalAmount,
-    currency: wallet?.currency || 'CDF',
+    currency: wallet?.currency || 'XOF',
     walletId: wallet?.id || null
   };
 };
@@ -109,7 +109,7 @@ const fetchWithdrawalRequests = async (): Promise<WithdrawalRequest[]> => {
     amount: r.amount,
     netAmount: r.amount * 0.98, // 2% fees
     fees: r.amount * 0.02,
-    currency: r.currency || 'CDF',
+    currency: r.currency || 'XOF',
     status: r.status,
     provider: r.mobile_money_provider || '',
     phone: r.mobile_money_phone || '',
@@ -177,7 +177,7 @@ export const useRestaurantWithdrawal = () => {
       totalEarned: 0,
       totalWithdrawn: 0,
       pendingWithdrawals: 0,
-      currency: 'CDF',
+      currency: 'XOF',
       walletId: null
     },
     withdrawalRequests: withdrawalRequests || [],

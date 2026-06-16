@@ -155,7 +155,7 @@ export const ProductDetailSheet = ({
   });
 
   const totalPrice = product.price * quantity;
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
   const discount = product.originalPrice && product.originalPrice > product.price
     ? Math.round((1 - product.price / product.originalPrice) * 100)
     : 0;

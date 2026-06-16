@@ -154,7 +154,7 @@ export const useDeliveryOrders = () => {
             amount: paymentData.amount,
             provider: paymentData.provider,
             phoneNumber: paymentData.phoneNumber,
-            currency: 'CDF',
+            currency: 'XOF',
             orderId: orderId,
             orderType: 'delivery'
           }

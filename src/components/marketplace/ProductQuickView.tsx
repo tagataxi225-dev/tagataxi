@@ -38,7 +38,7 @@ export const ProductQuickView = ({
 
   if (!product) return null;
 
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   const handleAddToCart = () => {
     onAddToCart(product, quantity);

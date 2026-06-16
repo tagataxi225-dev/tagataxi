@@ -42,7 +42,7 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
   onClose,
   userType,
   walletBalance,
-  currency = 'CDF',
+  currency = 'XOF',
   onSuccess
 }) => {
   const [amount, setAmount] = useState<string>('');

@@ -115,7 +115,7 @@ export const PartnerRentalSubscriptionManagement = () => {
       const history: PaymentHistory[] = (data || []).map((sub: any) => ({
         id: sub.id,
         amount: sub.plan?.monthly_price || 0,
-        currency: 'CDF',
+        currency: 'XOF',
         payment_date: sub.start_date,
         payment_method: 'TembeaPay',
         status: 'completed'

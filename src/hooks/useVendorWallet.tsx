@@ -44,7 +44,7 @@ export const useVendorWallet = () => {
       
       // Utiliser l'edge function pour bypass RLS
       const { data, error } = await supabase.functions.invoke('vendor-wallet-manager', {
-        body: { action: 'get_or_create', currency: 'CDF' }
+        body: { action: 'get_or_create', currency: 'XOF' }
       });
 
       if (error) throw error;
@@ -72,7 +72,7 @@ export const useVendorWallet = () => {
     // Cette fonction peut être appelée pour rafraîchir uniquement
     try {
       const { data, error } = await supabase.functions.invoke('vendor-wallet-manager', {
-        body: { action: 'get_or_create', currency: 'CDF' }
+        body: { action: 'get_or_create', currency: 'XOF' }
       });
 
       if (error) throw error;
@@ -141,9 +141,9 @@ export const useVendorWallet = () => {
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
-    }).format(amount).replace('CDF', 'CDF');
+    }).format(amount).replace('XOF', 'XOF');
   };
 
   useEffect(() => {

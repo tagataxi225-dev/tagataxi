@@ -84,7 +84,7 @@ export const MyRentalCard: React.FC<MyRentalCardProps> = memo(({
   onPayDeposit,
   onPay,
   isPaying = false,
-  currency = 'CDF'
+  currency = 'XOF'
 }) => {
   const vehicle = booking.rental_vehicles;
   const startDate = new Date(booking.start_date);

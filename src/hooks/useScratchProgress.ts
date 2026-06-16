@@ -53,7 +53,7 @@ export const useScratchProgress = (): UseScratchProgressReturn => {
     steps: [],
     cardsUnlocked: 0,
     totalWinnings: 0,
-    currency: 'CDF'
+    currency: 'XOF'
   });
 
   const calculateSteps = (points: number): ProgressStep[] => {
@@ -90,7 +90,7 @@ export const useScratchProgress = (): UseScratchProgressReturn => {
         .eq('status', 'claimed');
 
       const totalWinnings = wins?.reduce((sum, w) => sum + (w.prize_value || 0), 0) || 0;
-      const currency = wins?.[0]?.currency || 'CDF';
+      const currency = wins?.[0]?.currency || 'XOF';
 
       const { count: cardsCount } = await supabase
         .from('lottery_wins')

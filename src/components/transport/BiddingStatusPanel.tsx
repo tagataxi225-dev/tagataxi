@@ -4,7 +4,7 @@ import { useClientBidding } from '@/hooks/useClientBidding';
 interface BiddingStatusPanelProps {
   bookingId: string;
   estimatedPrice: number;
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
   onDriverAccepted: (driverId: string) => void;
   onCancel: () => void;
 }

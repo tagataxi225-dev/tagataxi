@@ -152,7 +152,7 @@ export const UnifiedPricingPanel = () => {
               <div>
                 <CardTitle>{city}</CardTitle>
                 <CardDescription>
-                  {rules[0]?.currency || 'CDF'} - {rules.length} types de véhicules
+                  {rules[0]?.currency || 'XOF'} - {rules.length} types de véhicules
                 </CardDescription>
               </div>
               <Badge variant="outline" className="text-sm">

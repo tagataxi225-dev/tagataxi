@@ -13,7 +13,7 @@ export const SUPPORTED_CITIES = {
     },
     communes: ['Gombe', 'Barumbu', 'Kinshasa', 'Lingwala', 'Kintambo', 'Ngaliema', 'Mont-Ngafula', 'Selembao', 'Lemba', 'Limete', 'Matete', 'Ngaba', 'Makala', 'Bumbu', 'Ngiri-Ngiri', 'Kalamu', 'Bandalungwa', 'Kasa-Vubu', 'Masina', 'Ndjili', 'Kisenso', 'Maluku', 'Nsele'],
     timezone: 'Africa/Kinshasa',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   lubumbashi: {
     name: 'Lubumbashi',
@@ -28,7 +28,7 @@ export const SUPPORTED_CITIES = {
     },
     communes: ['Lubumbashi', 'Kenya', 'Kamalondo', 'Kampemba', 'Katuba', 'Rwashi', 'Annexe'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   kolwezi: {
     name: 'Kolwezi',
@@ -43,7 +43,7 @@ export const SUPPORTED_CITIES = {
     },
     communes: ['Kolwezi', 'Dilala', 'Manika'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   abidjan: {
     name: 'Abidjan',
@@ -91,7 +91,7 @@ export const getCityNameFromCoordinates = (lat: number, lng: number, fallback = 
  */
 export const getCurrencyFromCoordinates = (lat: number, lng: number): string => {
   const city = detectCityFromCoordinates(lat, lng);
-  return city?.currency || 'CDF';
+  return city?.currency || 'XOF';
 };
 
 /**

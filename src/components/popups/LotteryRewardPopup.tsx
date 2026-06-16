@@ -15,7 +15,7 @@ interface LotteryRewardPopupProps {
 export const LotteryRewardPopup = ({
   show,
   amount,
-  currency = 'CDF',
+  currency = 'XOF',
   onClose,
   onClaim
 }: LotteryRewardPopupProps) => {

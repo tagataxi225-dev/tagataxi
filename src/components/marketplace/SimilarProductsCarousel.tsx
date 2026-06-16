@@ -35,7 +35,7 @@ export const SimilarProductsCarousel: React.FC<SimilarProductsCarouselProps> = (
     return null;
   }
 
-  const formatPrice = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatPrice = (amount: number) => formatCurrency(amount, 'XOF');
 
   const handleProductClick = (productId: string) => {
     navigate(`/marketplace/product/${productId}`);

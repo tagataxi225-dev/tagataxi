@@ -133,7 +133,7 @@ export const KwendaPayCheckout: React.FC<KwendaPayCheckoutProps> = ({
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Solde disponible</p>
-                  <p className="text-xl font-bold">{formatCurrency(walletBalance, 'CDF')}</p>
+                  <p className="text-xl font-bold">{formatCurrency(walletBalance, 'XOF')}</p>
                 </div>
               </div>
               <Badge variant={isSufficient ? 'default' : 'destructive'} className="gap-1">
@@ -155,14 +155,14 @@ export const KwendaPayCheckout: React.FC<KwendaPayCheckoutProps> = ({
             <div className="space-y-2 bg-muted/50 rounded-lg p-3">
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Sous-total</span>
-                <span className="font-medium">{formatCurrency(total, 'CDF')}</span>
+                <span className="font-medium">{formatCurrency(total, 'XOF')}</span>
               </div>
               
               <Separator />
               
               <div className="flex justify-between text-base font-bold">
                 <span>Total</span>
-                <span className="text-primary">{formatCurrency(total, 'CDF')}</span>
+                <span className="text-primary">{formatCurrency(total, 'XOF')}</span>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export const KwendaPayCheckout: React.FC<KwendaPayCheckoutProps> = ({
                       Rechargez pour finaliser votre achat
                     </p>
                     <p className="text-xs text-amber-600/80 mt-0.5">
-                      Il vous manque {formatCurrency(total - walletBalance, 'CDF')}
+                      Il vous manque {formatCurrency(total - walletBalance, 'XOF')}
                     </p>
                   </div>
                 </div>

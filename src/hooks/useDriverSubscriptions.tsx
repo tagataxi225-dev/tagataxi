@@ -13,7 +13,7 @@ function getLocalCurrency(): string {
     ?? (Intl.DateTimeFormat().resolvedOptions().timeZone === 'Africa/Abidjan' ? 'Abidjan' : 'Kinshasa');
 
   const resolved = getCityOrDefault(cityName);
-  return resolved === 'Abidjan' ? 'XOF' : 'CDF';
+  return resolved === 'Abidjan' ? 'XOF' : 'XOF';
 }
 
 interface SubscriptionPlan {

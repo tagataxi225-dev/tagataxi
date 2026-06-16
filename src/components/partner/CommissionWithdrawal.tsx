@@ -25,7 +25,7 @@ export const CommissionWithdrawal = () => {
     phoneNumber: ''
   });
 
-  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'CDF');
+  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'XOF');
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('fr-FR', {

@@ -71,7 +71,7 @@ export const useWalletPayment = () => {
         activity_type: activityType,
         description: `${description}${isMixed ? ` (${bonusUsed} bonus + ${balanceUsed} solde)` : ''}`,
         amount: -amount,
-        currency: 'CDF',
+        currency: 'XOF',
         reference_type: referenceType,
         reference_id: referenceId,
         metadata: { bonus_used: bonusUsed, balance_used: balanceUsed }

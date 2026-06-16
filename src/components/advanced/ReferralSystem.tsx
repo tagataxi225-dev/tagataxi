@@ -67,7 +67,7 @@ const ReferralSystem: React.FC = () => {
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF'
+      currency: 'XOF'
     }).format(amount);
   };
 

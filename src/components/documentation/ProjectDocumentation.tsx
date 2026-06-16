@@ -427,7 +427,7 @@ interface MobileMoneyPayment {
   provider: 'airtel' | 'mpesa' | 'orange';
   phoneNumber: string;
   amount: number;
-  currency: 'CDF' | 'USD';
+  currency: 'XOF' | 'USD';
   reference: string;
   description: string;
 }

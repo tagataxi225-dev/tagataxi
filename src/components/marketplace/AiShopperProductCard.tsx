@@ -9,7 +9,7 @@ import { useProductPromotions } from '@/hooks/useProductPromotions';
 
 const _tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const _xofZones = ['Abidjan', 'Dakar', 'Accra', 'Bamako', 'Conakry', 'Bissau', 'Lome', 'Cotonou', 'Niamey', 'Ouagadougou'];
-const shopCurrency = _xofZones.some(z => _tz.includes(z)) ? 'XOF' : 'CDF';
+const shopCurrency = _xofZones.some(z => _tz.includes(z)) ? 'XOF' : 'XOF';
 const formatShopPrice = (amount: number) => `${amount.toLocaleString('fr-FR')} ${shopCurrency}`;
 import { useAuth } from '@/hooks/useAuth';
 import { cn } from '@/lib/utils';

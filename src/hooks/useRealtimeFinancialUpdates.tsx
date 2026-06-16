@@ -86,7 +86,7 @@ export const useRealtimeFinancialUpdates = (): UseRealtimeFinancialUpdatesReturn
       const update: FinancialUpdate = {
         type: 'commission',
         amount: adminAmount,
-        currency: record.currency || 'CDF',
+        currency: record.currency || 'XOF',
         timestamp: record.created_at,
         metadata: {
           sourceTransactionId: record.id,

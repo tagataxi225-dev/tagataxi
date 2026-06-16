@@ -66,7 +66,7 @@ export const DownloadReceiptButton = ({
         deliveryFee: Number(order.delivery_fee || 0),
         serviceFee: Number(order.service_fee || 0),
         totalAmount: Number(order.total_amount),
-        currency: order.currency || 'CDF',
+        currency: order.currency || 'XOF',
         deliveryAddress: order.delivery_address || 'Non specifie',
         paymentMethod: order.payment_method || 'kwenda_pay',
         status: order.status

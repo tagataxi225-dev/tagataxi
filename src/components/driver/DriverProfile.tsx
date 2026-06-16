@@ -144,7 +144,7 @@ export const DriverProfile = () => {
     }
   };
 
-  const formatAmount = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatAmount = (amount: number) => formatCurrency(amount, 'XOF');
 
   const getJoinDuration = (joinDate: string) => {
     const join = new Date(joinDate);

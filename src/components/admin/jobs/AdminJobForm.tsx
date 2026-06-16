@@ -153,7 +153,7 @@ export const AdminJobForm = ({ jobId, onClose }: AdminJobFormProps) => {
         employment_type: formData.employment_type,
         salary_min: formData.salary_min ? parseInt(formData.salary_min) : null,
         salary_max: formData.salary_max ? parseInt(formData.salary_max) : null,
-        currency: 'CDF',
+        currency: 'XOF',
         location_city: formData.location_city,
         is_remote: formData.is_remote,
         is_featured: formData.is_featured,

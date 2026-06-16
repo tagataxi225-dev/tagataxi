@@ -1,0 +1,1 @@
+-- Seed data de d‚mo neutralis‚ (auth.uid() invalide hors session) 

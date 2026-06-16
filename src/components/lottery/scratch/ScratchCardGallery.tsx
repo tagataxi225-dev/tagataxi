@@ -73,7 +73,7 @@ export const ScratchCardGallery: React.FC = () => {
           id: details?.prize_id || win.id,
           name: details?.name || 'Prix',
           value: details?.value || 0,
-          currency: details?.currency || 'CDF',
+          currency: details?.currency || 'XOF',
           rarity: (win.rarity || 'common') as any,
           reward_type: (win.reward_type || 'cash') as any,
           image_url: details?.image_url,

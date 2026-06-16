@@ -217,7 +217,7 @@ export const useServiceConfigurations = () => {
     );
   };
 
-  const formatPrice = (amount: number, currency = 'CDF') => {
+  const formatPrice = (amount: number, currency = 'XOF') => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
       currency: currency,

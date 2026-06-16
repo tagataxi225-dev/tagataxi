@@ -21,7 +21,7 @@ export const VendorCheckoutBar = ({
   // Progress bar basée sur le nombre d'articles (max à 10 pour 100%)
   const progress = Math.min((totalItems / 10) * 100, 100);
   
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   if (totalItems === 0) return null;
 

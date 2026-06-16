@@ -21,7 +21,7 @@ interface VehicleOption {
 
 interface TaxiBookingHomeProps {
   cityLabel: string;           // "Abidjan" | "Kinshasa" etc
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
   pickupLabel: string;         // "Position actuelle" ou adresse
   destinationLabel?: string;   // null si pas encore choisi
   vehicleOptions: VehicleOption[];

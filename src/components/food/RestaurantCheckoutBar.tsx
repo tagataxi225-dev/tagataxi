@@ -19,7 +19,7 @@ export const RestaurantCheckoutBar: React.FC<RestaurantCheckoutBarProps> = ({
   restaurantName,
   onCheckout,
   onUpdateCart,
-  currency = 'CDF',
+  currency = 'XOF',
 }) => {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);

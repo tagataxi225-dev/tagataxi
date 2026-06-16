@@ -22,7 +22,7 @@ export const useDriverWallet = () => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [weeklyEarnings, setWeeklyEarnings] = useState<number[]>(new Array(7).fill(0));
   const [isLoading, setIsLoading] = useState(true);
-  const [currency, setCurrency] = useState('CDF');
+  const [currency, setCurrency] = useState('XOF');
 
   const fetchWalletData = useCallback(async () => {
     if (!user) return;
@@ -40,7 +40,7 @@ export const useDriverWallet = () => {
         setBonusBalance(walletData.bonus_balance || 0);
         setEcoCredits(walletData.ecosystem_credits || 0);
         setTembeaPoints(walletData.kwenda_points || 0);
-        setCurrency(walletData.currency || 'CDF');
+        setCurrency(walletData.currency || 'XOF');
       }
 
       const { data: txData } = await supabase

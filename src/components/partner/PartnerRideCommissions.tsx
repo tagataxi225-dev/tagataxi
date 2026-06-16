@@ -28,7 +28,7 @@ export const PartnerRideCommissions = () => {
       style: 'currency',
       currency: stats.currency,
       minimumFractionDigits: 0
-    }).format(amount).replace('CDF', 'CDF');
+    }).format(amount).replace('XOF', 'XOF');
   };
 
   const statCards = [

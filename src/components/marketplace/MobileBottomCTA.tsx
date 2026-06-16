@@ -27,7 +27,7 @@ export const MobileBottomCTA: React.FC<MobileBottomCTAProps> = ({
 }) => {
   const [quantity, setQuantity] = useState(1);
 
-  const formatPrice = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatPrice = (amount: number) => formatCurrency(amount, 'XOF');
 
   const effectiveQuantity = isDigital ? 1 : quantity;
   const totalPrice = productPrice * effectiveQuantity;

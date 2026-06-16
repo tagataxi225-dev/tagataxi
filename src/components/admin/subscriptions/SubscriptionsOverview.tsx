@@ -129,7 +129,7 @@ export const SubscriptionsOverview = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {stats?.monthlyRevenue?.toLocaleString() || 0} {stats?.currency || 'CDF'}
+              {stats?.monthlyRevenue?.toLocaleString() || 0} {stats?.currency || 'XOF'}
             </div>
             <p className="text-xs text-muted-foreground">
               Total des abonnements actifs

@@ -130,10 +130,10 @@ export const useDynamicDeliveryPricing = () => {
   };
 
   // Format price for display
-  const formatPrice = (price: number, currency = 'CDF'): string => {
+  const formatPrice = (price: number, currency = 'XOF'): string => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: currency === 'CDF' ? 'CDF' : 'USD',
+      currency: currency === 'XOF' ? 'XOF' : 'USD',
       minimumFractionDigits: 0,
     }).format(price);
   };

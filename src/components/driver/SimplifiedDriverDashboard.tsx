@@ -18,11 +18,11 @@ import { getCityOrDefault } from '@/config/coveredCities';
 import { RatingDialog } from '@/components/rating/RatingDialog';
 import { driverNotificationService } from '@/services/driverNotificationService';
 
-function getLocalCurrency(): 'CDF' | 'XOF' {
+function getLocalCurrency(): 'XOF' | 'XOF' {
   const selected = cityDetectionService.getSelectedCity();
   const cityName = selected?.name
     ?? (Intl.DateTimeFormat().resolvedOptions().timeZone === 'Africa/Abidjan' ? 'Abidjan' : 'Kinshasa');
-  return getCityOrDefault(cityName) === 'Abidjan' ? 'XOF' : 'CDF';
+  return getCityOrDefault(cityName) === 'Abidjan' ? 'XOF' : 'XOF';
 }
 
 type DriverUIState =

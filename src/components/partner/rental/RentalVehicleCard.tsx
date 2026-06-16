@@ -65,10 +65,10 @@ export default function RentalVehicleCard({ vehicle, onEdit }: Props) {
             <span className="font-medium">{vehicle.brand} {vehicle.model}</span> • {vehicle.year} • {vehicle.seats} places
           </div>
           <div className={`text-primary font-semibold ${isMobile ? 'text-sm' : 'text-base'}`}>
-            {formatCurrency(vehicle.daily_rate, 'CDF')}/jour
+            {formatCurrency(vehicle.daily_rate, 'XOF')}/jour
           </div>
           <div className={`text-muted-foreground ${isMobile ? 'text-xs' : 'text-sm'}`}>
-            Caution: {formatCurrency(vehicle.security_deposit, 'CDF')}
+            Caution: {formatCurrency(vehicle.security_deposit, 'XOF')}
           </div>
           {vehicle.moderation_status === "rejected" && vehicle.rejection_reason && (
             <div className={`text-red-600 bg-red-50 border border-red-200 rounded-xl px-3 py-2 ${isMobile ? 'text-xs' : 'text-sm'}`}>

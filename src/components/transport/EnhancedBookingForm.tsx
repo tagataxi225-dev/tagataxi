@@ -245,7 +245,7 @@ export const EnhancedBookingForm: React.FC<EnhancedBookingFormProps> = ({
         {calculating ? (
           'Calcul en cours...'
         ) : isReadyToBook ? (
-          `Réserver - ${estimatedPrice.toLocaleString()} ${selectedCity?.currency || 'CDF'}`
+          `Réserver - ${estimatedPrice.toLocaleString()} ${selectedCity?.currency || 'XOF'}`
         ) : (
           'Compléter les informations'
         )}

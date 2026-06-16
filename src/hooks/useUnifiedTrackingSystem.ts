@@ -111,7 +111,7 @@ export const useUnifiedTrackingSystem = (options: {
         },
         pricing: {
           amount: data.total_price || data.price || 0,
-          currency: data.currency || 'CDF'
+          currency: data.currency || 'XOF'
         },
         timing: {
           createdAt: data.created_at

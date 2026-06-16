@@ -96,7 +96,7 @@ export const ServiceAnalyticsDashboard = ({ service }: ServiceAnalyticsDashboard
             <div className="text-3xl font-bold">
               {new Intl.NumberFormat('fr-CD', {
                 style: 'currency',
-                currency: 'CDF',
+                currency: 'XOF',
                 minimumFractionDigits: 0
               }).format(stats.revenue)}
             </div>

@@ -15,7 +15,7 @@ interface TestLocation {
 const TEST_CITIES = {
   kinshasa: {
     name: 'Kinshasa',
-    currency: 'CDF',
+    currency: 'XOF',
     pickup: { lat: -4.3217, lng: 15.3069, address: 'Avenue de la Démocratie, Kinshasa', name: 'Centre Kinshasa' },
     destination: { lat: -4.3857, lng: 15.2663, address: 'Aéroport de Ndjili, Kinshasa', name: 'Aéroport Ndjili' },
     userLocation: { lat: -4.3300, lng: 15.3150 }
@@ -29,14 +29,14 @@ const TEST_CITIES = {
   },
   lubumbashi: {
     name: 'Lubumbashi',
-    currency: 'CDF',
+    currency: 'XOF',
     pickup: { lat: -11.6640, lng: 27.4794, address: 'Centre-ville, Lubumbashi', name: 'Centre Lubumbashi' },
     destination: { lat: -11.5913, lng: 27.5309, address: 'Aéroport Luano, Lubumbashi', name: 'Aéroport Luano' },
     userLocation: { lat: -11.6700, lng: 27.4850 }
   },
   kolwezi: {
     name: 'Kolwezi',
-    currency: 'CDF',
+    currency: 'XOF',
     pickup: { lat: -10.7144, lng: 25.4731, address: 'Centre Kolwezi', name: 'Centre-ville' },
     destination: { lat: -10.7656, lng: 25.5053, address: 'Zone Industrielle', name: 'Zone Minière' },
     userLocation: { lat: -10.7200, lng: 25.4800 }

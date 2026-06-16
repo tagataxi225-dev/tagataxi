@@ -399,7 +399,7 @@ export const ProductModerationPanel: React.FC = () => {
                   <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-lg">{formatCurrency(product.price, 'CDF')}</span>
+                  <span className="font-bold text-lg">{formatCurrency(product.price, 'XOF')}</span>
                   <Badge variant="outline">{product.category}</Badge>
                 </div>
                 <div className="text-xs text-muted-foreground">
@@ -541,7 +541,7 @@ export const ProductModerationPanel: React.FC = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <span className="text-sm text-muted-foreground">Prix</span>
-                    <p className="font-bold text-xl">{formatCurrency(selectedProduct.price, 'CDF')}</p>
+                    <p className="font-bold text-xl">{formatCurrency(selectedProduct.price, 'XOF')}</p>
                   </div>
                   <div>
                     <span className="text-sm text-muted-foreground">Catégorie</span>

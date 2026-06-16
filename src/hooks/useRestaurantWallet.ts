@@ -52,7 +52,7 @@ export const useRestaurantWallet = () => {
         .from('user_wallets')
         .select('*')
         .eq('user_id', user.id)
-        .eq('currency', 'CDF')
+        .eq('currency', 'XOF')
         .single();
 
       if (error && error.code === 'PGRST116') {
@@ -64,7 +64,7 @@ export const useRestaurantWallet = () => {
             user_id: user.id,
             balance: 0,
             bonus_balance: 0,
-            currency: 'CDF'
+            currency: 'XOF'
           })
           .select()
           .single();
@@ -127,7 +127,7 @@ export const useRestaurantWallet = () => {
           amount: request.amount,
           payment_method: request.payment_method,
           phone_number: request.phone_number,
-          currency: 'CDF'
+          currency: 'XOF'
         }
       });
 

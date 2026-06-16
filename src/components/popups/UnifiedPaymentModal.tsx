@@ -29,7 +29,7 @@ export const UnifiedPaymentModal = ({
   open,
   onOpenChange,
   amount,
-  currency = 'CDF',
+  currency = 'XOF',
   walletBalance = 0,
   onConfirm,
   title = 'Choisir le mode de paiement',

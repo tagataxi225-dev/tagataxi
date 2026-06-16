@@ -129,7 +129,7 @@ export const PartnerDeliveryDashboard = ({ onViewChange, partnerProfile }: Partn
           {
             label: 'CA du jour',
             value: loading ? '…' : `${(stats?.todayRevenue || 0).toLocaleString()}`,
-            sub: 'CDF',
+            sub: 'XOF',
             icon: DollarSign,
             accent: 'text-emerald-600',
             bg: 'bg-emerald-50 dark:bg-emerald-950/30',

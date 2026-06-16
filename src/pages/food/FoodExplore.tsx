@@ -443,7 +443,7 @@ export default function FoodExplore() {
                           </div>
                           <div className="flex items-center justify-between mt-1">
                             <p className="text-sm font-bold text-primary">
-                              {formatCurrency(dish.price, 'CDF')}
+                              {formatCurrency(dish.price, 'XOF')}
                             </p>
                             <Button 
                               size="sm" 

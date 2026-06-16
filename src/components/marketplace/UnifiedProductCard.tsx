@@ -47,7 +47,7 @@ export const UnifiedProductCard = ({
   const [imageLoaded, setImageLoaded] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   const handleAddClick = (e: React.MouseEvent) => {
     e.stopPropagation();

@@ -26,7 +26,7 @@ const DEFAULT_FORM: RestaurantPlanForm = {
   name: '',
   description: '',
   monthly_price: 0,
-  currency: 'CDF',
+  currency: 'XOF',
   max_products: 50,
   max_photos_per_product: 5,
   commission_rate: 10,

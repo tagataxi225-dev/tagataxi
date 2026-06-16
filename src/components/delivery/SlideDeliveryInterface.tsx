@@ -69,7 +69,7 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
   const { calculateDeliveryPrice, getServicePricing } = useDeliveryPricing(detectedCityName);
   
   // Devise dynamique selon la ville détectée
-  const currency = detectedCityName.includes('abidjan') ? 'XOF' : 'CDF';
+  const currency = detectedCityName.includes('abidjan') ? 'XOF' : 'XOF';
   const phonePrefix = detectedCityName.includes('abidjan') ? '+225' : '+243';
   
   const [currentStep, setCurrentStep] = useState<Step>('addresses');

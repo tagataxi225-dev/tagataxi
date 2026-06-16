@@ -31,7 +31,7 @@ const DEFAULT_FORM: VendorPlanForm = {
   name_en: '',
   description: '',
   price: 0,
-  currency: 'CDF',
+  currency: 'XOF',
   duration_days: 30,
   duration_type: 'monthly',
   max_products: 20,

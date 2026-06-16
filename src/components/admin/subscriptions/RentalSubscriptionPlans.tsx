@@ -19,7 +19,7 @@ export const RentalSubscriptionPlans = () => {
     name: '',
     description: '',
     monthly_price: 0,
-    currency: 'CDF',
+    currency: 'XOF',
     category_id: '',
     features: [],
     is_active: true
@@ -30,7 +30,7 @@ export const RentalSubscriptionPlans = () => {
       name: '',
       description: '',
       monthly_price: 0,
-      currency: 'CDF',
+      currency: 'XOF',
       category_id: '',
       features: [],
       is_active: true

@@ -13,7 +13,7 @@ interface TombolaHeaderProps {
 
 export const TombolaHeader: React.FC<TombolaHeaderProps> = ({
   totalWinnings,
-  currency = 'CDF',
+  currency = 'XOF',
   className
 }) => {
   const formatAmount = (amount: number) => {

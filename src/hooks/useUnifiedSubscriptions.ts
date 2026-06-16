@@ -82,7 +82,7 @@ export const useUnifiedSubscriptions = (): UseUnifiedSubscriptionsReturn => {
       rentalSubscriptions: rpcStats.rental_count || 0,
       expiringInWeek: rpcStats.total_expiring || 0,
       failedPayments: 0,
-      currency: 'CDF'
+      currency: 'XOF'
     };
   }, [subscriptionsData, isLoading]);
 

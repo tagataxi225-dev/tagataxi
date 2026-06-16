@@ -87,14 +87,14 @@ export const SecureVaultDashboard: React.FC = () => {
         .from('user_wallets')
         .select('balance, currency')
         .eq('user_id', user.id)
-        .eq('currency', 'CDF')
+        .eq('currency', 'XOF')
         .single();
 
       if (error && error.code !== 'PGRST116') throw error;
 
       setWalletInfo({
         balance: wallet?.balance || 0,
-        currency: 'CDF',
+        currency: 'XOF',
         pending_withdrawals: 0
       });
     } catch (error) {
@@ -157,9 +157,9 @@ export const SecureVaultDashboard: React.FC = () => {
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
-    }).format(amount).replace('CDF', 'CDF');
+    }).format(amount).replace('XOF', 'XOF');
   };
 
   useEffect(() => {

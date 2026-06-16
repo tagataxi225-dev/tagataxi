@@ -25,7 +25,7 @@ function getPhonePrefix() {
   const isAbidjan = getCityOrDefault(cityName) === 'Abidjan';
   return isAbidjan
     ? { prefix: '+225', flag: '🇨🇮', currency: 'XOF', minAmount: 200 }
-    : { prefix: '+243', flag: '🇨🇩', currency: 'CDF', minAmount: 1000 };
+    : { prefix: '+243', flag: '🇨🇩', currency: 'XOF', minAmount: 1000 };
 }
 
 interface TopUpModalProps {

@@ -66,7 +66,7 @@ export const OrderConfirmationStep: React.FC<OrderConfirmationStepProps> = ({
   service,
   pricing,
   city = 'kinshasa',
-  currency = 'CDF',
+  currency = 'XOF',
   onBack,
   onConfirm
 }) => {

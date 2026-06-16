@@ -70,7 +70,7 @@ export const DriverProfileEditor: React.FC = () => {
 
   const [settingsData, setSettingsData] = useState<SettingsData>({
     language: 'fr',
-    currency: 'CDF',
+    currency: 'XOF',
     notifications_enabled: true,
     push_notifications: true,
     email_notifications: true,
@@ -146,7 +146,7 @@ export const DriverProfileEditor: React.FC = () => {
       if (data) {
         setSettingsData({
           language: data.language || 'fr',
-          currency: data.currency || 'CDF',
+          currency: data.currency || 'XOF',
           notifications_enabled: data.notifications_enabled ?? true,
           push_notifications: data.push_notifications ?? true,
           email_notifications: data.email_notifications ?? true,

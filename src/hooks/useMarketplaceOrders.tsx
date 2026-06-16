@@ -384,7 +384,7 @@ export const useMarketplaceOrders = () => {
           reason: reason || 'No reason provided',
           financial_impact: {
             refund_amount: order.total_amount,
-            currency: 'CDF',
+            currency: 'XOF',
             escrow_payment_id: order.escrow_payments?.[0]?.id
           },
           metadata: {

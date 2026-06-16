@@ -86,7 +86,7 @@ export const SecureVaultDashboard: React.FC = () => {
         .from('user_wallets')
         .select('balance, currency')
         .eq('user_id', user.id)
-        .eq('currency', 'CDF')
+        .eq('currency', 'XOF')
         .single();
 
       // Charger les retraits en attente
@@ -112,7 +112,7 @@ export const SecureVaultDashboard: React.FC = () => {
 
       setWalletInfo({
         balance: wallet?.balance || 0,
-        currency: wallet?.currency || 'CDF',
+        currency: wallet?.currency || 'XOF',
         pending_withdrawals: pendingAmount,
         total_earned: totalEarned,
         total_withdrawn: totalWithdrawn
@@ -224,7 +224,7 @@ export const SecureVaultDashboard: React.FC = () => {
               <div>
                 <h4 className="font-medium">{t('escrow.balance')}</h4>
                 <p className="text-2xl font-bold text-success">
-                  {walletInfo?.balance.toLocaleString()} {walletInfo?.currency || 'CDF'}
+                  {walletInfo?.balance.toLocaleString()} {walletInfo?.currency || 'XOF'}
                 </p>
                 <p className="text-sm text-muted-foreground">
                   {t('escrow.consultation_balance')}

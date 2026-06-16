@@ -545,7 +545,7 @@ export const VendorStoreView: React.FC<VendorStoreViewProps> = ({
                     <p className="text-xs text-muted-foreground">
                       {new Intl.NumberFormat('fr-CD', {
                         style: 'currency',
-                        currency: 'CDF',
+                        currency: 'XOF',
                         minimumFractionDigits: 0,
                         maximumFractionDigits: 0
                       }).format(localCart.reduce((sum, item) => sum + (item.price * item.quantity), 0))}

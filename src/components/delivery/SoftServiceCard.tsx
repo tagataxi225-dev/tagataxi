@@ -34,7 +34,7 @@ const SoftServiceCard: React.FC<SoftServiceCardProps> = ({
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }).format(price);
@@ -140,7 +140,7 @@ const SoftServiceCard: React.FC<SoftServiceCardProps> = ({
               "text-sm font-black transition-colors",
               isSelected ? "text-primary" : "text-foreground"
             )}>
-              {formatPrice(price).replace('CDF', '')}
+              {formatPrice(price).replace('XOF', '')}
               <span className="text-[9px] font-bold ml-0.5 opacity-60">CDF</span>
             </div>
           ) : (

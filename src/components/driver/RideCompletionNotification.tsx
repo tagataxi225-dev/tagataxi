@@ -29,7 +29,7 @@ export const RideCompletionNotification: React.FC<RideCompletionNotificationProp
 }) => {
   const [showDetails, setShowDetails] = useState(false);
 
-  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'CDF');
+  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'XOF');
 
   if (!data) return null;
 

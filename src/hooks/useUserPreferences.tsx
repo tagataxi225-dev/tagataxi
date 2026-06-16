@@ -27,7 +27,7 @@ interface UserPreferences {
 
 const defaultPreferences: UserPreferences = {
   language: 'fr',
-  currency: 'CDF',
+  currency: 'XOF',
   timezone: 'Africa/Kinshasa',
   notification_preferences: {
     push_notifications: true,

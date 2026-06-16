@@ -96,7 +96,7 @@ const BookingActions: React.FC<BookingActionsProps> = ({ booking, onBookingUpdat
           financial_impact: {
             cancellation_fee: cancellationFee,
             original_amount: bookingData.estimated_price,
-            currency: 'CDF'
+            currency: 'XOF'
           }
         });
 

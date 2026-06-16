@@ -109,7 +109,7 @@ export function useAnimatedValue(
  */
 export function useAnimatedPrice(
   price: number,
-  currency: string = 'CDF',
+  currency: string = 'XOF',
   duration: number = 400
 ): string {
   const animatedValue = useAnimatedValue(price, {

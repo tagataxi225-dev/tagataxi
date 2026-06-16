@@ -142,7 +142,7 @@ export const useSmartGeolocation = (options: GeolocationOptions = {}) => {
             name: city.name, code: city.code,
             countryCode: city.countryCode || 'XX',
             defaultCoordinates: { lat: city.coordinates.lat, lng: city.coordinates.lng },
-            timezone: city.timezone || 'UTC', currency: city.currency || 'CDF'
+            timezone: city.timezone || 'UTC', currency: city.currency || 'XOF'
           });
         }
         

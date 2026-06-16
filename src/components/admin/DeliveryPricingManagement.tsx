@@ -29,7 +29,7 @@ const DeliveryPricingManagement = () => {
     maximum_fare: '',
     city: 'Kinshasa',
     surge_multiplier: 1.0,
-    currency: 'CDF'
+    currency: 'XOF'
   });
 
   const [tempConfigs, setTempConfigs] = useState<Record<string, any>>({});
@@ -106,7 +106,7 @@ const DeliveryPricingManagement = () => {
         maximum_fare: '',
         city: 'Kinshasa',
         surge_multiplier: 1.0,
-        currency: 'CDF'
+        currency: 'XOF'
       });
       loadPricingConfigs();
     }

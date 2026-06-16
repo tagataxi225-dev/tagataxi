@@ -12,17 +12,17 @@ const CITY_INFO = {
   'Kinshasa': {
     description: 'Capitale de la RDC',
     zones: 10,
-    currency: 'CDF'
+    currency: 'XOF'
   },
   'Lubumbashi': {
     description: 'Capitale du Haut-Katanga',
     zones: 5,
-    currency: 'CDF'
+    currency: 'XOF'
   },
   'Kolwezi': {
     description: 'Ville minière',
     zones: 4,
-    currency: 'CDF'
+    currency: 'XOF'
   },
   'Abidjan': {
     description: 'Capitale économique de la Côte d\'Ivoire',

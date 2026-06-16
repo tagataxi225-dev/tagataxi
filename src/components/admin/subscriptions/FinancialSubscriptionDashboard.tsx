@@ -13,7 +13,7 @@ export const FinancialSubscriptionDashboard = () => {
     );
   }
 
-  const formatCurrency = (amount: number, currency: string = 'CDF') => {
+  const formatCurrency = (amount: number, currency: string = 'XOF') => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
       currency: currency,

@@ -41,7 +41,7 @@ export const PurchaseCard: React.FC<PurchaseCardProps> = ({
 }) => {
   const [quantity, setQuantity] = useState(1);
 
-  const formatPrice = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatPrice = (amount: number) => formatCurrency(amount, 'XOF');
 
   // Pour les produits digitaux, quantité = 1 toujours
   const effectiveQuantity = isDigital ? 1 : quantity;

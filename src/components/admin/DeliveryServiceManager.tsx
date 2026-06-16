@@ -54,7 +54,7 @@ interface ServiceFormData {
 }
 
 const CITIES = ['Kinshasa', 'Lubumbashi', 'Kolwezi', 'Abidjan'];
-const CURRENCIES = ['CDF', 'XOF'];
+const CURRENCIES = ['XOF'];
 const SERVICE_TYPES = [
   { id: 'flash', name: 'Flash Express', icon: Bike, description: 'Moto - Petit colis' },
   { id: 'flex', name: 'Flex Camionnette', icon: Truck, description: 'Camionnette - Colis moyen volume' },
@@ -77,7 +77,7 @@ const DeliveryServiceManager = () => {
     price_per_km: 500,
     minimum_fare: 3000,
     maximum_fare: undefined,
-    currency: 'CDF',
+    currency: 'XOF',
     surge_multiplier: 1.0,
     is_active: true
   });
@@ -211,7 +211,7 @@ const DeliveryServiceManager = () => {
       price_per_km: 500,
       minimum_fare: 3000,
       maximum_fare: undefined,
-      currency: 'CDF',
+      currency: 'XOF',
       surge_multiplier: 1.0,
       is_active: true
     });

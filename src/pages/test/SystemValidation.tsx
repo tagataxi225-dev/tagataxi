@@ -157,7 +157,7 @@ const SystemValidation = () => {
         // Créer le wallet
         const { error: createError } = await supabase
           .from('user_wallets')
-          .insert({ user_id: user.id, balance: 0, currency: 'CDF', is_active: true });
+          .insert({ user_id: user.id, balance: 0, currency: 'XOF', is_active: true });
 
         if (createError) throw createError;
 

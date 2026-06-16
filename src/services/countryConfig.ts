@@ -122,7 +122,7 @@ const COUNTRIES: Record<string, CountryConfig> = {
   CD: {
     code: 'CD',
     name: 'République Démocratique du Congo',
-    currency: 'CDF',
+    currency: 'XOF',
     currencySymbol: 'FC',
     language: 'fr',
     timezone: 'Africa/Kinshasa',

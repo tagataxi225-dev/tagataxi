@@ -14,7 +14,7 @@ interface DriverBiddingResponseProps {
   pickupLocation: string;
   distanceToPickup: number;
   onResponseSubmitted?: () => void;
-  currency?: 'CDF';
+  currency?: 'XOF';
   distance?: number;
 }
 
@@ -25,7 +25,7 @@ export default function DriverBiddingResponse({
   pickupLocation,
   distanceToPickup,
   onResponseSubmitted,
-  currency = 'CDF',
+  currency = 'XOF',
   distance = 0
 }: DriverBiddingResponseProps) {
   const [loading, setLoading] = useState(false);

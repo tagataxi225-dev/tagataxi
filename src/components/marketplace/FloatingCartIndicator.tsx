@@ -42,7 +42,7 @@ export const FloatingCartIndicator = ({
   // Afficher seulement les 3 derniers articles ajoutés
   const recentItems = cartItems.slice(-3).reverse();
 
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   if (cartCount === 0) return null;
 

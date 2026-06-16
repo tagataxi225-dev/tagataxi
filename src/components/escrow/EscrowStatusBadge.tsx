@@ -102,7 +102,7 @@ interface EscrowAmountProps {
 
 export const EscrowAmount: React.FC<EscrowAmountProps> = ({
   amount,
-  currency = 'CDF',
+  currency = 'XOF',
   status = 'held'
 }) => {
   const isActive = status === 'held' || status === 'pending';

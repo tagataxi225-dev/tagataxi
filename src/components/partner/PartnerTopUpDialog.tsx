@@ -13,7 +13,7 @@ export const PartnerTopUpDialog: React.FC<PartnerTopUpDialogProps> = ({
   open,
   onOpenChange,
   currentBalance,
-  currency = 'CDF',
+  currency = 'XOF',
   onSuccess
 }) => {
   return (

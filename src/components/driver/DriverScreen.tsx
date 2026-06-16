@@ -15,7 +15,7 @@ interface RideRequest {
   pickupCoords?: { lat: number; lng: number };
   destinationCoords?: { lat: number; lng: number };
   fareAmount: number;
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
   distanceKm: number;
   clientName: string;
   clientPhone?: string;

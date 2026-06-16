@@ -71,7 +71,7 @@ export const RentalSubscriptionPlansByCategory = () => {
       description: '',
       tier_name: 'BASIC',
       monthly_price: 0,
-      currency: 'CDF',
+      currency: 'XOF',
       max_vehicles: 3,
       max_photos: 10,
       video_allowed: false,

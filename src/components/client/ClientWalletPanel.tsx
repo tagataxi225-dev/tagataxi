@@ -126,7 +126,7 @@ export const ClientWalletPanel: React.FC<ClientWalletPanelProps> = ({
         balance={wallet?.balance || 0}
         mainBalance={wallet?.balance || 0}
         bonusBalance={wallet?.bonus_balance || 0}
-        currency={wallet?.currency || 'CDF'}
+        currency={wallet?.currency || 'XOF'}
         kwendaPoints={wallet?.kwenda_points || 0}
         status="active"
       />
@@ -233,7 +233,7 @@ export const ClientWalletPanel: React.FC<ClientWalletPanelProps> = ({
         open={showTopUpModal}
         onClose={() => handleTopUpModalChange(false)}
         onSuccess={() => setShowConfetti(true)}
-        currency={wallet?.currency || 'CDF'}
+        currency={wallet?.currency || 'XOF'}
         quickAmounts={QUICK_AMOUNTS}
       />
 
@@ -241,7 +241,7 @@ export const ClientWalletPanel: React.FC<ClientWalletPanelProps> = ({
         open={showWithdrawDialog}
         onOpenChange={setShowWithdrawDialog}
         currentBalance={wallet?.balance || 0}
-        currency={wallet?.currency || 'CDF'}
+        currency={wallet?.currency || 'XOF'}
         userType="client"
         onSuccess={() => {}}
       />

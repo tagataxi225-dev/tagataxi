@@ -12,7 +12,7 @@ export const QuickAmountSelector: React.FC<QuickAmountSelectorProps> = ({
   amounts,
   selectedAmount,
   onSelect,
-  currency = 'CDF'
+  currency = 'XOF'
 }) => {
   return (
     <div className="space-y-2">

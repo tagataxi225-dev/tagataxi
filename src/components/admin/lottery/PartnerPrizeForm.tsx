@@ -27,7 +27,7 @@ export const PartnerPrizeForm: React.FC<PartnerPrizeFormProps> = ({ prize, onClo
     description: prize?.description || '',
     prize_type: (prize?.prize_type || 'physical_gift') as PrizeType,
     estimated_value: prize?.estimated_value || 0,
-    currency: prize?.currency || 'CDF',
+    currency: prize?.currency || 'XOF',
     stock_quantity: prize?.stock_quantity || 1,
     stock_unlimited: prize?.stock_unlimited || false,
     rarity_tier: (prize?.rarity_tier || 'epic') as RarityTier,

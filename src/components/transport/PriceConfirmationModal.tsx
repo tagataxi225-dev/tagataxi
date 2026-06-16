@@ -84,7 +84,7 @@ export default function PriceConfirmationModal({
   distance,
   duration,
   calculatedPrice,
-  currency = 'CDF',
+  currency = 'XOF',
   onConfirm,
   onBack,
 }: PriceConfirmationModalProps) {

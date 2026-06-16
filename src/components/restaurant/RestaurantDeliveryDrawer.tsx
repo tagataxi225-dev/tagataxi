@@ -87,7 +87,7 @@ export const RestaurantDeliveryDrawer = ({
   const [isCalculating, setIsCalculating] = useState(false);
   const [isCreatingOrder, setIsCreatingOrder] = useState(false);
   const [distance, setDistance] = useState<number>(0);
-  const [detectedCurrency, setDetectedCurrency] = useState<string>('CDF');
+  const [detectedCurrency, setDetectedCurrency] = useState<string>('XOF');
 
   // Détecter automatiquement la ville depuis les coordonnées
   const detectedCity = useMemo(() => {

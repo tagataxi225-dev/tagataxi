@@ -17,7 +17,7 @@ export const SUPPORT_HOURS = '24h/7j';
 // ============================================
 export const DEFAULT_COUNTRY = 'RDC';
 export const DEFAULT_CITY = 'Kinshasa';
-export const DEFAULT_CURRENCY = 'CDF';
+export const DEFAULT_CURRENCY = 'XOF';
 
 export const SUPPORTED_CITIES = [
   'Kinshasa',

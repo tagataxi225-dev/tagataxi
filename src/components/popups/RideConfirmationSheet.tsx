@@ -31,7 +31,7 @@ export const RideConfirmationSheet = ({
   onConfirm,
   paymentMethod = 'wallet'
 }: RideConfirmationSheetProps) => {
-  const currency = rideData.currency || 'CDF';
+  const currency = rideData.currency || 'XOF';
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>

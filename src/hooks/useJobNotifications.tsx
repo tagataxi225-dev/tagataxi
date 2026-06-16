@@ -56,7 +56,7 @@ export const saveJobNotificationPrefs = (prefs: JobNotificationPreferences) => {
 const formatSalary = (job: Job): string => {
   if (!job.salary_min && !job.salary_max) return '';
   
-  const currency = job.salary_currency || 'CDF';
+  const currency = job.salary_currency || 'XOF';
   
   if (job.salary_min && job.salary_max) {
     return `${job.salary_min.toLocaleString()} - ${job.salary_max.toLocaleString()} ${currency}`;

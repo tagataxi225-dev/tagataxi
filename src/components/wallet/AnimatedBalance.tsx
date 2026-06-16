@@ -11,7 +11,7 @@ interface AnimatedBalanceProps {
 
 export const AnimatedBalance: React.FC<AnimatedBalanceProps> = ({
   value,
-  currency = 'CDF',
+  currency = 'XOF',
   duration = 1,
   className
 }) => {

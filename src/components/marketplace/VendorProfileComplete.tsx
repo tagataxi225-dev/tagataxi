@@ -201,9 +201,9 @@ export const VendorProfileComplete: React.FC<VendorProfileCompleteProps> = ({
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
-    }).format(amount).replace('CDF', 'CDF');
+    }).format(amount).replace('XOF', 'XOF');
   };
 
   const renderStars = (rating: number) => {

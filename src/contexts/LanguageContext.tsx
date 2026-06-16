@@ -3593,7 +3593,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('kwenda-language', language);
   };
 
-  const formatCurrency = (amount: number, currency = 'CDF'): string => {
+  const formatCurrency = (amount: number, currency = 'XOF'): string => {
     return `${amount.toLocaleString()} ${currency}`;
   };
 

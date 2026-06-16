@@ -67,7 +67,7 @@ export const useMerchantAccount = () => {
           .insert({
             vendor_id: user.id,
             balance: 0,
-            currency: 'CDF'
+            currency: 'XOF'
           })
           .select()
           .single();

@@ -140,7 +140,7 @@ export const TestDataGenerator: React.FC = () => {
         .upsert({
           user_id: user.id,
           balance: 50000,
-          currency: 'CDF',
+          currency: 'XOF',
           is_active: true
         });
 

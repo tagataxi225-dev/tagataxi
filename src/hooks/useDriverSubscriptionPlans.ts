@@ -47,7 +47,7 @@ export const useDriverSubscriptionPlans = () => {
         name: planData.name,
         price: planData.price,
         description: planData.description || null,
-        currency: planData.currency || 'CDF',
+        currency: planData.currency || 'XOF',
         service_type: planData.service_type || 'transport',
         duration_type: 'monthly',
         features: {},

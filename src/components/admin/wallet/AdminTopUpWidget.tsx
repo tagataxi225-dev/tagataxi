@@ -62,7 +62,7 @@ export const AdminTopUpWidget = () => {
             phone_number: client.phone_number,
             user_type: 'Client',
             wallet_balance: wallet?.balance || 0,
-            wallet_currency: wallet?.currency || 'CDF'
+            wallet_currency: wallet?.currency || 'XOF'
           });
         }
       }
@@ -82,7 +82,7 @@ export const AdminTopUpWidget = () => {
             phone_number: driver.phone_number,
             user_type: 'Chauffeur',
             wallet_balance: wallet?.balance || 0,
-            wallet_currency: wallet?.currency || 'CDF'
+            wallet_currency: wallet?.currency || 'XOF'
           });
         }
       }

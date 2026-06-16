@@ -63,7 +63,7 @@ const ESCROW_STATUS_CONFIG: Record<EscrowStatus, {
 export function FoodEscrowIndicator({
   status,
   amount,
-  currency = 'CDF',
+  currency = 'XOF',
   autoReleaseAt,
   className,
   compact = false

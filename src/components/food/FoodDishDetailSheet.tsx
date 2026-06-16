@@ -35,7 +35,7 @@ export const FoodDishDetailSheet = ({
 
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const currency = (tz === 'Africa/Abidjan' || tz === 'Africa/Dakar' || tz === 'Africa/Accra')
-    ? 'XOF' : 'CDF';
+    ? 'XOF' : 'XOF';
 
   const handleAddToCart = () => {
     onAddToCart(quantity, notes.trim() || undefined);

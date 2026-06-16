@@ -166,7 +166,7 @@ export const useDeliveryPricing = (city: string = 'kinshasa') => {
       pricePerKm,
       distancePrice,
       totalPrice,
-      currency: rule?.currency || (city.toLowerCase().includes('abidjan') ? 'XOF' : 'CDF'),
+      currency: rule?.currency || (city.toLowerCase().includes('abidjan') ? 'XOF' : 'XOF'),
       source,
       rule
     };

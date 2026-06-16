@@ -105,8 +105,8 @@ const TransactionHistory = () => {
   const formatAmount = (amount: number, currency: string) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: currency === 'CDF' ? 'CDF' : 'USD',
-      minimumFractionDigits: currency === 'CDF' ? 0 : 2,
+      currency: currency === 'XOF' ? 'XOF' : 'USD',
+      minimumFractionDigits: currency === 'XOF' ? 0 : 2,
     }).format(amount);
   };
 

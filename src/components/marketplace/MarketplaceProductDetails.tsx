@@ -52,7 +52,7 @@ export const MarketplaceProductDetails: React.FC<MarketplaceProductDetailsProps>
 
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const currency = (tz === 'Africa/Abidjan' || tz === 'Africa/Dakar' || tz === 'Africa/Accra')
-    ? 'XOF' : 'CDF';
+    ? 'XOF' : 'XOF';
   const formatPrice = (p: number) => formatCurrency(p, currency);
 
   const productImages = product.images?.length ? product.images : [product.image];

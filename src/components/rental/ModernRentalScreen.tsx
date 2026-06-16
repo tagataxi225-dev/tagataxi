@@ -322,7 +322,7 @@ export const ModernRentalScreen = () => {
                             <span>{t('rental.per_hour')}</span>
                           </div>
                           <span className="font-semibold">
-                            {formatCurrency(calculateCityPrice(vehicle.hourly_rate, vehicle.category_id), 'CDF')}
+                            {formatCurrency(calculateCityPrice(vehicle.hourly_rate, vehicle.category_id), 'XOF')}
                           </span>
                         </div>
                         <div className="flex items-center justify-between">
@@ -331,7 +331,7 @@ export const ModernRentalScreen = () => {
                             <span>{t('rental.per_day')}</span>
                           </div>
                           <span className="font-bold text-primary text-lg">
-                            {formatCurrency(calculateCityPrice(vehicle.daily_rate, vehicle.category_id), 'CDF')}
+                            {formatCurrency(calculateCityPrice(vehicle.daily_rate, vehicle.category_id), 'XOF')}
                           </span>
                         </div>
                       </div>

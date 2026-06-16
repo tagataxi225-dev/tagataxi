@@ -73,7 +73,7 @@ export const CommissionHistoryCard: React.FC<CommissionHistoryCardProps> = ({ co
           {/* Montant */}
           <div className="text-right">
             <p className="text-heading-md font-bold text-green-600">
-              +{(commission.amount || 0).toLocaleString()} {commission.currency || 'CDF'}
+              +{(commission.amount || 0).toLocaleString()} {commission.currency || 'XOF'}
             </p>
             <Badge variant="outline" className="mt-1 bg-green-50 text-green-700 border-green-200">
               Payée

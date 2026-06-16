@@ -82,7 +82,7 @@ export const EscrowDashboard: React.FC = () => {
         .from('user_wallets')
         .select('balance, currency')
         .eq('user_id', user.id)
-        .eq('currency', 'CDF')
+        .eq('currency', 'XOF')
         .single();
 
       // Charger les retraits en attente
@@ -100,7 +100,7 @@ export const EscrowDashboard: React.FC = () => {
 
       setWalletInfo({
         balance: wallet?.balance || 0,
-        currency: wallet?.currency || 'CDF',
+        currency: wallet?.currency || 'XOF',
         pending_withdrawals: pendingAmount
       });
     } catch (error: any) {

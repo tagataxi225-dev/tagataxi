@@ -228,7 +228,7 @@ export const AdminSubscriptionManager = () => {
                       <p className="text-sm text-muted-foreground">{subscription.chauffeurs?.email || 'Email non disponible'}</p>
                       <div className="flex items-center gap-4 text-sm">
                         <span><strong>Plan:</strong> {subscription.subscription_plans?.name || 'Plan non trouvé'}</span>
-                        <span><strong>Montant:</strong> {subscription.subscription_plans?.price?.toLocaleString() || '0'} {subscription.subscription_plans?.currency || 'CDF'}</span>
+                        <span><strong>Montant:</strong> {subscription.subscription_plans?.price?.toLocaleString() || '0'} {subscription.subscription_plans?.currency || 'XOF'}</span>
                         <span><strong>Début:</strong> {new Date(subscription.start_date).toLocaleDateString()}</span>
                         <span><strong>Fin:</strong> {new Date(subscription.end_date).toLocaleDateString()}</span>
                         <span><strong>Auto-renew:</strong> {subscription.auto_renew ? 'Oui' : 'Non'}</span>

@@ -197,7 +197,7 @@ export const useUnifiedTrackingSystem = ({
       },
       pricing: {
         amount: order.actual_price || order.estimated_price || 0,
-        currency: 'CDF',
+        currency: 'XOF',
         estimated: order.estimated_price
       },
       timing: {
@@ -272,7 +272,7 @@ export const useUnifiedTrackingSystem = ({
       },
       pricing: {
         amount: booking.actual_price || booking.estimated_price || 0,
-        currency: 'CDF',
+        currency: 'XOF',
         estimated: booking.estimated_price
       },
       timing: {
@@ -321,7 +321,7 @@ export const useUnifiedTrackingSystem = ({
       },
       pricing: {
         amount: order.total_amount || 0,
-        currency: 'CDF'
+        currency: 'XOF'
       },
       timing: {
         createdAt: order.created_at,

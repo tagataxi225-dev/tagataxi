@@ -180,7 +180,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
           .insert({
             service_type: 'marketplace',
             base_fee: newDeliveryFee,
-            currency: 'CDF',
+            currency: 'XOF',
             is_active: true
           })
           .select()
@@ -209,9 +209,9 @@ export const MarketplaceCommissionManager: React.FC = () => {
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
-    }).format(amount).replace('CDF', 'CDF');
+    }).format(amount).replace('XOF', 'XOF');
   };
 
   useEffect(() => {

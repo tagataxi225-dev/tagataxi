@@ -120,7 +120,7 @@ export const PaymentFlowTesting: React.FC = () => {
       'wallet-balance': {
         initialBalance: 25000,
         finalBalance: 25000,
-        currency: 'CDF'
+        currency: 'XOF'
       },
       'wallet-topup': {
         amount: 10000,

@@ -13,7 +13,7 @@ import dMaxiSvg from '@/assets/vehicle-icons/d-maxi.svg';
 
 interface DeliveryBookingProps {
   cityLabel: string;
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
   pickupAddress: string;
   destinationAddress: string;
   distanceKm: number | null;

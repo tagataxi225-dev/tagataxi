@@ -146,7 +146,7 @@ const DriverApp = () => {
   }, []);
   const hasActiveRide = relevantActiveOrders.length > 0 || relevantPending.length > 0 || transitioningToActive || hasBiddingPopup;
 
-  const currency = walletCurrency || 'CDF';
+  const currency = walletCurrency || 'XOF';
   const LOW_BALANCE_THRESHOLD = currency === 'XOF' ? 500 : 1000;
   const isLowBalance = (balance + bonusBalance) < LOW_BALANCE_THRESHOLD;
 

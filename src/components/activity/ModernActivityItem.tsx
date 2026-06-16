@@ -175,7 +175,7 @@ export const ModernActivityItem = ({ item, onClick }: ModernActivityItemProps) =
                     {formatAmount(item.amount!)}
                   </div>
                   <div className="text-[10px] text-muted-foreground">
-                    {item.currency || 'CDF'}
+                    {item.currency || 'XOF'}
                   </div>
                 </div>
               )}

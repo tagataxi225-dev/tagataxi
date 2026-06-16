@@ -622,7 +622,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
       <div className="fixed inset-0 z-[220]">
         <TaxiBookingHome
           cityLabel={currentCity?.name || 'Kinshasa'}
-          currency={currency as 'CDF' | 'XOF'}
+          currency={currency as 'XOF' | 'XOF'}
           pickupLabel={pickupLocation?.address || 'Position actuelle'}
           destinationLabel={destinationLocation?.address}
           vehicleOptions={vehicleOptions}
@@ -690,7 +690,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
         <BiddingStatusPanel
           bookingId={tempBookingId}
           estimatedPrice={calculatedPrice || 0}
-          currency={currency as 'CDF' | 'XOF'}
+          currency={currency as 'XOF' | 'XOF'}
           onDriverAccepted={(driverId) => {
             setIsBiddingMode(false);
             if (onTrackDriver && tempBookingId) onTrackDriver(tempBookingId);

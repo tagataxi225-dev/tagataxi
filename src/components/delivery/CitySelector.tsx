@@ -15,21 +15,21 @@ const cities = [
     name: 'Kinshasa', 
     icon: Building2, 
     description: 'Capitale - Transport rapide',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   { 
     id: 'Lubumbashi', 
     name: 'Lubumbashi', 
     icon: Mountain, 
     description: 'Ville minière - Tarifs +20%',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   { 
     id: 'Kolwezi', 
     name: 'Kolwezi', 
     icon: Mountain, 
     description: 'Zone minière - Tarifs +10%',
-    currency: 'CDF'
+    currency: 'XOF'
   }
 ];
 

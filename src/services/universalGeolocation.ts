@@ -39,7 +39,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
     },
     communes: ['Gombe', 'Kalamu', 'Kasa-Vubu', 'Kinshasa', 'Kintambo', 'Lemba', 'Limete', 'Lingwala', 'Makala', 'Maluku', 'Masina', 'Matete', 'Mont-Ngafula', 'Ndjili', 'Ngaba', 'Ngiri-Ngiri', 'Barumbu', 'Bumbu', 'Bandalungwa', 'Kimbanseke', 'Kisenso', 'Nsele', 'Selembao', 'Mont-Amba'],
     timezone: 'Africa/Kinshasa',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   lubumbashi: {
     name: 'Lubumbashi',
@@ -54,7 +54,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
     },
     communes: ['Kampemba', 'Katuba', 'Kenya', 'Lubumbashi', 'Rwashi'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   kolwezi: {
     name: 'Kolwezi',
@@ -69,7 +69,7 @@ export const SUPPORTED_CITIES: Record<string, CityConfig> = {
     },
     communes: ['Kolwezi', 'Manika', 'Mutoshi'],
     timezone: 'Africa/Lubumbashi',
-    currency: 'CDF'
+    currency: 'XOF'
   },
   abidjan: {
     name: 'Abidjan',

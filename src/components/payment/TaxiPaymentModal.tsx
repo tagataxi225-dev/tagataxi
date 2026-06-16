@@ -44,7 +44,7 @@ export default function TaxiPaymentModal({ isOpen, onClose, bookingData, onPayme
 
   if (!isOpen) return null;
 
-  const currency = bookingData.currency || 'CDF';
+  const currency = bookingData.currency || 'XOF';
   const price = bookingData.actualPrice;
 
   const handleWallet = async () => {

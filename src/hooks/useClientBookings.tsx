@@ -230,7 +230,7 @@ export const useClientBookings = () => {
           financial_impact: {
             cancellation_fee: cancellationFee,
             original_amount: booking.estimated_price,
-            currency: 'CDF'
+            currency: 'XOF'
           }
         });
 

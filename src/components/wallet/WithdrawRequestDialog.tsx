@@ -40,7 +40,7 @@ export const WithdrawRequestDialog = ({
   open, 
   onOpenChange, 
   currentBalance, 
-  currency = 'CDF',
+  currency = 'XOF',
   userType = 'client',
   onSuccess 
 }: WithdrawRequestDialogProps) => {

@@ -24,7 +24,7 @@ interface PriceBreakdown {
   totalPrice: number;
   distance: number;
   duration: number;
-  currency: 'CDF';
+  currency: 'XOF';
 }
 
 interface RobustPriceCalculatorProps {
@@ -80,9 +80,9 @@ const RobustPriceCalculator: React.FC<RobustPriceCalculatorProps> = ({
 
   // Multiplicateurs par ville RDC
   const cityMultipliers = {
-    'Kinshasa': { factor: 1.0, currency: 'CDF' as const },
-    'Lubumbashi': { factor: 1.2, currency: 'CDF' as const }, // +20% pour conditions minières
-    'Kolwezi': { factor: 1.1, currency: 'CDF' as const } // +10% ville minière
+    'Kinshasa': { factor: 1.0, currency: 'XOF' as const },
+    'Lubumbashi': { factor: 1.2, currency: 'XOF' as const }, // +20% pour conditions minières
+    'Kolwezi': { factor: 1.1, currency: 'XOF' as const } // +10% ville minière
   };
 
   // Calcul stable et immédiat du prix
@@ -149,10 +149,10 @@ const RobustPriceCalculator: React.FC<RobustPriceCalculatorProps> = ({
   const IconComponent = config.icon;
 
   // Formatage des prix en CDF
-  const formatPrice = (amount: number, currency: 'CDF' = 'CDF') => {
+  const formatPrice = (amount: number, currency: 'XOF' = 'XOF') => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0
     }).format(amount);
   };

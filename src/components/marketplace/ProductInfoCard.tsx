@@ -40,7 +40,7 @@ export const ProductInfoCard: React.FC<ProductInfoCardProps> = ({
 }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const formatPrice = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatPrice = (amount: number) => formatCurrency(amount, 'XOF');
 
   const formatFileSize = (bytes?: number) => {
     if (!bytes) return null;

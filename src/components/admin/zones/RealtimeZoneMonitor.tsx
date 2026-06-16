@@ -94,7 +94,7 @@ export const RealtimeZoneMonitor: React.FC = () => {
     return { status: 'normal', color: 'success' }
   }
 
-  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'CDF')
+  const formatCurrency = (amount: number) => formatCurrencyUtil(amount, 'XOF')
 
   if (loading) {
     return (

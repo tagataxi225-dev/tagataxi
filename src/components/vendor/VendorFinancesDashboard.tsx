@@ -31,7 +31,7 @@ import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import { cn } from '@/lib/utils';
 
-const formatCurrency = (amount: number, currency: string = 'CDF') => {
+const formatCurrency = (amount: number, currency: string = 'XOF') => {
   return new Intl.NumberFormat('fr-CD', {
     style: 'decimal',
     minimumFractionDigits: 0,

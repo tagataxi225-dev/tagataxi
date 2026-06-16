@@ -202,7 +202,7 @@ export function ProductModerationQueue() {
                 
                 <div className="flex items-center justify-between pt-2">
                   <span className="text-2xl font-bold">
-                    {product.price.toLocaleString()} {(product as any).currency || 'CDF'}
+                    {product.price.toLocaleString()} {(product as any).currency || 'XOF'}
                   </span>
                   <Badge variant="outline">{product.condition}</Badge>
                 </div>

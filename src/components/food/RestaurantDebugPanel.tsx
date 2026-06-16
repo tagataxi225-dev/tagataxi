@@ -189,7 +189,7 @@ export const RestaurantDebugPanel = ({ selectedCity }: RestaurantDebugPanelProps
                       </div>
                       {testProducts.map((p) => (
                         <div key={p.id} className="text-xs pl-2 border-l border-yellow-300 dark:border-yellow-700">
-                          <strong>{p.name}</strong> - {formatCurrency(p.price, 'CDF')}
+                          <strong>{p.name}</strong> - {formatCurrency(p.price, 'XOF')}
                           <div className="text-muted-foreground">
                             Cat: {p.category} | ID: {p.id}
                           </div>
@@ -212,7 +212,7 @@ export const RestaurantDebugPanel = ({ selectedCity }: RestaurantDebugPanelProps
                       </div>
                       {restaurantProducts.slice(0, 3).map((p) => (
                         <div key={p.id} className="text-xs pl-2">
-                          {p.name} - {p.price ? formatCurrency(p.price, 'CDF') : 'N/A'}
+                          {p.name} - {p.price ? formatCurrency(p.price, 'XOF') : 'N/A'}
                         </div>
                       ))}
                       {restaurantProducts.length > 3 && (

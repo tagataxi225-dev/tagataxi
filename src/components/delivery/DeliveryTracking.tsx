@@ -17,7 +17,7 @@ interface DeliveryTrackingProps {
   pickupLabel: string;
   destinationLabel: string;
   fareAmount: number;
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
   serviceLabel: string;
   packageLabel: string;
   driver?: {

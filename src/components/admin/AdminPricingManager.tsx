@@ -31,7 +31,7 @@ export const AdminPricingManager = () => {
     waiting_fee_per_minute: 50,
     free_waiting_time_minutes: 5,
     max_waiting_time_minutes: 15,
-    currency: 'CDF',
+    currency: 'XOF',
     city: 'Kinshasa'
   });
   const [deletingRule, setDeletingRule] = useState<string | null>(null);
@@ -83,7 +83,7 @@ export const AdminPricingManager = () => {
         waiting_fee_per_minute: 50,
         free_waiting_time_minutes: 5,
         max_waiting_time_minutes: 15,
-        currency: 'CDF', 
+        currency: 'XOF', 
         city: 'Kinshasa' 
       });
       setLastUpdate(new Date());

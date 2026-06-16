@@ -194,7 +194,7 @@ export const useJobPublisher = () => {
           posted_by_user_id: user.id,
           status: 'active',
           moderation_status: 'pending',
-          currency: 'CDF',
+          currency: 'XOF',
           views_count: 0,
           is_featured: false
         })

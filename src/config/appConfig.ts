@@ -28,7 +28,7 @@ export const APP_CONFIG = {
   // ─── Villes couvertes ───────────────────────────────────────────────────────
   COVERED_CITIES: ['Kinshasa', 'Lubumbashi', 'Kolwezi', 'Abidjan'] as string[],
   DEFAULT_CITY: 'Kinshasa',
-  DEFAULT_CURRENCY: 'CDF',
+  DEFAULT_CURRENCY: 'XOF',
 
   // ─── Timeouts (ms) ──────────────────────────────────────────────────────────
   MAPS_LOAD_TIMEOUT_MS: 15_000,

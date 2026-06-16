@@ -17,7 +17,7 @@ interface ModernTopUpModalProps {
   onSuccess: (amount: number) => void;
   userType?: 'client' | 'driver' | 'partner' | 'admin';
   initialAmount?: number;
-  currency?: 'CDF' | 'XOF';
+  currency?: 'XOF' | 'XOF';
   targetUserId?: string;
 }
 

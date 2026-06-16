@@ -103,7 +103,7 @@ export const usePricingRules = (city: string = 'Kinshasa') => {
             waiting_fee_per_minute: rule.waiting_fee_per_minute || 50,
             free_waiting_time_minutes: rule.free_waiting_time_minutes || 5,
             max_waiting_time_minutes: rule.max_waiting_time_minutes || 15,
-            currency: rule.currency || 'CDF',
+            currency: rule.currency || 'XOF',
             city: rule.city || 'Kinshasa',
             is_active: true
           });

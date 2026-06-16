@@ -66,7 +66,7 @@ export const MarketplaceCommissionSettings: React.FC = () => {
         service_type: serviceType,
         commission_rate: parseFloat(commissionRate),
         fixed_fee: parseFloat(fixedFee),
-        currency: 'CDF',
+        currency: 'XOF',
         is_active: true
       };
 

@@ -26,17 +26,17 @@ const SUPPORTED_CITIES = {
   kinshasa: {
     name: 'Kinshasa',
     bounds: { north: -4.2, south: -4.5, east: 15.5, west: 15.1 },
-    currency: 'CDF'
+    currency: 'XOF'
   },
   lubumbashi: {
     name: 'Lubumbashi',
     bounds: { north: -11.5, south: -11.8, east: 27.6, west: 27.3 },
-    currency: 'CDF'
+    currency: 'XOF'
   },
   kolwezi: {
     name: 'Kolwezi',
     bounds: { north: -10.6, south: -10.9, east: 25.6, west: 25.3 },
-    currency: 'CDF'
+    currency: 'XOF'
   },
 };
 

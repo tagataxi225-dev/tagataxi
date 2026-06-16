@@ -146,7 +146,7 @@ export const PaymentConfirmation = () => {
   const formatAmount = (amount: number, currency: string) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: currency || 'CDF',
+      currency: currency || 'XOF',
       minimumFractionDigits: 0
     }).format(amount);
   };

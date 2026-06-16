@@ -26,7 +26,7 @@ export const TopUpModal: React.FC<TopUpModalProps> = ({
   open,
   onClose,
   onSuccess,
-  currency = 'CDF',
+  currency = 'XOF',
   quickAmounts = [1000, 2500, 5000, 10000, 25000]
 }) => {
   const { topUpWallet, loading } = useWallet();

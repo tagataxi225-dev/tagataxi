@@ -54,7 +54,7 @@ interface PriceBreakdown {
   totalPrice: number;
   distance: number;
   duration: number;
-  currency: 'CDF' | 'XOF';
+  currency: 'XOF' | 'XOF';
 }
 
 interface DeliveryFormWizardProps {

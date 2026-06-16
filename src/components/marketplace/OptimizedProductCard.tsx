@@ -45,7 +45,7 @@ export const OptimizedProductCard = ({
   const mainImage = product.image || '/placeholder.svg';
   const inStock = product.inStock;
 
-  const formatPrice = (price: number) => formatCurrency(price, 'CDF');
+  const formatPrice = (price: number) => formatCurrency(price, 'XOF');
 
   const calculateDistance = () => {
     if (!userLocation || !product.coordinates) return null;

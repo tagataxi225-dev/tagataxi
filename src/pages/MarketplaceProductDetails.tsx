@@ -334,7 +334,7 @@ const MarketplaceProductDetails = () => {
           setShowConfetti(true);
           toast.success('Rechargement effectué avec succès !');
         }}
-        currency={wallet?.currency || 'CDF'}
+        currency={wallet?.currency || 'XOF'}
         quickAmounts={[5000, 10000, 25000, 50000, 100000]}
       />
 

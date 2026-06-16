@@ -36,7 +36,7 @@ export const VendorProductCard = ({
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('fr-CD', {
       style: 'currency',
-      currency: 'CDF',
+      currency: 'XOF',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }).format(price);

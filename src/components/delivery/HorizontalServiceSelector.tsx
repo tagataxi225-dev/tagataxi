@@ -75,7 +75,7 @@ const HorizontalServiceSelector: React.FC<HorizontalServiceSelectorProps> = ({
                 <span className="ml-2 px-2 py-0.5 bg-primary/20 rounded-md">
                   {new Intl.NumberFormat('fr-CD', {
                     style: 'currency',
-                    currency: 'CDF',
+                    currency: 'XOF',
                     minimumFractionDigits: 0,
                     maximumFractionDigits: 0
                   }).format(pricing[selectedService.id].price)}

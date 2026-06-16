@@ -13,7 +13,7 @@ interface StampRevealProps {
 export const StampReveal = ({ 
   type, 
   value, 
-  currency = 'CDF',
+  currency = 'XOF',
   onAnimationComplete 
 }: StampRevealProps) => {
   

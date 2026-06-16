@@ -17,8 +17,6 @@ verify_jwt = true
 [functions.admin-analytics]
 verify_jwt = true
 
-[functions.admin-notifications]
-verify_jwt = true
 
 [functions.notification-dispatcher]
 verify_jwt = false
@@ -228,8 +226,6 @@ verify_jwt = false
 [functions.wallet-restaurant-topup]
 verify_jwt = true
 
-[functions.mobile-money-webhook]
-verify_jwt = false
 
 [functions.process-marketplace-checkout]
 verify_jwt = true

@@ -38,7 +38,7 @@ export const useUnifiedPartnerFinances = (range: '7d' | '30d' | 'all' = '30d') =
   const { stats: withdrawalStats, loading: withdrawalsLoading } = usePartnerWithdrawals();
   
   const [walletBalance, setWalletBalance] = useState(0);
-  const [walletCurrency, setWalletCurrency] = useState('CDF');
+  const [walletCurrency, setWalletCurrency] = useState('XOF');
   const [rideCommissions, setRideCommissions] = useState(0);
   const [subscriptionCommissions, setSubscriptionCommissions] = useState(0);
   const [walletLoading, setWalletLoading] = useState(true);
@@ -66,7 +66,7 @@ export const useUnifiedPartnerFinances = (range: '7d' | '30d' | 'all' = '30d') =
 
         if (walletRes.data) {
           setWalletBalance(walletRes.data.balance || 0);
-          setWalletCurrency(walletRes.data.currency || 'CDF');
+          setWalletCurrency(walletRes.data.currency || 'XOF');
         }
 
         if (partnerRes.data) {

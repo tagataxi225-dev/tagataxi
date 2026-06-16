@@ -171,7 +171,7 @@ export const useVendorOrders = () => {
           platform_fee: platformFee,
           seller_amount: sellerAmount,
           status: 'held',
-          currency: 'CDF'
+          currency: 'XOF'
         });
 
       if (escrowError) {

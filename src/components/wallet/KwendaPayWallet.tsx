@@ -79,7 +79,7 @@ export const KwendaPayWallet = () => {
             .insert({ 
               user_id: user?.id, 
               balance: 0,
-              currency: 'CDF',
+              currency: 'XOF',
               is_active: true
             })
             .select()
@@ -174,7 +174,7 @@ export const KwendaPayWallet = () => {
           amount: parseFloat(topUpAmount),
           provider: topUpProvider,
           phone: phoneNumber,
-          currency: 'CDF'
+          currency: 'XOF'
         }
       });
 
@@ -217,7 +217,7 @@ export const KwendaPayWallet = () => {
     }
   };
 
-  const formatAmount = (amount: number) => formatCurrency(amount, 'CDF');
+  const formatAmount = (amount: number) => formatCurrency(amount, 'XOF');
 
   const getTransactionIcon = (type: string) => {
     switch (type) {

@@ -46,7 +46,7 @@ export const DriverWalletPanel: React.FC = () => {
           mainBalance={wallet?.balance || 0}
           bonusBalance={wallet?.bonus_balance || 0}
           kwendaPoints={wallet?.kwenda_points || 0}
-          currency={wallet?.currency || 'CDF'}
+          currency={wallet?.currency || 'XOF'}
           loading={loading}
         />
 
@@ -153,7 +153,7 @@ export const DriverWalletPanel: React.FC = () => {
           triggerSuccess();
           setShowConfetti(true);
         }}
-        currency={wallet?.currency || 'CDF'}
+        currency={wallet?.currency || 'XOF'}
         quickAmounts={QUICK_AMOUNTS}
       />
 

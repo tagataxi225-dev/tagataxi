@@ -7,7 +7,7 @@
  */
 export const formatPartnerCurrency = (
   amount: number, 
-  currency: string = 'CDF',
+  currency: string = 'XOF',
   showSymbol: boolean = true
 ): string => {
   const formatted = new Intl.NumberFormat('fr-CD', {

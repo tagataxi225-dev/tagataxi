@@ -32,7 +32,7 @@ export const usePartnerRideCommissions = () => {
         .eq('user_id', user.id)
         .maybeSingle();
       const partenaireId = partenaireData?.id;
-      if (!partenaireId) return { totalCommissions: 0, monthlyCommissions: 0, totalRides: 0, monthlyRides: 0, activeDrivers: 0, averageCommissionPerRide: 0, currency: 'CDF' };
+      if (!partenaireId) return { totalCommissions: 0, monthlyCommissions: 0, totalRides: 0, monthlyRides: 0, activeDrivers: 0, averageCommissionPerRide: 0, currency: 'XOF' };
 
       // 1. Récupérer tous les chauffeurs du partenaire
       const { data: partnerDrivers, error: driversError } = await supabase
@@ -53,7 +53,7 @@ export const usePartnerRideCommissions = () => {
           monthlyRides: 0,
           activeDrivers: 0,
           averageCommissionPerRide: 0,
-          currency: 'CDF'
+          currency: 'XOF'
         };
       }
 
@@ -137,7 +137,7 @@ export const usePartnerRideCommissions = () => {
         monthlyRides,
         activeDrivers: driverIds.length,
         averageCommissionPerRide: totalRides > 0 ? Math.round(totalCommissions / totalRides) : 0,
-        currency: 'CDF'
+        currency: 'XOF'
       };
     },
     enabled: !!user,
@@ -153,7 +153,7 @@ export const usePartnerRideCommissions = () => {
       monthlyRides: 0,
       activeDrivers: 0,
       averageCommissionPerRide: 0,
-      currency: 'CDF'
+      currency: 'XOF'
     },
     isLoading,
     refetch

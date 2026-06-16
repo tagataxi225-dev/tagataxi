@@ -29,7 +29,7 @@ interface ActivityListItemProps {
 export const ActivityListItem = ({ item, onClick }: ActivityListItemProps) => {
   const { t } = useLanguage();
   const label = t(labelKeyByType[item.type]);
-  const amountText = item.amount != null ? `${item.amount.toLocaleString()} ${item.currency || 'CDF'}` : undefined;
+  const amountText = item.amount != null ? `${item.amount.toLocaleString()} ${item.currency || 'XOF'}` : undefined;
 
   return (
     <Card 

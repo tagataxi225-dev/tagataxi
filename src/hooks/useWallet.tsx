@@ -66,7 +66,7 @@ export const useWallet = () => {
         .from('user_wallets')
         .select('id, balance, bonus_balance, ecosystem_credits, kwenda_points, currency, is_active')
         .eq('user_id', user.id)
-        .eq('currency', 'CDF')
+        .eq('currency', 'XOF')
         .maybeSingle();
 
       if (error) {
@@ -84,7 +84,7 @@ export const useWallet = () => {
             bonus_balance: 0,
             ecosystem_credits: 0,
             kwenda_points: 0,
-            currency: 'CDF',
+            currency: 'XOF',
             is_active: true
           })
           .select('id, balance, bonus_balance, ecosystem_credits, kwenda_points, currency, is_active')
@@ -141,7 +141,7 @@ export const useWallet = () => {
           amount,
           provider,
           phoneNumber: phone,
-          currency: 'CDF',
+          currency: 'XOF',
           orderType: 'wallet_topup',
           userType: 'client'
         }

@@ -5,3 +5,5 @@ dist
 android
 *.zip
 schema_tembea.sql
+.claude/ 
+ios/App/App/public/ 

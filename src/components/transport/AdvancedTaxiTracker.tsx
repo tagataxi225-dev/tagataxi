@@ -559,7 +559,7 @@ export default function AdvancedTaxiTracker({ bookingId, onBack }: AdvancedTaxiT
         destinationLabel={booking.destination}
         fareAmount={(booking.actual_price || booking.final_agreed_price || booking.client_proposed_price || booking.estimated_price || 0) + waitingFee}
         driverArrivedAt={driverArrivedAt}
-        fareCurrency={getCurrencyByCity(booking.city || 'Kinshasa') as 'CDF' | 'XOF'}
+        fareCurrency={getCurrencyByCity(booking.city || 'Kinshasa') as 'XOF' | 'XOF'}
         driver={{
           name: booking.driver_name || 'Chauffeur',
           rating: booking.driver_rating || 0,

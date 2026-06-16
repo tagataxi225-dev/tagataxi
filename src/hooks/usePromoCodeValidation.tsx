@@ -80,7 +80,7 @@ export const usePromoCodeValidation = () => {
           order_id: data.orderId,
           order_type: data.orderType,
           discount_amount: data.discountAmount,
-          currency: 'CDF',
+          currency: 'XOF',
           used_at: new Date().toISOString()
         });
 
