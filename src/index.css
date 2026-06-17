@@ -90,12 +90,12 @@ All colors MUST be HSL.
     --shadow-float: 0 20px 50px -10px rgba(0, 0, 0, 0.25);
 
     /* Gradient System - Congo Colors */
-    --gradient-primary: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(0 84% 60%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(147 100% 33%) 0%, hsl(147 90% 45%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(45 96% 56%) 35%, hsl(142 76% 36%) 70%, hsl(217 91% 60%) 100%);
     --gradient-success: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 86% 46%) 100%);
     --gradient-card: linear-gradient(180deg, hsla(var(--card), 0.8) 0%, hsla(var(--card), 1) 100%);
     --gradient-congo-flag: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(0 79% 48%) 25%, hsl(45 96% 56%) 50%, hsl(142 76% 36%) 75%, hsl(217 91% 60%) 100%);
-    --gradient-congo-modern: linear-gradient(135deg, hsl(0 79% 48%) 0%, hsl(45 96% 56%) 100%);
+    --gradient-congo-modern: linear-gradient(135deg, hsl(147 100% 33%) 0%, hsl(234 65% 17%) 100%);
     --gradient-congo-subtle: linear-gradient(180deg, hsla(0, 79%, 48%, 0.05) 0%, hsla(45, 96%, 56%, 0.05) 100%);
 
     /* Transition System */
@@ -113,44 +113,44 @@ All colors MUST be HSL.
     --popover-foreground: 220 25% 5%;
 
     /* Primary: Rouge Congo vibrant mais plus doux */
-    --primary: 357 85% 50%;
+    --primary: 147 100% 33%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 357 85% 60%;
-    --primary-light: 357 85% 70%;
+    --primary-glow: 147 90% 45%;
+    --primary-light: 147 70% 55%;
 
     /* Secondary: Or Congo éclatant */
-    --secondary: 42 100% 50%;
+    --secondary: 234 65% 17%;
     --secondary-foreground: 220 25% 5%;
-    --secondary-light: 42 100% 60%;
+    --secondary-light: 234 50% 30%;
 
     --muted: 220 15% 85%;
     --muted-foreground: 220 20% 25%;
 
     /* Accent: Or Congo vibrant */
-    --accent: 42 100% 50%;
+    --accent: 234 65% 17%;
     --accent-foreground: 220 25% 5%;
-    --accent-light: 42 100% 60%;
+    --accent-light: 234 50% 30%;
 
     /* Congo Flag Colors - INTENSIFIED */
     --congo-blue: 220 100% 50%;
-    --congo-red: 357 95% 55%;
+    --congo-red: 147 100% 33%;
     --congo-yellow: 42 100% 60%;
     --congo-green: 142 85% 45%;
     
     /* Congo Electric Variants - Intensité réduite pour plus de douceur */
-    --congo-red-electric: 357 88% 60%;
+    --congo-red-electric: 147 90% 45%;
     --congo-yellow-electric: 42 95% 65%;
     --congo-green-electric: 142 80% 50%;
     --congo-blue-electric: 220 90% 55%;
     
     /* Congo Vibrant Variants - Interactive elements plus doux */
-    --congo-red-vibrant: 357 82% 48%;
+    --congo-red-vibrant: 147 100% 33%;
     --congo-yellow-vibrant: 42 90% 55%;
     --congo-green-vibrant: 142 75% 40%;
     --congo-blue-vibrant: 220 85% 45%;
     
     /* Congo Glow Variants - Focus states */
-    --congo-red-glow: 357 85% 70%;
+    --congo-red-glow: 147 70% 55%;
     --congo-yellow-glow: 42 95% 75%;
     --congo-green-glow: 142 80% 60%;
     --congo-blue-glow: 220 90% 70%;
@@ -180,7 +180,7 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 357 79% 54%;
+    --ring: 147 100% 33%;
 
     /* Safe area and responsive utilities */
     --safe-area-top: env(safe-area-inset-top, 0px);
