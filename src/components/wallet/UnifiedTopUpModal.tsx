@@ -11,7 +11,7 @@ import { QuickAmountSelector } from './QuickAmountSelector';
 import { OperatorSelector } from './OperatorSelector';
 import { cn } from '@/lib/utils';
 
-type Operator = 'airtel' | 'orange' | 'mpesa';
+type Operator = 'orange' | 'wave';
 type UserType = 'client' | 'partner' | 'vendor' | 'restaurant';
 
 interface UnifiedTopUpModalProps {
@@ -69,9 +69,9 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
     if (!value || isNaN(numAmount)) {
       setAmountError('Montant invalide');
     } else if (numAmount < 500) {
-      setAmountError('Montant minimum : 500 CDF');
+      setAmountError('Montant minimum : 500 XOF');
     } else if (numAmount > 500000) {
-      setAmountError('Montant maximum : 500,000 CDF');
+      setAmountError('Montant maximum : 500 000 XOF');
     } else if (provider === 'orange' && numAmount % 100 !== 0) {
       setAmountError('Orange Money : montant doit être multiple de 100');
     } else {
@@ -88,17 +88,13 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
     }
     
     const cleanPhone = value.replace(/[\s\-\(\)]/g, '');
-    
-    // Format DRC : +243XXXXXXXXX ou 0XXXXXXXXX
-    const phoneWithPrefixRegex = /^\+?243[0-9]{9}$/;
+
+    // Format Côte d'Ivoire : +225XXXXXXXXXX ou 0XXXXXXXXX (10 chiffres)
+    const phoneWithPrefixRegex = /^\+?225[0-9]{10}$/;
     const phoneWithoutPrefixRegex = /^0[0-9]{9}$/;
-    
+
     if (!phoneWithPrefixRegex.test(cleanPhone) && !phoneWithoutPrefixRegex.test(cleanPhone)) {
-      setPhoneError('Format invalide. Ex: +243991234567 ou 0991234567');
-    } else if (provider === 'orange' && !cleanPhone.match(/^(\+?243|0)(81|82|83|84|85|89|97|98)[0-9]{7}$/)) {
-      setPhoneError('Orange Money : numéro invalide (doit commencer par 81, 82, 83, 84, 85, 89, 97 ou 98)');
-    } else if (provider === 'airtel' && !cleanPhone.match(/^(\+?243|0)(97|99)[0-9]{7}$/)) {
-      setPhoneError('Airtel Money : numéro invalide (doit commencer par 97 ou 99)');
+      setPhoneError('Format invalide. Ex: +2250712345678 ou 0712345678');
     } else {
       setPhoneError('');
     }
@@ -111,7 +107,7 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
     }
 
     if (!amount || Number(amount) < 500) {
-      setAmountError('Montant minimum : 500 CDF');
+      setAmountError('Montant minimum : 500 XOF');
       return;
     }
 
@@ -120,30 +116,15 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
       return;
     }
 
-    // Re-valider le numéro avant soumission
+    // Re-valider le numéro avant soumission (format Côte d'Ivoire)
     const cleanPhone = phone.replace(/[\s\-\(\)]/g, '');
-    const phoneWithPrefixRegex = /^\+?243[0-9]{9}$/;
+    const phoneWithPrefixRegex = /^\+?225[0-9]{10}$/;
     const phoneWithoutPrefixRegex = /^0[0-9]{9}$/;
-    
+
     if (!phoneWithPrefixRegex.test(cleanPhone) && !phoneWithoutPrefixRegex.test(cleanPhone)) {
-      setPhoneError('Format invalide. Le numéro doit contenir 10 chiffres (ex: 0991234567)');
+      setPhoneError('Format invalide. Ex: +2250712345678 ou 0712345678');
       toast.error('Format de numéro invalide');
       return;
-    }
-
-    // Validation spécifique opérateur
-    if (provider === 'orange') {
-      if (!cleanPhone.match(/^(\+?243|0)(81|82|83|84|85|89|97|98)[0-9]{7}$/)) {
-        setPhoneError('Orange Money : numéro invalide (doit commencer par 81, 82, 83, 84, 85, 89, 97 ou 98)');
-        toast.error('Numéro Orange Money invalide');
-        return;
-      }
-    } else if (provider === 'airtel') {
-      if (!cleanPhone.match(/^(\+?243|0)(97|99)[0-9]{7}$/)) {
-        setPhoneError('Airtel Money : numéro invalide (doit commencer par 97 ou 99)');
-        toast.error('Numéro Airtel Money invalide');
-        return;
-      }
     }
 
     if (amountError || phoneError) return;
@@ -282,7 +263,7 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
               <Input
                 id="phone"
                 type="tel"
-                placeholder="0991234567 (10 chiffres)"
+                placeholder="0712345678 (10 chiffres)"
                 value={phone}
                 onChange={(e) => handlePhoneChange(e.target.value)}
                 className="pl-10 bg-muted/50 border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
@@ -293,7 +274,7 @@ export const UnifiedTopUpModal: React.FC<UnifiedTopUpModalProps> = ({
             )}
             {!phoneError && phone && (
               <p className="text-xs text-muted-foreground mt-1">
-                Format accepté: +243XXXXXXXXX ou 0XXXXXXXXX (10 chiffres)
+                Format accepté: +225XXXXXXXXXX ou 0XXXXXXXXX (10 chiffres)
               </p>
             )}
           </div>

@@ -62,7 +62,7 @@ export const DualBalanceCard: React.FC<DualBalanceCardProps> = ({
               animate={{ scale: 1 }}
               className="text-4xl md:text-5xl font-bold text-white"
             >
-              {totalBalance.toLocaleString('fr-CD')} {currency}
+              {totalBalance.toLocaleString('fr-FR')} {currency}
             </motion.p>
           </div>
 

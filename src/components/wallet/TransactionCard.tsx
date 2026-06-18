@@ -89,7 +89,7 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
             : "text-foreground"
         )}>
           {isCredit ? '+' : '-'}
-          {amount.toLocaleString('fr-CD')} {currency}
+          {amount.toLocaleString('fr-FR')} {currency}
         </p>
       </div>
     </motion.div>

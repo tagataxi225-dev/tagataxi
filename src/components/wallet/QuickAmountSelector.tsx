@@ -33,7 +33,7 @@ export const QuickAmountSelector: React.FC<QuickAmountSelectorProps> = ({
                 : "bg-muted/50 border border-border/60 text-foreground hover:bg-muted hover:border-border"
             )}
           >
-            {amount.toLocaleString('fr-CD')} {currency}
+            {amount.toLocaleString('fr-FR')} {currency}
           </button>
         ))}
       </div>

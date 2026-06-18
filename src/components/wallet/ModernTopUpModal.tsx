@@ -17,7 +17,7 @@ interface ModernTopUpModalProps {
   onSuccess: (amount: number) => void;
   userType?: 'client' | 'driver' | 'partner' | 'admin';
   initialAmount?: number;
-  currency?: 'XOF' | 'XOF';
+  currency?: 'XOF';
   targetUserId?: string;
 }
 
@@ -32,7 +32,6 @@ const OPERATORS: Record<string, { name: string; color: string; bg: string }> = {
 
 const QUICK: Record<string, number[]> = {
   XOF: [1000, 2000, 5000, 10000, 25000],
-  CDF: [2000, 5000, 10000, 25000, 50000],
 };
 
 export const ModernTopUpModal: React.FC<ModernTopUpModalProps> = ({

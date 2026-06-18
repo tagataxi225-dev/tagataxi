@@ -55,7 +55,7 @@ export const WalletHero: React.FC<WalletHeroProps> = ({
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm">
             <Gift className="h-3 w-3 text-white/50" />
             <span className="text-[11px] font-medium text-white/80">
-              {bonusBalance.toLocaleString('fr-CD')} {currency}
+              {bonusBalance.toLocaleString('fr-FR')} {currency}
             </span>
             <span className="text-[10px] text-white/40">bonus</span>
           </div>
@@ -63,11 +63,11 @@ export const WalletHero: React.FC<WalletHeroProps> = ({
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm">
             <Star className="h-3 w-3 text-white/50" />
             <span className="text-[11px] font-medium text-white/80">
-              {kwendaPoints.toLocaleString('fr-CD')} pts
+              {kwendaPoints.toLocaleString('fr-FR')} pts
             </span>
             {kwendaPoints > 0 && (
               <span className="text-[10px] text-white/40">
-                ~{estimatedPointsValue.toLocaleString('fr-CD')} {currency}
+                ~{estimatedPointsValue.toLocaleString('fr-FR')} {currency}
               </span>
             )}
           </div>

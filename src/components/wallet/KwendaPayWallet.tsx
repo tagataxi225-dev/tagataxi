@@ -45,9 +45,8 @@ export const KwendaPayWallet = () => {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const providers = [
-    { id: 'airtel', name: 'Airtel Money', icon: '📱' },
-    { id: 'orange', name: 'Orange Money', icon: '🧡' },
-    { id: 'mpesa', name: 'M-Pesa', icon: '💚' }
+    { id: 'orange', name: 'Orange Money', icon: '🧡', disabled: false },
+    { id: 'wave', name: 'Wave', icon: '💧', disabled: true }
   ];
 
   useEffect(() => {
@@ -192,7 +191,7 @@ export const KwendaPayWallet = () => {
         });
         toast({
           title: "Rechargement réussi",
-          description: `Votre wallet a été rechargé de ${topUpAmount} CDF`
+          description: `Votre wallet a été rechargé de ${topUpAmount} XOF`
         });
         setIsTopUpOpen(false);
         setTopUpAmount('');
@@ -306,7 +305,7 @@ export const KwendaPayWallet = () => {
                 <div className="space-y-5 pt-4">
                   <div className="space-y-2">
                     <Label htmlFor="amount" className="text-sm font-medium text-slate-700 dark:text-slate-300">
-                      Montant (CDF)
+                      Montant (XOF)
                     </Label>
                     <Input
                       id="amount"
@@ -328,10 +327,10 @@ export const KwendaPayWallet = () => {
                       </SelectTrigger>
                       <SelectContent>
                         {providers.map((provider) => (
-                          <SelectItem key={provider.id} value={provider.id}>
+                          <SelectItem key={provider.id} value={provider.id} disabled={provider.disabled}>
                             <span className="flex items-center gap-2 text-base">
                               <span className="text-xl">{provider.icon}</span>
-                              {provider.name}
+                              {provider.name}{provider.disabled ? ' (Bientôt)' : ''}
                             </span>
                           </SelectItem>
                         ))}
@@ -346,7 +345,7 @@ export const KwendaPayWallet = () => {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+243 XXX XXX XXX"
+                      placeholder="+225 XX XX XX XX XX"
                       value={phoneNumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
                       className="h-12 text-lg border-slate-200 dark:border-slate-700 focus:border-indigo-500 focus:ring-indigo-500"

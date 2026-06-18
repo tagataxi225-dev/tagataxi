@@ -17,7 +17,7 @@ export const AnimatedBalance: React.FC<AnimatedBalanceProps> = ({
 }) => {
   const [displayValue, setDisplayValue] = useState(0);
   const spring = useSpring(0, { duration: duration * 1000, bounce: 0 });
-  const display = useTransform(spring, (latest) => Math.floor(latest).toLocaleString('fr-CD'));
+  const display = useTransform(spring, (latest) => Math.floor(latest).toLocaleString('fr-FR'));
 
   useEffect(() => {
     spring.set(value);

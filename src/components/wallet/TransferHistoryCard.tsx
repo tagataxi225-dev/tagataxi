@@ -65,7 +65,7 @@ export const TransferHistoryCard = ({
             "text-lg font-bold whitespace-nowrap",
             isSent ? "text-destructive" : "text-primary"
           )}>
-            {isSent ? '-' : '+'}{transfer.amount.toLocaleString()} CDF
+            {isSent ? '-' : '+'}{transfer.amount.toLocaleString('fr-FR')} XOF
           </p>
           <Badge 
             variant={transfer.status === 'completed' ? 'default' : 'secondary'}

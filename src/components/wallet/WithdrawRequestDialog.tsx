@@ -28,13 +28,12 @@ interface WithdrawRequestDialogProps {
 
 const PROVIDER_MAP: Record<string, { id: string; fee: number }> = {
   orange: { id: 'orange_money', fee: 2 },
-  airtel: { id: 'airtel_money', fee: 2 },
-  mpesa: { id: 'm_pesa', fee: 2 },
+  wave: { id: 'wave', fee: 2 },
 };
 
-const MIN_WITHDRAW = 5000;
+const MIN_WITHDRAW = 2000;
 const MAX_WITHDRAW = 1000000;
-const QUICK_AMOUNTS = [5000, 10000, 20000, 50000];
+const QUICK_AMOUNTS = [2000, 5000, 10000, 50000];
 
 export const WithdrawRequestDialog = ({ 
   open, 
@@ -48,7 +47,7 @@ export const WithdrawRequestDialog = ({
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [amount, setAmount] = useState('');
-  const [operator, setOperator] = useState<'airtel' | 'orange' | 'mpesa' | ''>('');
+  const [operator, setOperator] = useState<'orange' | 'wave' | ''>('');
   const [phoneNumber, setPhoneNumber] = useState('');
 
   const parsedAmount = parseInt(amount) || 0;
@@ -69,7 +68,7 @@ export const WithdrawRequestDialog = ({
       toast({ title: "Opérateur requis", description: "Veuillez sélectionner un opérateur", variant: "destructive" });
       return;
     }
-    if (!phoneNumber || phoneNumber.length < 9) {
+    if (!phoneNumber || phoneNumber.length < 10) {
       toast({ title: "Numéro invalide", description: "Veuillez entrer un numéro valide", variant: "destructive" });
       return;
     }
@@ -89,7 +88,7 @@ export const WithdrawRequestDialog = ({
             paymentDetails: {
               userType,
               mobileMoneyProvider: providerInfo?.id,
-              mobileMoneyPhone: `+243${phoneNumber}`
+              mobileMoneyPhone: `+225${phoneNumber}`
             }
           }
         }
@@ -121,7 +120,7 @@ export const WithdrawRequestDialog = ({
     setAmount(String(val));
   };
 
-  const canSubmit = parsedAmount >= MIN_WITHDRAW && parsedAmount <= currentBalance && !!operator && phoneNumber.length >= 9 && !loading;
+  const canSubmit = parsedAmount >= MIN_WITHDRAW && parsedAmount <= currentBalance && !!operator && phoneNumber.length >= 10 && !loading;
 
   return (
     <Drawer.Root open={open} onOpenChange={onOpenChange}>
@@ -159,7 +158,7 @@ export const WithdrawRequestDialog = ({
                 <div className="bg-muted/40 rounded-xl px-4 py-3 flex items-center justify-between mb-5">
                   <span className="text-sm text-muted-foreground">Solde disponible</span>
                   <span className="text-sm font-bold text-foreground">
-                    {currentBalance.toLocaleString('fr-CD')} {currency}
+                    {currentBalance.toLocaleString('fr-FR')} {currency}
                   </span>
                 </div>
 
@@ -196,7 +195,7 @@ export const WithdrawRequestDialog = ({
                             : 'bg-muted/50 border border-border/60 text-foreground hover:bg-muted hover:border-border'
                         }`}
                       >
-                        {val.toLocaleString('fr-CD')}
+                        {val.toLocaleString('fr-FR')}
                       </button>
                     ))}
                   </div>
@@ -214,14 +213,14 @@ export const WithdrawRequestDialog = ({
                     </label>
                     <div className="flex items-center h-12 rounded-xl border border-border/50 bg-muted/30 overflow-hidden">
                       <span className="px-3 text-sm font-medium text-muted-foreground border-r border-border/50 h-full flex items-center bg-muted/50">
-                        +243
+                        +225
                       </span>
                       <input
                         type="tel"
-                        placeholder="812 345 678"
+                        placeholder="07 12 34 56 78"
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/g, ''))}
-                        maxLength={9}
+                        maxLength={10}
                         className="flex-1 h-full px-3 bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground/60"
                       />
                     </div>
@@ -232,15 +231,15 @@ export const WithdrawRequestDialog = ({
                     <div className="bg-muted/30 rounded-xl p-4 space-y-2.5">
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">Montant</span>
-                        <span className="font-medium text-foreground">{parsedAmount.toLocaleString('fr-CD')} {currency}</span>
+                        <span className="font-medium text-foreground">{parsedAmount.toLocaleString('fr-FR')} {currency}</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">Frais ({providerInfo?.fee}%)</span>
-                        <span className="font-medium text-foreground">-{fee.toLocaleString('fr-CD')} {currency}</span>
+                        <span className="font-medium text-foreground">-{fee.toLocaleString('fr-FR')} {currency}</span>
                       </div>
                       <div className="border-t border-border/50 pt-2.5 flex justify-between text-sm">
                         <span className="font-semibold text-foreground">Vous recevrez</span>
-                        <span className="font-bold text-primary">{netAmount.toLocaleString('fr-CD')} {currency}</span>
+                        <span className="font-bold text-primary">{netAmount.toLocaleString('fr-FR')} {currency}</span>
                       </div>
                     </div>
                   )}

@@ -117,13 +117,13 @@ export const QuickTransferPopup: React.FC<QuickTransferPopupProps> = ({
 
     const amount = selectedAmount || parseFloat(customAmount);
     
-    if (amount < 100 || amount > 500000) {
-      toast({ title: 'Montant invalide', description: 'Entre 100 et 500 000 CDF', variant: 'destructive' });
+    if (amount < 200 || amount > 500000) {
+      toast({ title: 'Montant invalide', description: 'Entre 200 et 500 000 XOF', variant: 'destructive' });
       return;
     }
 
     if (!wallet || wallet.balance < amount) {
-      toast({ title: 'Solde insuffisant', description: `Disponible: ${wallet?.balance?.toLocaleString() || 0} CDF`, variant: 'destructive' });
+      toast({ title: 'Solde insuffisant', description: `Disponible: ${wallet?.balance?.toLocaleString() || 0} XOF`, variant: 'destructive' });
       return;
     }
 
@@ -132,7 +132,7 @@ export const QuickTransferPopup: React.FC<QuickTransferPopupProps> = ({
     try {
       await transferFunds(selectedContact, amount, 'Transfert rapide');
       setShowConfetti(true);
-      toast({ title: '✨ Transfert réussi !', description: `${amount.toLocaleString()} CDF envoyés à ${selectedContactName}` });
+      toast({ title: '✨ Transfert réussi !', description: `${amount.toLocaleString()} XOF envoyés à ${selectedContactName}` });
 
       setTimeout(() => {
         onTransferSuccess?.();
@@ -161,7 +161,7 @@ export const QuickTransferPopup: React.FC<QuickTransferPopupProps> = ({
         className="wallet-glass p-3 rounded-2xl border border-border/30">
         <p className="text-xs text-muted-foreground mb-1">Solde disponible</p>
         <p className="text-xl font-bold text-foreground">
-          {wallet?.balance?.toLocaleString() || '0'} <span className="text-base text-muted-foreground">CDF</span>
+          {wallet?.balance?.toLocaleString() || '0'} <span className="text-base text-muted-foreground">XOF</span>
         </p>
       </motion.div>
 
@@ -263,7 +263,7 @@ export const QuickTransferPopup: React.FC<QuickTransferPopupProps> = ({
                     ? 'contact-selected bg-gradient-to-br from-purple-500 via-pink-500 to-purple-600 text-white'
                     : 'bg-muted/50 hover:bg-muted text-foreground hover:scale-105'
                 }`}>
-                {amount.toLocaleString()} CDF
+                {amount.toLocaleString()} XOF
               </motion.button>
             ))}
           </div>
@@ -285,7 +285,7 @@ export const QuickTransferPopup: React.FC<QuickTransferPopupProps> = ({
             {isTransferring ? (
               <><Loader2 className="h-5 w-5 animate-spin" />Transfert en cours...</>
             ) : (
-              <>Envoyer {(selectedAmount || parseFloat(customAmount) || 0).toLocaleString()} CDF<ArrowRight className="h-5 w-5" /></>
+              <>Envoyer {(selectedAmount || parseFloat(customAmount) || 0).toLocaleString()} XOF<ArrowRight className="h-5 w-5" /></>
             )}
           </button>
         </motion.div>

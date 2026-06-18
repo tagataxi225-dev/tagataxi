@@ -107,8 +107,8 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
   };
 
   const amountValue = parseFloat(amount) || 0;
-  const isAmountValid = amountValue >= 100 && amountValue <= 500000;
-  const isAmountTooLow = amountValue > 0 && amountValue < 100;
+  const isAmountValid = amountValue >= 200 && amountValue <= 500000;
+  const isAmountTooLow = amountValue > 0 && amountValue < 200;
   const isAmountTooHigh = amountValue > 500000;
   
   const isValid = 
@@ -147,7 +147,7 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
           <div className="flex items-center justify-between bg-muted/40 rounded-xl px-4 py-3">
             <span className="text-sm text-muted-foreground">Solde disponible</span>
             <span className="text-base font-bold text-foreground">
-              {wallet?.balance.toLocaleString()} CDF
+              {wallet?.balance.toLocaleString('fr-FR')} XOF
             </span>
           </div>
 
@@ -231,7 +231,7 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
           {/* Input montant */}
           <div className="space-y-2">
             <Label className="text-sm font-medium text-foreground">
-              Montant (CDF)
+              Montant (XOF)
             </Label>
             <Input
               type="number"
@@ -247,10 +247,10 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
             />
             <div className="flex justify-between text-xs text-muted-foreground">
               <span className={isAmountTooLow ? "text-amber-600 font-medium" : ""}>
-                Min: 100 CDF
+                Min: 200 XOF
               </span>
               <span className={isAmountTooHigh ? "text-destructive font-medium" : ""}>
-                Max: 500,000 CDF
+                Max: 500 000 XOF
               </span>
             </div>
           </div>
@@ -269,7 +269,7 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
                     : "bg-muted/50 border border-border/50 text-foreground hover:bg-muted"
                 )}
               >
-                {qa.toLocaleString('fr-CD')}
+                {qa.toLocaleString('fr-FR')}
               </button>
             ))}
           </div>

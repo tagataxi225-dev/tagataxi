@@ -12,7 +12,7 @@ import { OperatorSelector } from './OperatorSelector';
 import { AnimatedTopUpButton } from './AnimatedTopUpButton';
 import { cn } from '@/lib/utils';
 
-type Operator = 'airtel' | 'orange' | 'mpesa';
+type Operator = 'orange' | 'wave';
 
 interface TopUpModalProps {
   open: boolean;
@@ -129,7 +129,7 @@ export const TopUpModal: React.FC<TopUpModalProps> = ({
           {/* Custom Amount Input */}
           <div className="space-y-2">
             <Label className="text-sm font-medium text-foreground">
-              Montant personnalisé (CDF)
+              Montant personnalisé (XOF)
             </Label>
             <Input
               type="number"
@@ -178,7 +178,7 @@ export const TopUpModal: React.FC<TopUpModalProps> = ({
               <Input
                 type="tel"
                 inputMode="tel"
-                placeholder="0991234567"
+                placeholder="0712345678"
                 value={phone}
                 onChange={(e) => handlePhoneChange(e.target.value)}
                 className={cn(

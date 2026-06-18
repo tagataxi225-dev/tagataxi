@@ -39,7 +39,7 @@ export const EnhancedWalletCard: React.FC<EnhancedWalletCardProps> = ({
           <div className="flex-1 min-w-0">
             <p className="text-xs text-white/70 font-medium">TembeaPay</p>
             <p className="font-bold text-white text-sm truncate">
-              {balance.toLocaleString('fr-CD')} {currency}
+              {balance.toLocaleString('fr-FR')} {currency}
             </p>
           </div>
           {onTopUp && (
