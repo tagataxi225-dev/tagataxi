@@ -76,7 +76,7 @@ const CATEGORY_CONFIG = [
   { key: 'delivery', icon: Package, label: 'Livraison', description: 'Statut des colis' },
   { key: 'marketplace', icon: ShoppingBag, label: 'Marketplace', description: 'Commandes et messages' },
   { key: 'food', icon: Utensils, label: 'Food', description: 'Commandes repas' },
-  { key: 'job', icon: Briefcase, label: 'Tembea Job', description: 'Nouvelles offres d\'emploi' },
+  { key: 'job', icon: Briefcase, label: 'TAGA Job', description: 'Nouvelles offres d\'emploi' },
   { key: 'lottery', icon: Gift, label: 'Loterie', description: 'Tirages et gains' },
   { key: 'chat', icon: MessageCircle, label: 'Chat', description: 'Messages directs' },
   { key: 'payment', icon: CreditCard, label: 'Paiements', description: 'Transactions' },

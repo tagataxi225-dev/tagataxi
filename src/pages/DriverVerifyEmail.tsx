@@ -11,7 +11,7 @@ const DriverVerifyEmail = () => {
         {/* Logo Tembea */}
         <img
           src="/icons/kwenda-icon.svg"
-          alt="Tembea"
+          alt="TAGA"
           className="w-14 h-14 mb-8"
           onError={(e) => {
             // Fallback texte si l'icône n'est pas trouvée

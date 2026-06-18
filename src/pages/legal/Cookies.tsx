@@ -63,7 +63,7 @@ const Cookies = () => {
           </Badge>
           <h1 className="text-display-lg">Utilisation des Cookies</h1>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Cette page explique comment Tembea Taxi utilise les cookies pour améliorer votre expérience
+            Cette page explique comment TAGA Taxi utilise les cookies pour améliorer votre expérience
           </p>
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
             <Clock className="w-4 h-4" />
@@ -86,7 +86,7 @@ const Cookies = () => {
               préférences pour améliorer votre expérience.
             </p>
             <p>
-              Tembea Taxi utilise des cookies pour assurer le bon fonctionnement de l'application, 
+              TAGA Taxi utilise des cookies pour assurer le bon fonctionnement de l'application, 
               sécuriser votre compte et personnaliser votre expérience.
             </p>
           </CardContent>
@@ -143,7 +143,7 @@ const Cookies = () => {
               Cookies de services tiers
             </CardTitle>
             <CardDescription>
-              Tembea Taxi utilise des services tiers qui peuvent déposer leurs propres cookies
+              TAGA Taxi utilise des services tiers qui peuvent déposer leurs propres cookies
             </CardDescription>
           </CardHeader>
           <CardContent>

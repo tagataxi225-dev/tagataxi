@@ -13,7 +13,7 @@ export type UserRole = 'client' | 'driver' | 'partner' | 'admin' | 'restaurant';
 
 export const APP_CONFIG = {
   // ─── Identité app ───────────────────────────────────────────────────────────
-  name: 'Tembea',
+  name: 'TAGA',
   appId: 'cd.kwenda.app',
   primaryColor: '#DC2626',
   defaultRoute: '/app',

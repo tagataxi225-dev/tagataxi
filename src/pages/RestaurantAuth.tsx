@@ -165,7 +165,7 @@ export default function RestaurantAuth() {
             </div>
             
             <h1 className="text-2xl font-bold tracking-tight">
-              {isSignUp ? 'Devenir Restaurant Partenaire' : 'Tembea Food'}
+              {isSignUp ? 'Devenir Restaurant Partenaire' : 'TAGA Food'}
             </h1>
             <p className="text-sm text-muted-foreground">
               {isSignUp 

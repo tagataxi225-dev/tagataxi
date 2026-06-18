@@ -173,7 +173,7 @@ const LocationVehicules = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi louer avec Tembea ?</h2>
+            <h2 className="text-heading-xl">Pourquoi louer avec TAGA ?</h2>
             <p className="text-body-md text-muted-foreground">
               Un service de location moderne et sécurisé
             </p>

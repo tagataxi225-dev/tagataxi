@@ -35,7 +35,7 @@ export default function ModernBiddingInterface({
     { label: '-10%', value: Math.round(basePrice * 0.9) },
     { label: '-20%', value: Math.round(basePrice * 0.8) },
     { label: '-30%', value: Math.round(basePrice * 0.7) },
-    { label: 'Tembea', value: basePrice }
+    { label: 'TAGA', value: basePrice }
   ];
 
   const handleIncrement = () => {
@@ -159,7 +159,7 @@ export default function ModernBiddingInterface({
                       {isDiscount ? (
                         <>
                           <TrendingDown className="w-3 h-3" />
-                          -{Math.abs(savingsPercent)}% par rapport au prix Tembea
+                          -{Math.abs(savingsPercent)}% par rapport au prix TAGA
                         </>
                       ) : (
                         <>

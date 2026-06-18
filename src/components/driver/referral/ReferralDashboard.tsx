@@ -59,7 +59,7 @@ export const ReferralDashboard: React.FC = () => {
     if (!referralCode) return;
 
     const shareData = {
-      title: 'Rejoignez Tembea VTC',
+      title: 'Rejoignez TAGA VTC',
       text: `Utilisez mon code de parrainage ${referralCode.code} et gagnez 3000 CDF !`,
       url: shareUrl
     };

@@ -78,7 +78,7 @@ export const CallConfirmationModal: React.FC<CallConfirmationModalProps> = ({
       return;
     }
     const formattedPhone = partnerPhone.replace(/\s/g, '').replace('+', '');
-    const message = encodeURIComponent(`Bonjour ${partnerName}, je vous contacte via Tembea.`);
+    const message = encodeURIComponent(`Bonjour ${partnerName}, je vous contacte via TAGA.`);
     window.open(`https://wa.me/${formattedPhone}?text=${message}`, '_blank');
     onClose();
   };

@@ -162,7 +162,7 @@ export const useBackgroundTracking = (opts: BackgroundTrackingOptions = {}) => {
       if (supported && bgPluginRef.current?.addWatcher) {
         const id = await bgPluginRef.current.addWatcher(
           {
-            backgroundMessage: 'Le suivi Tembea Taxi est actif en arrière-plan.',
+            backgroundMessage: 'Le suivi TAGA Taxi est actif en arrière-plan.',
             backgroundTitle: 'Suivi en cours',
             requestPermissions: false, // ← Permissions gérées séparément après divulgation
             stale: false,

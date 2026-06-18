@@ -72,13 +72,13 @@ const DevenirChauffeur = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="secondary" className="mb-4">
-              Devenir Chauffeur Tembea
+              Devenir Chauffeur TAGA
             </Badge>
             <h1 className="text-display-lg">
               Gagnez votre vie en conduisant à <span className="text-primary">Kinshasa</span>
             </h1>
             <p className="text-body-lg text-muted-foreground">
-              Rejoignez des centaines de chauffeurs qui génèrent des revenus flexibles avec Tembea. 
+              Rejoignez des centaines de chauffeurs qui génèrent des revenus flexibles avec TAGA. 
               Transport, livraison, horaires libres et support 24h/24.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -169,9 +169,9 @@ const DevenirChauffeur = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi choisir Tembea ?</h2>
+            <h2 className="text-heading-xl">Pourquoi choisir TAGA ?</h2>
             <p className="text-body-md text-muted-foreground">
-              Les avantages de faire partie de la famille Tembea
+              Les avantages de faire partie de la famille TAGA
             </p>
           </div>
 
@@ -260,7 +260,7 @@ const DevenirChauffeur = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary-glow text-white">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <h2 className="text-heading-xl">Prêt à devenir chauffeur Tembea ?</h2>
+          <h2 className="text-heading-xl">Prêt à devenir chauffeur TAGA ?</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
             Rejoignez notre communauté de chauffeurs et commencez à générer des revenus dès aujourd'hui
           </p>

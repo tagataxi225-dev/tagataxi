@@ -184,7 +184,7 @@ export const usePartnerTeamManagement = (partnerId?: string) => {
 
       if (!targetUserId) {
         toast.error('Utilisateur introuvable', {
-          description: 'Cet email ne correspond à aucun compte Tembea. L\'utilisateur doit d\'abord créer un compte.'
+          description: 'Cet email ne correspond à aucun compte TAGA. L\'utilisateur doit d\'abord créer un compte.'
         });
         return false;
       }

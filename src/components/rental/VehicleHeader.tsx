@@ -38,7 +38,7 @@ export const VehicleHeader: React.FC<VehicleHeaderProps> = ({
       try {
         await navigator.share({
           title: vehicleName,
-          text: `Découvrez ${vehicleName} sur Tembea`,
+          text: `Découvrez ${vehicleName} sur TAGA`,
           url: window.location.href,
         });
       } catch (err) {

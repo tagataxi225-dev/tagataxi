@@ -434,7 +434,7 @@ const EnhancedMarketplaceContent: React.FC<EnhancedMarketplaceInterfaceProps> = 
           description: product.description || '',
           seller_id: product.seller_id,
           seller: { 
-            display_name: (product.vendor_profiles as any)?.shop_name || 'Boutique Tembea'
+            display_name: (product.vendor_profiles as any)?.shop_name || 'Boutique TAGA'
           },
           sellerLogo: (product.vendor_profiles as any)?.shop_logo_url,
           sellerRating: (product.vendor_profiles as any)?.average_rating || 0,

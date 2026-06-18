@@ -206,7 +206,7 @@ const SystemValidation = () => {
         <CardHeader>
           <CardTitle className="text-2xl">✅ Validation Système Complète</CardTitle>
           <CardDescription>
-            Tests automatisés de tous les services Tembea après migrations Phase 1-5
+            Tests automatisés de tous les services TAGA après migrations Phase 1-5
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">

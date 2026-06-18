@@ -97,7 +97,7 @@ export const ModernBiddingCard = ({
         {/* Prix */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 18 }}>
           <div style={{ background: '#F7F7F9', borderRadius: 16, padding: '14px 10px', textAlign: 'center' }}>
-            <p style={{ fontSize: 10, color: '#8E8E93', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 4 }}>Prix Tembea</p>
+            <p style={{ fontSize: 10, color: '#8E8E93', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 4 }}>Prix TAGA</p>
             <p style={{ fontSize: 26, fontWeight: 900, color: '#1C1C1E', lineHeight: 1 }}>{fmt(estimatedPrice)}</p>
             <p style={{ fontSize: 10, color: '#8E8E93', marginTop: 3 }}>CDF</p>
           </div>

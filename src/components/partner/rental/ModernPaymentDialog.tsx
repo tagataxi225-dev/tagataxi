@@ -166,7 +166,7 @@ export const ModernPaymentDialog = ({
                 Votre abonnement <strong>{planName}</strong> est maintenant actif.
               </p>
               <p className="text-sm text-muted-foreground">
-                Votre véhicule est désormais visible sur l'application Tembea.
+                Votre véhicule est désormais visible sur l'application TAGA.
               </p>
             </div>
             <Button onClick={handleClose} className="w-full">

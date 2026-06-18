@@ -107,7 +107,7 @@ export default function DeliveryTrackingDemo() {
         {/* Header */}
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Démo Suivi de Livraison Tembea
+            Démo Suivi de Livraison TAGA
           </h1>
           <p className="text-muted-foreground">
             Système complet de suivi de livraison avec validation étape par étape

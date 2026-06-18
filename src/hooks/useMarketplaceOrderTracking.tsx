@@ -137,7 +137,7 @@ export function useMarketplaceOrderTracking({
       let driverProfile = null;
 
       if (orderData.vendor_delivery_method === 'kwenda' && enableTracking) {
-        console.log('🚚 Livraison Tembea détectée, recherche du chauffeur...');
+        console.log('🚚 Livraison TAGA détectée, recherche du chauffeur...');
         
         const { data: assignmentData, error: assignmentError } = await supabase
           .from('marketplace_delivery_assignments')

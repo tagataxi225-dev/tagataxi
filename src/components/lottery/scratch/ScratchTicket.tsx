@@ -291,7 +291,7 @@ export const ScratchTicket: React.FC<ScratchTicketProps> = ({
               <div className="flex items-center gap-2">
                 <Ticket className="h-5 w-5 text-primary-foreground" />
                 <span className="text-primary-foreground font-black text-base tracking-widest uppercase shimmer-effect">
-                  Tembea Gratta
+                  TAGA Gratta
                 </span>
               </div>
               <span className="text-primary-foreground/50">●</span>

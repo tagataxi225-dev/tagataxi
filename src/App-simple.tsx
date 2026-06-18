@@ -45,7 +45,7 @@ function App() {
           <Route path="/" element={
             <div className="container mx-auto p-4 space-y-6">
               <div className="text-center space-y-2">
-                <h1 className="text-4xl font-bold">Tembea</h1>
+                <h1 className="text-4xl font-bold">TAGA</h1>
                 <p className="text-xl text-muted-foreground">
                   Plateforme de transport et livraison
                 </p>

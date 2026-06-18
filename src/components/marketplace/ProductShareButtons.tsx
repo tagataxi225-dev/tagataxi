@@ -29,7 +29,7 @@ export const ProductShareButtons: React.FC<ProductShareButtonsProps> = ({
 
   const productUrl = getProductUrl(productId);
   
-  const shareMessage = `🛍️ Découvre ce produit sur Tembea Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n📍 Vendeur: ${sellerName}\n\n👉 ${productUrl}`;
+  const shareMessage = `🛍️ Découvre ce produit sur TAGA Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n📍 Vendeur: ${sellerName}\n\n👉 ${productUrl}`;
 
   const trackShare = async (shareType: string) => {
     try {

@@ -334,7 +334,7 @@ export const SecureVaultDashboard: React.FC = () => {
                               </div>
                             )}
                             <div>
-                              <p className="text-muted-foreground">Frais Tembea</p>
+                              <p className="text-muted-foreground">Frais TAGA</p>
                               <p className="font-medium">{formatAmount(transaction.platform_fee)}</p>
                             </div>
                           </div>

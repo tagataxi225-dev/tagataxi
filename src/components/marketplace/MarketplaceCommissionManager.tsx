@@ -262,7 +262,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
         <CardContent className="space-y-6">
           <div className="grid gap-4 md:grid-cols-3">
             <div>
-              <Label htmlFor="admin_rate">Commission Tembea (%)</Label>
+              <Label htmlFor="admin_rate">Commission TAGA (%)</Label>
               <Input
                 id="admin_rate"
                 type="number"
@@ -276,7 +276,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
                 className="mt-1"
               />
               <p className="text-sm text-muted-foreground mt-1">
-                Frais retenus par Tembea par vente
+                Frais retenus par TAGA par vente
               </p>
             </div>
 
@@ -345,7 +345,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
                 <span className="font-medium">50 000 CDF</span>
               </div>
               <div className="flex justify-between">
-                <span>Commission Tembea ({newRates.admin_rate}%):</span>
+                <span>Commission TAGA ({newRates.admin_rate}%):</span>
                 <span className="text-red-600 font-medium">-{formatAmount(50000 * newRates.admin_rate / 100)}</span>
               </div>
               <div className="flex justify-between">
@@ -394,7 +394,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
             <h4 className="font-medium mb-2">Information importante:</h4>
             <p className="text-sm text-muted-foreground">
               Les frais de livraison sont payés par le client en plus du prix du produit. 
-              Ces frais ne sont pas soumis à la commission Tembea.
+              Ces frais ne sont pas soumis à la commission TAGA.
             </p>
           </div>
 
@@ -421,7 +421,7 @@ export const MarketplaceCommissionManager: React.FC = () => {
                 <h4 className="font-medium mb-2">Commission Marketplace</h4>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
-                    <span>Commission Tembea:</span>
+                    <span>Commission TAGA:</span>
                     <Badge variant="outline">{commissionSettings.admin_rate}%</Badge>
                   </div>
                   <div className="flex justify-between">

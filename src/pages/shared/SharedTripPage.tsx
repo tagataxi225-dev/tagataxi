@@ -259,7 +259,7 @@ export default function SharedTripPage() {
 
         {/* Footer */}
         <div className="text-center mt-8 text-sm text-muted-foreground">
-          <p>Propulsé par Tembea</p>
+          <p>Propulsé par TAGA</p>
           <p>Plateforme de transport sécurisée</p>
         </div>
       </div>

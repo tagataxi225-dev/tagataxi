@@ -391,7 +391,7 @@ export default function SystemTestPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Shield className="h-6 w-6" />
-            🧪 Test Système Complet Tembea
+            🧪 Test Système Complet TAGA
           </CardTitle>
           <CardDescription>
             Validation automatique de tous les espaces (Food, Marketplace, Transport, Delivery, Admin)

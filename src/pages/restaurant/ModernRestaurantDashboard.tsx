@@ -223,7 +223,7 @@ export default function ModernRestaurantDashboard() {
               {restaurantProfile?.restaurant_name || 'Dashboard Restaurant'}
             </h1>
             <p className="text-sm text-muted-foreground mt-1">
-              Gérez votre restaurant Tembea Food
+              Gérez votre restaurant TAGA Food
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -276,7 +276,7 @@ export default function ModernRestaurantDashboard() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <ChefHat className="h-6 w-6 text-primary" />
-                Bienvenue sur Tembea Food !
+                Bienvenue sur TAGA Food !
               </CardTitle>
               <CardDescription>
                 Voici les prochaines étapes pour commencer à recevoir des commandes

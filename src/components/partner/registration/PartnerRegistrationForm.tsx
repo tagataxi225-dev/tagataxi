@@ -148,7 +148,7 @@ export const PartnerRegistrationForm = () => {
       // ✅ Cas 1 : Email déjà utilisé
       if (error.message === 'EMAIL_EXISTS_USE_LOGIN') {
         toast.error('Email déjà utilisé', {
-          description: 'Cet email est déjà lié à un compte Tembea. Connectez-vous d\'abord pour ajouter le rôle partenaire.',
+          description: 'Cet email est déjà lié à un compte TAGA. Connectez-vous d\'abord pour ajouter le rôle partenaire.',
           duration: 8000,
           action: {
             label: 'Se connecter',
@@ -240,7 +240,7 @@ export const PartnerRegistrationForm = () => {
           <div className="mb-6 space-y-3 animate-fade-in">
             <div className="p-4 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg">
               <p className="text-sm text-blue-800 dark:text-blue-200">
-                💡 <strong>Vous avez déjà un compte Tembea ?</strong> Pas de problème ! 
+                💡 <strong>Vous avez déjà un compte TAGA ?</strong> Pas de problème ! 
                 Vous pouvez utiliser le même email pour devenir partenaire. 
                 Utilisez le même mot de passe que votre compte existant.
               </p>
@@ -268,7 +268,7 @@ export const PartnerRegistrationForm = () => {
           </div>
           
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Devenir Partenaire Tembea
+            Devenir Partenaire TAGA
           </h1>
           
           <p className="text-gray-600 dark:text-gray-400">

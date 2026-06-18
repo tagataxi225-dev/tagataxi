@@ -47,7 +47,7 @@ export const CAMPAIGN_TEMPLATES: Record<string, CampaignData> = {
     target: 'clients',
     city: 'Kinshasa',
     headline: '🔥 Kinshasa : -50% sur ta première course !',
-    subheadline: 'Rejoins 12,000+ Kinois qui utilisent déjà Tembea',
+    subheadline: 'Rejoins 12,000+ Kinois qui utilisent déjà TAGA',
     hero_image: '/campaigns/kwenda-hero.png',
     offer: {
       bonus_credits: 2000,
@@ -66,7 +66,7 @@ export const CAMPAIGN_TEMPLATES: Record<string, CampaignData> = {
     id: 'driver-recruitment',
     target: 'drivers',
     city: 'all',
-    headline: '💰 Deviens chauffeur Tembea et gagne jusqu\'à 200,000 CDF/mois',
+    headline: '💰 Deviens chauffeur TAGA et gagne jusqu\'à 200,000 CDF/mois',
     subheadline: 'Formation gratuite • Flexibilité totale • Revenus réguliers',
     hero_image: '/campaigns/kwenda-hero.png',
     offer: {
@@ -86,7 +86,7 @@ export const CAMPAIGN_TEMPLATES: Record<string, CampaignData> = {
     id: 'lubumbashi-expansion',
     target: 'clients',
     city: 'Lubumbashi',
-    headline: '🎉 Tembea arrive à Lubumbashi !',
+    headline: '🎉 TAGA arrive à Lubumbashi !',
     subheadline: 'Profite de l\'offre de lancement exclusive',
     hero_image: '/campaigns/kwenda-hero.png',
     offer: {

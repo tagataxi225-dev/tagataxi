@@ -38,7 +38,7 @@ export const PointsConversion = () => {
       <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-sm text-muted-foreground mb-1">Mes Points Tembea</p>
+            <p className="text-sm text-muted-foreground mb-1">Mes Points TAGA</p>
             <p className="text-3xl font-bold text-primary">
               {points.total_points.toLocaleString()}
             </p>

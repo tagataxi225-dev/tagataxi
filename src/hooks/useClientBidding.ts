@@ -362,7 +362,7 @@ export const useClientBidding = ({ bookingId, estimatedPrice }: UseClientBidding
         if (prev <= 1) {
           setBiddingActive(false);
           toast.warning('⏱️ Enchère expirée', {
-            description: 'Vous pouvez augmenter votre offre ou accepter le prix Tembea'
+            description: 'Vous pouvez augmenter votre offre ou accepter le prix TAGA'
           });
           return 0;
         }

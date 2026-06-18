@@ -22,7 +22,7 @@ interface PartnerHeaderProps {
 
 export const PartnerHeader: React.FC<PartnerHeaderProps> = ({ 
   title = "Tableau de bord", 
-  subtitle = "Tembea Taxi Partner" 
+  subtitle = "TAGA Taxi Partner" 
 }) => {
   const { user, signOut } = useAuth();
   const { unreadCount } = useRealtimeNotifications();

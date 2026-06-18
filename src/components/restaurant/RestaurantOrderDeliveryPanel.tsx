@@ -263,7 +263,7 @@ export function RestaurantOrderDeliveryPanel({
               className="flex flex-col items-center gap-1.5 p-3 rounded-xl border border-border/60 bg-background/60 hover:border-primary/40 hover:bg-primary/5 transition-all text-center"
             >
               <Truck className="h-5 w-5 text-primary" />
-              <span className="text-xs font-semibold">Livreur Tembea</span>
+              <span className="text-xs font-semibold">Livreur TAGA</span>
               <span className="text-[10px] text-muted-foreground">
                 ~{estimatedPrice > 0 ? formatPrice(estimatedPrice) : '7 500 CDF'}
               </span>

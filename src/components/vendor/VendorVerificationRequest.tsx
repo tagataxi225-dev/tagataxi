@@ -137,7 +137,7 @@ export const VendorVerificationRequest = () => {
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Store className="h-6 w-6 text-primary" />
-          Devenir vendeur sur Tembea
+          Devenir vendeur sur TAGA
         </CardTitle>
       </CardHeader>
 
@@ -154,7 +154,7 @@ export const VendorVerificationRequest = () => {
               <li className={identityVerified ? "text-green-600" : ""}>
                 {identityVerified ? "✅" : "❌"} Pièce d'identité validée
               </li>
-              <li>✅ Compte Tembea vérifié</li>
+              <li>✅ Compte TAGA vérifié</li>
               <li>✅ Conditions générales acceptées</li>
             </ul>
           </AlertDescription>

@@ -118,7 +118,7 @@ const SoftServiceCard: React.FC<SoftServiceCardProps> = ({
             "font-black text-[13px] leading-tight transition-colors",
             isSelected ? "text-primary" : "text-foreground"
           )}>
-            {name.replace('Tembea ', '')}
+            {name.replace('TAGA ', '')}
           </h3>
           
           <div className="flex items-center gap-1 opacity-70">

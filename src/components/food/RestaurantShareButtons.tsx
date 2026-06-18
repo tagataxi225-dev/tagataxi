@@ -27,7 +27,7 @@ export const RestaurantShareButtons: React.FC<RestaurantShareButtonsProps> = ({
 
   const restaurantUrl = getRestaurantUrl(restaurantId);
   
-  const shareMessage = `💥 ${restaurantName} est en ligne sur Tembea Food !
+  const shareMessage = `💥 ${restaurantName} est en ligne sur TAGA Food !
 
 Découvre notre menu, passe ta commande et fais-toi livrer où que tu sois 🍽️✨
 
@@ -37,7 +37,7 @@ ${cuisineType ? `👨‍🍳 Cuisine ${cuisineType}\n` : ''}⭐ Note ${rating.to
 
 👉 Commande maintenant : ${restaurantUrl}`;
   
-  const shortMessage = `Restaurant ${restaurantName} sur Tembea Food - ${restaurantUrl}`;
+  const shortMessage = `Restaurant ${restaurantName} sur TAGA Food - ${restaurantUrl}`;
 
   const handleWhatsAppShare = () => {
     console.log('[RestaurantShare] Shared via WhatsApp:', { restaurantId, restaurantName, timestamp: new Date().toISOString() });
@@ -47,7 +47,7 @@ ${cuisineType ? `👨‍🍳 Cuisine ${cuisineType}\n` : ''}⭐ Note ${rating.to
 
   const handleFacebookShare = () => {
     console.log('[RestaurantShare] Shared via Facebook:', { restaurantId, restaurantName });
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(restaurantUrl)}&quote=${encodeURIComponent(`Restaurant ${restaurantName} sur Tembea Food`)}`;
+    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(restaurantUrl)}&quote=${encodeURIComponent(`Restaurant ${restaurantName} sur TAGA Food`)}`;
     window.open(url, '_blank');
   };
 
@@ -63,7 +63,7 @@ ${cuisineType ? `👨‍🍳 Cuisine ${cuisineType}\n` : ''}⭐ Note ${rating.to
   };
 
   const handleEmail = () => {
-    const subject = `Restaurant ${restaurantName} sur Tembea Food`;
+    const subject = `Restaurant ${restaurantName} sur TAGA Food`;
     const url = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(shareMessage)}`;
     window.open(url, '_self');
   };

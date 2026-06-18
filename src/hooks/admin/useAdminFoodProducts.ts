@@ -83,7 +83,7 @@ export const useAdminFoodProducts = () => {
         await supabase.from('delivery_notifications').insert({
           user_id: product.restaurant.user_id,
           title: '✅ Produit approuvé',
-          message: `Votre plat "${product.name}" est maintenant visible sur Tembea Food`,
+          message: `Votre plat "${product.name}" est maintenant visible sur TAGA Food`,
           notification_type: 'product_approved',
         });
       }

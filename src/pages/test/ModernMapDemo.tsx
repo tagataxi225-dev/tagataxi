@@ -39,7 +39,7 @@ export default function ModernMapDemo() {
           <div className="flex items-center justify-center gap-2">
             <Sparkles className="h-8 w-8 text-primary" />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Tembea Modern Map 2025
+              TAGA Modern Map 2025
             </h1>
           </div>
           <p className="text-muted-foreground max-w-2xl mx-auto">

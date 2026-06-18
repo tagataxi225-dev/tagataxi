@@ -206,7 +206,7 @@ export function RestaurantImageSettings({ onImageUpdate }: RestaurantImageSettin
       setTimeout(() => {
         toast({
           title: '🔄 Mise à jour complète',
-          description: 'Votre restaurant a été rafraîchi dans Tembea Food'
+          description: 'Votre restaurant a été rafraîchi dans TAGA Food'
         });
       }, 500);
     } catch (error: any) {

@@ -47,7 +47,7 @@ export const DriverOfferSheet = ({
 
   const quickPrices = [
     { label: '-10%', value: Math.floor(estimatedPrice * 0.9), icon: TrendingDown },
-    { label: 'Tembea', value: estimatedPrice, icon: Zap },
+    { label: 'TAGA', value: estimatedPrice, icon: Zap },
     { label: '+10%', value: Math.ceil(estimatedPrice * 1.1), icon: TrendingUp },
   ];
 

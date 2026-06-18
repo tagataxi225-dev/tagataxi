@@ -69,7 +69,7 @@ export const RideCommissionDetails = ({ commission }: RideCommissionDetailsProps
           <div className="flex items-center justify-between pl-6">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span className="text-sm">Tembea ({commission.kwenda_rate}%)</span>
+              <span className="text-sm">TAGA ({commission.kwenda_rate}%)</span>
             </div>
             <span className="text-sm font-medium text-destructive">
               -{formatAmount(commission.kwenda_commission)} CDF

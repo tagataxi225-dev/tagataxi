@@ -115,7 +115,7 @@ export const ClientOrderCard = ({ order, onConfirmReceived }: ClientOrderCardPro
                 )}
                 {order.vendor_delivery_method && (
                   <Badge variant="outline" className="text-xs">
-                    {order.vendor_delivery_method === 'kwenda' ? '🚚 Tembea' : '📦 Vendeur'}
+                    {order.vendor_delivery_method === 'kwenda' ? '🚚 TAGA' : '📦 Vendeur'}
                   </Badge>
                 )}
               </div>

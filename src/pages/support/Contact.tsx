@@ -57,7 +57,7 @@ const Contact = () => {
           </Badge>
           <h1 className="text-display-lg">Comment pouvons-nous vous aider ?</h1>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Notre équipe est là pour répondre à toutes vos questions sur Tembea Taxi
+            Notre équipe est là pour répondre à toutes vos questions sur TAGA Taxi
           </p>
         </div>
 
@@ -164,7 +164,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold">Tembea Taxi SARL</h4>
+                  <h4 className="font-semibold">TAGA Taxi SARL</h4>
                   <p className="text-sm text-muted-foreground">
                     Avenue de l'Université<br />
                     Commune de Kinshasa<br />

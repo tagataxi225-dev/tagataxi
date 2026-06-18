@@ -69,7 +69,7 @@ const SignalerProbleme = () => {
 
   const emergencyContacts = [
     {
-      service: "Urgence Tembea",
+      service: "Urgence TAGA",
       number: "08 58 04 04 00",
       description: "Support prioritaire 24h/24",
       availability: "24h/24, 7j/7"

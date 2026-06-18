@@ -49,8 +49,8 @@ export const UserGuides: React.FC = () => {
   const guides: Record<string, UserGuide> = {
     client: {
       id: 'client',
-      title: 'Guide Client - Tembea Taxi',
-      description: 'Apprenez à utiliser Tembea Taxi pour vos déplacements à Kinshasa',
+      title: 'Guide Client - TAGA Taxi',
+      description: 'Apprenez à utiliser TAGA Taxi pour vos déplacements à Kinshasa',
       icon: User,
       difficulty: 'Débutant',
       estimatedTime: '10 minutes',
@@ -58,9 +58,9 @@ export const UserGuides: React.FC = () => {
         {
           id: 'getting-started',
           title: 'Premiers pas',
-          content: 'Découvrez comment créer votre compte et configurer votre profil sur Tembea Taxi.',
+          content: 'Découvrez comment créer votre compte et configurer votre profil sur TAGA Taxi.',
           steps: [
-            'Téléchargez l\'application Tembea Taxi depuis le Play Store ou App Store',
+            'Téléchargez l\'application TAGA Taxi depuis le Play Store ou App Store',
             'Créez votre compte avec votre numéro de téléphone',
             'Vérifiez votre numéro par SMS',
             'Complétez votre profil avec vos informations personnelles',
@@ -133,8 +133,8 @@ export const UserGuides: React.FC = () => {
     },
     driver: {
       id: 'driver',
-      title: 'Guide Chauffeur - Tembea Driver',
-      description: 'Maximisez vos gains en tant que chauffeur partenaire Tembea',
+      title: 'Guide Chauffeur - TAGA Driver',
+      description: 'Maximisez vos gains en tant que chauffeur partenaire TAGA',
       icon: Car,
       difficulty: 'Intermédiaire',
       estimatedTime: '20 minutes',
@@ -142,9 +142,9 @@ export const UserGuides: React.FC = () => {
         {
           id: 'registration',
           title: 'Inscription et Validation',
-          content: 'Processus complet pour devenir chauffeur Tembea.',
+          content: 'Processus complet pour devenir chauffeur TAGA.',
           steps: [
-            'Téléchargez l\'application Tembea Driver',
+            'Téléchargez l\'application TAGA Driver',
             'Créez votre compte chauffeur',
             'Téléchargez vos documents (permis, carte grise, assurance)',
             'Prenez des photos de votre véhicule',
@@ -161,7 +161,7 @@ export const UserGuides: React.FC = () => {
         {
           id: 'earning-system',
           title: 'Système de Gains et Crédits',
-          content: 'Comprenez comment fonctionnent vos revenus sur Tembea.',
+          content: 'Comprenez comment fonctionnent vos revenus sur TAGA.',
           steps: [
             'Rechargez votre compte crédits pour rester visible',
             'Chaque course consomme des crédits selon la zone',
@@ -227,9 +227,9 @@ export const UserGuides: React.FC = () => {
         {
           id: 'partner-setup',
           title: 'Configuration Partenaire',
-          content: 'Devenez partenaire Tembea et configurez votre espace de gestion.',
+          content: 'Devenez partenaire TAGA et configurez votre espace de gestion.',
           steps: [
-            'Contactez l\'équipe Tembea pour une demande de partenariat',
+            'Contactez l\'équipe TAGA pour une demande de partenariat',
             'Fournissez vos documents d\'entreprise',
             'Signez l\'accord de partenariat',
             'Recevez vos accès à l\'interface partenaire',
@@ -267,8 +267,8 @@ export const UserGuides: React.FC = () => {
     },
     admin: {
       id: 'admin',
-      title: 'Guide Administrateur - Plateforme Tembea',
-      description: 'Administration complète de la plateforme Tembea Taxi',
+      title: 'Guide Administrateur - Plateforme TAGA',
+      description: 'Administration complète de la plateforme TAGA Taxi',
       icon: Shield,
       difficulty: 'Avancé',
       estimatedTime: '45 minutes',
@@ -341,10 +341,10 @@ export const UserGuides: React.FC = () => {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Book className="h-5 w-5" />
-            Guides d'Utilisation Tembea
+            Guides d'Utilisation TAGA
           </CardTitle>
           <p className="text-muted-foreground">
-            Documentation complète pour tous les utilisateurs de la plateforme Tembea
+            Documentation complète pour tous les utilisateurs de la plateforme TAGA
           </p>
         </CardHeader>
       </Card>

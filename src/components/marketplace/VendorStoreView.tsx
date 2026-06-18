@@ -471,7 +471,7 @@ export const VendorStoreView: React.FC<VendorStoreViewProps> = ({
           </Badge>
         )}
         <p className="text-sm text-gray-500 mt-1 text-center line-clamp-2 max-w-sm">
-          {vendor?.shop_description || vendor?.bio || 'Vendeur certifié Tembea'}
+          {vendor?.shop_description || vendor?.bio || 'Vendeur certifié TAGA'}
         </p>
 
         {/* 3) Stats pills ────────────────────────────────────────── */}

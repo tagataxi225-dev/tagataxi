@@ -50,7 +50,7 @@ export const ServiceWelcomeCarousel = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <DrawerTitle className="sr-only">Services Tembea</DrawerTitle>
+        <DrawerTitle className="sr-only">Services TAGA</DrawerTitle>
         <DrawerDescription className="sr-only">
           Découvrez tous nos services : Food, Shop, Transport et Loterie
         </DrawerDescription>

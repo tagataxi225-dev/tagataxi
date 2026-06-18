@@ -92,7 +92,7 @@ export const PartnerTeamManager = ({ partnerId }: PartnerTeamManagerProps) => {
                     placeholder="jean@example.com"
                   />
                   <p className="text-xs text-muted-foreground">
-                    L'utilisateur doit déjà avoir un compte Tembea
+                    L'utilisateur doit déjà avoir un compte TAGA
                   </p>
                 </div>
                 <div className="space-y-2">

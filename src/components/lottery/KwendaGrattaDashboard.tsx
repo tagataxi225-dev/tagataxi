@@ -120,7 +120,7 @@ export const KwendaGrattaDashboard: React.FC<KwendaGrattaDashboardProps> = ({
               </div>
               <div className="flex-1">
                 <h2 className="text-base font-semibold text-foreground">
-                  Continue d'utiliser Tembea !
+                  Continue d'utiliser TAGA !
                 </h2>
                 <p className="text-sm text-muted-foreground">
                   Plus que <span className="text-primary font-semibold">{progress.actionsRemaining}</span> actions pour ta prochaine carte

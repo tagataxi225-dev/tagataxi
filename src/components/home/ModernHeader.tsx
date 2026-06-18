@@ -98,38 +98,59 @@ export const ModernHeader = ({}: ModernHeaderProps) => {
     return () => ro.disconnect();
   }, []);
 
+  const firstName = profileLoading ? '...' : (displayName?.split(' ')[0] || '');
+  const initials = profileLoading
+    ? '…'
+    : ((displayName || '')
+        .split(' ')
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((w) => w[0])
+        .join('')
+        .toUpperCase() || '?');
+
   return (
     <header ref={headerRef} id="main-header" className="fixed top-0 left-0 right-0 z-[150] bg-background/95 backdrop-blur-xl border-b border-border/20" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
       <div className="px-4 py-2.5">
         <div className="flex items-center justify-between gap-3 min-h-[48px]">
-          {/* Zone gauche: Greeting + Nom + Position */}
-          <div className="flex flex-col items-start min-w-0">
-            <div className="flex items-baseline gap-1.5">
-              <span className="text-[10px] font-semibold text-primary/70 uppercase tracking-wider whitespace-nowrap">
-                {getGreeting()}
-              </span>
-              <span className="text-lg font-extrabold text-foreground truncate max-w-[130px] leading-tight">
-                {profileLoading ? '...' : displayName.split(' ')[0]}
-              </span>
+          {/* Zone gauche: Avatar + Greeting + Nom + Position (app-top TAGA) */}
+          <div className="flex items-center gap-3 min-w-0">
+            {/* Avatar initiales — dégradé navy (ancrage premium TAGA) */}
+            <div
+              className="flex items-center justify-center w-11 h-11 rounded-full text-white text-[13px] font-extrabold shrink-0 shadow-sm"
+              style={{ background: 'linear-gradient(135deg, hsl(var(--secondary-light)), hsl(var(--secondary)))' }}
+              aria-hidden="true"
+            >
+              {initials}
             </div>
 
-            {/* Position: toujours visible, montre l'adresse ou le statut */}
-            <button
-              onClick={() => setLocationSheetOpen(true)}
-              className="flex items-center gap-1 text-[10px] text-muted-foreground hover:text-foreground transition-colors mt-0.5"
-            >
-              <MapPin className="h-2.5 w-2.5 text-primary/60 shrink-0" />
-              <span className="truncate max-w-[160px]">
-                {geocodingLoading
-                  ? t('client.locating')
-                  : currentAddress || t('client.my_position')}
+            <div className="flex flex-col items-start min-w-0">
+              <span className="text-[11px] font-semibold text-muted-foreground whitespace-nowrap leading-tight">
+                {getGreeting()} 👋
               </span>
-              <ChevronDown className="h-2.5 w-2.5 text-primary/40" />
-            </button>
+              <span className="text-base font-extrabold text-foreground truncate max-w-[150px] leading-tight tracking-tight">
+                {firstName}
+              </span>
+
+              {/* Position: toujours visible, montre l'adresse ou le statut */}
+              <button
+                type="button"
+                onClick={() => setLocationSheetOpen(true)}
+                className="flex items-center gap-1 text-[10px] text-muted-foreground hover:text-foreground transition-colors mt-0.5"
+              >
+                <MapPin className="h-2.5 w-2.5 text-primary shrink-0" />
+                <span className="truncate max-w-[150px]">
+                  {geocodingLoading
+                    ? t('client.locating')
+                    : currentAddress || t('client.my_position')}
+                </span>
+                <ChevronDown className="h-2.5 w-2.5 text-primary/50" />
+              </button>
+            </div>
           </div>
 
           {/* Zone droite: Icônes */}
-          <div className="flex items-center gap-1 bg-muted/40 backdrop-blur-sm rounded-2xl px-2 py-1.5 border border-border/15 shadow-sm">
+          <div className="flex items-center gap-1 bg-muted/40 backdrop-blur-sm rounded-2xl px-2 py-1.5 border border-border/15 shadow-sm shrink-0">
             <NotificationCenter />
             <div className="w-px h-4 bg-border/20" />
             <SeasonalThemeSelector />

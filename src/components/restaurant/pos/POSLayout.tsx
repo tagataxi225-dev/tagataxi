@@ -115,7 +115,7 @@ export const POSLayout = () => {
         <Button variant="ghost" size="icon" onClick={() => navigate('/restaurant')}>
           <ArrowLeft className="h-5 w-5" />
         </Button>
-        <h1 className="text-xl font-bold">Caisse Tembea POS</h1>
+        <h1 className="text-xl font-bold">Caisse TAGA POS</h1>
         <Button variant="ghost" size="icon" onClick={toggleFullscreen}>
           {fullscreen ? <Minimize2 className="h-5 w-5" /> : <Maximize2 className="h-5 w-5" />}
         </Button>

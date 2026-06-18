@@ -88,7 +88,7 @@ export class TransportErrorBoundary extends React.Component<Props, State> {
               </div>
 
               <p className="text-xs text-muted-foreground mt-4">
-                Si le problème persiste, contactez le support Tembea
+                Si le problème persiste, contactez le support TAGA
               </p>
             </CardContent>
           </Card>

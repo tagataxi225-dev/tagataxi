@@ -70,7 +70,7 @@ const HorizontalServiceSelector: React.FC<HorizontalServiceSelectorProps> = ({
           <div className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md flex items-center gap-2 shadow-sm">
             <Check className="w-3.5 h-3.5 text-primary stroke-[3]" />
             <span className="text-[13px] font-bold text-primary">
-              {selectedService.name.replace('Tembea ', '')}
+              {selectedService.name.replace('TAGA ', '')}
               {pricing[selectedService.id] && !loadingPricing && (
                 <span className="ml-2 px-2 py-0.5 bg-primary/20 rounded-md">
                   {new Intl.NumberFormat('fr-CD', {

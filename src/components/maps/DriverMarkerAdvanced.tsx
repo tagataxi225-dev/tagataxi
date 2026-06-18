@@ -111,7 +111,7 @@ export default function DriverMarkerAdvanced({
             <!-- Fenêtres -->
             <rect x="-10" y="-20" width="20" height="12" rx="2" fill="#3b82f6" opacity="0.4"/>
             
-            <!-- Capot avec accent Tembea -->
+            <!-- Capot avec accent TAGA -->
             <path d="M -10 -20 L -8 -8 L 8 -8 L 10 -20 Z" 
                   fill="url(#grad-accent)" 
                   opacity="0.9"/>

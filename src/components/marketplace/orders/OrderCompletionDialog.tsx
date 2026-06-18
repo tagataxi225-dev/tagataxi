@@ -119,7 +119,7 @@ export const OrderCompletionDialog = ({
           {/* Info importante */}
           <div className="p-3 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 rounded-lg">
             <p className="text-xs text-blue-800 dark:text-blue-200">
-              💰 En confirmant, le paiement sera <strong>immédiatement libéré</strong> au vendeur (95% du montant, commission Tembea de 5%).
+              💰 En confirmant, le paiement sera <strong>immédiatement libéré</strong> au vendeur (95% du montant, commission TAGA de 5%).
             </p>
           </div>
 

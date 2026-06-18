@@ -14,7 +14,7 @@ const ClientLocationLanding = () => {
   return (
     <div className="space-y-6">
       <div className="text-center py-12">
-        <h1 className="text-4xl font-bold mb-4">Location de Véhicules Tembea</h1>
+        <h1 className="text-4xl font-bold mb-4">Location de Véhicules TAGA</h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Louez le véhicule parfait pour vos besoins à Kinshasa, Lubumbashi et Kolwezi. 
           Des tarifs transparents, des véhicules de qualité et un service fiable.

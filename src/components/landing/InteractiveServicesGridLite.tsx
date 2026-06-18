@@ -50,7 +50,7 @@ const InteractiveServicesGridLite = () => {
     {
       id: "food",
       icon: <UtensilsCrossed className="w-8 h-8" />,
-      title: "Tembea Food",
+      title: "TAGA Food",
       description: "Restaurants locaux, livraison rapide",
       price: "Commission 5%",
       new: true,

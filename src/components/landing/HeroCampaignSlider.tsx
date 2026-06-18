@@ -12,12 +12,12 @@ const slides = [
   {
     id: 1,
     image: campaignClient,
-    alt: 'Tembea - Simplifiez vos trajets, profitez de chaque instant',
+    alt: 'TAGA - Simplifiez vos trajets, profitez de chaque instant',
   },
   {
     id: 2,
     image: campaignDelivery,
-    alt: 'Devenez livreur Tembea et gagnez plus rapidement',
+    alt: 'Devenez livreur TAGA et gagnez plus rapidement',
   }
 ];
 

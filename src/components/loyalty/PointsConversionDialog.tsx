@@ -39,7 +39,7 @@ export const PointsConversionDialog: React.FC<PointsConversionDialogProps> = ({ 
             <div className="p-2 rounded-xl bg-primary/10">
               <Gift className="w-5 h-5 text-primary" />
             </div>
-            Convertir mes Points Tembea
+            Convertir mes Points TAGA
           </DrawerTitle>
         </DrawerHeader>
 
@@ -68,7 +68,7 @@ export const PointsConversionDialog: React.FC<PointsConversionDialogProps> = ({ 
               <div>
                 <p className="font-semibold text-foreground">Pas encore assez de points</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Gagnez des points en effectuant des courses, livraisons et achats sur Tembea. Minimum 50 points requis.
+                  Gagnez des points en effectuant des courses, livraisons et achats sur TAGA. Minimum 50 points requis.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-2 pt-2">
@@ -137,7 +137,7 @@ export const PointsConversionDialog: React.FC<PointsConversionDialogProps> = ({ 
               {/* Info */}
               <div className="bg-congo-yellow/5 border border-congo-yellow/20 p-3.5 rounded-xl">
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  💡 <strong>Important :</strong> Le Solde Bonus est utilisable pour les courses, livraisons et achats Tembea. Il n'est pas retirable.
+                  💡 <strong>Important :</strong> Le Solde Bonus est utilisable pour les courses, livraisons et achats TAGA. Il n'est pas retirable.
                 </p>
               </div>
 

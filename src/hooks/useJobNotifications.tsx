@@ -179,7 +179,7 @@ export const useJobNotifications = () => {
           // Envoyer une notification push native si disponible
           if ('Notification' in window && Notification.permission === 'granted') {
             try {
-              new Notification('Nouvelle offre Tembea Job', {
+              new Notification('Nouvelle offre TAGA Job', {
                 body: `${job.title} - ${job.company_name} (${job.location_city})`,
                 icon: '/icons/icon-192x192.png',
                 tag: `job-${job.id}`,

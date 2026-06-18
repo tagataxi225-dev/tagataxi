@@ -247,8 +247,8 @@ export const ZoneImportExport: React.FC<ZoneImportExportProps> = ({
     return `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Zones Tembea</name>
-    <description>Zones de service Tembea</description>${placemarks}
+    <name>Zones TAGA</name>
+    <description>Zones de service TAGA</description>${placemarks}
   </Document>
 </kml>`
   }

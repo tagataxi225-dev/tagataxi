@@ -49,7 +49,7 @@ const STATUS: Record<RideStatus, { label: string; sub: string; color: string; do
   arriving:  { label: 'Le chauffeur arrive',      sub: 'Préparez-vous à monter',                color: '#0A84FF', dot: '#0A84FF' },
   arrived:   { label: 'Le chauffeur est arrivé',  sub: 'Il vous attend',                        color: '#30D158', dot: '#30D158' },
   en_route:  { label: 'En route vers destination', sub: 'Bonne route !',                        color: '#0A84FF', dot: '#0A84FF' },
-  completed: { label: 'Course terminée',           sub: 'Merci d\'avoir utilisé Tembea',         color: '#30D158', dot: '#30D158' },
+  completed: { label: 'Course terminée',           sub: 'Merci d\'avoir utilisé TAGA',         color: '#30D158', dot: '#30D158' },
 };
 
 const FREE_MIN = 5;

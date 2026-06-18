@@ -68,8 +68,8 @@ class BackgroundGeolocationService {
     try {
       // Configuration optimale pour chauffeur taxi
       const config: WatcherOptions = {
-        backgroundMessage: "Tembea suit votre position pour les courses à proximité.",
-        backgroundTitle: "Tembea Chauffeur en ligne",
+        backgroundMessage: "TAGA suit votre position pour les courses à proximité.",
+        backgroundTitle: "TAGA Chauffeur en ligne",
         requestPermissions: true,
         stale: false,
         distanceFilter: 10, // Mettre à jour tous les 10 mètres minimum

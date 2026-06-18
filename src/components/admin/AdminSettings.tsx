@@ -231,7 +231,7 @@ export const AdminSettings: React.FC = () => {
         <div>
           <h1 className="text-3xl font-bold">Paramètres Admin</h1>
           <p className="text-muted-foreground">
-            Configuration générale de l'application Tembea Transport
+            Configuration générale de l'application TAGA Transport
           </p>
         </div>
         <Button onClick={loadAllSettings} variant="outline" disabled={loading}>

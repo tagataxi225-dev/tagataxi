@@ -50,7 +50,7 @@ export const RateAppCard = ({ className, compact = false }: RateAppCardProps) =>
           <Star className="h-6 w-6 text-white" fill="white" />
         </div>
         <div className="flex-1 text-left">
-          <div className="font-semibold text-sm">Noter Tembea</div>
+          <div className="font-semibold text-sm">Noter TAGA</div>
           <div className="text-xs text-muted-foreground">
             {hasRated ? 'Merci pour votre avis !' : `Sur ${storeInfo.name}`}
           </div>
@@ -83,7 +83,7 @@ export const RateAppCard = ({ className, compact = false }: RateAppCardProps) =>
             <Heart className="h-7 w-7 text-white" fill="white" />
           </div>
           <div>
-            <h3 className="font-bold">Vous aimez Tembea ?</h3>
+            <h3 className="font-bold">Vous aimez TAGA ?</h3>
             <p className="text-sm text-muted-foreground">Votre avis compte !</p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export const RateAppCard = ({ className, compact = false }: RateAppCardProps) =>
         <p className="text-sm text-muted-foreground mb-4">
           {hasRated 
             ? 'Merci pour votre évaluation ! Vous pouvez modifier votre avis à tout moment.'
-            : 'Partagez votre expérience et aidez-nous à améliorer Tembea pour la communauté.'}
+            : 'Partagez votre expérience et aidez-nous à améliorer TAGA pour la communauté.'}
         </p>
 
         {/* Button */}

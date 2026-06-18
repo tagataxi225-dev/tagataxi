@@ -51,7 +51,7 @@ export const DownloadReceiptButton = ({
       const receiptData = {
         orderNumber: order.order_number,
         orderDate: order.created_at,
-        customerName: profile?.display_name || 'Client Tembea',
+        customerName: profile?.display_name || 'Client TAGA',
         customerPhone: profile?.phone_number || order.delivery_phone || 'N/A',
         restaurantName: restaurant?.restaurant_name || 'Restaurant',
         restaurantAddress: restaurant?.address || '',

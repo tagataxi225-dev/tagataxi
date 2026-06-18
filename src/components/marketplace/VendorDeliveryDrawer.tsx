@@ -177,7 +177,7 @@ export const VendorDeliveryDrawer = ({
                 <Truck className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <DrawerTitle className="text-lg">Tembea Delivery</DrawerTitle>
+                <DrawerTitle className="text-lg">TAGA Delivery</DrawerTitle>
                 <p className="text-xs text-muted-foreground">Commander un livreur</p>
               </div>
             </div>

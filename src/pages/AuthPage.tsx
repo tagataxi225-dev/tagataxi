@@ -431,7 +431,7 @@ const AuthPage = ({ onAuthSuccess }: AuthPageProps) => {
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
           <h1 className="text-3xl font-bold">Interface d'Administration</h1>
-          <p className="text-muted-foreground">Tembea - Gestion des Services</p>
+          <p className="text-muted-foreground">TAGA - Gestion des Services</p>
         </div>
 
         <Tabs defaultValue="login" className="space-y-4">

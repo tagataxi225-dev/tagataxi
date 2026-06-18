@@ -247,7 +247,7 @@ class UnifiedNotificationService {
       },
       completed: { 
         title: '✅ Course terminée', 
-        message: details || 'Merci d\'avoir utilisé Tembea !',
+        message: details || 'Merci d\'avoir utilisé TAGA !',
         priority: 'normal'
       }
     };

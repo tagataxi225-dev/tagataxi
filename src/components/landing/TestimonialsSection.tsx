@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
       name: "Marie Kalala",
       role: "Étudiante",
       location: "Gombe, Kinshasa",
-      content: "Tembea Taxi a révolutionné mes déplacements ! Fini les négociations interminables avec les taxis. L'app est simple, les prix transparents et je peux payer avec mon Airtel Money.",
+      content: "TAGA Taxi a révolutionné mes déplacements ! Fini les négociations interminables avec les taxis. L'app est simple, les prix transparents et je peux payer avec mon Airtel Money.",
       rating: 5,
       service: "Transport VTC",
       avatar: "👩🏿‍🎓",
@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
       name: "Jean-Baptiste Mukendi",
       role: "Chauffeur Partenaire",
       location: "Lubumbashi, Haut-Katanga",
-      content: "Tembea m'a ouvert de nouveaux horizons à Lubumbashi ! Les revenus sont stables et je peux maintenant subvenir aux besoins de ma famille. L'équipe support est fantastique.",
+      content: "TAGA m'a ouvert de nouveaux horizons à Lubumbashi ! Les revenus sont stables et je peux maintenant subvenir aux besoins de ma famille. L'équipe support est fantastique.",
       rating: 5,
       service: "Partenaire Chauffeur",
       avatar: "👨🏿‍💼",
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
       name: "Grâce Nzuzi",
       role: "Commerçante",
       location: "Kolwezi, Lualaba",
-      content: "Depuis Kolwezi, je vends maintenant dans toute la province ! Tembea Shop m'a connectée à des clients de Lubumbashi et même Kinshasa. Un succès incroyable !",
+      content: "Depuis Kolwezi, je vends maintenant dans toute la province ! TAGA Shop m'a connectée à des clients de Lubumbashi et même Kinshasa. Un succès incroyable !",
       rating: 5,
       service: "Marketplace",
       avatar: "👩🏿‍💼",
@@ -41,9 +41,9 @@ const TestimonialsSection = () => {
       name: "Patient Mbemba",
       role: "Entrepreneur",
       location: "Ngaliema, Kinshasa",
-      content: "La tombola Tembea, c'est génial ! J'ai déjà gagné 50 000 CDF le mois dernier. En plus des courses pratiques, on peut gagner de l'argent. Une vraie innovation !",
+      content: "La tombola TAGA, c'est génial ! J'ai déjà gagné 50 000 CDF le mois dernier. En plus des courses pratiques, on peut gagner de l'argent. Une vraie innovation !",
       rating: 5,
-      service: "Tembea Tombola",
+      service: "TAGA Tombola",
       avatar: "👨🏿‍💻",
       verified: true
     },
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
       name: "Solange Kongo",
       role: "Mère de famille",
       location: "Masina, Kinshasa",
-      content: "Avec Tembea, j'envoie mes courses et mes documents en livraison express. Le suivi en temps réel me rassure totalement. Service impeccable et tarifs abordables !",
+      content: "Avec TAGA, j'envoie mes courses et mes documents en livraison express. Le suivi en temps réel me rassure totalement. Service impeccable et tarifs abordables !",
       rating: 5,
       service: "Livraison Express",
       avatar: "👩🏿‍🍳",
@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
             Ce que disent nos utilisateurs
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            Découvrez comment Tembea Taxi transforme la vie quotidienne dans les 3 grandes villes du Congo :
+            Découvrez comment TAGA Taxi transforme la vie quotidienne dans les 3 grandes villes du Congo :
             Kinshasa, Lubumbashi et Kolwezi.
           </p>
         </div>

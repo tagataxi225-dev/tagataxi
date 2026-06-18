@@ -41,7 +41,7 @@ interface DeliveryPricing {
 const deliveryServices: DeliveryService[] = [
   {
     id: 'flash',
-    name: 'Tembea Flash',
+    name: 'TAGA Flash',
     subtitle: 'Express',
     description: 'Rapide et urgent',
     icon: Zap,
@@ -50,7 +50,7 @@ const deliveryServices: DeliveryService[] = [
   },
   {
     id: 'flex',
-    name: 'Tembea Flex',
+    name: 'TAGA Flex',
     subtitle: 'Standard',
     description: 'Équilibré',
     icon: Package,
@@ -59,7 +59,7 @@ const deliveryServices: DeliveryService[] = [
   },
   {
     id: 'maxicharge',
-    name: 'Tembea MaxiCharge',
+    name: 'TAGA MaxiCharge',
     subtitle: 'Gros colis',
     description: 'Volumineux',
     icon: Truck,

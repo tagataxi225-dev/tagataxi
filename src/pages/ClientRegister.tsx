@@ -187,7 +187,7 @@ const ClientRegister = () => {
               </div>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 via-rose-800 to-gray-900 dark:from-white dark:via-rose-200 dark:to-white bg-clip-text text-transparent">
-              Rejoignez Tembea
+              Rejoignez TAGA
             </h1>
             <p className="text-sm text-muted-foreground">
               Créez votre compte et profitez de courses abordables

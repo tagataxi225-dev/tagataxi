@@ -108,7 +108,7 @@ export const ModernPartnerHeader = ({
               )}
             </div>
             <p className="text-xs text-muted-foreground">
-              Tembea Partner Dashboard
+              TAGA Partner Dashboard
             </p>
           </div>
           </div>

@@ -23,7 +23,7 @@ interface MobilePartnerHeaderProps {
 
 export const MobilePartnerHeader: React.FC<MobilePartnerHeaderProps> = ({ 
   title = "Tableau de bord", 
-  subtitle = "Tembea Taxi Partner",
+  subtitle = "TAGA Taxi Partner",
   onMenuToggle 
 }) => {
   const { user, signOut } = useAuth();

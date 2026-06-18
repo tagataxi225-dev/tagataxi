@@ -36,7 +36,7 @@ export const usePartnerRegistrationSecure = () => {
       if (existingUser) {
         console.log('⚠️ Email already exists, user must sign in first');
         toast.error('Cet email est déjà utilisé', {
-          description: 'Si vous possédez déjà un compte Tembea, connectez-vous d\'abord puis ajoutez le rôle partenaire depuis votre profil.',
+          description: 'Si vous possédez déjà un compte TAGA, connectez-vous d\'abord puis ajoutez le rôle partenaire depuis votre profil.',
           duration: 8000
         });
         throw new Error('EMAIL_EXISTS_USE_LOGIN');

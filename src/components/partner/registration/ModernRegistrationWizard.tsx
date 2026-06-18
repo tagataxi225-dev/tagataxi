@@ -193,7 +193,7 @@ export const ModernRegistrationWizard = () => {
             <BrandLogo size={44} />
           </div>
           <h1 className="text-2xl font-bold text-foreground mb-1">
-            Devenez Partenaire Tembea
+            Devenez Partenaire TAGA
           </h1>
           <p className="text-sm text-muted-foreground">
             Rejoignez le réseau et développez votre activité

@@ -7,7 +7,7 @@ export default function FoodTracking() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = 'Suivi de commande - Tembea Food';
+    document.title = 'Suivi de commande - TAGA Food';
   }, []);
 
   if (!orderId) {

@@ -41,7 +41,7 @@ export const SoundSettings = () => {
           Sons des notifications
         </CardTitle>
         <CardDescription>
-          Gérez les préférences audio pour vos notifications Tembea
+          Gérez les préférences audio pour vos notifications TAGA
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">

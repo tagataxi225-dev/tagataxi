@@ -113,7 +113,7 @@ export const ActiveOrdersSection = ({ taxiBookings, deliveryOrders, onTaxiClick,
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
                         <p className="font-black text-sm text-foreground truncate">
-                          {order.type === 'taxi' ? 'Course Taxi' : 'Livraison Tembea'}
+                          {order.type === 'taxi' ? 'Course Taxi' : 'Livraison TAGA'}
                         </p>
                         {config.pulse && (
                           <span className="relative flex h-2 w-2">

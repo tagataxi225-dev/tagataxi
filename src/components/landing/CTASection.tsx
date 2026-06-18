@@ -56,7 +56,7 @@ const CTASection = () => {
         {/* Main CTA Header */}
         <div className="text-center mb-16 space-y-6">
           <Badge variant="outline" className="border-primary/30 text-primary text-lg px-6 py-2">
-            🚀 Rejoignez l'aventure Tembea !
+            🚀 Rejoignez l'aventure TAGA !
           </Badge>
           <h2 className="text-display-lg bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent">
             Prêt à transformer votre
@@ -66,7 +66,7 @@ const CTASection = () => {
             </span>
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            Que vous soyez client ou chauffeur, Tembea Taxi a la solution parfaite pour vous. 
+            Que vous soyez client ou chauffeur, TAGA Taxi a la solution parfaite pour vous. 
             Rejoignez dès aujourd'hui la communauté qui révolutionne Kinshasa, Lubumbashi et Kolwezi !
           </p>
         </div>
@@ -131,7 +131,7 @@ const CTASection = () => {
           <div className="text-center mb-6 lg:mb-8">
             <h3 className="text-xl lg:text-heading-lg mb-3 lg:mb-4 flex flex-col sm:flex-row items-center justify-center gap-2 lg:gap-3">
               <Download className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
-              <span>Téléchargez l'application Tembea Taxi</span>
+              <span>Téléchargez l'application TAGA Taxi</span>
             </h3>
             <p className="text-sm lg:text-body-md text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Accédez à tous nos services directement depuis votre smartphone. 
@@ -195,7 +195,7 @@ const CTASection = () => {
               </div>
               
               <p className="text-base lg:text-xl mb-6 lg:mb-8 leading-relaxed">
-                Tembea Taxi n'est pas juste une application, c'est un mouvement pour moderniser 
+                TAGA Taxi n'est pas juste une application, c'est un mouvement pour moderniser 
                 le transport et le commerce au Congo RDC. Ensemble, construisons l'avenir de Kinshasa, Lubumbashi et Kolwezi !
               </p>
 

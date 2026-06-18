@@ -29,7 +29,7 @@ export const JobHeader = ({ onBack, savedCount = 0, notificationCount = 0, onSav
           </Button>
           <div>
             <h1 className="text-lg font-bold bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-              Tembea Job
+              TAGA Job
             </h1>
             <p className="text-xs text-muted-foreground">Trouvez votre prochain emploi</p>
           </div>

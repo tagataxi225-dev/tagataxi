@@ -390,7 +390,7 @@ export const ProductDetailSheet = ({
                 </p>
                 <div className="flex items-center gap-1 mt-2">
                   <Check className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
-                  <span className="text-xs font-semibold text-blue-700 dark:text-blue-300">Produit vérifié Tembea</span>
+                  <span className="text-xs font-semibold text-blue-700 dark:text-blue-300">Produit vérifié TAGA</span>
                 </div>
               </div>
             </div>

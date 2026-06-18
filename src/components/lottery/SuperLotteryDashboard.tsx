@@ -243,7 +243,7 @@ export const SuperLotteryDashboard = () => {
       <Card>
         <CardHeader>
           <CardTitle>Participer</CardTitle>
-          <CardDescription>Coût : {currentDraw.entry_cost_points} Tembea Points</CardDescription>
+          <CardDescription>Coût : {currentDraw.entry_cost_points} TAGA Points</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="flex items-center justify-between p-4 rounded-lg bg-muted/50">

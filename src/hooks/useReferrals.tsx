@@ -245,7 +245,7 @@ export const useReferrals = () => {
       const baseUrl = "https://kwenda.taxi";
       
       if (stats.userType === 'driver' || stats.userType === 'admin' || stats.userType === 'partner') {
-        return `🚗💼 Deviens chauffeur sur Tembea Taxi Congo !
+        return `🚗💼 Deviens chauffeur sur TAGA Taxi Congo !
 
 Utilise mon code de parrainage : ${referralCode}
 🎁 Gagne ${stats.currentReward} CDF de bonus !
@@ -256,7 +256,7 @@ Utilise mon code de parrainage : ${referralCode}
 
 Télécharge l'app : ${baseUrl}`;
       } else {
-        return `🚗💰 Rejoins-moi sur Tembea Taxi Congo !
+        return `🚗💰 Rejoins-moi sur TAGA Taxi Congo !
 
 Utilise mon code : ${referralCode}
 🎁 Bonus de ${stats.currentReward} CDF pour toi !
@@ -274,7 +274,7 @@ Télécharge l'app : ${baseUrl}`;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: stats.userType === 'driver' ? 'Deviens chauffeur sur Tembea Taxi !' : 'Rejoins-moi sur Tembea Taxi !',
+          title: stats.userType === 'driver' ? 'Deviens chauffeur sur TAGA Taxi !' : 'Rejoins-moi sur TAGA Taxi !',
           text: referralMessage,
         });
       } catch (error) {

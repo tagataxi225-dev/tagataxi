@@ -55,7 +55,7 @@ const serviceSlides: Record<ServiceType, OnboardingSlide[]> = {
   wallet: [
     {
       title: 'TembeaPay Wallet 💰',
-      description: 'Votre portefeuille électronique pour tous vos paiements sur Tembea.'
+      description: 'Votre portefeuille électronique pour tous vos paiements sur TAGA.'
     },
     {
       title: 'Rechargez facilement',

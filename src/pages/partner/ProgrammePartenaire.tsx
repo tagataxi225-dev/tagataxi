@@ -102,13 +102,13 @@ const ProgrammePartenaire = () => {
           <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
           <div className="container mx-auto max-w-7xl text-center relative z-10">
             <Badge variant="outline" className="border-white/30 text-white mb-6">
-              🤝 Programme Partenaire Tembea
+              🤝 Programme Partenaire TAGA
             </Badge>
             <h1 className="text-display-lg mb-6">
               Rejoignez l'Écosystème
               <br />
               <span className="bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent">
-                Tembea Taxi
+                TAGA Taxi
               </span>
             </h1>
             <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
@@ -228,7 +228,7 @@ const ProgrammePartenaire = () => {
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-7xl">
             <div className="text-center mb-16">
-              <h2 className="text-display-md mb-4">Pourquoi Tembea Taxi ?</h2>
+              <h2 className="text-display-md mb-4">Pourquoi TAGA Taxi ?</h2>
               <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
                 Plus qu'un simple travail, rejoignez une famille de partenaires soutenus et valorisés
               </p>

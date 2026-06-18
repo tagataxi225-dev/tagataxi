@@ -87,7 +87,7 @@ export const usePromos = (): Promo[] => {
         {
           id: 'newYear',
           title: '🎆 Bonne Année !',
-          description: 'Commencez 2026 avec Tembea',
+          description: 'Commencez 2026 avec TAGA',
           image: '',
           gradient: 'from-amber-500 via-purple-600 to-indigo-600',
           cta: 'Découvrir',

@@ -422,7 +422,7 @@ const VendorShop: React.FC = () => {
       {/* SEO Meta Tags */}
       {profile && (
         <ShareMetaTags
-          title={`Boutique ${profile.shop_name} | Tembea Shop`}
+          title={`Boutique ${profile.shop_name} | TAGA Shop`}
           description={`Découvrez ${products.length} produits disponibles - Note ${profile.average_rating?.toFixed(1) || 0}/5`}
           image={profile.shop_logo_url || 'https://tembea.app/kwenda-splash-logo.png'}
           url={getVendorShopUrl(profile.user_id)}

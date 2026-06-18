@@ -72,7 +72,7 @@ const DevenirLivreur = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="secondary" className="mb-4">
-              Devenir Livreur Tembea
+              Devenir Livreur TAGA
             </Badge>
             <h1 className="text-display-lg">
               Livrez et gagnez dans tout <span className="text-secondary">Kinshasa</span>
@@ -169,7 +169,7 @@ const DevenirLivreur = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi livrer avec Tembea ?</h2>
+            <h2 className="text-heading-xl">Pourquoi livrer avec TAGA ?</h2>
             <p className="text-body-md text-muted-foreground">
               Les avantages de faire partie de l'équipe livraison
             </p>
@@ -282,9 +282,9 @@ const DevenirLivreur = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-secondary to-accent text-white">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <h2 className="text-heading-xl">Prêt à devenir livreur Tembea ?</h2>
+          <h2 className="text-heading-xl">Prêt à devenir livreur TAGA ?</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
-            Rejoignez des centaines de livreurs qui gagnent leur vie avec Tembea
+            Rejoignez des centaines de livreurs qui gagnent leur vie avec TAGA
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="secondary" size="lg">

@@ -247,7 +247,7 @@ export const SmartAnalytics: React.FC<SmartAnalyticsProps> = ({
                 </div>
                 <p className="text-sm text-muted-foreground">
                   L'analyse prédictive montre une tendance positive avec une confiance moyenne de 89%. 
-                  Les algorithmes d'optimisation Tembea Taxi améliorent significativement les performances 
+                  Les algorithmes d'optimisation TAGA Taxi améliorent significativement les performances 
                   opérationnelles et la satisfaction client.
                 </p>
                 

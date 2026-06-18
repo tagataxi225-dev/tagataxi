@@ -37,7 +37,7 @@ export const ModernMarketplaceHeader = ({
             </motion.div>
             <div className="hidden md:block">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-orange-500 to-destructive bg-clip-text text-transparent">
-                Tembea Shop
+                TAGA Shop
               </h1>
               <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30 mt-1">
                 <Shield className="h-3 w-3 mr-1" />

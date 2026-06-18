@@ -25,9 +25,9 @@ export const QuickShareMenu: React.FC<QuickShareMenuProps> = ({
     const referralLink = getReferralUrl(referralCode);
     
     if (userType === 'client') {
-      return `🚗 Rejoignez-moi sur Tembea avec le code ${referralCode} et obtenez ${rewardText} de crédit gratuit ! Inscrivez-vous : ${referralLink}`;
+      return `🚗 Rejoignez-moi sur TAGA avec le code ${referralCode} et obtenez ${rewardText} de crédit gratuit ! Inscrivez-vous : ${referralLink}`;
     } else {
-      return `🚕 Devenez chauffeur Tembea avec mon code ${referralCode} et obtenez ${rewardText} de bonus ! Inscription : ${referralLink}`;
+      return `🚕 Devenez chauffeur TAGA avec mon code ${referralCode} et obtenez ${rewardText} de bonus ! Inscription : ${referralLink}`;
     }
   };
 

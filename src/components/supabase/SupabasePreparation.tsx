@@ -293,7 +293,7 @@ serve(async (req) => {
 
   const generateMigrationSQL = () => {
     return `
--- Migration Tembea Taxi Congo RDC
+-- Migration TAGA Taxi Congo RDC
 -- Création des tables principales
 
 -- Extension pour UUID
@@ -468,7 +468,7 @@ CREATE INDEX idx_payment_transactions_user_id ON public.payment_transactions(use
                 Préparation Supabase Backend
               </CardTitle>
               <p className="text-sm text-muted-foreground mt-1">
-                Configuration backend complète pour Tembea Taxi Congo
+                Configuration backend complète pour TAGA Taxi Congo
               </p>
             </div>
             <Badge variant="secondary" className="bg-primary/10 text-primary">
@@ -512,7 +512,7 @@ CREATE INDEX idx_payment_transactions_user_id ON public.payment_transactions(use
                 <Alert>
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    Ce script créera toutes les tables, politiques RLS et index nécessaires pour Tembea Taxi.
+                    Ce script créera toutes les tables, politiques RLS et index nécessaires pour TAGA Taxi.
                     Exécutez-le dans l'éditeur SQL de Supabase.
                   </AlertDescription>
                 </Alert>

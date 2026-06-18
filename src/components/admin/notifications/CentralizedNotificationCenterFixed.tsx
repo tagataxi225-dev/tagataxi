@@ -91,7 +91,7 @@ export const CentralizedNotificationCenterFixed: React.FC<CentralizedNotificatio
       id: '1',
       template_name: 'welcome_email',
       template_type: 'email',
-      subject_template: 'Bienvenue sur Tembea Taxi, {{user_name}}!',
+      subject_template: 'Bienvenue sur TAGA Taxi, {{user_name}}!',
       content_template: 'Bonjour {{user_name}}, bienvenue sur notre plateforme!',
       variables: ['user_name'],
       is_active: true,

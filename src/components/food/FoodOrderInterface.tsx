@@ -257,7 +257,7 @@ export const FoodOrderInterface = ({ onOrderComplete, onBack, onCartStateChange 
         <MapPin className="w-8 h-8 text-red-500" />
       </div>
       <h3 className="text-lg font-bold text-gray-900 mb-1">Choisissez votre ville</h3>
-      <p className="text-sm text-gray-500 mb-6">Tembea Food disponible dans ces villes</p>
+      <p className="text-sm text-gray-500 mb-6">TAGA Food disponible dans ces villes</p>
       <div className="flex flex-col gap-3 w-full max-w-xs">
         {['Kinshasa', 'Lubumbashi', 'Kolwezi'].map(c => (
           <button key={c} onClick={() => setSelectedCity(c)}
@@ -419,7 +419,7 @@ export const FoodOrderInterface = ({ onOrderComplete, onBack, onCartStateChange 
             minimum_order_amount: 0
           } : {
             id: '',
-            restaurant_name: 'Tembea Food',
+            restaurant_name: 'TAGA Food',
             city: selectedCity,
             address: '',
             is_active: true,

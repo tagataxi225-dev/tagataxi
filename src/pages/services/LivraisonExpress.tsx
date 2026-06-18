@@ -137,7 +137,7 @@ const LivraisonExpress = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi choisir Tembea Livraison ?</h2>
+            <h2 className="text-heading-xl">Pourquoi choisir TAGA Livraison ?</h2>
             <p className="text-body-md text-muted-foreground">
               Un service de livraison moderne et fiable
             </p>
@@ -193,7 +193,7 @@ const LivraisonExpress = () => {
         <div className="container mx-auto px-4 text-center space-y-8">
           <h2 className="text-heading-xl">Envoyez votre premier colis</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
-            Rejoignez des milliers d'utilisateurs qui font confiance à Tembea pour leurs livraisons
+            Rejoignez des milliers d'utilisateurs qui font confiance à TAGA pour leurs livraisons
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="secondary" size="lg">

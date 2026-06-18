@@ -285,7 +285,7 @@ export function useBatteryOptimizedTracking(options: BatteryOptimizedTrackingOpt
       if (options.enableBackgroundMode && Capacitor.isNativePlatform()) {
         if (options.showNotification) {
           await LocalNotifications.schedule({
-            notifications: [{ title: 'Tembea - Tracking actif', body: 'Votre position est suivie en arrière-plan', id: 1 }]
+            notifications: [{ title: 'TAGA - Tracking actif', body: 'Votre position est suivie en arrière-plan', id: 1 }]
           });
         }
       }

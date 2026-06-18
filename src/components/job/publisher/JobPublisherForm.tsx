@@ -184,7 +184,7 @@ export const JobPublisherForm = ({
                       <Input
                         value={companyData.name}
                         onChange={(e) => setCompanyData(prev => ({ ...prev, name: e.target.value }))}
-                        placeholder="Ex: Tembea Transport"
+                        placeholder="Ex: TAGA Transport"
                         disabled={!!company}
                       />
                       {company && (

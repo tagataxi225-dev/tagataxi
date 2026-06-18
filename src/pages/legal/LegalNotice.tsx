@@ -10,7 +10,7 @@ const LegalNotice = () => {
       title: "Éditeur de l'application",
       icon: <Building2 className="w-5 h-5" />,
       content: [
-        { label: "Nom commercial", value: "Tembea Taxi" },
+        { label: "Nom commercial", value: "TAGA Taxi" },
         { label: "Forme juridique", value: "Société à Responsabilité Limitée (SARL)" },
         { label: "Siège social", value: "Kinshasa, République Démocratique du Congo" },
         { label: "Email", value: "legal@tembea.app" },
@@ -32,7 +32,7 @@ const LegalNotice = () => {
       content: [
         { label: "Développé par", value: "ITEC", link: "https://itec-sarlu.com" },
         { label: "Hébergement base de données", value: "Supabase (États-Unis)" },
-        { label: "Hébergement frontend", value: "Infrastructure Cloud Tembea (CDN Global)" },
+        { label: "Hébergement frontend", value: "Infrastructure Cloud TAGA (CDN Global)" },
         { label: "Services cartographiques", value: "Google Maps API, Mapbox" }
       ]
     }
@@ -51,7 +51,7 @@ const LegalNotice = () => {
           </Badge>
           <h1 className="text-display-lg">Mentions Légales</h1>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Informations légales concernant l'application Tembea Taxi et ses services
+            Informations légales concernant l'application TAGA Taxi et ses services
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const LegalNotice = () => {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-2">
             <p>
-              Le directeur de publication de l'application Tembea Taxi est responsable du contenu éditorial 
+              Le directeur de publication de l'application TAGA Taxi est responsable du contenu éditorial 
               et des services proposés sur la plateforme.
             </p>
             <p className="font-medium text-foreground">
@@ -121,8 +121,8 @@ const LegalNotice = () => {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-4">
             <p>
-              L'ensemble des contenus présents sur l'application Tembea Taxi (textes, images, graphismes, 
-              logo, icônes, sons, logiciels, etc.) est la propriété exclusive de Tembea Taxi ou de ses 
+              L'ensemble des contenus présents sur l'application TAGA Taxi (textes, images, graphismes, 
+              logo, icônes, sons, logiciels, etc.) est la propriété exclusive de TAGA Taxi ou de ses 
               partenaires et est protégé par les lois congolaises et internationales relatives à la 
               propriété intellectuelle.
             </p>
@@ -136,8 +136,8 @@ const LegalNotice = () => {
                 <strong>Marques déposées :</strong>
               </p>
               <ul className="mt-2 space-y-1 text-sm">
-                <li>• Tembea Taxi® - Marque déposée</li>
-                <li>• Logo Tembea - Droits réservés</li>
+                <li>• TAGA Taxi® - Marque déposée</li>
+                <li>• Logo TAGA - Droits réservés</li>
                 <li>• TembeaPay - Marque de service</li>
               </ul>
             </div>
@@ -151,12 +151,12 @@ const LegalNotice = () => {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-4">
             <p>
-              Tembea Taxi met tout en œuvre pour offrir aux utilisateurs des informations et services 
+              TAGA Taxi met tout en œuvre pour offrir aux utilisateurs des informations et services 
               fiables et de qualité. Cependant, nous ne pouvons garantir l'exactitude, la précision ou 
               l'exhaustivité des informations disponibles sur l'application.
             </p>
             <p>
-              Tembea Taxi ne saurait être tenu responsable :
+              TAGA Taxi ne saurait être tenu responsable :
             </p>
             <ul className="space-y-2 ml-6">
               <li>• Des dommages directs ou indirects causés par l'utilisation de l'application</li>
@@ -177,7 +177,7 @@ const LegalNotice = () => {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-4">
             <p>
-              Tembea Taxi accorde une grande importance à la protection de vos données personnelles. 
+              TAGA Taxi accorde une grande importance à la protection de vos données personnelles. 
               Le traitement de vos données est effectué conformément aux législations en vigueur.
             </p>
             <p>
@@ -206,7 +206,7 @@ const LegalNotice = () => {
                 <div>
                   <p className="font-medium">Adresse postale</p>
                   <p className="text-sm text-muted-foreground">
-                    Tembea Taxi<br />
+                    TAGA Taxi<br />
                     Kinshasa, République Démocratique du Congo
                   </p>
                 </div>
@@ -239,7 +239,7 @@ const LegalNotice = () => {
         <div className="mt-12 p-6 bg-muted/30 rounded-lg text-center">
           <p className="text-sm text-muted-foreground">
             Ces mentions légales ont été mises à jour le 27 octobre 2024.<br />
-            Tembea Taxi se réserve le droit de les modifier à tout moment.
+            TAGA Taxi se réserve le droit de les modifier à tout moment.
           </p>
         </div>
       </main>

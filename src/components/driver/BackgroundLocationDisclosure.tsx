@@ -46,7 +46,7 @@ export const BackgroundLocationDisclosure: React.FC<BackgroundLocationDisclosure
 
         {/* Description courte */}
         <p className="text-center text-sm text-gray-500 leading-relaxed">
-          Tembea a besoin de votre position pour vous attribuer des courses et permettre aux clients de vous suivre en temps réel. Partagée uniquement quand vous êtes en ligne.
+          TAGA a besoin de votre position pour vous attribuer des courses et permettre aux clients de vous suivre en temps réel. Partagée uniquement quand vous êtes en ligne.
         </p>
 
         {/* Boutons */}

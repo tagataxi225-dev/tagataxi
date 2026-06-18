@@ -383,7 +383,7 @@ export const DriverTransactionHistory: React.FC = () => {
                             </span>
                           </div>
                           <div className="flex justify-between text-red-600">
-                            <span>- Frais Tembea:</span>
+                            <span>- Frais TAGA:</span>
                             <span className="font-medium">
                               -{formatAmount((transaction.metadata.commission_breakdown.admin_amount || 0) + 
                                             (transaction.metadata.commission_breakdown.platform_amount || 0))}

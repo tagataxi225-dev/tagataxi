@@ -47,7 +47,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           src={brandLogo}
           width={pixelSize}
           height={pixelSize}
-          alt={alt || "Tembea Taxi Congo — logo"}
+          alt={alt || "TAGA Taxi Congo — logo"}
           className={clsx(
             "rounded-lg object-contain transition-all duration-300",
             withGlow && "drop-shadow-[0_0_15px_rgba(220,38,38,0.4)]"
@@ -68,7 +68,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       src={brandLogo}
       width={pixelSize}
       height={pixelSize}
-      alt={alt || "Tembea Taxi Congo — logo"}
+      alt={alt || "TAGA Taxi Congo — logo"}
       className={clsx(
         "rounded-lg object-contain transition-all duration-300",
         withGlow && "drop-shadow-[0_0_15px_rgba(220,38,38,0.4)]",

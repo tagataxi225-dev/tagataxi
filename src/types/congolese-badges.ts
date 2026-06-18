@@ -123,7 +123,7 @@ export const CONGOLESE_BADGES: Record<string, CongoleseBadge> = {
   roi_du_grattage: {
     id: 'roi_du_grattage',
     name: 'Roi du Grattage',
-    description: 'Maître absolu des cartes Tembea !',
+    description: 'Maître absolu des cartes TAGA !',
     icon: '👑',
     rarity: 'epic',
     requirement: '10 cartes Méga révélées',

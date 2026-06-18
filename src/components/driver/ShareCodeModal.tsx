@@ -24,8 +24,8 @@ interface ShareCodeModalProps {
 }
 
 export const ShareCodeModal = ({ open, onOpenChange, code }: ShareCodeModalProps) => {
-  const shareText = `🚗 Rejoignez Tembea!\n\nMon Code Driver: ${code}\n\nUtilisez ce code pour m'ajouter à votre flotte ou inscrivez-vous avec ce code pour bénéficier de bonus.\n\n📱 Téléchargez Tembea`;
-  const shortText = `Mon Code Driver Tembea: ${code}`;
+  const shareText = `🚗 Rejoignez TAGA!\n\nMon Code Driver: ${code}\n\nUtilisez ce code pour m'ajouter à votre flotte ou inscrivez-vous avec ce code pour bénéficier de bonus.\n\n📱 Téléchargez TAGA`;
+  const shortText = `Mon Code Driver TAGA: ${code}`;
 
   const handleWhatsApp = () => {
     const url = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
@@ -46,7 +46,7 @@ export const ShareCodeModal = ({ open, onOpenChange, code }: ShareCodeModalProps
   };
 
   const handleEmail = () => {
-    const subject = 'Code Driver Tembea';
+    const subject = 'Code Driver TAGA';
     const url = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(shareText)}`;
     window.open(url, '_self');
     onOpenChange(false);
@@ -72,7 +72,7 @@ export const ShareCodeModal = ({ open, onOpenChange, code }: ShareCodeModalProps
     try {
       if (navigator.share && window.isSecureContext) {
         await navigator.share({
-          title: 'Code Driver Tembea',
+          title: 'Code Driver TAGA',
           text: shareText
         });
         onOpenChange(false);

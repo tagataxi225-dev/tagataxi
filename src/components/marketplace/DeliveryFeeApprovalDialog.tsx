@@ -93,7 +93,7 @@ export const DeliveryFeeApprovalDialog = ({
               <div>
                 <p className="text-sm font-medium">Mode de livraison</p>
                 <Badge variant={order.vendor_delivery_method === 'kwenda' ? 'default' : 'secondary'}>
-                  {order.vendor_delivery_method === 'kwenda' ? 'Livreur Tembea' : 'Livraison par le vendeur'}
+                  {order.vendor_delivery_method === 'kwenda' ? 'Livreur TAGA' : 'Livraison par le vendeur'}
                 </Badge>
               </div>
             </div>

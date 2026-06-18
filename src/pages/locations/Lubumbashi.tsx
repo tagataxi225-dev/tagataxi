@@ -101,7 +101,7 @@ const Lubumbashi = () => {
               🇨🇩 Lubumbashi - Capitale Minière
             </Badge>
             <h1 className="text-display-lg">
-              Tembea arrive à <span className="text-orange-600">Lubumbashi</span>
+              TAGA arrive à <span className="text-orange-600">Lubumbashi</span>
             </h1>
             <p className="text-body-lg text-muted-foreground">
               Transport et livraison dans la capitale minière du Katanga. 
@@ -123,7 +123,7 @@ const Lubumbashi = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Tembea Lubumbashi en chiffres</h2>
+            <h2 className="text-heading-xl">TAGA Lubumbashi en chiffres</h2>
             <p className="text-body-md text-muted-foreground">
               Une présence grandissante dans la capitale du Katanga
             </p>
@@ -237,7 +237,7 @@ const Lubumbashi = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Tembea s'adapte à Lubumbashi</h2>
+            <h2 className="text-heading-xl">TAGA s'adapte à Lubumbashi</h2>
             <p className="text-body-md text-muted-foreground">
               Des services pensés pour la capitale minière
             </p>
@@ -311,7 +311,7 @@ const Lubumbashi = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div>
-              <h2 className="text-heading-xl mb-4">L'avenir de Tembea à Lubumbashi</h2>
+              <h2 className="text-heading-xl mb-4">L'avenir de TAGA à Lubumbashi</h2>
               <p className="text-body-md text-muted-foreground">
                 Nos projets de développement dans la capitale du Katanga
               </p>
@@ -355,7 +355,7 @@ const Lubumbashi = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <h2 className="text-heading-xl">Découvrez Tembea Lubumbashi</h2>
+          <h2 className="text-heading-xl">Découvrez TAGA Lubumbashi</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
             Rejoignez la révolution du transport dans la capitale minière du Katanga
           </p>

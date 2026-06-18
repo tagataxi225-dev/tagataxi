@@ -69,7 +69,7 @@ export const VendorDeliveryManager = () => {
         delivery_assignment: order.marketplace_delivery_assignments?.[0] ? {
           id: order.marketplace_delivery_assignments[0].id,
           assignment_status: order.marketplace_delivery_assignments[0].assignment_status,
-          driver_name: 'Livreur Tembea',
+          driver_name: 'Livreur TAGA',
           estimated_delivery_time: order.marketplace_delivery_assignments[0].estimated_delivery_time
         } : undefined
       })) || [];
@@ -225,7 +225,7 @@ export const VendorDeliveryManager = () => {
                   {order.status}
                 </Badge>
                 <Badge variant="outline">
-                  {order.delivery_method === 'pickup' ? 'À récupérer' : 'Livraison Tembea'}
+                  {order.delivery_method === 'pickup' ? 'À récupérer' : 'Livraison TAGA'}
                 </Badge>
               </div>
 
@@ -273,7 +273,7 @@ export const VendorDeliveryManager = () => {
                     onClick={() => updateDeliveryPreference(order.id, 'kwenda_delivery')}
                   >
                     <Truck className="h-4 w-4 mr-1" />
-                    Activer livraison Tembea
+                    Activer livraison TAGA
                   </Button>
                 )}
                 

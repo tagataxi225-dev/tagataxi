@@ -81,7 +81,7 @@ export const LegalAcceptanceCheckbox = ({
             >
               politique de confidentialité
             </span>{' '}
-            de Tembea.
+            de TAGA.
           </Label>
         </div>
 

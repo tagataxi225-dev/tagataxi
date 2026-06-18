@@ -105,7 +105,7 @@ export default function TaxiPaymentModal({ isOpen, onClose, bookingData, onPayme
             <p style={{ fontSize: 38, fontWeight: 900, color: '#1C1C1E', margin: '0 0 4px', letterSpacing: -1.5, lineHeight: 1 }}>
               {fmt(price)} <span style={{ fontSize: 16, fontWeight: 600, color: '#8E8E93' }}>{currency}</span>
             </p>
-            <p style={{ fontSize: 13, color: '#8E8E93', margin: 0 }}>Via wallet Tembea</p>
+            <p style={{ fontSize: 13, color: '#8E8E93', margin: 0 }}>Via wallet TAGA</p>
           </div>
         ) : (
           <div style={{ padding: '8px 20px 24px' }}>

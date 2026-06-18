@@ -86,7 +86,7 @@ export default function Changelog() {
             <div>
               <h1 className="text-3xl font-bold">Historique des versions</h1>
               <p className="text-muted-foreground">
-                Toutes les nouveautés et améliorations de Tembea
+                Toutes les nouveautés et améliorations de TAGA
               </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function Changelog() {
 
         {/* Footer */}
         <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p>Tembea Taxi • Mobilité africaine</p>
+          <p>TAGA Taxi • Mobilité africaine</p>
         </div>
       </div>
     </div>

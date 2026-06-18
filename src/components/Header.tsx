@@ -23,8 +23,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <BrandLogo size={32} className="rounded-lg" alt="Tembea Taxi Congo — logo" />
-            <span className="sr-only">Tembea Taxi</span>
+            <BrandLogo size={32} className="rounded-lg" alt="TAGA Taxi Congo — logo" />
+            <span className="sr-only">TAGA Taxi</span>
           </div>
 
           {/* Desktop Navigation */}

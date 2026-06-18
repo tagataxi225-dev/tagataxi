@@ -236,7 +236,7 @@ export default function RestaurantProfile() {
         <Alert className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
           <Sparkles className="h-4 w-4 text-primary" />
           <AlertDescription className="text-sm">
-            💡 <strong>Conseil :</strong> Vos images (logo et bannière) apparaissent dans Tembea Food. 
+            💡 <strong>Conseil :</strong> Vos images (logo et bannière) apparaissent dans TAGA Food. 
             Modifiez-les ici pour mettre à jour votre vitrine instantanément !
           </AlertDescription>
         </Alert>
@@ -249,7 +249,7 @@ export default function RestaurantProfile() {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-1">
                 <h3 className="font-semibold text-lg flex items-center gap-2">
-                  🍽️ Aperçu dans Tembea Food
+                  🍽️ Aperçu dans TAGA Food
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
                   Visualisez comment votre restaurant apparaît aux clients

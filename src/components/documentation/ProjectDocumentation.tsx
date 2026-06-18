@@ -78,10 +78,10 @@ const ProjectDocumentation: React.FC = () => {
       title: 'Vue d\'ensemble du projet',
       icon: FileText,
       content: `
-# Tembea Taxi - Application VTC Congo RDC
+# TAGA Taxi - Application VTC Congo RDC
 
 ## Vision
-Tembea Taxi est une application de transport multimodale conçue spécifiquement pour Kinshasa, République Démocratique du Congo. Elle combine transport VTC, livraison de colis et marketplace dans une seule plateforme adaptée aux réalités locales.
+TAGA Taxi est une application de transport multimodale conçue spécifiquement pour Kinshasa, République Démocratique du Congo. Elle combine transport VTC, livraison de colis et marketplace dans une seule plateforme adaptée aux réalités locales.
 
 ## Objectifs
 - Faciliter les déplacements à Kinshasa avec des véhicules adaptés
@@ -602,7 +602,7 @@ const verifyPhoneNumber = async (phoneNumber: string) => {
   const otpCode = Math.floor(100000 + Math.random() * 900000);
   
   // Envoi SMS via API locale
-  await sendSMS(phoneNumber, \`Votre code Tembea Taxi: \${otpCode}\`);
+  await sendSMS(phoneNumber, \`Votre code TAGA Taxi: \${otpCode}\`);
   
   return { success: true, reference: generateReference() };
 };
@@ -614,7 +614,7 @@ const verifyPhoneNumber = async (phoneNumber: string) => {
 
   const generateProjectReport = () => {
     const report = {
-      project: 'Tembea Taxi Congo RDC',
+      project: 'TAGA Taxi Congo RDC',
       version: '1.0.0',
       generated: new Date().toISOString(),
       features: [
@@ -675,7 +675,7 @@ const verifyPhoneNumber = async (phoneNumber: string) => {
             <div>
               <CardTitle className="flex items-center gap-2">
                 <FileText className="w-5 h-5 text-primary" />
-                Documentation Projet Tembea Taxi
+                Documentation Projet TAGA Taxi
               </CardTitle>
               <p className="text-sm text-muted-foreground mt-1">
                 Documentation complète de l'application VTC pour Kinshasa

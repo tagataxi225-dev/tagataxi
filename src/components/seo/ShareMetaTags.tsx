@@ -23,7 +23,7 @@ export const ShareMetaTags: React.FC<ShareMetaTagsProps> = ({
     <meta property="og:url" content={url} />
     <meta property="og:image" content={image} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Tembea Shop" />
+    <meta property="og:site_name" content="TAGA Shop" />
     
     {/* Twitter Card */}
     <meta name="twitter:card" content="summary_large_image" />

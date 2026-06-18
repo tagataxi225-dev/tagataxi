@@ -264,7 +264,7 @@ const PartnerSupport = () => {
         </div>
         <div>
           <h1 className="text-2xl font-bold">Support Partenaire</h1>
-          <p className="text-muted-foreground">Support dédié à nos partenaires Tembea</p>
+          <p className="text-muted-foreground">Support dédié à nos partenaires TAGA</p>
         </div>
       </div>
 

@@ -113,7 +113,7 @@ const VendorSetupWizard = () => {
       <div className="min-h-screen bg-background p-4 flex items-center justify-center">
         <Card className="w-full max-w-2xl">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">🎉 Bienvenue chez Tembea Vendeurs</CardTitle>
+            <CardTitle className="text-2xl">🎉 Bienvenue chez TAGA Vendeurs</CardTitle>
             <CardDescription>Quel type d'espace souhaitez-vous créer ?</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -145,7 +145,7 @@ const VendorSetupWizard = () => {
                   <ShoppingCart className="h-6 w-6 text-emerald-600" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">Supermarché</h3>
-                <p className="text-sm text-muted-foreground">Gérez votre supermarché sur Tembea : alimentaire, boissons, hygiène...</p>
+                <p className="text-sm text-muted-foreground">Gérez votre supermarché sur TAGA : alimentaire, boissons, hygiène...</p>
               </button>
             </div>
 

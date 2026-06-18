@@ -122,7 +122,7 @@ export const generateFoodReceipt = async (receiptData: ReceiptData): Promise<voi
   // ===== HEADER =====
   setF('bold', 14);
   doc.setTextColor(RED.r, RED.g, RED.b);
-  doc.text('KWENDA FOOD', W / 2, y, { align: 'center' });
+  doc.text('TAGA FOOD', W / 2, y, { align: 'center' });
   y += 1.5;
 
   // Red decorative line under title

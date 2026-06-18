@@ -27,7 +27,7 @@ export const LegalDocumentSheet = ({ type, open, onOpenChange }: LegalDocumentSh
                 {type === 'terms' ? "Conditions Générales d'Utilisation" : 'Politique de Confidentialité'}
               </DrawerTitle>
               <p className="text-xs text-muted-foreground text-left mt-0.5">
-                {type === 'terms' ? 'Tembea — Transport & Livraison' : 'Protection de vos données personnelles'}
+                {type === 'terms' ? 'TAGA — Transport & Livraison' : 'Protection de vos données personnelles'}
               </p>
             </div>
           </div>
@@ -59,13 +59,13 @@ const Section = ({ title, icon: Icon, children }: { title: string; icon?: React.
 const TermsContent = () => (
   <div className="space-y-5 py-4">
     <Section title="1. Objet" icon={FileText}>
-      <p>Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation de la plateforme Tembea, service de transport et de livraison en République Démocratique du Congo.</p>
+      <p>Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation de la plateforme TAGA, service de transport et de livraison en République Démocratique du Congo.</p>
     </Section>
     <Section title="2. Acceptation des conditions" icon={Scale}>
-      <p>En utilisant les services Tembea, vous acceptez sans réserve les présentes CGU. L'utilisation continue de la plateforme vaut acceptation des modifications éventuelles.</p>
+      <p>En utilisant les services TAGA, vous acceptez sans réserve les présentes CGU. L'utilisation continue de la plateforme vaut acceptation des modifications éventuelles.</p>
     </Section>
     <Section title="3. Services proposés" icon={MapPin}>
-      <p>Tembea propose des services de transport de personnes (VTC, moto-taxi) et de livraison de colis dans les villes de Kinshasa, Lubumbashi et Kolwezi.</p>
+      <p>TAGA propose des services de transport de personnes (VTC, moto-taxi) et de livraison de colis dans les villes de Kinshasa, Lubumbashi et Kolwezi.</p>
     </Section>
     <Section title="4. Inscription et compte utilisateur" icon={Users}>
       <p>L'utilisation des services nécessite la création d'un compte avec des informations exactes et à jour. Vous êtes responsable de la confidentialité de vos identifiants.</p>
@@ -74,13 +74,13 @@ const TermsContent = () => (
       <p>Les tarifs sont affichés avant confirmation de la commande. Des frais supplémentaires peuvent s'appliquer en cas de surge pricing dans les zones à forte demande.</p>
     </Section>
     <Section title="6. Responsabilités" icon={AlertTriangle}>
-      <p>Tembea agit comme intermédiaire entre clients et prestataires (chauffeurs, livreurs). Nous ne sommes pas responsables des dommages survenus pendant le trajet.</p>
+      <p>TAGA agit comme intermédiaire entre clients et prestataires (chauffeurs, livreurs). Nous ne sommes pas responsables des dommages survenus pendant le trajet.</p>
     </Section>
     <Section title="7. Annulation et remboursement" icon={RefreshCw}>
       <p>Les annulations gratuites sont possibles dans les 2 minutes suivant la commande. Au-delà, des frais d'annulation peuvent s'appliquer.</p>
     </Section>
     <Section title="8. Modification des CGU" icon={FileText}>
-      <p>Tembea se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entrent en vigueur dès leur publication.</p>
+      <p>TAGA se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entrent en vigueur dès leur publication.</p>
     </Section>
     <p className="text-xs text-muted-foreground/60 pt-3 border-t border-border/30">
       Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
@@ -91,7 +91,7 @@ const TermsContent = () => (
 const PrivacyContent = () => (
   <div className="space-y-5 py-4">
     <Section title="1. Collecte des données" icon={Database}>
-      <p>Tembea collecte les données personnelles nécessaires à la fourniture de ses services : nom, email, numéro de téléphone, localisation GPS pendant les trajets.</p>
+      <p>TAGA collecte les données personnelles nécessaires à la fourniture de ses services : nom, email, numéro de téléphone, localisation GPS pendant les trajets.</p>
     </Section>
     <Section title="2. Utilisation des données" icon={Eye}>
       <p>Vos données sont utilisées pour :</p>
@@ -120,7 +120,7 @@ const PrivacyContent = () => (
       <p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Contactez-nous à support@tembea.app pour exercer ces droits.</p>
     </Section>
     <Section title="7. Cookies" icon={Cookie}>
-      <p>Tembea utilise des cookies essentiels au fonctionnement du site (authentification, préférences). Aucun cookie publicitaire tiers n'est utilisé.</p>
+      <p>TAGA utilise des cookies essentiels au fonctionnement du site (authentification, préférences). Aucun cookie publicitaire tiers n'est utilisé.</p>
     </Section>
     <Section title="8. Contact" icon={Mail}>
       <p>Pour toute question relative à la protection de vos données, contactez-nous à privacy@tembea.app</p>

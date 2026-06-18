@@ -44,7 +44,7 @@ const Onboarding: React.FC = () => {
   const { triggerHaptic, triggerSuccess } = useHapticFeedback();
 
   useEffect(() => {
-    document.title = `Onboarding — Tembea`;
+    document.title = `Onboarding — TAGA`;
   }, []);
 
   useEffect(() => {
@@ -97,9 +97,9 @@ const Onboarding: React.FC = () => {
       <header className="flex items-center justify-between px-4 py-3 shrink-0 pt-safe-top">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-white rounded-lg shadow-sm flex items-center justify-center p-0.5">
-            <img src={kwendaLogoK} alt="Tembea" className="w-full h-full rounded-md object-cover" />
+            <img src={kwendaLogoK} alt="TAGA" className="w-full h-full rounded-md object-cover" />
           </div>
-          <span className="font-semibold text-foreground">Tembea</span>
+          <span className="font-semibold text-foreground">TAGA</span>
         </div>
         <Button 
           variant="ghost" 

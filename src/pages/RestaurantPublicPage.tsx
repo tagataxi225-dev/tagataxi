@@ -121,8 +121,8 @@ export default function RestaurantPublicPage() {
   return (
     <>
       <ShareMetaTags
-        title={`${restaurant.restaurant_name} | Tembea Food`}
-        description={`Découvre le menu de ${restaurant.restaurant_name} sur Tembea Food. ${menu.length} plats disponibles. Note ${restaurant.rating_average?.toFixed(1) || 0}/5`}
+        title={`${restaurant.restaurant_name} | TAGA Food`}
+        description={`Découvre le menu de ${restaurant.restaurant_name} sur TAGA Food. ${menu.length} plats disponibles. Note ${restaurant.rating_average?.toFixed(1) || 0}/5`}
         image={restaurant.logo_url || restaurant.banner_url}
         url={restaurantUrl}
       />

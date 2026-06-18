@@ -65,7 +65,7 @@ export const AppFeedbackSection = ({ userType }: AppFeedbackSectionProps) => {
           className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-muted/40 border border-border/40 text-sm font-medium text-foreground hover:bg-muted/60 transition-colors"
         >
           <Star className="h-4 w-4 text-amber-500" />
-          <span>Noter Tembea</span>
+          <span>Noter TAGA</span>
         </a>
         <button
           onClick={() => setOpen(true)}

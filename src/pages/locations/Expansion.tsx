@@ -120,10 +120,10 @@ const Expansion = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="secondary" className="mb-4">
-              Plan d'Expansion Tembea
+              Plan d'Expansion TAGA
             </Badge>
             <h1 className="text-display-lg">
-              Tembea se déploie dans toute la <span className="text-purple-600">RDC</span>
+              TAGA se déploie dans toute la <span className="text-purple-600">RDC</span>
             </h1>
             <p className="text-body-lg text-muted-foreground">
               Notre vision : connecter toutes les grandes villes de la République Démocratique du Congo 
@@ -131,7 +131,7 @@ const Expansion = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">
-                <Link to="/support/contact">Demander Tembea dans ma ville</Link>
+                <Link to="/support/contact">Demander TAGA dans ma ville</Link>
               </Button>
               <Button variant="outline" asChild>
                 <Link to="#roadmap">Voir la roadmap</Link>
@@ -147,7 +147,7 @@ const Expansion = () => {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-heading-xl">Nos villes actuelles</h2>
             <p className="text-body-md text-muted-foreground">
-              Où Tembea est déjà opérationnel en République Démocratique du Congo
+              Où TAGA est déjà opérationnel en République Démocratique du Congo
             </p>
           </div>
 
@@ -420,13 +420,13 @@ const Expansion = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <h2 className="text-heading-xl">Faites partie de l'expansion Tembea</h2>
+          <h2 className="text-heading-xl">Faites partie de l'expansion TAGA</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
             Votre ville mérite nos services ? Contactez-nous pour accélérer son arrivée dans votre région.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="secondary" size="lg">
-              <Link to="/support/contact">Demander Tembea dans ma ville</Link>
+              <Link to="/support/contact">Demander TAGA dans ma ville</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-500">
               <Link to="/partners/programme-partenaire">Devenir partenaire</Link>

@@ -265,7 +265,7 @@ export const DriverProfilePanel: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-1">
                   <Shield className="h-4 w-4" />
-                  <span>Tembea Pro</span>
+                  <span>TAGA Pro</span>
                 </div>
               </div>
             </div>

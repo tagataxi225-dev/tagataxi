@@ -85,7 +85,7 @@ const MarketplaceContent = () => {
       image: "/placeholder.svg",
       rating: 4.7,
       reviewCount: 128,
-      seller: "Alimentation Tembea",
+      seller: "Alimentation TAGA",
       sellerId: "seller3",
       category: "food",
       location: { lat: -4.3317, lng: 15.3169 },
@@ -148,7 +148,7 @@ const MarketplaceContent = () => {
   const topSellers = [
     { name: "TechStore Kinshasa", rating: 4.9, sales: 1200, verified: true },
     { name: "Mode Africaine", rating: 4.8, sales: 850, verified: true },
-    { name: "Alimentation Tembea", rating: 4.7, sales: 2100, verified: true },
+    { name: "Alimentation TAGA", rating: 4.7, sales: 2100, verified: true },
     { name: "Premium Tech", rating: 5.0, sales: 340, verified: true }
   ];
 
@@ -211,7 +211,7 @@ const MarketplaceContent = () => {
           <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
           <div className="container mx-auto max-w-7xl text-center relative z-10">
             <Badge variant="outline" className="border-white/30 text-white mb-6">
-              🛍️ Tembea Shop
+              🛍️ TAGA Shop
             </Badge>
             <h1 className="text-display-lg mb-6">
               Marketplace
@@ -408,9 +408,9 @@ const MarketplaceContent = () => {
         {/* CTA */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-secondary to-accent text-white">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-display-md mb-6">Vendez vos Produits sur Tembea Shop</h2>
+            <h2 className="text-display-md mb-6">Vendez vos Produits sur TAGA Shop</h2>
             <p className="text-xl mb-8 text-white/90">
-              Rejoignez plus de 200 vendeurs qui font confiance à Tembea pour développer leur business. 
+              Rejoignez plus de 200 vendeurs qui font confiance à TAGA pour développer leur business. 
               Commission de seulement 8% avec livraison intégrée !
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

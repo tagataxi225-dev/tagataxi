@@ -116,7 +116,7 @@ export default function DeliveryNotificationCenter({
 
           // Browser notification
           if ('Notification' in window && Notification.permission === 'granted') {
-            new Notification(`Tembea Delivery - ${newNotification.title}`, {
+            new Notification(`TAGA Delivery - ${newNotification.title}`, {
               body: newNotification.message,
               icon: '/favicon.ico'
             });

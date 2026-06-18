@@ -113,7 +113,7 @@ export const AppRatingPrompt = ({ onClose }: AppRatingPromptProps) => {
 
                 {/* Title */}
                 <h3 className="text-xl font-bold text-center mb-2">
-                  Vous aimez Tembea ?
+                  Vous aimez TAGA ?
                 </h3>
 
                 {/* Description */}

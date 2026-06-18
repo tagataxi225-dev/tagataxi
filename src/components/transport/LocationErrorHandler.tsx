@@ -51,7 +51,7 @@ export const LocationErrorHandler = ({
         steps: [
           'Ouvrez les Réglages/Paramètres de votre téléphone',
           'Activez le Service de localisation / GPS',
-          'Revenez sur Tembea et appuyez sur Réessayer'
+          'Revenez sur TAGA et appuyez sur Réessayer'
         ],
         actions: [
           { label: '🔄 Réessayer', action: onRetry, variant: 'default' as const },

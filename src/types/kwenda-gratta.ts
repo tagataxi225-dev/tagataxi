@@ -145,7 +145,7 @@ export const REWARD_CONFIG: Record<RewardCategory, RewardConfig> = {
   },
   internal_credit: {
     icon: '💵',
-    label: 'Crédit Tembea',
+    label: 'Crédit TAGA',
     description: 'Crédit utilisable dans l\'app',
     colorClass: 'text-green-600'
   },

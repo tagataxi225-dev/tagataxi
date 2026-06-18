@@ -18,7 +18,7 @@ export const FAQAccordion = () => {
     },
     {
       question: 'Quelles zones sont couvertes à Kinshasa ?',
-      answer: 'Tembea couvre toutes les communes de Kinshasa : Gombe, Ngaliema, Lemba, Bandalungwa, Kalamu, Kasa-Vubu, Lingwala, Barumbu, Kinshasa, Kintambo, Mont-Ngafula, Ngiri-Ngiri, Bumbu, Makala, Kimbanseke, Masina, Ndjili, Matete, Limete, Ngaba, Selembao, Kisenso, et Maluku.'
+      answer: 'TAGA couvre toutes les communes de Kinshasa : Gombe, Ngaliema, Lemba, Bandalungwa, Kalamu, Kasa-Vubu, Lingwala, Barumbu, Kinshasa, Kintambo, Mont-Ngafula, Ngiri-Ngiri, Bumbu, Makala, Kimbanseke, Masina, Ndjili, Matete, Limete, Ngaba, Selembao, Kisenso, et Maluku.'
     },
     {
       question: 'Paiement mobile money accepté ?',

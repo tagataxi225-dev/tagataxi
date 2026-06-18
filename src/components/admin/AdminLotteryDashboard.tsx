@@ -255,7 +255,7 @@ export const AdminLotteryDashboard = () => {
             <Trophy className="h-8 w-8 text-primary" />
             Gestion Tombola
           </h1>
-          <p className="text-muted-foreground">Tembea Gratta & Tirages</p>
+          <p className="text-muted-foreground">TAGA Gratta & Tirages</p>
         </div>
         <div className="flex gap-2">
           <Button variant="outline" onClick={() => { loadStats(); loadDraws(); loadGrattaStats(); }}>

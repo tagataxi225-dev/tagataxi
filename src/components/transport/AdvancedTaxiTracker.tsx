@@ -486,7 +486,7 @@ export default function AdvancedTaxiTracker({ bookingId, onBack }: AdvancedTaxiT
     if (!booking || !booking.pickup_coordinates) return;
 
     const shareData = {
-      title: 'Ma course Tembea Taxi',
+      title: 'Ma course TAGA Taxi',
       text: `Je suis en route vers ${booking.destination}`,
       url: `https://maps.google.com/?q=${booking.pickup_coordinates.lat},${booking.pickup_coordinates.lng}`
     };

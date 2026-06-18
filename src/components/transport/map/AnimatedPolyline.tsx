@@ -82,7 +82,7 @@ export default function AnimatedPolyline({ map, pickup, destination }: AnimatedP
         }, i * 40);
       }
 
-      console.log(`✅ ${numSegments} segments de route créés avec gradient Tembea`);
+      console.log(`✅ ${numSegments} segments de route créés avec gradient TAGA`);
     };
 
     setupRoute();

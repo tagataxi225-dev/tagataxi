@@ -181,7 +181,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
     utmMedium: 'outdoor',
     utmCampaign: 'car_branding',
     color: '#EF4444',
-    description: 'QR sur véhicules Tembea',
+    description: 'QR sur véhicules TAGA',
     icon: 'Car'
   },
   {

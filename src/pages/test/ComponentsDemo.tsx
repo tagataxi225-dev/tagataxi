@@ -58,7 +58,7 @@ export const ComponentsDemo = () => {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Démo Composants Tembea
+              Démo Composants TAGA
             </h1>
             <p className="text-muted-foreground mt-2">
               Testez tous les composants notifications, loterie et chat

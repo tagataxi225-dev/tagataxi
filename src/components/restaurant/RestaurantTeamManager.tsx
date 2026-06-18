@@ -107,7 +107,7 @@ export const RestaurantTeamManager = () => {
                       placeholder="0991234567 ou email@example.com"
                     />
                     <p className="text-xs text-muted-foreground">
-                      L'utilisateur doit avoir un compte Tembea. Il sera ajouté directement à l'équipe.
+                      L'utilisateur doit avoir un compte TAGA. Il sera ajouté directement à l'équipe.
                     </p>
                   </div>
                   <div className="space-y-2">

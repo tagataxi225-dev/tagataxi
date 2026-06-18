@@ -234,7 +234,7 @@ export const RestaurantDeliveryDrawer = ({
                 <Truck className="h-5 w-5 text-red-500" />
               </div>
               <div>
-                <DrawerTitle className="text-lg">Tembea Delivery</DrawerTitle>
+                <DrawerTitle className="text-lg">TAGA Delivery</DrawerTitle>
                 <p className="text-xs text-muted-foreground">
                   Commande #{order?.order_number || order?.id?.slice(0, 8)}
                 </p>
@@ -371,7 +371,7 @@ export const RestaurantDeliveryDrawer = ({
           </Button>
 
           <p className="text-xs text-center text-muted-foreground">
-            Un livreur Tembea sera automatiquement assigné
+            Un livreur TAGA sera automatiquement assigné
           </p>
         </div>
       </DrawerContent>

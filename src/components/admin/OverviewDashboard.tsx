@@ -14,7 +14,7 @@ export const OverviewDashboard = () => {
       <div>
         <h1 className="text-3xl font-bold">Vue d'ensemble</h1>
         <p className="text-muted-foreground">
-          Statistiques en temps réel de la plateforme Tembea
+          Statistiques en temps réel de la plateforme TAGA
         </p>
       </div>
 

@@ -24,7 +24,7 @@ const Terms = () => {
             <h2 className="text-xl font-semibold mb-2">1. Objet</h2>
             <p className="text-muted-foreground">
               Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation 
-              de la plateforme Tembea, service de transport et de livraison en République 
+              de la plateforme TAGA, service de transport et de livraison en République 
               Démocratique du Congo.
             </p>
           </section>
@@ -32,14 +32,14 @@ const Terms = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">2. Acceptation des conditions</h2>
             <p className="text-muted-foreground">
-              En utilisant les services Tembea, vous acceptez sans réserve les présentes CGU.
+              En utilisant les services TAGA, vous acceptez sans réserve les présentes CGU.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-2">3. Services proposés</h2>
             <p className="text-muted-foreground">
-              Tembea propose des services de transport de personnes (VTC, moto-taxi) et de 
+              TAGA propose des services de transport de personnes (VTC, moto-taxi) et de 
               livraison de colis dans les villes de Kinshasa, Lubumbashi et Kolwezi.
             </p>
           </section>
@@ -63,7 +63,7 @@ const Terms = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">6. Responsabilités</h2>
             <p className="text-muted-foreground">
-              Tembea agit comme intermédiaire entre clients et prestataires (chauffeurs, livreurs). 
+              TAGA agit comme intermédiaire entre clients et prestataires (chauffeurs, livreurs). 
               Nous ne sommes pas responsables des dommages survenus pendant le trajet.
             </p>
           </section>
@@ -79,7 +79,7 @@ const Terms = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">8. Modification des CGU</h2>
             <p className="text-muted-foreground">
-              Tembea se réserve le droit de modifier les présentes CGU à tout moment. 
+              TAGA se réserve le droit de modifier les présentes CGU à tout moment. 
               Les modifications entrent en vigueur dès leur publication.
             </p>
           </section>

@@ -86,9 +86,9 @@ class PushNotificationService {
   // Mettre à jour le badge du navigateur (titre de la page)
   updatePageBadge(count: number): void {
     if (count > 0) {
-      document.title = `(${count}) Tembea - Marketplace`;
+      document.title = `(${count}) TAGA - Marketplace`;
     } else {
-      document.title = 'Tembea - Marketplace';
+      document.title = 'TAGA - Marketplace';
     }
   }
 

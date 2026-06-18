@@ -259,7 +259,7 @@ const DeliveryTrackingPage = () => {
                       </div>
                       <div>
                         <p className="font-medium">
-                          {driverProfile.display_name || 'Chauffeur Tembea'}
+                          {driverProfile.display_name || 'Chauffeur TAGA'}
                         </p>
                         {driverProfile.phone_number && (
                           <Button variant="outline" size="sm" className="mt-2">

@@ -495,7 +495,7 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
           {/* Branding + sous-titre contextuel */}
           <div className="flex-1 min-w-0">
             <h1 className="text-[15px] font-bold tracking-tight whitespace-nowrap">
-              Tembea <span className="text-muted-foreground">Delivery</span>
+              TAGA <span className="text-muted-foreground">Delivery</span>
             </h1>
             <p className="text-[11px] text-muted-foreground/60">
               {currentStep === 'addresses' && 'Adresses'}

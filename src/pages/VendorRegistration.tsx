@@ -96,7 +96,7 @@ export const VendorRegistration = () => {
               <Input
                 value={formData.shop_name}
                 onChange={(e) => setFormData({ ...formData, shop_name: e.target.value })}
-                placeholder="Ex: Boutique Tembea"
+                placeholder="Ex: Boutique TAGA"
                 required
               />
             </div>

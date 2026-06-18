@@ -143,7 +143,7 @@ export default function DriverBiddingResponse({
   const counterPresets = [
     { label: 'Client', value: clientProposedPrice },
     { label: 'Milieu', value: Math.floor((clientProposedPrice + estimatedPrice) / 2) },
-    { label: 'Tembea', value: estimatedPrice },
+    { label: 'TAGA', value: estimatedPrice },
   ];
 
   if (showCounterOffer) {
@@ -269,7 +269,7 @@ export default function DriverBiddingResponse({
         <div className="px-4 py-3">
           <div className="grid grid-cols-2 gap-3">
             <div className="bg-muted/50 rounded-xl p-3 text-center">
-              <p className="text-xs text-muted-foreground mb-1">Prix Tembea</p>
+              <p className="text-xs text-muted-foreground mb-1">Prix TAGA</p>
               <p className="text-xl font-bold">{estimatedPrice.toLocaleString()}</p>
               <p className="text-xs text-muted-foreground">{currency}</p>
             </div>

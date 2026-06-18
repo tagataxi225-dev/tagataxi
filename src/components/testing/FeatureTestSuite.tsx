@@ -346,7 +346,7 @@ const FeatureTestSuite: React.FC = () => {
             <div>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="w-5 h-5 text-primary" />
-                Suite de Tests Tembea Taxi
+                Suite de Tests TAGA Taxi
               </CardTitle>
               <p className="text-sm text-muted-foreground mt-1">
                 Tests complets de toutes les fonctionnalités pour le marché congolais

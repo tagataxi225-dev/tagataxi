@@ -410,7 +410,7 @@ export const SecurityTesting: React.FC = () => {
             <div className="flex items-center gap-3">
               <Shield className="h-6 w-6 text-primary" />
               <div>
-                <CardTitle>Audit de Sécurité Tembea</CardTitle>
+                <CardTitle>Audit de Sécurité TAGA</CardTitle>
                 <p className="text-muted-foreground">
                   Tests de sécurité automatisés pour la plateforme
                 </p>

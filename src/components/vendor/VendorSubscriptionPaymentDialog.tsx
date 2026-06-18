@@ -136,7 +136,7 @@ export const VendorSubscriptionPaymentDialog = ({
                   <Wallet className="h-5 w-5 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm text-muted-foreground">Votre wallet Tembea</p>
+                  <p className="text-sm text-muted-foreground">Votre wallet TAGA</p>
                   <p className="font-bold text-lg">
                     {walletBalance.toLocaleString()} CDF
                   </p>

@@ -48,7 +48,7 @@ export const defaultPromos: Promo[] = [
   },
   {
     id: '6',
-    title: 'Tembea Food',
+    title: 'TAGA Food',
     description: 'Commandez vos plats préférés',
     image: '',
     gradient: 'from-orange-500 via-amber-500 to-yellow-500',

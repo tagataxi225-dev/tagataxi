@@ -442,7 +442,7 @@ export const VendorSubscriptionManager = () => {
         <CardContent className="space-y-2 text-sm text-muted-foreground">
           <p>• La commission est automatiquement déduite à chaque vente livrée</p>
           <p>• Vous recevez 85-95% du prix de vente selon votre plan</p>
-          <p>• Les paiements sont crédités instantanément dans votre wallet Tembea</p>
+          <p>• Les paiements sont crédités instantanément dans votre wallet TAGA</p>
           <p>• Changement de plan disponible à tout moment</p>
         </CardContent>
       </Card>

@@ -18,7 +18,7 @@ const ModernFooter = () => {
         { name: "Livraison Express", href: "/app/auth?service=delivery", icon: <Package className="w-4 h-4" /> },
         { name: "Location Véhicules", href: "/app/auth?service=rental", icon: <Car className="w-4 h-4" /> },
         { name: "Marketplace", href: "/marketplace", icon: <Store className="w-4 h-4" /> },
-        { name: "Tembea Tombola", href: "/app/auth?service=lottery", icon: <Heart className="w-4 h-4" /> }
+        { name: "TAGA Tombola", href: "/app/auth?service=lottery", icon: <Heart className="w-4 h-4" /> }
       ]
     },
     {
@@ -77,7 +77,7 @@ const ModernFooter = () => {
             <div className="flex items-center gap-4">
               <BrandLogo size={48} />
               <div>
-                <h3 className="text-heading-sm">Tembea Taxi</h3>
+                <h3 className="text-heading-sm">TAGA Taxi</h3>
                 <p className="text-sm text-muted-foreground">🇨🇩 Made in Congo</p>
               </div>
             </div>
@@ -157,7 +157,7 @@ const ModernFooter = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              © 2026 Tembea Taxi. Tous droits réservés.
+              © 2026 TAGA Taxi. Tous droits réservés.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Conçu avec ❤️ pour l'Afrique

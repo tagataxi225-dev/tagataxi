@@ -67,10 +67,10 @@ const translations = {
   },
   messages: {
     welcome: {
-      fr: 'Bienvenue sur Tembea Taxi!',
-      ln: 'Boyei malamu na Tembea Taxi!',
-      kg: 'Tuete ku Tembea Taxi!',
-      sw: 'Karibu Tembea Taxi!'
+      fr: 'Bienvenue sur TAGA Taxi!',
+      ln: 'Boyei malamu na TAGA Taxi!',
+      kg: 'Tuete ku TAGA Taxi!',
+      sw: 'Karibu TAGA Taxi!'
     },
     excellent_service: {
       fr: 'Service excellent!',

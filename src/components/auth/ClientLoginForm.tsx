@@ -198,7 +198,7 @@ export const ClientLoginForm = () => {
           <button type="button" onClick={() => setLegalSheet('privacy')} className="text-rose-500 font-medium hover:underline">
             politique de confidentialité
           </button>{' '}
-          de Tembea.
+          de TAGA.
         </Label>
       </motion.div>
 

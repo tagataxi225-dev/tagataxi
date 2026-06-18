@@ -118,7 +118,7 @@ export const FoodDeliveryFeeApprovalDialog = ({
           <div className="flex items-center gap-2 p-3 bg-muted/50 rounded-lg">
             <Truck className="h-5 w-5 text-primary" />
             <div>
-              <p className="text-sm font-medium">Livreur Tembea</p>
+              <p className="text-sm font-medium">Livreur TAGA</p>
               <p className="text-xs text-muted-foreground">
                 Livraison rapide par un chauffeur vérifié
               </p>

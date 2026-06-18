@@ -36,7 +36,7 @@ export const ReferralPanel: React.FC = () => {
     triggerHaptic();
 
     const shareData = {
-      title: 'Rejoignez Tembea',
+      title: 'Rejoignez TAGA',
       text: `Utilisez mon code de parrainage ${referralCode.code} et gagnez 500 CDF !`,
       url: `https://tembea.app/app/register?ref=${referralCode.code}`
     };

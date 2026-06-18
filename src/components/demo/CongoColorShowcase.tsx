@@ -11,7 +11,7 @@ export const CongoColorShowcase = () => {
           Système Congo Design 🇨🇩
         </h1>
         <p className="text-body-lg text-muted-foreground">
-          Couleurs harmonieuses et professionnelles pour Tembea Taxi
+          Couleurs harmonieuses et professionnelles pour TAGA Taxi
         </p>
       </div>
 

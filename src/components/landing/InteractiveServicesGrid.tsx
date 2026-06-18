@@ -73,7 +73,7 @@ const InteractiveServicesGrid = () => {
     {
       id: "marketplace",
       icon: <Store className="w-10 h-10" />,
-      title: "Marketplace Tembea",
+      title: "Marketplace TAGA",
       description: "E-commerce local avec livraison intégrée et paiement sécurisé",
       price: "Commission 3%",
       gradient: "from-primary via-accent to-secondary",
@@ -86,7 +86,7 @@ const InteractiveServicesGrid = () => {
     {
       id: "lottery",
       icon: <Dice1 className="w-10 h-10" />,
-      title: "Tembea Tombola",
+      title: "TAGA Tombola",
       description: "Tickets gratuits à chaque course - Gains réels hebdomadaires",
       price: "Gratuit avec chaque course",
       hot: true,
@@ -100,7 +100,7 @@ const InteractiveServicesGrid = () => {
     {
       id: "food",
       icon: <UtensilsCrossed className="w-10 h-10" />,
-      title: "Tembea Food",
+      title: "TAGA Food",
       description: "Commandez vos plats préférés auprès de restaurants locaux",
       price: "Livraison gratuite dès 10K CDF",
       new: true,
@@ -124,7 +124,7 @@ const InteractiveServicesGrid = () => {
             Tout ce dont vous avez besoin
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Tembea Taxi combine transport, livraison, location, marketplace, food et divertissement 
+            TAGA Taxi combine transport, livraison, location, marketplace, food et divertissement 
             dans une seule application intelligente. Disponible à Kinshasa, Lubumbashi et Kolwezi.
           </p>
         </div>
@@ -245,11 +245,11 @@ const InteractiveServicesGrid = () => {
             
             <div className="relative z-10 space-y-fluid">
               <h3 className="text-heading-lg lg:text-display-sm bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-                Prêt à découvrir l'expérience Tembea ?
+                Prêt à découvrir l'expérience TAGA ?
               </h3>
               <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Téléchargez l'app et profitez de tous nos services en quelques clics ! 
-                Rejoignez des milliers d'utilisateurs qui font déjà confiance à Tembea Taxi.
+                Rejoignez des milliers d'utilisateurs qui font déjà confiance à TAGA Taxi.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary via-primary-glow to-primary hover:shadow-glow min-h-[56px] text-body-lg rounded-xl interactive-scale px-8">

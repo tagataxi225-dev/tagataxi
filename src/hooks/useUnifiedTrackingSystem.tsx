@@ -509,7 +509,7 @@ export const useUnifiedTrackingSystem = ({
   const shareLocation = useCallback(() => {
     if (currentPosition) {
       const shareData = {
-        title: 'Ma position - Tembea',
+        title: 'Ma position - TAGA',
         text: `Je suis ici: ${currentPosition.latitude}, ${currentPosition.longitude}`,
         url: `https://maps.google.com/?q=${currentPosition.latitude},${currentPosition.longitude}`
       };

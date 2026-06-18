@@ -152,7 +152,7 @@ export default function RestaurantApp() {
             userType="restaurant"
             defaultCompanyData={{
               name: restaurantName,
-              description: 'Restaurant sur Tembea Food',
+              description: 'Restaurant sur TAGA Food',
               city: 'Kinshasa'
             }}
           />
@@ -180,7 +180,7 @@ export default function RestaurantApp() {
             <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-sm">
               <Store className="h-4 w-4 text-white" />
             </div>
-            <span className="font-semibold text-base tracking-tight">Tembea Food</span>
+            <span className="font-semibold text-base tracking-tight">TAGA Food</span>
           </div>
           
           {/* Actions */}

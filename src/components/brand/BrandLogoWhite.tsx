@@ -20,7 +20,7 @@ export const BrandLogoWhite: React.FC<BrandLogoWhiteProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={clsx("drop-shadow-2xl", className)}
-      aria-label={alt || "Tembea Logo"}
+      aria-label={alt || "TAGA Logo"}
     >
       {/* Cercle de fond */}
       <circle cx="100" cy="100" r="95" fill="white" fillOpacity="0.95"/>
@@ -48,7 +48,7 @@ export const BrandLogoWhite: React.FC<BrandLogoWhiteProps> = ({
         textAnchor="middle"
         letterSpacing="2"
       >
-        KWENDA
+        TAGA
       </text>
     </svg>
   );

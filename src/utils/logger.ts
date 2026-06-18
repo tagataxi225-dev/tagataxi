@@ -35,7 +35,7 @@ class Logger {
 
   private formatMessage(level: LogLevel, message: string, data?: any): string {
     const timestamp = new Date().toISOString();
-    const prefix = this.config.prefix || 'Tembea';
+    const prefix = this.config.prefix || 'TAGA';
     return `[${timestamp}] [${prefix}] [${level.toUpperCase()}] ${message}`;
   }
 
@@ -83,7 +83,7 @@ if (!isProduction) {
   logger.setConfig({ 
     enabled: true, 
     level: 'debug',
-    prefix: 'Tembea'
+    prefix: 'TAGA'
   });
 } else {
   // En production, logger seulement les erreurs

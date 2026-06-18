@@ -73,10 +73,10 @@ export default function MapValidationTest() {
     
     // Test 2: Vérifier les markers
     if (showPickup) {
-      addTestResult('Marker pickup (noir Tembea)', 'passed', 'Marker pickup affiché avec couleurs #1A1A1A');
+      addTestResult('Marker pickup (noir TAGA)', 'passed', 'Marker pickup affiché avec couleurs #1A1A1A');
     }
     if (showDestination) {
-      addTestResult('Marker destination (rouge Tembea)', 'passed', 'Marker destination affiché avec couleur #EF4444');
+      addTestResult('Marker destination (rouge TAGA)', 'passed', 'Marker destination affiché avec couleur #EF4444');
     }
     if (showUserLocation) {
       addTestResult('Marker position actuelle (bleu)', 'passed', 'Marker position avec pulsation bleue');
@@ -111,7 +111,7 @@ export default function MapValidationTest() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              Testez tous les scénarios : markers dynamiques, couleurs Tembea, centrage automatique, routes animées
+              Testez tous les scénarios : markers dynamiques, couleurs TAGA, centrage automatique, routes animées
             </p>
           </CardContent>
         </Card>

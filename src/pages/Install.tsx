@@ -39,7 +39,7 @@ const Install = () => {
             <div className="w-20 h-20 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">
               <Smartphone className="w-10 h-10 text-primary" />
             </div>
-            <h1 className="text-2xl font-bold">Téléchargez Tembea</h1>
+            <h1 className="text-2xl font-bold">Téléchargez TAGA</h1>
             <p className="text-muted-foreground">
               L'application de transport et livraison n°1 en RDC
             </p>

@@ -24,7 +24,7 @@ export const SocialShareButtons: React.FC<SocialShareButtonsProps> = ({
     const referralUrl = getReferralUrl(referralCode);
     
     if (userType === 'driver' || userType === 'admin' || userType === 'partner') {
-      return `🚗💼 Deviens chauffeur sur Tembea Taxi Congo !
+      return `🚗💼 Deviens chauffeur sur TAGA Taxi Congo !
 
 Utilise mon code de parrainage : ${referralCode}
 🎁 Gagne ${reward} CDF de bonus !
@@ -35,7 +35,7 @@ Utilise mon code de parrainage : ${referralCode}
 
 Inscris-toi ici : ${referralUrl}`;
     } else {
-      return `🚗💰 Rejoins-moi sur Tembea Taxi Congo !
+      return `🚗💰 Rejoins-moi sur TAGA Taxi Congo !
 
 Utilise mon code : ${referralCode}
 🎁 Bonus de ${reward} CDF pour toi !

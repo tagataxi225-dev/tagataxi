@@ -445,7 +445,7 @@ export const UserSettings = () => {
           <div className="flex items-center justify-between">
             <div className="space-y-0.5">
               <p className="text-sm font-medium text-foreground">Se déconnecter</p>
-              <p className="text-xs text-muted-foreground/80">Déconnectez-vous de votre compte Tembea</p>
+              <p className="text-xs text-muted-foreground/80">Déconnectez-vous de votre compte TAGA</p>
             </div>
             <Button
               variant="outline"

@@ -46,7 +46,7 @@ export const CommissionDeprecationBanner = () => {
         <p>
           Le <strong>système de commissions est désormais déprécié</strong>. Tous les chauffeurs et livreurs 
           doivent désormais souscrire à des <strong>tickets d'abonnement digitaux</strong> pour se mettre en ligne 
-          sur Tembea et effectuer des courses.
+          sur TAGA et effectuer des courses.
         </p>
         
         <div className="flex items-center gap-4 flex-wrap">

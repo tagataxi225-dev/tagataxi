@@ -59,7 +59,7 @@ export const AccountSwitcher = () => {
       <div>
         <h3 className="text-xl font-bold mb-2">Vos comptes</h3>
         <p className="text-sm text-muted-foreground">
-          Basculez entre vos différents comptes Tembea
+          Basculez entre vos différents comptes TAGA
         </p>
       </div>
 

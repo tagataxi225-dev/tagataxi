@@ -39,7 +39,7 @@ const TestingDashboard: React.FC = () => {
                 Phase 10 : Tests et Finalisation Complète
               </CardTitle>
               <p className="text-sm text-muted-foreground mt-1">
-                Suite de tests, optimisations et documentation pour Tembea Taxi Congo RDC
+                Suite de tests, optimisations et documentation pour TAGA Taxi Congo RDC
               </p>
             </div>
             <div className="text-center">

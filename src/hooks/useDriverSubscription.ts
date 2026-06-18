@@ -154,7 +154,7 @@ function getDefaultSubscription(serviceType: 'taxi' | 'delivery'): DriverSubscri
     commissionRate: 12,
     normalRate: 12,
     isActive: true,
-    features: ['12% Tembea + max 3% partenaire', 'Courses illimitées', 'Pas de frais fixes'],
+    features: ['12% TAGA + max 3% partenaire', 'Courses illimitées', 'Pas de frais fixes'],
     billingMode: 'commission'
   };
 }

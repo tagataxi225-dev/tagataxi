@@ -23,7 +23,7 @@ export const VendorShopShareButtons: React.FC<VendorShopShareButtonsProps> = ({
 
   const shopUrl = getVendorShopUrl(vendorId);
   
-  const shareMessage = `💥 ${vendorName} est en ligne sur Tembea Shop !
+  const shareMessage = `💥 ${vendorName} est en ligne sur TAGA Shop !
 
 Découvre nos produits, passe ta commande et fais-toi livrer où que tu sois 📦✨
 
@@ -33,7 +33,7 @@ Découvre nos produits, passe ta commande et fais-toi livrer où que tu sois �
 
 👉 Visite la boutique maintenant : ${shopUrl}`;
   
-  const shortMessage = `Boutique ${vendorName} sur Tembea Shop - ${shopUrl}`;
+  const shortMessage = `Boutique ${vendorName} sur TAGA Shop - ${shopUrl}`;
 
   const handleWhatsAppShare = () => {
     const url = `https://wa.me/?text=${encodeURIComponent(shareMessage)}`;
@@ -41,7 +41,7 @@ Découvre nos produits, passe ta commande et fais-toi livrer où que tu sois �
   };
 
   const handleFacebookShare = () => {
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shopUrl)}&quote=${encodeURIComponent(`Boutique ${vendorName} sur Tembea Shop`)}`;
+    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shopUrl)}&quote=${encodeURIComponent(`Boutique ${vendorName} sur TAGA Shop`)}`;
     window.open(url, '_blank');
   };
 
@@ -56,7 +56,7 @@ Découvre nos produits, passe ta commande et fais-toi livrer où que tu sois �
   };
 
   const handleEmail = () => {
-    const subject = `Boutique ${vendorName} sur Tembea Shop`;
+    const subject = `Boutique ${vendorName} sur TAGA Shop`;
     const url = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(shareMessage)}`;
     window.open(url, '_self');
   };

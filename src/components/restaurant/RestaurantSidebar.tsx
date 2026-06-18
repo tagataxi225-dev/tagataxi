@@ -133,7 +133,7 @@ export function RestaurantSidebar({
                 exit={{ opacity: 0, x: -10 }}
                 className="flex-1 min-w-0"
               >
-                <h2 className="font-bold text-foreground truncate">Tembea Food</h2>
+                <h2 className="font-bold text-foreground truncate">TAGA Food</h2>
                 <p className="text-xs text-muted-foreground truncate">{restaurantName}</p>
               </motion.div>
             )}

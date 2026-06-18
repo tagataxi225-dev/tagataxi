@@ -122,7 +122,7 @@ const AdminSuggestions = () => {
                 Suggestions <span className="text-red-500">utilisateurs</span>
               </h1>
               <p className="mt-0.5 text-sm text-muted-foreground">
-                Retours envoyés depuis l’app Tembea.
+                Retours envoyés depuis l’app TAGA.
               </p>
             </div>
           </div>

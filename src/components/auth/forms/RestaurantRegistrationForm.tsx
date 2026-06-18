@@ -114,7 +114,7 @@ export const RestaurantRegistrationForm = ({ onSuccess, onBack }: RestaurantRegi
         <CardHeader>
           <CardTitle>Inscription Restaurant</CardTitle>
           <CardDescription>
-            Rejoignez Tembea et proposez vos plats à des milliers de clients
+            Rejoignez TAGA et proposez vos plats à des milliers de clients
           </CardDescription>
         </CardHeader>
         <CardContent>

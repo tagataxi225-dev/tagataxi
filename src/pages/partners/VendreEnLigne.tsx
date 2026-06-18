@@ -54,7 +54,7 @@ const VendreEnLigne = () => {
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Base clients Tembea",
+      title: "Base clients TAGA",
       description: "Accédez à notre communauté d'utilisateurs actifs"
     }
   ];
@@ -78,7 +78,7 @@ const VendreEnLigne = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="secondary" className="mb-4">
-              Marketplace Tembea
+              Marketplace TAGA
             </Badge>
             <h1 className="text-display-lg">
               Vendez en ligne et développez votre <span className="text-primary-glow">business</span>
@@ -205,7 +205,7 @@ const VendreEnLigne = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi vendre sur Tembea ?</h2>
+            <h2 className="text-heading-xl">Pourquoi vendre sur TAGA ?</h2>
             <p className="text-body-md text-muted-foreground">
               Tous les outils pour faire croître votre business
             </p>
@@ -302,7 +302,7 @@ const VendreEnLigne = () => {
                 name: "Mama Esperance",
                 business: "Mode & Accessoires",
                 sales: "150 ventes/mois",
-                comment: "Tembea m'a permis d'agrandir ma clientèle au-delà de mon quartier !"
+                comment: "TAGA m'a permis d'agrandir ma clientèle au-delà de mon quartier !"
               },
               {
                 name: "Christian M.",
@@ -344,7 +344,7 @@ const VendreEnLigne = () => {
         <div className="container mx-auto px-4 text-center space-y-8">
           <h2 className="text-heading-xl">Prêt à ouvrir votre boutique ?</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
-            Rejoignez des centaines de vendeurs qui développent leur business sur Tembea
+            Rejoignez des centaines de vendeurs qui développent leur business sur TAGA
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="secondary" size="lg">

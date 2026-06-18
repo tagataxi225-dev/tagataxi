@@ -23,7 +23,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">1. Collecte des données</h2>
             <p className="text-muted-foreground">
-              Tembea collecte les données personnelles nécessaires à la fourniture de ses services : 
+              TAGA collecte les données personnelles nécessaires à la fourniture de ses services : 
               nom, email, numéro de téléphone, localisation GPS pendant les trajets.
             </p>
           </section>
@@ -81,7 +81,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">7. Cookies</h2>
             <p className="text-muted-foreground">
-              Tembea utilise des cookies essentiels au fonctionnement du site (authentification, 
+              TAGA utilise des cookies essentiels au fonctionnement du site (authentification, 
               préférences). Aucun cookie publicitaire tiers n'est utilisé.
             </p>
           </section>

@@ -193,13 +193,13 @@ class NativeGeolocationService {
     if (this.isNative) {
       if (isAndroid) {
         return new GeolocationError(
-          'GPS désactivé pour Tembea. Allez dans Paramètres > Applications > Tembea > Permissions > Localisation > Autoriser.',
+          'GPS désactivé pour TAGA. Allez dans Paramètres > Applications > TAGA > Permissions > Localisation > Autoriser.',
           'permission_denied_permanent'
         );
       }
       if (isIOS) {
         return new GeolocationError(
-          'GPS désactivé pour Tembea. Allez dans Réglages > Confidentialité > Service de localisation > Tembea > Lorsque l\'app est active.',
+          'GPS désactivé pour TAGA. Allez dans Réglages > Confidentialité > Service de localisation > TAGA > Lorsque l\'app est active.',
           'permission_denied_permanent'
         );
       }
@@ -700,10 +700,10 @@ class NativeGeolocationService {
     if (this.isNative && isAndroid) {
       return {
         platform: 'android',
-        steps: 'Paramètres > Applications > Tembea > Permissions > Localisation > Autoriser',
+        steps: 'Paramètres > Applications > TAGA > Permissions > Localisation > Autoriser',
         detailedSteps: [
           'Ouvrez les Paramètres de votre téléphone',
-          'Allez dans Applications > Tembea',
+          'Allez dans Applications > TAGA',
           'Appuyez sur Permissions > Localisation',
           'Sélectionnez "Autoriser tout le temps" ou "Uniquement pendant l\'utilisation"',
           'Activez aussi "Utiliser la position précise"'
@@ -713,12 +713,12 @@ class NativeGeolocationService {
     if (this.isNative && isIOS) {
       return {
         platform: 'ios',
-        steps: 'Réglages > Confidentialité > Service de localisation > Tembea > Lorsque l\'app est active',
+        steps: 'Réglages > Confidentialité > Service de localisation > TAGA > Lorsque l\'app est active',
         detailedSteps: [
           'Ouvrez les Réglages iPhone',
           'Allez dans Confidentialité et sécurité > Service de localisation',
           'Vérifiez que le Service de localisation est ACTIVÉ (en haut)',
-          'Trouvez Tembea dans la liste',
+          'Trouvez TAGA dans la liste',
           'Sélectionnez "Lorsque l\'app est active" ou "Toujours"',
           'Activez "Position exacte"'
         ]
@@ -734,7 +734,7 @@ class NativeGeolocationService {
           'Vérifiez que le Service de localisation est ACTIVÉ',
           'Trouvez Safari dans la liste et appuyez dessus',
           'Sélectionnez "Lorsque l\'app est active" ou "Autoriser"',
-          'Retournez sur Tembea et rechargez la page'
+          'Retournez sur TAGA et rechargez la page'
         ]
       };
     }

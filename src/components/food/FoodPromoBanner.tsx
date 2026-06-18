@@ -16,7 +16,7 @@ interface PromoSlide {
 const promoSlides: PromoSlide[] = [
   {
     id: '0',
-    title: 'Tembea Food 🍽️',
+    title: 'TAGA Food 🍽️',
     description: 'Tes restaurants préférés, livrés rapidement.',
     cta: '🔍 Explorer les restaurants',
     gradient: 'from-orange-600 via-red-600 to-orange-700',

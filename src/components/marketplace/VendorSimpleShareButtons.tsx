@@ -28,7 +28,7 @@ export const VendorSimpleShareButtons: React.FC<VendorSimpleShareButtonsProps> =
       toast({
         variant: 'destructive',
         title: '⚠️ Erreur de configuration',
-        description: 'Votre ID boutique est invalide. Contactez le support Tembea.'
+        description: 'Votre ID boutique est invalide. Contactez le support TAGA.'
       });
     }
   }, [vendorId, toast]);
@@ -36,7 +36,7 @@ export const VendorSimpleShareButtons: React.FC<VendorSimpleShareButtonsProps> =
   const shopUrl = getVendorShopUrl(vendorId);
   
   // Message enrichi avec emojis
-  const shareMessage = `💥 ${vendorName} est en ligne sur Tembea Shop !
+  const shareMessage = `💥 ${vendorName} est en ligne sur TAGA Shop !
 
 Découvre nos produits, passe ta commande et fais-toi livrer où que tu sois 📦✨
 

@@ -14,7 +14,7 @@ export const DarkModeShowcase = () => {
         <div className="flex items-center justify-center gap-2 text-4xl font-bold">
           <Palette className="h-10 w-10 text-primary" />
           <span className="bg-gradient-primary bg-clip-text text-transparent">
-            Tembea Dark Mode
+            TAGA Dark Mode
           </span>
         </div>
         <p className="text-muted-foreground max-w-2xl mx-auto">

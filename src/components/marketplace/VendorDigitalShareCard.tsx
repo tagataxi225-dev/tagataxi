@@ -40,8 +40,8 @@ export const VendorDigitalShareCard: React.FC<VendorDigitalShareCardProps> = ({
   const productUrl = getProductUrl(productId);
   
   const shareMessage = isDigital
-    ? `📥 Découvre ce produit digital sur Tembea Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n📲 Téléchargement instantané\n\n👉 ${productUrl}`
-    : `🛍️ Découvre ce produit sur Tembea Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n\n👉 ${productUrl}`;
+    ? `📥 Découvre ce produit digital sur TAGA Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n📲 Téléchargement instantané\n\n👉 ${productUrl}`
+    : `🛍️ Découvre ce produit sur TAGA Shop !\n\n${productTitle}\n💰 ${productPrice.toLocaleString()} CDF\n\n👉 ${productUrl}`;
 
   useEffect(() => {
     const fetchStats = async () => {

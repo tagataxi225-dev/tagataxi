@@ -57,7 +57,7 @@ export const InstallBanner = () => {
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-sm mb-1">
-                Téléchargez Tembea
+                Téléchargez TAGA
               </h3>
               <p className="text-xs text-muted-foreground mb-3">
                 Disponible sur Play Store & App Store

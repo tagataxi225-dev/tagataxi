@@ -103,7 +103,7 @@ export const RentalVehiclesVisibilityTest = () => {
       <CardHeader>
         <CardTitle>🚗 Test Visibilité Véhicules Côté Client</CardTitle>
         <CardDescription>
-          Vérifie que les 10 véhicules de "Tembea Test Fleet" sont visibles pour les clients
+          Vérifie que les 10 véhicules de "TAGA Test Fleet" sont visibles pour les clients
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -111,7 +111,7 @@ export const RentalVehiclesVisibilityTest = () => {
           <p><strong>Utilisateur connecté:</strong> {user?.email || 'Non connecté'}</p>
           <p><strong>Rôle attendu:</strong> Client (non-partenaire)</p>
           <p><strong>Véhicules attendus:</strong> 10 véhicules approuvés</p>
-          <p><strong>Partenaire source:</strong> Tembea Test Fleet</p>
+          <p><strong>Partenaire source:</strong> TAGA Test Fleet</p>
         </div>
 
         <div className="flex gap-2">

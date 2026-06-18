@@ -140,7 +140,7 @@ export const RegistrationSummary = ({ data, onConfirm, onEdit, onPrevious, loadi
           <button type="button" onClick={() => setLegalSheet('terms')} className={cn('font-medium hover:underline', iconColor)}>conditions d'utilisation</button>
           {' '}et la{' '}
           <button type="button" onClick={() => setLegalSheet('privacy')} className={cn('font-medium hover:underline', iconColor)}>politique de confidentialité</button>
-          {' '}de Tembea.
+          {' '}de TAGA.
         </p>
         <LegalDocumentSheet
           type={legalSheet}

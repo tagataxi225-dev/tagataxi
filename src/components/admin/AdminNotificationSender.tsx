@@ -35,7 +35,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
   {
     id: 'welcome',
     label: 'Bienvenue',
-    title: 'Bienvenue sur Tembea ! 🎉',
+    title: 'Bienvenue sur TAGA ! 🎉',
     content: "Ravis de t'accueillir. Commande un taxi, fais-toi livrer, commande à manger — tout est là, en quelques clics.",
     priority: 'normal',
   },
@@ -43,7 +43,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'reactivation',
     label: 'Reviens nous voir',
     title: 'Tu nous as manqué 👋',
-    content: "Ça fait un moment ! De nouvelles fonctionnalités t'attendent sur Tembea. Reviens découvrir ce qui a changé.",
+    content: "Ça fait un moment ! De nouvelles fonctionnalités t'attendent sur TAGA. Reviens découvrir ce qui a changé.",
     priority: 'normal',
   },
 
@@ -52,7 +52,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'promo_weekend',
     label: 'Promo week-end',
     title: 'Bon plan week-end 🔥',
-    content: "Profite de réductions sur tes courses et livraisons tout le week-end. Ouvre Tembea et fonce !",
+    content: "Profite de réductions sur tes courses et livraisons tout le week-end. Ouvre TAGA et fonce !",
     priority: 'high',
   },
   {
@@ -66,7 +66,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'promo_food',
     label: 'Promo restauration',
     title: 'Une petite faim ? 🍽️',
-    content: "Tes restos préférés sont en promo sur Tembea Food. Commande maintenant, on te livre vite et chaud.",
+    content: "Tes restos préférés sont en promo sur TAGA Food. Commande maintenant, on te livre vite et chaud.",
     priority: 'high',
   },
 
@@ -74,22 +74,22 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
   {
     id: 'new_service',
     label: 'Nouveau service',
-    title: 'Du nouveau sur Tembea ✨',
+    title: 'Du nouveau sur TAGA ✨',
     content: "Un nouveau service vient d'arriver dans ta ville. Ouvre l'app pour le découvrir en avant-première.",
     priority: 'normal',
   },
   {
     id: 'new_city',
     label: 'Nouvelle ville',
-    title: 'Tembea arrive chez toi 🚗',
-    content: "Bonne nouvelle : Tembea est désormais disponible dans ta ville. Taxi, livraison et plus encore, à portée de main.",
+    title: 'TAGA arrive chez toi 🚗',
+    content: "Bonne nouvelle : TAGA est désormais disponible dans ta ville. Taxi, livraison et plus encore, à portée de main.",
     priority: 'normal',
   },
   {
     id: 'rental',
     label: 'Location véhicule',
     title: 'Besoin d\'un véhicule ? 🚙',
-    content: "Loue une voiture en toute simplicité sur Tembea. Réserve en quelques minutes, roule en toute liberté.",
+    content: "Loue une voiture en toute simplicité sur TAGA. Réserve en quelques minutes, roule en toute liberté.",
     priority: 'normal',
   },
 
@@ -98,14 +98,14 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'maintenance',
     label: 'Maintenance',
     title: 'Maintenance prévue 🛠️',
-    content: "Tembea sera brièvement indisponible cette nuit pour amélioration. Merci de ta patience, on revient encore meilleurs.",
+    content: "TAGA sera brièvement indisponible cette nuit pour amélioration. Merci de ta patience, on revient encore meilleurs.",
     priority: 'normal',
   },
   {
     id: 'update_app',
     label: 'Mise à jour',
     title: 'Nouvelle version disponible 📲',
-    content: "Une mise à jour de Tembea est disponible. Installe-la pour profiter des dernières améliorations et corrections.",
+    content: "Une mise à jour de TAGA est disponible. Installe-la pour profiter des dernières améliorations et corrections.",
     priority: 'normal',
   },
 
@@ -114,13 +114,13 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'driver_opportunity',
     label: 'Chauffeurs — gains',
     title: 'Plus de courses pour toi 🚕',
-    content: "La demande est forte en ce moment. Connecte-toi sur Tembea et maximise tes gains dès maintenant.",
+    content: "La demande est forte en ce moment. Connecte-toi sur TAGA et maximise tes gains dès maintenant.",
     priority: 'high',
   },
   {
     id: 'partner_info',
     label: 'Partenaires — info',
-    title: 'Info partenaire Tembea 📋',
+    title: 'Info partenaire TAGA 📋',
     content: "Une nouveauté concerne ta flotte. Connecte-toi à ton espace partenaire pour en savoir plus.",
     priority: 'normal',
   },
@@ -128,7 +128,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'vendor_boost',
     label: 'Vendeurs — visibilité',
     title: 'Booste tes ventes 📈',
-    content: "Mets en avant tes produits sur Tembea Marketplace. Plus de visibilité, plus de clients, plus de ventes.",
+    content: "Mets en avant tes produits sur TAGA Marketplace. Plus de visibilité, plus de clients, plus de ventes.",
     priority: 'normal',
   },
 
@@ -137,7 +137,7 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
     id: 'security_alert',
     label: 'Alerte sécurité',
     title: 'Reste vigilant ⚠️',
-    content: "Ta sécurité compte. Ne partage jamais ton code de connexion. Tembea ne te le demandera jamais.",
+    content: "Ta sécurité compte. Ne partage jamais ton code de connexion. TAGA ne te le demandera jamais.",
     priority: 'urgent',
   },
 
@@ -145,8 +145,8 @@ const PREDEFINED_TEMPLATES: NotificationTemplate[] = [
   {
     id: 'holiday',
     label: 'Jour férié / fête',
-    title: 'Bonne fête de la part de Tembea 🎊',
-    content: "Toute l'équipe Tembea te souhaite une excellente journée. On reste à ton service, où que tu sois.",
+    title: 'Bonne fête de la part de TAGA 🎊',
+    content: "Toute l'équipe TAGA te souhaite une excellente journée. On reste à ton service, où que tu sois.",
     priority: 'normal',
   },
 ];

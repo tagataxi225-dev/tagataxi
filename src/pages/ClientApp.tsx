@@ -422,7 +422,7 @@ const ClientApp = () => {
           images: Array.isArray(product.images) ? product.images : [],
           rating: 4.5,
           reviews: Math.floor(Math.random() * 200) + 10,
-          seller: "Vendeur Tembea",
+          seller: "Vendeur TAGA",
           category: product.category?.toLowerCase() || "other",
           description: product.description || "",
           specifications: {},
@@ -1102,7 +1102,7 @@ const ClientApp = () => {
                             </Button>
                             <div className="flex items-center gap-2">
                               <Sparkles className="h-5 w-5 text-primary" />
-                              <h1 className="text-lg font-semibold text-foreground">Tombola Tembea</h1>
+                              <h1 className="text-lg font-semibold text-foreground">Tombola TAGA</h1>
                             </div>
                           </div>
                         </div>

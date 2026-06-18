@@ -36,7 +36,7 @@ export const translations = {
     'common.previous': 'Précédent',
     
     // Auth
-    'auth.welcome': 'Bienvenue sur Tembea',
+    'auth.welcome': 'Bienvenue sur TAGA',
     'auth.choose_space': 'Choisissez votre espace pour vous connecter',
     'auth.professional_question': 'Vous êtes professionnel ?',
     'auth.back_home': 'Retour à l\'accueil',
@@ -102,7 +102,7 @@ export const translations = {
     'home.services.gift_cards_desc': 'Offrez du crédit TembeaPay',
     'home.services.airtime': 'E-Recharge',
     'home.services.airtime_desc': 'Rechargez vos unités mobile',
-    'home.services.job': 'Tembea Job',
+    'home.services.job': 'TAGA Job',
     'home.services.job_desc': 'Trouvez votre prochain emploi',
     'home.services.games': 'Jeux',
     'home.services.games_desc': 'Divertissement et jeux interactifs',
@@ -117,7 +117,7 @@ export const translations = {
     'auth.redirecting': 'Redirection en cours...',
     'auth.accept_terms_part1': 'J\'accepte les',
     'auth.accept_terms_part2': 'et la',
-    'auth.accept_terms_part3': 'de Tembea.',
+    'auth.accept_terms_part3': 'de TAGA.',
     'auth.terms_of_service': 'conditions générales d\'utilisation',
     'auth.privacy_policy': 'politique de confidentialité',
 
@@ -131,10 +131,10 @@ export const translations = {
 
     // Auth - Espaces Admin
     'auth.admin_space': 'Espace Administrateur',
-    'auth.admin_title': 'Tembea Admin',
+    'auth.admin_title': 'TAGA Admin',
     'auth.admin_subtitle': 'Accès sécurisé pour les administrateurs',
     'auth.not_authorized_admin': 'Ce compte n\'est pas autorisé à accéder à l\'administration',
-    'auth.welcome_admin': 'Bienvenue dans l\'administration Tembea',
+    'auth.welcome_admin': 'Bienvenue dans l\'administration TAGA',
     'auth.admin_email_placeholder': 'admin@kwendataxi.com',
     'auth.not_admin': 'Pas admin ?',
     'auth.client_space': 'Espace Client',
@@ -142,7 +142,7 @@ export const translations = {
     'auth.partner_space': 'Espace Partenaire',
 
     // Auth - Espaces Chauffeur
-    'auth.driver_title': 'Tembea Driver',
+    'auth.driver_title': 'TAGA Driver',
     'auth.driver_subtitle': 'Gérez vos courses et maximisez vos gains',
     'auth.welcome_driver': 'Bienvenue dans votre espace chauffeur',
     'auth.driver_email_placeholder': 'chauffeur@email.com',
@@ -154,9 +154,9 @@ export const translations = {
     'auth.discover_services': 'Découvrez nos services sans vous connecter',
 
     // Auth - Espaces Partenaire
-    'auth.partner_title': 'Tembea Partner',
+    'auth.partner_title': 'TAGA Partner',
     'auth.partner_subtitle': 'Gérez votre flotte et développez votre activité',
-    'auth.welcome_partner': 'Bienvenue dans votre espace partenaire Tembea',
+    'auth.welcome_partner': 'Bienvenue dans votre espace partenaire TAGA',
     'auth.partner_email_placeholder': 'partenaire@entreprise.com',
     'auth.not_partner_account': 'Ce compte n\'est pas un compte partenaire.',
     'auth.not_partner': 'Pas partenaire ?',
@@ -254,7 +254,7 @@ export const translations = {
     
     // Settings
     'settings.title': 'Paramètres',
-    'settings.subtitle': 'Personnalisez votre expérience Tembea',
+    'settings.subtitle': 'Personnalisez votre expérience TAGA',
     'settings.save': 'Sauvegarder',
     'settings.reset': 'Réinitialiser',
     'settings.saving': 'Sauvegarde...',
@@ -321,14 +321,14 @@ export const translations = {
     // Hero Section
     'hero.title': 'Transport et Livraison en RDC',
     'hero.subtitle': 'Votre solution complète de mobilité urbaine',
-    'hero.description': 'Des courses VTC aux livraisons express, découvrez Tembea - l\'application qui révolutionne le transport en République Démocratique du Congo.',
+    'hero.description': 'Des courses VTC aux livraisons express, découvrez TAGA - l\'application qui révolutionne le transport en République Démocratique du Congo.',
     'hero.cta_start': 'Commencer maintenant',
     'hero.cta_demo': 'Voir la démo',
     'hero.stats.cities': 'Villes actives',
     'hero.stats.available': 'Disponible 24h/7j',
     'hero.stats.payment': 'Paiement sécurisé',
     'hero.stats.support': 'Support client',
-    'hero.kwenda_taxi': 'Tembea Taxi',
+    'hero.kwenda_taxi': 'TAGA Taxi',
     'hero.made_in_rdc': 'Fait en RDC',
     'hero.innovation_excellence': 'Innovation & Excellence',
     'hero.tagline': 'Votre partenaire mobilité en Afrique',
@@ -339,7 +339,7 @@ export const translations = {
     'hero.available_24_7': 'Disponible 24h/7j',
     'hero.kwenda_pay': 'TembeaPay',
     'hero.location': 'Kinshasa, Lubumbashi, Kolwezi',
-    'hero.alt_text': 'Service de transport Tembea Taxi en RDC',
+    'hero.alt_text': 'Service de transport TAGA Taxi en RDC',
     
     // Services
     'services.title': 'Nos Services',
@@ -399,7 +399,7 @@ export const translations = {
     'features.title': 'Fonctionnalités Avancées',
     'features.subtitle': 'Une expérience utilisateur exceptionnelle',
     'features.title_prefix': 'Pourquoi choisir',
-    'features.title_brand': 'Tembea',
+    'features.title_brand': 'TAGA',
     'features.realtime.title': 'Suivi en temps réel',
     'features.realtime.description': 'Suivez vos courses et livraisons en direct',
     'features.payment.title': 'Paiements sécurisés',
@@ -628,7 +628,7 @@ export const translations = {
     'promo.vehicle_rental_desc': 'À partir de 75 000 CDF/jour',
     'promo.marketplace_slogan': 'Achetez. Vendez. On livre.',
     'promo.marketplace_slogan_desc': 'Marketplace 100% sécurisée',
-    'promo.kwenda_food': 'Tembea Food',
+    'promo.kwenda_food': 'TAGA Food',
     'promo.kwenda_food_desc': 'Commandez vos plats préférés',
     'promo.order': 'Commander',
     'promo.deliver': 'Livrer',
@@ -761,7 +761,7 @@ export const translations = {
     'faq.lost_item': 'Objet perdu ou oublié',
     'faq.lost_item_answer': 'Contactez notre support client immédiatement via le chat ou par téléphone. Nous vous mettrons en relation avec le chauffeur pour récupérer vos affaires.',
     'faq.become_driver': 'Devenir chauffeur partenaire',
-    'faq.become_driver_answer': 'Pour devenir chauffeur Tembea, inscrivez-vous via l\'application, soumettez vos documents (permis, assurance, contrôle technique) et passez la validation.',
+    'faq.become_driver_answer': 'Pour devenir chauffeur TAGA, inscrivez-vous via l\'application, soumettez vos documents (permis, assurance, contrôle technique) et passez la validation.',
     'faq.data_security': 'Sécurité des données',
     'faq.data_security_answer': 'Vos données sont protégées par cryptage SSL et conformes aux normes internationales. Nous ne partageons jamais vos informations personnelles.',
 
@@ -772,7 +772,7 @@ export const translations = {
     'wallet.recent_transactions': 'Transactions récentes',
 
     // Lottery
-    'lottery.title': '✨ Tembea Tombola',
+    'lottery.title': '✨ TAGA Tombola',
     'lottery.subtitle': 'Grattez et gagnez !',
     'lottery.cards': 'Cartes',
     'lottery.wins': 'Gains',
@@ -830,7 +830,7 @@ export const translations = {
     'delivery.outside_service_area': 'Cette adresse est en dehors de {city}. Assurez-vous d\'être dans la zone de service.',
 
     // Rental
-    'rental.title': 'Tembea Location',
+    'rental.title': 'TAGA Location',
     'rental.subtitle': 'Véhicules premium',
     'rental.all_vehicles': 'Tous ({count})',
     'rental.no_vehicles': 'Aucun véhicule disponible',
@@ -962,7 +962,7 @@ export const translations = {
     'driver_settings.help_desc': 'FAQ et support',
 
     // Driver Header
-    'driver_header.title': 'Tembea Pro',
+    'driver_header.title': 'TAGA Pro',
     'driver_header.subtitle': 'Application moderne pour chauffeurs professionnels',
     'driver_header.taxi': 'Taxi',
     'driver_header.delivery': 'Livraison',
@@ -1001,7 +1001,7 @@ export const translations = {
     'common.more': 'More',
     
     // Auth
-    'auth.welcome': 'Welcome to Tembea',
+    'auth.welcome': 'Welcome to TAGA',
     'auth.choose_space': 'Choose your space to log in',
     'auth.professional_question': 'Are you a professional?',
     'auth.back_home': 'Back to Home',
@@ -1067,7 +1067,7 @@ export const translations = {
     'home.services.gift_cards_desc': 'Give TembeaPay credit',
     'home.services.airtime': 'Airtime',
     'home.services.airtime_desc': 'Top up your mobile credit',
-    'home.services.job': 'Tembea Job',
+    'home.services.job': 'TAGA Job',
     'home.services.job_desc': 'Find your next job',
     'home.services.games': 'Games',
     'home.services.games_desc': 'Entertainment and interactive games',
@@ -1082,13 +1082,13 @@ export const translations = {
     'auth.redirecting': 'Redirecting...',
     'auth.accept_terms_part1': 'I accept the',
     'auth.accept_terms_part2': 'and the',
-    'auth.accept_terms_part3': 'of Tembea.',
+    'auth.accept_terms_part3': 'of TAGA.',
     'auth.terms_of_service': 'terms of service',
     'auth.privacy_policy': 'privacy policy',
     
     // Settings
     'settings.title': 'Settings',
-    'settings.subtitle': 'Customize your Tembea experience',
+    'settings.subtitle': 'Customize your TAGA experience',
     'settings.save': 'Save',
     'settings.reset': 'Reset',
     'settings.saving': 'Saving...',
@@ -1155,14 +1155,14 @@ export const translations = {
     // Hero Section
     'hero.title': 'Transport and Delivery in DRC',
     'hero.subtitle': 'Your complete urban mobility solution',
-    'hero.description': 'From VTC rides to express deliveries, discover Tembea - the app revolutionizing transport in the Democratic Republic of Congo.',
+    'hero.description': 'From VTC rides to express deliveries, discover TAGA - the app revolutionizing transport in the Democratic Republic of Congo.',
     'hero.cta_start': 'Get Started',
     'hero.cta_demo': 'View Demo',
     'hero.stats.cities': 'Active Cities',
     'hero.stats.available': 'Available 24/7',
     'hero.stats.payment': 'Secure Payment',
     'hero.stats.support': 'Customer Support',
-    'hero.kwenda_taxi': 'Tembea Taxi',
+    'hero.kwenda_taxi': 'TAGA Taxi',
     'hero.made_in_rdc': 'Made in DRC',
     'hero.innovation_excellence': 'Innovation & Excellence',
     'hero.tagline': 'Your mobility partner in Africa',
@@ -1173,7 +1173,7 @@ export const translations = {
     'hero.available_24_7': 'Available 24/7',
     'hero.kwenda_pay': 'TembeaPay',
     'hero.location': 'Kinshasa, Lubumbashi, Kolwezi',
-    'hero.alt_text': 'Tembea Taxi transport service in DRC',
+    'hero.alt_text': 'TAGA Taxi transport service in DRC',
     
     // Services
     'services.title': 'Our Services',
@@ -1233,7 +1233,7 @@ export const translations = {
     'features.title': 'Advanced Features',
     'features.subtitle': 'An exceptional user experience',
     'features.title_prefix': 'Why choose',
-    'features.title_brand': 'Tembea',
+    'features.title_brand': 'TAGA',
     'features.realtime.title': 'Real-time Tracking',
     'features.realtime.description': 'Track your rides and deliveries live',
     'features.payment.title': 'Secure Payments',
@@ -1430,7 +1430,7 @@ export const translations = {
     'promo.vehicle_rental_desc': 'From 75,000 CDF/day',
     'promo.marketplace_slogan': 'Buy. Sell. We deliver.',
     'promo.marketplace_slogan_desc': '100% secure marketplace',
-    'promo.kwenda_food': 'Tembea Food',
+    'promo.kwenda_food': 'TAGA Food',
     'promo.kwenda_food_desc': 'Order your favorite dishes',
     'promo.order': 'Order',
     'promo.deliver': 'Deliver',
@@ -1544,7 +1544,7 @@ export const translations = {
 
     // FAQ - English Complete Section
     'faq.title': 'Frequently Asked Questions',
-    'faq.subtitle': 'Find answers to common questions about Tembea services',
+    'faq.subtitle': 'Find answers to common questions about TAGA services',
     'faq.how_book_ride': 'How do I book a ride?',
     'faq.how_book_ride_answer': 'Open the app, enter your destination, choose your vehicle type, and confirm your booking. A driver will be assigned to you automatically.',
     'faq.payment_methods': 'What payment methods do you accept?',
@@ -1573,7 +1573,7 @@ export const translations = {
     'wallet.recent_transactions': 'Recent Transactions',
 
     // Lottery
-    'lottery.title': '✨ Tembea Lottery',
+    'lottery.title': '✨ TAGA Lottery',
     'lottery.subtitle': 'Scratch and win!',
     'lottery.cards': 'Cards',
     'lottery.wins': 'Wins',
@@ -1631,7 +1631,7 @@ export const translations = {
     'delivery.outside_service_area': 'This address is outside {city}. Make sure you are in the service area.',
 
     // Rental
-    'rental.title': 'Tembea Rental',
+    'rental.title': 'TAGA Rental',
     'rental.subtitle': 'Premium vehicles',
     'rental.all_vehicles': 'All ({count})',
     'rental.no_vehicles': 'No vehicles available',
@@ -1783,7 +1783,7 @@ export const translations = {
     'driver_settings.help_desc': 'FAQ and support',
 
     // Driver Header
-    'driver_header.title': 'Tembea Pro',
+    'driver_header.title': 'TAGA Pro',
     'driver_header.subtitle': 'Modern app for professional drivers',
     'driver_header.taxi': 'Taxi',
     'driver_header.delivery': 'Delivery',
@@ -1821,7 +1821,7 @@ export const translations = {
     'auth.register': 'Sumina',
     'auth.email': 'Email',
     'auth.password': 'Code ya lukutuka',
-    'auth.continue': 'Tembea',
+    'auth.continue': 'TAGA',
     'auth.logout': 'Fuluka',
     
     // Role Selection
@@ -1861,7 +1861,7 @@ export const translations = {
     'home.services.gift_cards_desc': 'Pesa crédit TembeaPay',
     'home.services.airtime': 'Recharge',
     'home.services.airtime_desc': 'Recharge crédit mobile',
-    'home.services.job': 'Tembea Job',
+    'home.services.job': 'TAGA Job',
     'home.services.job_desc': 'Zwa mosala',
     'home.services.games': 'Masano',
     'home.services.games_desc': 'Esengo na masano',
@@ -1876,13 +1876,13 @@ export const translations = {
     'auth.redirecting': 'Tokozonga...',
     'auth.accept_terms_part1': 'Nandimi',
     'auth.accept_terms_part2': 'na',
-    'auth.accept_terms_part3': 'ya Tembea.',
+    'auth.accept_terms_part3': 'ya TAGA.',
     'auth.terms_of_service': 'mibeko ya kosalela',
     'auth.privacy_policy': 'politique ya kobatela ba données',
     
     // Settings - Lingala
     'settings.title': 'Ba paramètres',
-    'settings.subtitle': 'Bongisa Tembea na yo',
+    'settings.subtitle': 'Bongisa TAGA na yo',
     'settings.save': 'Bomba',
     'settings.reset': 'Zongisa',
     'settings.saving': 'Kobomba...',
@@ -1994,7 +1994,7 @@ export const translations = {
     'promo.vehicle_rental_desc': 'Kobanda na 75 000 CDF/jour',
     'promo.marketplace_slogan': 'Somba. Tekisa. Tolivrer.',
     'promo.marketplace_slogan_desc': 'Marketplace 100% sécurisée',
-    'promo.kwenda_food': 'Tembea Food',
+    'promo.kwenda_food': 'TAGA Food',
     'promo.kwenda_food_desc': 'Commander ba plats waku ya malonga',
     'promo.order': 'Commander',
     'promo.deliver': 'Livrer',
@@ -2014,7 +2014,7 @@ export const translations = {
     'wallet.recent_transactions': 'Ba transactions ya sika',
 
     // Lottery
-    'lottery.title': '✨ Tembea Tombola',
+    'lottery.title': '✨ TAGA Tombola',
     'lottery.subtitle': 'Kata mpe zwa!',
     'lottery.cards': 'Ba cartes',
     'lottery.wins': 'Ba gains',
@@ -2073,7 +2073,7 @@ export const translations = {
     'delivery.outside_service_area': 'Adresse oyo ezali libánda ya {city}. Yeba ete ozali na zone ya service.',
 
     // Rental
-    'rental.title': 'Tembea Location',
+    'rental.title': 'TAGA Location',
     'rental.subtitle': 'Ba véhicules premium',
     'rental.all_vehicles': 'Nyonso ({count})',
     'rental.no_vehicles': 'Ba véhicules ezali te',
@@ -2206,7 +2206,7 @@ export const translations = {
     'home.services.gift_cards_desc': 'Kupa crédit TembeaPay',
     'home.services.airtime': 'Recharge',
     'home.services.airtime_desc': 'Recharge crédit mobile',
-    'home.services.job': 'Tembea Job',
+    'home.services.job': 'TAGA Job',
     'home.services.job_desc': 'Baka musalu',
     'home.services.games': 'Mikanda',
     'home.services.games_desc': 'Kusepela ne mikanda',
@@ -2221,13 +2221,13 @@ export const translations = {
     'auth.redirecting': 'Tukenji...',
     'auth.accept_terms_part1': 'Ndimika',
     'auth.accept_terms_part2': 'ne',
-    'auth.accept_terms_part3': 'wa Tembea.',
+    'auth.accept_terms_part3': 'wa TAGA.',
     'auth.terms_of_service': 'mibeko ya kusebesa',
     'auth.privacy_policy': 'dipolitique dya kukeba ba données',
     
     // Settings - Tshiluba
     'settings.title': 'Ba paramètres',
-    'settings.subtitle': 'Bongisa Tembea mua bualu',
+    'settings.subtitle': 'Bongisa TAGA mua bualu',
     'settings.save': 'Bikila',
     'settings.reset': 'Zongisha',
     'settings.saving': 'Kubikila...',
@@ -2362,7 +2362,7 @@ export const translations = {
     'promo.vehicle_rental_desc': 'Kobanda na 75 000 CDF/jour',
     'promo.marketplace_slogan': 'Somba. Tekisa. Tolivrer.',
     'promo.marketplace_slogan_desc': 'Marketplace 100% sécurisée',
-    'promo.kwenda_food': 'Tembea Food',
+    'promo.kwenda_food': 'TAGA Food',
     'promo.kwenda_food_desc': 'Commander ba plats waku',
     'promo.order': 'Commander',
     'promo.deliver': 'Livrer',
@@ -2382,7 +2382,7 @@ export const translations = {
     'wallet.recent_transactions': 'Ba transactions wa sika',
 
     // Lottery
-    'lottery.title': '✨ Tembea Tombola',
+    'lottery.title': '✨ TAGA Tombola',
     'lottery.subtitle': 'Kata ne wina!',
     'lottery.cards': 'Ba cartes',
     'lottery.wins': 'Ba gains',
@@ -2440,7 +2440,7 @@ export const translations = {
     'delivery.outside_service_area': 'Adresse welu udi libánda wa {city}. Manya udi ku zone wa service.',
 
     // Rental
-    'rental.title': 'Tembea Location',
+    'rental.title': 'TAGA Location',
     'rental.subtitle': 'Ba véhicules premium',
     'rental.all_vehicles': 'Nyonso ({count})',
     'rental.no_vehicles': 'Ba véhicules bidiaka te',
@@ -2575,7 +2575,7 @@ export const translations = {
     'home.services.gift_cards_desc': 'Toa mkopo wa TembeaPay',
     'home.services.airtime': 'E-Recharge',
     'home.services.airtime_desc': 'Jaza mkopo wako wa simu',
-    'home.services.job': 'Tembea Job',
+    'home.services.job': 'TAGA Job',
     'home.services.job_desc': 'Pata kazi yako',
     'home.services.games': 'Michezo',
     'home.services.games_desc': 'Burudani na michezo ya kuburudisha',
@@ -2590,13 +2590,13 @@ export const translations = {
     'auth.redirecting': 'Inaelekeza...',
     'auth.accept_terms_part1': 'Nakubali',
     'auth.accept_terms_part2': 'na',
-    'auth.accept_terms_part3': 'ya Tembea.',
+    'auth.accept_terms_part3': 'ya TAGA.',
     'auth.terms_of_service': 'masharti ya huduma',
     'auth.privacy_policy': 'sera ya faragha',
     
     // Settings - Swahili
     'settings.title': 'Mipangilio',
-    'settings.subtitle': 'Binafsisha uzoefu wako wa Tembea',
+    'settings.subtitle': 'Binafsisha uzoefu wako wa TAGA',
     'settings.save': 'Hifadhi',
     'settings.reset': 'Rejesha',
     'settings.saving': 'Inahifadhi...',
@@ -2663,14 +2663,14 @@ export const translations = {
     // Hero Section
     'hero.title': 'Usafiri na Uwasilishaji DRC',
     'hero.subtitle': 'Suluhisho lako kamili la uhamishaji wa mijini',
-    'hero.description': 'Kutoka safari za VTC hadi uwasilishaji wa haraka, gundua Tembea - programu inayobadilisha usafiri katika Jamhuri ya Kidemokrasia ya Kongo.',
+    'hero.description': 'Kutoka safari za VTC hadi uwasilishaji wa haraka, gundua TAGA - programu inayobadilisha usafiri katika Jamhuri ya Kidemokrasia ya Kongo.',
     'hero.cta_start': 'Anza sasa',
     'hero.cta_demo': 'Ona onyesho',
     'hero.stats.cities': 'Miji hai',
     'hero.stats.available': 'Inapatikana 24/7',
     'hero.stats.payment': 'Malipo salama',
     'hero.stats.support': 'Huduma kwa wateja',
-    'hero.kwenda_taxi': 'Tembea Taxi',
+    'hero.kwenda_taxi': 'TAGA Taxi',
     'hero.made_in_rdc': 'Imetengenezwa DRC',
     'hero.innovation_excellence': 'Uvumbuzi na Ubora',
     'hero.tagline': 'Mshirika wako wa uhamishaji Afrika',
@@ -2681,7 +2681,7 @@ export const translations = {
     'hero.available_24_7': 'Inapatikana 24/7',
     'hero.kwenda_pay': 'TembeaPay',
     'hero.location': 'Kinshasa, Lubumbashi, Kolwezi',
-    'hero.alt_text': 'Huduma ya usafiri Tembea Taxi DRC',
+    'hero.alt_text': 'Huduma ya usafiri TAGA Taxi DRC',
     
     // Services
     'services.title': 'Huduma Zetu',
@@ -2741,7 +2741,7 @@ export const translations = {
     'features.title': 'Vipengele vya Juu',
     'features.subtitle': 'Uzoefu wa mtumiaji wa kipekee',
     'features.title_prefix': 'Kwa nini chagua',
-    'features.title_brand': 'Tembea',
+    'features.title_brand': 'TAGA',
     'features.realtime.title': 'Ufuatiliaji wa wakati halisi',
     'features.realtime.description': 'Fuatilia safari na mizigo yako moja kwa moja',
     'features.payment.title': 'Malipo salama',
@@ -2944,7 +2944,7 @@ export const translations = {
     'promo.vehicle_rental_desc': 'Kuanzia 75,000 CDF/siku',
     'promo.marketplace_slogan': 'Nunua. Uza. Tunawasilisha.',
     'promo.marketplace_slogan_desc': 'Soko 100% salama',
-    'promo.kwenda_food': 'Tembea Food',
+    'promo.kwenda_food': 'TAGA Food',
     'promo.kwenda_food_desc': 'Agiza vyakula vyako vya kupenda',
     'promo.order': 'Agiza',
     'promo.deliver': 'Wasilisha',
@@ -3402,7 +3402,7 @@ export const translations = {
     
     // FAQ - Swahili Complete Section
     'faq.title': 'Maswali Yanayoulizwa Mara kwa Mara',
-    'faq.subtitle': 'Pata majibu ya maswali ya kawaida kuhusu huduma za Tembea',
+    'faq.subtitle': 'Pata majibu ya maswali ya kawaida kuhusu huduma za TAGA',
     'faq.how_book_ride': 'Ninaagizaje safari?',
     'faq.how_book_ride_answer': 'Fungua programu, ingiza mahali unakokwenda, chagua aina ya gari, na thibitisha uhifadhi wako. Dereva atakabidhiwa moja kwa moja.',
     'faq.payment_methods': 'Ni njia gani za malipo mnazokubali?',
@@ -3489,7 +3489,7 @@ export const translations = {
     'delivery.outside_service_area': 'Anwani hii iko nje ya {city}. Hakikisha uko katika eneo la huduma.',
 
     // Rental - Additional keys
-    'rental.title': 'Tembea Ukodishaji',
+    'rental.title': 'TAGA Ukodishaji',
     'rental.subtitle': 'Magari ya hali ya juu',
     'rental.all_vehicles': 'Yote ({count})',
     'rental.no_vehicles': 'Hakuna magari yanapatikana',

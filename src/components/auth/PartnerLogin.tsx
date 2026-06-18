@@ -193,7 +193,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                   <button type="button" onClick={() => setLegalSheet('privacy')} className="text-emerald-500 font-medium hover:underline">
                     politique de confidentialité
                   </button>{' '}
-                  de Tembea.
+                  de TAGA.
                 </Label>
               </div>
 

@@ -109,7 +109,7 @@ const CampaignLanding = () => {
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            🇨🇩 Tembea Taxi • Made with ❤️ in RDC
+            🇨🇩 TAGA Taxi • Made with ❤️ in RDC
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             🔒 Sécurisé • 📞 Support 24/7

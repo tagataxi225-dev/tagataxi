@@ -75,7 +75,7 @@ export const useSupport = () => {
   const contactEmergency = () => {
     toast({
       title: "Support d'urgence",
-      description: "Numéro Tembea: +243 858 040 400",
+      description: "Numéro TAGA: +243 858 040 400",
     });
   };
 

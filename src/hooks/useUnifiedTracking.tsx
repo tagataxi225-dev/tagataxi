@@ -368,7 +368,7 @@ export const useUnifiedTracking = ({
   };
 
   const contactSupport = () => {
-    toast.info('Support Tembea', {
+    toast.info('Support TAGA', {
       description: '24h/7j au +243 XXX XXX XXX'
     });
   };

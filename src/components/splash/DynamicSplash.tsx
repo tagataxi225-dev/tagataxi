@@ -93,7 +93,7 @@ export const DynamicSplash: React.FC<DynamicSplashProps> = ({ context }) => {
               ease: "easeInOut"
             }}
           >
-            <BrandLogo size={224} className="drop-shadow-2xl relative z-10 filter brightness-110" alt="Tembea Logo" />
+            <BrandLogo size={224} className="drop-shadow-2xl relative z-10 filter brightness-110" alt="TAGA Logo" />
           </motion.div>
         </div>
 

@@ -84,7 +84,7 @@ export const ClientReferralDashboard = () => {
       icon: MessageCircle,
       color: 'bg-green-500',
       action: () => {
-        const text = `🎁 Rejoins Tembea avec mon code *${referralCode?.code}* et reçois ${REWARD_PER_REFERRAL} CDF de bonus !\n\n👉 ${getShareLink()}`;
+        const text = `🎁 Rejoins TAGA avec mon code *${referralCode?.code}* et reçois ${REWARD_PER_REFERRAL} CDF de bonus !\n\n👉 ${getShareLink()}`;
         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
       }
     },
@@ -94,7 +94,7 @@ export const ClientReferralDashboard = () => {
       icon: Send,
       color: 'bg-blue-500',
       action: () => {
-        const text = `🎁 Rejoins Tembea avec mon code ${referralCode?.code} et reçois ${REWARD_PER_REFERRAL} CDF de bonus !`;
+        const text = `🎁 Rejoins TAGA avec mon code ${referralCode?.code} et reçois ${REWARD_PER_REFERRAL} CDF de bonus !`;
         window.open(`https://t.me/share/url?url=${encodeURIComponent(getShareLink())}&text=${encodeURIComponent(text)}`, '_blank');
       }
     },
@@ -104,7 +104,7 @@ export const ClientReferralDashboard = () => {
       icon: Smartphone,
       color: 'bg-orange-500',
       action: () => {
-        const text = `Rejoins Tembea avec mon code ${referralCode?.code} ! ${getShareLink()}`;
+        const text = `Rejoins TAGA avec mon code ${referralCode?.code} ! ${getShareLink()}`;
         window.open(`sms:?body=${encodeURIComponent(text)}`, '_blank');
       }
     },
@@ -270,7 +270,7 @@ export const ClientReferralDashboard = () => {
                     />
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 text-center">
-                    Scannez pour rejoindre Tembea avec votre code
+                    Scannez pour rejoindre TAGA avec votre code
                   </p>
                 </CardContent>
               </Card>

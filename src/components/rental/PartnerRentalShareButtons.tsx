@@ -27,7 +27,7 @@ export const PartnerRentalShareButtons: React.FC<PartnerRentalShareButtonsProps>
   const [shareCount, setShareCount] = useState(0);
   const partnerUrl = getRentalPartnerUrl(partnerId);
 
-  const shareMessage = `🚗 Découvrez ${partnerName} sur Tembea Location !
+  const shareMessage = `🚗 Découvrez ${partnerName} sur TAGA Location !
 
 ${slogan || 'Agence de location de véhicules'}
 📊 ${totalVehicles} véhicule${totalVehicles > 1 ? 's' : ''} disponible${totalVehicles > 1 ? 's' : ''}
@@ -88,7 +88,7 @@ ${rating ? `⭐ ${rating.toFixed(1)}/5` : ''}
   };
 
   const handleEmailShare = () => {
-    const subject = `🚗 Découvrez ${partnerName} sur Tembea`;
+    const subject = `🚗 Découvrez ${partnerName} sur TAGA`;
     const body = shareMessage;
     const mailtoUrl = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;

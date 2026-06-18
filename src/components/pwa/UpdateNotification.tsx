@@ -81,7 +81,7 @@ export const UpdateNotification = () => {
             <DialogDescription className="text-base">
               {isCritical 
                 ? "Une mise à jour de sécurité importante doit être installée maintenant."
-                : "Découvrez les dernières améliorations de Tembea."
+                : "Découvrez les dernières améliorations de TAGA."
               }
             </DialogDescription>
           </DialogHeader>

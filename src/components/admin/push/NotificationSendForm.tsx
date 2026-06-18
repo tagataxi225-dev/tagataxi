@@ -499,7 +499,7 @@ export const NotificationSendForm: React.FC = () => {
                             </div>
                             <div className="flex-1">
                               <div className="flex items-center justify-between">
-                                <p className="font-semibold text-sm">Tembea</p>
+                                <p className="font-semibold text-sm">TAGA</p>
                                 <span className="text-[10px] text-muted-foreground">maintenant</span>
                               </div>
                               <p className="font-medium text-sm mt-1">

@@ -103,7 +103,7 @@ export default function VendorRevenueDashboard() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold">Tableau de bord Tembea Market</h2>
+        <h2 className="text-2xl font-bold">Tableau de bord TAGA Market</h2>
         <Select value={selectedPeriod} onValueChange={(value) => setSelectedPeriod(value as any)}>
           <SelectTrigger className="w-32">
             <SelectValue />

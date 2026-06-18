@@ -42,8 +42,8 @@ export const JobNotificationToggle: React.FC<JobNotificationToggleProps> = ({
     
     toast.success(
       checked 
-        ? '🔔 Notifications Tembea Job activées' 
-        : '🔕 Notifications Tembea Job désactivées',
+        ? '🔔 Notifications TAGA Job activées' 
+        : '🔕 Notifications TAGA Job désactivées',
       { duration: 2000 }
     );
   };
@@ -63,7 +63,7 @@ export const JobNotificationToggle: React.FC<JobNotificationToggleProps> = ({
         </div>
         <div>
           <Label htmlFor="job-notifications" className="font-medium cursor-pointer">
-            Tembea Job
+            TAGA Job
           </Label>
           <p className="text-xs text-muted-foreground">
             Nouvelles offres d'emploi

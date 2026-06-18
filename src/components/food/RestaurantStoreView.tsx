@@ -142,7 +142,7 @@ export const RestaurantStoreView: React.FC<RestaurantStoreViewProps> = ({
     if (navigator.share) {
       navigator.share({
         title: restaurant.restaurant_name,
-        text: `Découvrez ${restaurant.restaurant_name} sur Tembea Food`,
+        text: `Découvrez ${restaurant.restaurant_name} sur TAGA Food`,
         url: window.location.href,
       });
     } else {

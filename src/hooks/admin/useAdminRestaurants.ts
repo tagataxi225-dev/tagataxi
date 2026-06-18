@@ -96,7 +96,7 @@ export const useAdminRestaurants = () => {
       await supabase.from('delivery_notifications').insert({
         user_id: restaurant.user_id,
         title: '🎉 Restaurant approuvé !',
-        message: 'Votre restaurant est maintenant actif sur Tembea Food',
+        message: 'Votre restaurant est maintenant actif sur TAGA Food',
         notification_type: 'restaurant_approved',
       });
 

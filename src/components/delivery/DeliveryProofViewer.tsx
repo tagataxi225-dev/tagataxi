@@ -262,7 +262,7 @@ export default function DeliveryProofViewer({
           {/* Certificate footer */}
           <div className="border-t pt-4 text-center text-sm text-muted-foreground">
             <p>Ce document certifie la livraison du colis</p>
-            <p>Commande #{proof.orderId} • Tembea Delivery</p>
+            <p>Commande #{proof.orderId} • TAGA Delivery</p>
             <p>Généré le {new Date().toLocaleDateString('fr-FR')}</p>
           </div>
         </div>

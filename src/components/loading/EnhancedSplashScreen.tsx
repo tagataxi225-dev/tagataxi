@@ -173,7 +173,7 @@ export const EnhancedSplashScreen = ({
               {/* Logo avec animation douce */}
               <motion.img
                 src="/kwenda-splash-logo.png"
-                alt="Tembea"
+                alt="TAGA"
                 className="w-56 h-56 sm:w-64 sm:h-64 object-contain relative z-10"
                 animate={!isReduced ? {
                   scale: [1, 1.03, 1],

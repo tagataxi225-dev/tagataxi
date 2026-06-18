@@ -224,7 +224,7 @@ export const TransferMoneyDialog = ({ open, onClose }: TransferMoneyDialogProps)
             )}
 
             <p className="text-xs text-muted-foreground">
-              Téléphone ou email du destinataire Tembea
+              Téléphone ou email du destinataire TAGA
             </p>
           </div>
 

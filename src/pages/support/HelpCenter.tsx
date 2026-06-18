@@ -40,12 +40,12 @@ const HelpCenter = () => {
   ];
 
   const popularArticles = [
-    "Comment créer un compte Tembea ?",
+    "Comment créer un compte TAGA ?",
     "Quels sont les moyens de paiement acceptés ?",
     "Comment contacter un chauffeur ?",
     "Que faire en cas de problème avec une course ?",
     "Comment devenir chauffeur partenaire ?",
-    "Zones de service de Tembea Taxi"
+    "Zones de service de TAGA Taxi"
   ];
 
   return (
@@ -60,7 +60,7 @@ const HelpCenter = () => {
           </Badge>
           <h1 className="text-display-lg">Comment pouvons-nous vous aider ?</h1>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Trouvez rapidement les réponses à vos questions sur Tembea Taxi
+            Trouvez rapidement les réponses à vos questions sur TAGA Taxi
           </p>
           
           {/* Search Bar */}

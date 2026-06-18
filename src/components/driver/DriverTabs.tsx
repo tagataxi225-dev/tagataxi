@@ -150,7 +150,7 @@ export function GainsTab({
         <div className="bg-green-50 border border-green-200 rounded-xl p-3 flex items-start gap-2">
           <span className="text-xl">🎁</span>
           <div>
-            <p className="text-sm font-semibold text-green-800">Crédit de bienvenue Tembea</p>
+            <p className="text-sm font-semibold text-green-800">Crédit de bienvenue TAGA</p>
             <p className="text-sm text-green-700">{formatPrice(bonusBalance)} CDF offerts pour démarrer — utilisés automatiquement pour vos commissions, utilisés en priorité avant votre solde réel</p>
           </div>
         </div>

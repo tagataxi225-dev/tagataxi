@@ -93,11 +93,11 @@ const About = () => {
         {/* Header Section */}
         <div className="text-center space-y-6 mb-16">
           <Badge variant="secondary" className="mb-4">
-            À propos de Tembea Taxi
+            À propos de TAGA Taxi
           </Badge>
           <h1 className="text-display-lg">Révolutionner la mobilité en RDC</h1>
           <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            Tembea Taxi est né d'une vision simple : transformer la mobilité urbaine en République 
+            TAGA Taxi est né d'une vision simple : transformer la mobilité urbaine en République 
             Démocratique du Congo grâce à la technologie et l'innovation locale.
           </p>
         </div>
@@ -230,7 +230,7 @@ const About = () => {
             <div className="text-center space-y-6">
               <h2 className="text-heading-lg">Développé au Congo, pour le Congo</h2>
               <p className="text-body-md text-muted-foreground max-w-2xl mx-auto">
-                Tembea Taxi est fièrement développé par{" "}
+                TAGA Taxi est fièrement développé par{" "}
                 <a 
                   href="https://wa.me/2250100540707" 
                   target="_blank" 

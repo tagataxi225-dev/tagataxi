@@ -68,7 +68,7 @@ const CampaignThankYou = () => {
             transition={{ delay: 0.5 }}
             className="text-lg text-muted-foreground mb-8"
           >
-            Ton inscription a bien été enregistrée. Bienvenue dans la famille Tembea !
+            Ton inscription a bien été enregistrée. Bienvenue dans la famille TAGA !
           </motion.p>
 
           {/* Bonuses */}

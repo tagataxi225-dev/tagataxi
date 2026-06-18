@@ -99,7 +99,7 @@ export const DualBalanceCard: React.FC<DualBalanceCardProps> = ({
                       <Info className="w-3 h-3 text-yellow-300/70" />
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p className="text-xs">Utilisable pour payer vos courses et commandes Tembea (non retirable)</p>
+                      <p className="text-xs">Utilisable pour payer vos courses et commandes TAGA (non retirable)</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
@@ -126,7 +126,7 @@ export const DualBalanceCard: React.FC<DualBalanceCardProps> = ({
                     <span className="text-sm">🎁</span>
                   </div>
                   <div>
-                    <p className="text-xs text-purple-200">Points Tembea</p>
+                    <p className="text-xs text-purple-200">Points TAGA</p>
                     <p className="text-sm font-bold text-purple-100">
                       {kwendaPoints} points
                     </p>

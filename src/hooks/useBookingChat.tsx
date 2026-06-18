@@ -111,7 +111,7 @@ export const useBookingChat = () => {
         'support',
         supportParticipantId,
         undefined,
-        subject || 'Support Tembea'
+        subject || 'Support TAGA'
       );
 
       if (!conversation) {
@@ -122,7 +122,7 @@ export const useBookingChat = () => {
       openChat({
         contextType: 'support',
         participantId: supportParticipantId,
-        title: subject || 'Support Tembea',
+        title: subject || 'Support TAGA',
         quickActions: [
           { label: "J'ai un problème avec ma course", action: () => {} },
           { label: "Question sur mon compte", action: () => {} },

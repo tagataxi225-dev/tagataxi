@@ -88,7 +88,7 @@ export const DriverLogin = ({ onSuccess }: DriverLoginProps) => {
       localStorage.removeItem('kwenda_login_in_progress');
       localStorage.removeItem('kwenda_selected_role');
       await supabase.auth.signOut();
-      setError('Votre compte chauffeur n\'est pas encore activé. Contactez le support Tembea.');
+      setError('Votre compte chauffeur n\'est pas encore activé. Contactez le support TAGA.');
       setLoading(false);
       return;
     }
@@ -229,7 +229,7 @@ export const DriverLogin = ({ onSuccess }: DriverLoginProps) => {
                   <button type="button" onClick={() => setLegalSheet('privacy')} className="text-orange-500 font-medium hover:underline">
                     politique de confidentialité
                   </button>{' '}
-                  de Tembea.
+                  de TAGA.
                 </Label>
               </div>
 

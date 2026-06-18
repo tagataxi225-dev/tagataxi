@@ -65,7 +65,7 @@ export default function PublicRestaurantPage() {
   const handleShare = async () => {
     const shareData = {
       title: restaurant?.restaurant_name,
-      text: `Découvrez ${restaurant?.restaurant_name} sur Tembea Food`,
+      text: `Découvrez ${restaurant?.restaurant_name} sur TAGA Food`,
       url: window.location.href,
     };
 
@@ -117,9 +117,9 @@ export default function PublicRestaurantPage() {
   return (
     <>
       <Helmet>
-        <title>{restaurant.restaurant_name} - Tembea Food</title>
+        <title>{restaurant.restaurant_name} - TAGA Food</title>
         <meta name="description" content={restaurant.description || `Découvrez le menu de ${restaurant.restaurant_name}`} />
-        <meta property="og:title" content={`${restaurant.restaurant_name} - Tembea Food`} />
+        <meta property="og:title" content={`${restaurant.restaurant_name} - TAGA Food`} />
         <meta property="og:description" content={restaurant.description || ''} />
         <meta property="og:image" content={restaurant.banner_url || restaurant.logo_url || ''} />
         <meta property="og:url" content={window.location.href} />

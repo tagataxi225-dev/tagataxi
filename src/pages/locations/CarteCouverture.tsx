@@ -88,7 +88,7 @@ const CarteCouverture = () => {
           <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
           <div className="container mx-auto max-w-7xl text-center relative z-10">
             <Badge variant="outline" className="border-white/30 text-white mb-6">
-              🗺️ Couverture Tembea Taxi
+              🗺️ Couverture TAGA Taxi
             </Badge>
             <h1 className="text-display-lg mb-6">
               Carte de Couverture

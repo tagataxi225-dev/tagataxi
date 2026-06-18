@@ -696,7 +696,7 @@ export default function DriverShell({
               <span style={{ fontSize: 15, fontWeight: 700, color: '#E8353B' }}>Se déconnecter</span>
             </button>
 
-            <p style={{ textAlign: 'center', fontSize: 10, color: '#C7C7CC', paddingBottom: 8 }}>Tembea Driver · v1.1.5</p>
+            <p style={{ textAlign: 'center', fontSize: 10, color: '#C7C7CC', paddingBottom: 8 }}>TAGA Driver · v1.1.5</p>
           </div>
           </>
         )}

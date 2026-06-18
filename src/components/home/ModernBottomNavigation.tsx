@@ -39,13 +39,14 @@ export const ModernBottomNavigation = ({
   return (
     <nav 
       className="bottom-nav-standard"
-      style={{ 
+      style={{
         willChange: 'transform',
         pointerEvents: 'auto',
-        touchAction: 'manipulation'
+        touchAction: 'manipulation',
+        background: 'hsl(var(--background))'
       }}
     >
-      {/* Gradient d'accentuation subtile en haut */}
+      {/* Gradient d'accentuation subtile en haut — vert primaire */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       
       {/* Container des boutons - hauteur fixe explicite */}
@@ -69,8 +70,8 @@ export const ModernBottomNavigation = ({
               <div className="relative z-10">
                 <Icon 
                   className={`w-5 h-5 transition-all duration-300 ease-out ${
-                    isActive 
-                      ? 'text-primary scale-110' 
+                    isActive
+                      ? 'text-primary scale-110'
                       : 'text-muted-foreground group-hover:text-foreground group-hover:scale-105'
                   }`}
                 />
@@ -86,8 +87,8 @@ export const ModernBottomNavigation = ({
               {/* Label */}
               <span 
                 className={`relative z-10 text-[10px] font-semibold tracking-tight transition-all duration-300 ${
-                  isActive 
-                    ? 'text-primary' 
+                  isActive
+                    ? 'text-primary'
                     : 'text-muted-foreground group-hover:text-foreground'
                 }`}
               >

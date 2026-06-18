@@ -351,7 +351,7 @@ export default function PanicButton({
             variant="outline"
             onClick={() => window.open('tel:+243858040400')}
           >
-            📞 Support Tembea
+            📞 Support TAGA
           </Button>
         </div>
       </Card>

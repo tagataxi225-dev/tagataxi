@@ -9,8 +9,8 @@ const ReferralPage = () => {
   return (
     <>
       <Helmet>
-        <title>Parrainage | Tembea</title>
-        <meta name="description" content="Invitez vos amis sur Tembea et gagnez des récompenses" />
+        <title>Parrainage | TAGA</title>
+        <meta name="description" content="Invitez vos amis sur TAGA et gagnez des récompenses" />
       </Helmet>
       <ClientReferralDashboard />
     </>

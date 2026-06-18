@@ -97,7 +97,7 @@ export class PWAInstaller {
 
   // Instructions spécifiques pour iOS Safari
   getIOSInstallInstructions(): string {
-    return 'Pour installer Tembea Taxi sur iOS: Appuyez sur le bouton Partager puis "Ajouter à l\'écran d\'accueil"';
+    return 'Pour installer TAGA Taxi sur iOS: Appuyez sur le bouton Partager puis "Ajouter à l\'écran d\'accueil"';
   }
 
   // Rediriger vers la page d'installation PWA

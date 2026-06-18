@@ -361,7 +361,7 @@ export const PromoSlider = ({ onServiceSelect }: PromoSliderProps) => {
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ delay: 0.1, duration: 0.3 }}
                         >
-                          Marketplace Tembea
+                          Marketplace TAGA
                         </motion.h3>
                         <motion.p 
                           className="text-white/80 text-xs sm:text-sm font-bold"
@@ -417,7 +417,7 @@ export const PromoSlider = ({ onServiceSelect }: PromoSliderProps) => {
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ delay: 0.1, duration: 0.3 }}
                         >
-                          Tembea Food
+                          TAGA Food
                         </motion.h3>
                         <motion.p 
                           className="text-white/80 text-xs sm:text-sm font-bold"

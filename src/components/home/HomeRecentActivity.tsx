@@ -17,7 +17,7 @@ interface HomeRecentActivityProps {
 }
 
 const ItemSkeleton = () => (
-  <div className="min-w-[150px] max-w-[150px] flex-shrink-0">
+  <div className="min-w-[160px] max-w-[160px] flex-shrink-0">
     <Skeleton className="aspect-square w-full rounded-xl" />
     <Skeleton className="h-3 w-[80%] mt-2 rounded" />
     <Skeleton className="h-3 w-[50%] mt-1 rounded" />
@@ -26,28 +26,11 @@ const ItemSkeleton = () => (
 
 const SectionHeader = ({ title, onSeeAll }: { emoji?: string; title: string; onSeeAll: () => void }) => (
   <div className="flex items-center justify-between">
-    <p className="text-base font-extrabold text-foreground">{title}</p>
+    <p className="text-base font-extrabold text-foreground tracking-tight">{title}</p>
     <button onClick={onSeeAll} className="inline-flex items-center gap-0.5 text-xs font-semibold text-primary bg-primary/5 rounded-full px-2.5 py-1 hover:bg-primary/10 transition-colors">
       Voir tout <ChevronRight className="h-3 w-3" />
     </button>
   </div>
-);
-
-const FallbackCard = ({ emoji, title, description, cta, gradient, border, onClick }: {
-  emoji: string; title: string; description: string; cta: string;
-  gradient: string; border: string; onClick: () => void;
-}) => (
-  <button
-    onClick={onClick}
-    className={`${gradient} ${border} border rounded-2xl p-4 text-left active:scale-[0.97] transition-all duration-200 flex-1`}
-  >
-    <span className="text-3xl block mb-2">{emoji}</span>
-    <p className="text-sm font-bold text-foreground">{title}</p>
-    <p className="text-[11px] text-muted-foreground leading-tight mt-0.5 line-clamp-2">{description}</p>
-    <span className="inline-flex items-center gap-0.5 text-xs font-semibold text-primary mt-2">
-      {cta} <ChevronRight className="h-3 w-3" />
-    </span>
-  </button>
 );
 
 import { VideoThumbnail } from '@/components/shared/VideoThumbnail';
@@ -138,22 +121,22 @@ export const HomeRecentActivity = memo(({ onServiceSelect }: HomeRecentActivityP
       {/* Food Section */}
       {dishesLoading ? (
         <div className="space-y-2.5">
-          <SectionHeader emoji="🍔" title="Plats en vedette" onSeeAll={() => navigate('/food/vedette')} />
+          <SectionHeader emoji="🍔" title="Populaires près de vous" onSeeAll={() => navigate('/food/vedette')} />
           <div className="flex gap-3 overflow-x-auto pb-1 scrollbar-hide">
             {Array.from({ length: 4 }).map((_, i) => <ItemSkeleton key={i} />)}
           </div>
         </div>
       ) : hasDishes ? (
         <div className="space-y-2.5">
-          <SectionHeader emoji="🍔" title="Plats en vedette" onSeeAll={() => navigate('/food/vedette')} />
-          <div className="flex gap-3 overflow-x-auto pb-1 px-1 scrollbar-hide">
+          <SectionHeader emoji="🍔" title="Populaires près de vous" onSeeAll={() => navigate('/food/vedette')} />
+          <div className="flex gap-3 overflow-x-auto pb-2 px-1 scrollbar-hide snap-x snap-mandatory">
             {topDishes.map((dish) => (
               <button
                 key={dish.id}
                 onClick={() => handleDishClick(dish)}
-                className="min-w-[150px] max-w-[150px] flex-shrink-0 text-left active:scale-[0.97] transition-transform"
+                className="min-w-[160px] max-w-[160px] flex-shrink-0 snap-start text-left active:scale-[0.97] transition-transform"
               >
-                <div className="aspect-square w-full rounded-xl overflow-hidden bg-muted/30 shadow-sm relative">
+                <div className="aspect-square w-full rounded-2xl overflow-hidden bg-muted/30 shadow-sm relative">
                   {dish.video_url ? (
                     <VideoThumbnail src={dish.video_url} />
                   ) : dish.main_image_url ? (
@@ -163,41 +146,32 @@ export const HomeRecentActivity = memo(({ onServiceSelect }: HomeRecentActivityP
                   )}
                 </div>
                 <p className="text-xs font-semibold text-foreground mt-1.5 truncate">{dish.name}</p>
-                <p className="text-xs font-bold text-primary bg-primary/5 rounded-md px-1.5 py-0.5 inline-block mt-0.5">{formatCurrency(dish.price, currency)}</p>
+                <p className="text-xs font-bold text-primary bg-primary/10 rounded-md px-1.5 py-0.5 inline-block mt-0.5">{formatCurrency(dish.price, currency)}</p>
               </button>
             ))}
           </div>
         </div>
-      ) : (
-        <div className="grid grid-cols-2 gap-3">
-          <FallbackCard
-            emoji="🍔" title="Tembea Food" description="Découvrez les meilleurs plats près de vous" cta="Explorer"
-            gradient="bg-gradient-to-br from-orange-50/80 to-amber-50/80 dark:from-orange-950/30 dark:to-amber-900/20"
-            border="border-orange-200/40 dark:border-orange-800/20"
-            onClick={() => onServiceSelect('food')}
-          />
-        </div>
-      )}
+      ) : null}
 
       {/* Marketplace Section */}
       {productsLoading ? (
         <div className="space-y-2.5">
-          <SectionHeader emoji="🛍️" title="Shopping tendance" onSeeAll={() => navigate('/marketplace/tendance')} />
+          <SectionHeader emoji="🛍️" title="Recommandés" onSeeAll={() => navigate('/marketplace/tendance')} />
           <div className="flex gap-3 overflow-x-auto pb-1 scrollbar-hide">
             {Array.from({ length: 4 }).map((_, i) => <ItemSkeleton key={i} />)}
           </div>
         </div>
       ) : hasProducts ? (
         <div className="space-y-2.5">
-          <SectionHeader emoji="🛍️" title="Shopping tendance" onSeeAll={() => navigate('/marketplace/tendance')} />
-          <div className="flex gap-3 overflow-x-auto pb-1 px-1 scrollbar-hide">
+          <SectionHeader emoji="🛍️" title="Recommandés" onSeeAll={() => navigate('/marketplace/tendance')} />
+          <div className="flex gap-3 overflow-x-auto pb-2 px-1 scrollbar-hide snap-x snap-mandatory">
             {topProducts.map((product) => (
               <button
                 key={product.id}
                 onClick={() => handleProductClick(product)}
-                className="min-w-[150px] max-w-[150px] flex-shrink-0 text-left active:scale-[0.97] transition-transform"
+                className="min-w-[160px] max-w-[160px] flex-shrink-0 snap-start text-left active:scale-[0.97] transition-transform"
               >
-                <div className="aspect-square w-full rounded-xl overflow-hidden bg-muted/30 shadow-sm relative">
+                <div className="aspect-square w-full rounded-2xl overflow-hidden bg-muted/30 shadow-sm relative">
                   {product.videoUrl ? (
                     <VideoThumbnail src={product.videoUrl} />
                   ) : product.image ? (
@@ -207,21 +181,12 @@ export const HomeRecentActivity = memo(({ onServiceSelect }: HomeRecentActivityP
                   )}
                 </div>
                 <p className="text-xs font-semibold text-foreground mt-1.5 truncate">{product.name}</p>
-                <p className="text-xs font-bold text-primary bg-primary/5 rounded-md px-1.5 py-0.5 inline-block mt-0.5">{formatCurrency(product.price, currency)}</p>
+                <p className="text-xs font-bold text-primary bg-primary/10 rounded-md px-1.5 py-0.5 inline-block mt-0.5">{formatCurrency(product.price, currency)}</p>
               </button>
             ))}
           </div>
         </div>
-      ) : (
-        <div className="grid grid-cols-2 gap-3">
-          <FallbackCard
-            emoji="🛍️" title="Tembea Shop" description="Trouvez tout ce qu'il vous faut" cta="Voir"
-            gradient="bg-gradient-to-br from-blue-50/80 to-indigo-50/80 dark:from-blue-950/30 dark:to-indigo-900/20"
-            border="border-blue-200/40 dark:border-blue-800/20"
-            onClick={() => onServiceSelect('marketplace')}
-          />
-        </div>
-      )}
+      ) : null}
 
       {selectedDish && (
         <FoodDishDetailSheet

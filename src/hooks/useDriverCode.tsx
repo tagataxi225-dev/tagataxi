@@ -297,7 +297,7 @@ export const useDriverCode = () => {
   const shareCode = async () => {
     if (!driverCode) return;
 
-    const shareText = `Mon code chauffeur Tembea: ${driverCode.code}`;
+    const shareText = `Mon code chauffeur TAGA: ${driverCode.code}`;
     
     try {
       // Try clipboard first as it's more reliable
@@ -308,7 +308,7 @@ export const useDriverCode = () => {
       if (navigator.share && window.isSecureContext) {
         try {
           await navigator.share({
-            title: 'Code Chauffeur Tembea',
+            title: 'Code Chauffeur TAGA',
             text: shareText
           });
         } catch (shareError) {

@@ -479,7 +479,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
       }
     } catch (error: any) {
       const raw = error.message || 'Impossible d\'obtenir votre position';
-      const msg = /Param.tres.*Applications.*Tembea|Applications.*Tembea|Tembea.*Permissions/i.test(raw)
+      const msg = /Param.tres.*Applications.*TAGA|Applications.*TAGA|TAGA.*Permissions/i.test(raw)
         ? 'Appuyez sur le cadenas dans la barre d\'adresse puis Autorisations puis Position puis Autoriser'
         : raw;
       toast.error(msg);
@@ -727,7 +727,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
             </div>
             <AlertDialogTitle className="text-center">Connexion requise</AlertDialogTitle>
             <AlertDialogDescription className="text-center">
-              Connectez-vous pour réserver un taxi et profiter de toutes les fonctionnalités Tembea.
+              Connectez-vous pour réserver un taxi et profiter de toutes les fonctionnalités TAGA.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter className="flex-col gap-2 sm:flex-col">

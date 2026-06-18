@@ -37,7 +37,7 @@ const DriverRegistration = () => {
           </h1>
           
           <p className="text-base text-gray-700 dark:text-gray-200">
-            Rejoignez l'équipe Tembea et commencez à gagner
+            Rejoignez l'équipe TAGA et commencez à gagner
           </p>
         </div>
 

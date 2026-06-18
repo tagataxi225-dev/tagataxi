@@ -101,7 +101,7 @@ const Kolwezi = () => {
               🇨🇩 Kolwezi - Ville du Cobalt
             </Badge>
             <h1 className="text-display-lg">
-              Tembea dessert <span className="text-blue-600">Kolwezi</span>
+              TAGA dessert <span className="text-blue-600">Kolwezi</span>
             </h1>
             <p className="text-body-lg text-muted-foreground">
               Transport et livraison dans la capitale mondiale du cobalt. 
@@ -123,7 +123,7 @@ const Kolwezi = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Tembea Kolwezi en chiffres</h2>
+            <h2 className="text-heading-xl">TAGA Kolwezi en chiffres</h2>
             <p className="text-body-md text-muted-foreground">
               Notre présence dans la ville du cobalt
             </p>
@@ -237,7 +237,7 @@ const Kolwezi = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Tembea s'adapte à Kolwezi</h2>
+            <h2 className="text-heading-xl">TAGA s'adapte à Kolwezi</h2>
             <p className="text-body-md text-muted-foreground">
               Des services pensés pour la capitale du cobalt
             </p>
@@ -313,7 +313,7 @@ const Kolwezi = () => {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-heading-xl">Informations pratiques</h2>
             <p className="text-body-md text-muted-foreground">
-              Ce qu'il faut savoir sur Tembea Kolwezi
+              Ce qu'il faut savoir sur TAGA Kolwezi
             </p>
           </div>
 
@@ -374,7 +374,7 @@ const Kolwezi = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div>
-              <h2 className="text-heading-xl mb-4">L'avenir de Tembea à Kolwezi</h2>
+              <h2 className="text-heading-xl mb-4">L'avenir de TAGA à Kolwezi</h2>
               <p className="text-body-md text-muted-foreground">
                 Nos projets de développement dans la capitale du cobalt
               </p>
@@ -418,7 +418,7 @@ const Kolwezi = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
         <div className="container mx-auto px-4 text-center space-y-8">
-          <h2 className="text-heading-xl">Découvrez Tembea Kolwezi</h2>
+          <h2 className="text-heading-xl">Découvrez TAGA Kolwezi</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
             Rejoignez la révolution du transport dans la capitale mondiale du cobalt
           </p>

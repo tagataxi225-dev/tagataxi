@@ -16,7 +16,7 @@ export const serviceWelcomeSlides: ServiceSlide[] = [
   {
     id: 'welcome_food',
     service: 'food',
-    title: 'Tembea Food',
+    title: 'TAGA Food',
     subtitle: 'Vos restaurants préférés livrés chez vous',
     description: 'Découvrez les meilleurs plats de Kinshasa, Lubumbashi et Kolwezi.',
     lucideIcon: UtensilsCrossed,
@@ -27,9 +27,9 @@ export const serviceWelcomeSlides: ServiceSlide[] = [
   {
     id: 'welcome_shop',
     service: 'marketplace',
-    title: 'Tembea Shop',
+    title: 'TAGA Shop',
     subtitle: 'Marketplace pour acheter et vendre',
-    description: 'Rejoignez des milliers de vendeurs et acheteurs sur Tembea Shop.',
+    description: 'Rejoignez des milliers de vendeurs et acheteurs sur TAGA Shop.',
     lucideIcon: ShoppingBag,
     gradient: 'from-muted/30 to-background',
     ctaText: 'Explorer la marketplace',
@@ -49,7 +49,7 @@ export const serviceWelcomeSlides: ServiceSlide[] = [
   {
     id: 'welcome_lottery',
     service: 'lottery',
-    title: 'Tombola Tembea',
+    title: 'Tombola TAGA',
     subtitle: 'Gagnez des récompenses gratuitement',
     description: 'Recevez des tickets gratuits à chaque course, livraison ou parrainage.',
     lucideIcon: Ticket,

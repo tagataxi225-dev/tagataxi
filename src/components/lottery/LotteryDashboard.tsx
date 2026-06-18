@@ -41,7 +41,7 @@ export const LotteryDashboard = ({ hideHeader = false }: LotteryDashboardProps) 
                 className="text-sm font-bold data-[state=active]:bg-gradient-to-r data-[state=active]:from-[hsl(210,100%,50%)] data-[state=active]:via-[hsl(45,100%,50%)] data-[state=active]:to-[hsl(0,80%,50%)] data-[state=active]:text-white data-[state=active]:shadow-lg rounded-lg transition-all"
               >
                 <span className="mr-2">🎰</span>
-                Tembea Gratta
+                TAGA Gratta
                 <span className="ml-1">🇨🇩</span>
               </TabsTrigger>
               <TabsTrigger 

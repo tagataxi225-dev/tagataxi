@@ -94,7 +94,7 @@ export const RideBiddingModal = ({
         <div className="bg-muted/30 border border-border/30 rounded-2xl p-4">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <p className="text-xs text-muted-foreground/70">Tarif estimé Tembea</p>
+              <p className="text-xs text-muted-foreground/70">Tarif estimé TAGA</p>
               <p className="text-2xl tracking-tight font-bold text-foreground">
                 {estimatedPrice.toLocaleString()} <span className="text-sm font-medium text-muted-foreground">CDF</span>
               </p>

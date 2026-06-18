@@ -65,7 +65,7 @@ export const shareProduct = async ({
   // 1) Essai partage natif
   if (navigator.share) {
     const shareData: ShareData = {
-      title: `${title} sur Tembea`,
+      title: `${title} sur TAGA`,
       text: shareText,
       url: shareUrl,
     };

@@ -138,13 +138,13 @@ export const useDriverCodeEnhanced = () => {
   const shareCode = async () => {
     if (!driverCode) return;
 
-    const shareText = `Code Chauffeur Tembea: ${driverCode.code}`;
+    const shareText = `Code Chauffeur TAGA: ${driverCode.code}`;
     const shareUrl = `https://tembea.app/driver/join/${driverCode.code}`;
 
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Code Chauffeur Tembea',
+          title: 'Code Chauffeur TAGA',
           text: shareText,
           url: shareUrl
         });

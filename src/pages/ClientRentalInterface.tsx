@@ -297,7 +297,7 @@ export const ClientRentalInterface = () => {
       <div className="h-screen h-dvh flex flex-col overflow-hidden bg-background">
         <InvisibleLoadingBar />
         <UniversalAppHeader 
-          title="Tembea Location" 
+          title="TAGA Location" 
           showBackButton={true}
           onBackClick={() => navigate('/app/client')}
         />
@@ -317,7 +317,7 @@ export const ClientRentalInterface = () => {
     <div className="h-screen h-dvh flex flex-col overflow-hidden bg-background">
       {/* Header avec bouton retour */}
       <UniversalAppHeader 
-        title="Tembea Location" 
+        title="TAGA Location" 
         showBackButton={true}
         onBackClick={() => navigate('/app/client')}
       />

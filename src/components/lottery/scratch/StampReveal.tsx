@@ -131,7 +131,7 @@ export const StampReveal = ({
                 letterSpacing="2"
               >
                 <textPath href="#circlePath" startOffset="0%">
-                  KWENDA GRATTA • KINSHASA • {new Date().getFullYear()} •
+                  TAGA GRATTA • KINSHASA • {new Date().getFullYear()} •
                 </textPath>
               </text>
             </svg>

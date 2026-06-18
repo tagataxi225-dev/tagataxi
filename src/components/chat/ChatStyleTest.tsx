@@ -10,8 +10,8 @@ export const ChatStyleTest = () => {
       sender_id: 'vendor', 
       content: 'Bonjour ! Votre commande est prête pour le retrait 📦', 
       sender: { 
-        display_name: 'Tembea Shop',
-        shop_name: 'Tembea Shop',
+        display_name: 'TAGA Shop',
+        shop_name: 'TAGA Shop',
         avatar_url: null
       },
       created_at: new Date().toISOString()
@@ -31,8 +31,8 @@ export const ChatStyleTest = () => {
       sender_id: 'vendor', 
       content: 'Parfait ! Je vous attends au point de retrait habituel 📍', 
       sender: { 
-        display_name: 'Tembea Shop',
-        shop_name: 'Tembea Shop',
+        display_name: 'TAGA Shop',
+        shop_name: 'TAGA Shop',
         avatar_url: null
       },
       created_at: new Date().toISOString()

@@ -430,7 +430,7 @@ export const ClientLogin = () => {
                   <div className="p-8 rounded-2xl bg-gradient-to-br from-red-50 via-rose-50 to-red-100 dark:from-red-900/25 dark:via-rose-900/25 dark:to-red-900/30 border-2 border-red-200 dark:border-red-800/60 backdrop-blur-sm">
                     <p className="text-base text-gray-800 dark:text-gray-100 font-semibold mb-6 leading-relaxed">
                       Choisissez votre profil et commencez<br/>
-                      votre aventure Tembea ! 🚀
+                      votre aventure TAGA ! 🚀
                     </p>
                     <Button
                       onClick={() => setStep('role-selection')}

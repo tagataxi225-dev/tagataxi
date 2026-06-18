@@ -152,11 +152,11 @@ export const LocationDetailsSheet: React.FC<LocationDetailsSheetProps> = ({
     }
 
     const shareUrl = `https://www.google.com/maps?q=${currentCoords.lat},${currentCoords.lng}`;
-    const shareText = `📍 Ma position Tembea\n${currentAddress}\n\n${shareUrl}`;
+    const shareText = `📍 Ma position TAGA\n${currentAddress}\n\n${shareUrl}`;
     
     if (navigator.share) {
       try {
-        await navigator.share({ title: 'Ma position Tembea', text: shareText });
+        await navigator.share({ title: 'Ma position TAGA', text: shareText });
         toast({ title: "📤 Partagé avec succès" });
       } catch (err) {
         if (err instanceof Error && err.name !== 'AbortError') {

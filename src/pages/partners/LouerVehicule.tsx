@@ -42,7 +42,7 @@ const LouerVehicule = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Assurance incluse",
-      description: "Couverture complète pendant les courses Tembea"
+      description: "Couverture complète pendant les courses TAGA"
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -81,7 +81,7 @@ const LouerVehicule = () => {
               Louez votre véhicule et <span className="text-accent">générez des revenus</span>
             </h1>
             <p className="text-body-lg text-muted-foreground">
-              Mettez votre véhicule au service de Tembea et générez des revenus passifs. 
+              Mettez votre véhicule au service de TAGA et générez des revenus passifs. 
               Assurance incluse, chauffeurs vérifiés, paiements garantis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -156,7 +156,7 @@ const LouerVehicule = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-heading-xl">Pourquoi louer avec Tembea ?</h2>
+            <h2 className="text-heading-xl">Pourquoi louer avec TAGA ?</h2>
             <p className="text-body-md text-muted-foreground">
               Des avantages uniques pour les propriétaires de véhicules
             </p>
@@ -333,7 +333,7 @@ const LouerVehicule = () => {
                 name: "Patrick K.",
                 vehicle: "Toyota Land Cruiser 2018",
                 revenue: "1,200,000 FC/mois",
-                comment: "Investissement très rentable. L'équipe Tembea est très professionnelle."
+                comment: "Investissement très rentable. L'équipe TAGA est très professionnelle."
               }
             ].map((testimonial, index) => (
               <Card key={index}>
@@ -363,7 +363,7 @@ const LouerVehicule = () => {
         <div className="container mx-auto px-4 text-center space-y-8">
           <h2 className="text-heading-xl">Prêt à rentabiliser votre véhicule ?</h2>
           <p className="text-body-lg opacity-90 max-w-2xl mx-auto">
-            Rejoignez des centaines de propriétaires qui génèrent des revenus passifs avec Tembea
+            Rejoignez des centaines de propriétaires qui génèrent des revenus passifs avec TAGA
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild variant="secondary" size="lg">

@@ -484,7 +484,7 @@ export const UserProfile = ({ onWalletAccess, onViewChange, onClose }: UserProfi
                 <div className="flex-1 text-left">
                   <div className="text-lg font-bold text-foreground group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Devenir vendeur</div>
                   <div className="text-sm text-muted-foreground">
-                    Vendez vos produits sur Tembea Shop
+                    Vendez vos produits sur TAGA Shop
                   </div>
                 </div>
                 <ChevronRight className="h-5 w-5 text-violet-400 group-hover:text-violet-600 group-hover:translate-x-1 transition-all" />

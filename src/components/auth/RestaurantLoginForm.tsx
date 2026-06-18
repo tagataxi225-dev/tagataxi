@@ -122,7 +122,7 @@ export const RestaurantLoginForm = () => {
         </h2>
         <p className="text-body-sm text-muted-foreground">
           {isSignUp 
-            ? 'Rejoignez Tembea Food et développez votre activité'
+            ? 'Rejoignez TAGA Food et développez votre activité'
             : 'Connectez-vous pour gérer votre restaurant'
           }
         </p>
@@ -208,7 +208,7 @@ export const RestaurantLoginForm = () => {
               <button type="button" onClick={() => setLegalSheet('privacy')} className="text-primary font-medium hover:underline">
                 politique de confidentialité
               </button>{' '}
-              de Tembea.
+              de TAGA.
             </Label>
           </div>
         )}

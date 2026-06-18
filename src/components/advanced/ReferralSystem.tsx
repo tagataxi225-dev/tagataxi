@@ -47,11 +47,11 @@ const ReferralSystem: React.FC = () => {
   };
 
   const shareReferralLink = () => {
-    const shareText = `Rejoins-moi sur Tembea Taxi avec mon code de parrainage ${referralData.userCode} et gagne 2000 CDF! 🚗💰`;
+    const shareText = `Rejoins-moi sur TAGA Taxi avec mon code de parrainage ${referralData.userCode} et gagne 2000 CDF! 🚗💰`;
     
     if (navigator.share) {
       navigator.share({
-        title: 'Tembea Taxi - Code de parrainage',
+        title: 'TAGA Taxi - Code de parrainage',
         text: shareText,
         url: `https://tembea.app/ref/${referralData.userCode}`
       });

@@ -240,7 +240,7 @@ export const useEnhancedDeliveryTracking = (orderId: string) => {
 
     // Send push notification if supported
     if ('Notification' in window && Notification.permission === 'granted') {
-      new Notification(`Tembea Delivery - ${title}`, {
+      new Notification(`TAGA Delivery - ${title}`, {
         body: `Commande #${orderId.slice(-8)}`,
         icon: '/favicon.ico'
       });

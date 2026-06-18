@@ -196,8 +196,8 @@ export const useRestaurantTeamManagement = () => {
       if (!targetUserId) {
         toast.error('Utilisateur introuvable', {
           description: isPhone
-            ? 'Ce numéro ne correspond à aucun compte Tembea.'
-            : 'Cet email ne correspond à aucun compte Tembea.'
+            ? 'Ce numéro ne correspond à aucun compte TAGA.'
+            : 'Cet email ne correspond à aucun compte TAGA.'
         });
         return false;
       }

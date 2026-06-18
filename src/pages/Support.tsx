@@ -26,7 +26,7 @@ const SupportPage = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Support Tembea
+                Support TAGA
               </h1>
               <p className="text-sm text-muted-foreground">Aide et assistance</p>
             </div>

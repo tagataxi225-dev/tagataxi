@@ -25,10 +25,10 @@ export const InstallPrompt = ({ open, onClose, platform = 'ios' }: InstallPrompt
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl">
-            📱 Installer Tembea Taxi
+            📱 Installer TAGA Taxi
           </DialogTitle>
           <DialogDescription>
-            Suivez ces étapes simples pour ajouter Tembea à votre écran d'accueil
+            Suivez ces étapes simples pour ajouter TAGA à votre écran d'accueil
           </DialogDescription>
         </DialogHeader>
 
@@ -88,7 +88,7 @@ export const InstallPrompt = ({ open, onClose, platform = 'ios' }: InstallPrompt
                   <div>
                     <p className="font-semibold mb-1">Appuyer sur "Ajouter"</p>
                     <p className="text-sm text-muted-foreground">
-                      L'icône Tembea apparaîtra sur votre écran d'accueil !
+                      L'icône TAGA apparaîtra sur votre écran d'accueil !
                     </p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export const InstallPrompt = ({ open, onClose, platform = 'ios' }: InstallPrompt
                   <div>
                     <p className="font-semibold mb-1">Lancer l'application</p>
                     <p className="text-sm text-muted-foreground">
-                      Tembea s'ouvrira dans sa propre fenêtre, comme une application native
+                      TAGA s'ouvrira dans sa propre fenêtre, comme une application native
                     </p>
                   </div>
                 </div>

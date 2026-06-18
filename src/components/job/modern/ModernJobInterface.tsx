@@ -111,7 +111,7 @@ export const ModernJobInterface = ({ onBack }: ModernJobInterfaceProps) => {
                 <Briefcase className="h-4 w-4 text-white" />
               </div>
               <div>
-                <span className="font-semibold leading-none">Tembea Job</span>
+                <span className="font-semibold leading-none">TAGA Job</span>
                 <p className="text-xs text-muted-foreground">{filteredJobs?.length || 0} offres</p>
               </div>
             </div>

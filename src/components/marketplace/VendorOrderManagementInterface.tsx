@@ -215,7 +215,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
         .eq('id', order.id);
 
       if (error) throw error;
-      toast.success(method === 'self' ? 'Vous livrerez vous-même' : 'Livreur Tembea assigné');
+      toast.success(method === 'self' ? 'Vous livrerez vous-même' : 'Livreur TAGA assigné');
       onStatusUpdate?.();
     } catch (error) {
       console.error('Error setting delivery method:', error);
@@ -312,7 +312,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
             </div>
             <div className="flex-1">
               <p className="text-xs text-muted-foreground">Mode de livraison</p>
-              <p className="font-medium">{isSelfDelivery ? 'Auto-gérée' : 'Tembea'}</p>
+              <p className="font-medium">{isSelfDelivery ? 'Auto-gérée' : 'TAGA'}</p>
             </div>
             {order.delivery_fee > 0 && (
               <Badge variant="secondary" className="text-xs">
@@ -347,7 +347,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
                 variant="outline"
                 className="flex-1"
               >
-                🚚 Livreur Tembea
+                🚚 Livreur TAGA
               </Button>
             </div>
           </motion.div>
@@ -372,7 +372,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
               </Button>
               {isTembeaDelivery && (
                 <p className="text-xs text-muted-foreground mt-2 text-center">
-                  Le livreur Tembea sera notifié automatiquement
+                  Le livreur TAGA sera notifié automatiquement
                 </p>
               )}
             </motion.div>
@@ -419,7 +419,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
             <div className="text-center py-4 bg-indigo-500/10 rounded-lg">
               <Truck className="h-8 w-8 text-indigo-500 mx-auto mb-2 animate-pulse" />
               <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
-                🚚 En attente de récupération par le livreur Tembea
+                🚚 En attente de récupération par le livreur TAGA
               </p>
             </div>
           )}
@@ -439,7 +439,7 @@ export const VendorOrderManagementInterface: React.FC<VendorOrderManagementInter
             <div className="text-center py-4 bg-purple-500/10 rounded-lg">
               <Truck className="h-8 w-8 text-purple-500 mx-auto mb-2" />
               <p className="text-sm font-medium text-purple-700 dark:text-purple-300">
-                🚗 Livraison en cours par le livreur Tembea
+                🚗 Livraison en cours par le livreur TAGA
               </p>
             </div>
           )}

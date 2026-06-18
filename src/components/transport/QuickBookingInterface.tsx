@@ -205,7 +205,7 @@ export const QuickBookingInterface = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Partager ma course Tembea',
+          title: 'Partager ma course TAGA',
           text: `Je vais à ${destination.label}. Veux-tu partager la course ?`,
           url: window.location.href
         });

@@ -135,7 +135,7 @@ const ServiceIntegrationTest = () => {
             Test d'Intégration des Services
           </h1>
           <p className="text-muted-foreground">
-            Vérification du bon fonctionnement de tous les services Tembea
+            Vérification du bon fonctionnement de tous les services TAGA
           </p>
           <Button 
             onClick={testAllServices}

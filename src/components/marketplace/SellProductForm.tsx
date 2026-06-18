@@ -941,7 +941,7 @@ export const SellProductForm: React.FC<SellProductFormProps> = ({
                 )}
 
                 <p className="text-center text-sm text-muted-foreground mt-4">
-                  Voici comment votre produit apparaîtra sur la marketplace Tembea
+                  Voici comment votre produit apparaîtra sur la marketplace TAGA
                 </p>
               </CardContent>
             </Card>

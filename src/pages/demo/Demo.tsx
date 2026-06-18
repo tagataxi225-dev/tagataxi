@@ -27,7 +27,7 @@ const Demo = () => {
       steps: [
         {
           title: "Ouvrir l'application",
-          description: "L'utilisateur lance Tembea Taxi sur son smartphone",
+          description: "L'utilisateur lance TAGA Taxi sur son smartphone",
           image: "/placeholder.svg",
           duration: 2
         },
@@ -149,7 +149,7 @@ const Demo = () => {
         },
         {
           title: "Choisir la livraison",
-          description: "Sélectionner le mode de livraison intégré Tembea",
+          description: "Sélectionner le mode de livraison intégré TAGA",
           image: "/placeholder.svg",
           duration: 2
         },
@@ -229,10 +229,10 @@ const Demo = () => {
           <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
           <div className="container mx-auto max-w-7xl text-center relative z-10">
             <Badge variant="outline" className="border-white/30 text-white mb-6">
-              🎬 Démo Interactive Tembea
+              🎬 Démo Interactive TAGA
             </Badge>
             <h1 className="text-display-lg mb-6">
-              Découvrez Tembea Taxi
+              Découvrez TAGA Taxi
               <br />
               <span className="bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent">
                 en Action
@@ -439,7 +439,7 @@ const Demo = () => {
         <section className="py-20 px-4 bg-muted/30">
           <div className="container mx-auto max-w-7xl">
             <div className="text-center mb-16">
-              <h2 className="text-display-md mb-4">Pourquoi Tembea Taxi ?</h2>
+              <h2 className="text-display-md mb-4">Pourquoi TAGA Taxi ?</h2>
               <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
                 Une application pensée pour répondre aux besoins spécifiques du Congo RDC
               </p>
@@ -466,7 +466,7 @@ const Demo = () => {
         {/* CTA */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-secondary to-accent text-white">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-display-md mb-6">Prêt à Essayer Tembea Taxi ?</h2>
+            <h2 className="text-display-md mb-6">Prêt à Essayer TAGA Taxi ?</h2>
             <p className="text-xl mb-8 text-white/90">
               Téléchargez l'application dès maintenant et découvrez la révolution du transport au Congo !
             </p>

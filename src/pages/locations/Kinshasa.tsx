@@ -42,7 +42,7 @@ const Kinshasa = () => {
     },
     {
       icon: <Trophy className="w-6 h-6" />,
-      title: "Tembea Tombola",
+      title: "TAGA Tombola",
       description: "Gagnez des prix après chaque course",
       stats: "500+ gagnants/mois",
       color: "bg-primary-glow/10 text-primary-glow"
@@ -67,9 +67,9 @@ const Kinshasa = () => {
             <MapPin className="w-4 h-4 mr-2" />
             Kinshasa 🇨🇩
           </Badge>
-          <h1 className="text-display-lg">Tembea Taxi à Kinshasa</h1>
+          <h1 className="text-display-lg">TAGA Taxi à Kinshasa</h1>
           <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            La capitale congolaise au cœur de notre innovation. Découvrez comment Tembea Taxi 
+            La capitale congolaise au cœur de notre innovation. Découvrez comment TAGA Taxi 
             transforme la mobilité urbaine dans la plus grande ville d'Afrique francophone.
           </p>
         </div>
@@ -195,7 +195,7 @@ const Kinshasa = () => {
         {/* CTA Section */}
         <Card className="bg-gradient-to-r from-primary/10 to-secondary/10">
           <CardContent className="p-8 text-center">
-            <h2 className="text-heading-lg mb-4">Rejoignez la révolution Tembea à Kinshasa !</h2>
+            <h2 className="text-heading-lg mb-4">Rejoignez la révolution TAGA à Kinshasa !</h2>
             <p className="text-body-md text-muted-foreground mb-6">
               Que vous soyez utilisateur ou chauffeur, découvrez une nouvelle façon de vous déplacer dans la capitale.
             </p>

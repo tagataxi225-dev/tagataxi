@@ -114,7 +114,7 @@ export const RideCompletionNotification: React.FC<RideCompletionNotificationProp
                     <div className="flex justify-between items-center text-red-600">
                       <div className="flex items-center space-x-1">
                         <AlertTriangle className="w-3 h-3" />
-                        <span>Frais Tembea:</span>
+                        <span>Frais TAGA:</span>
                       </div>
                       <div className="text-right">
                         <span className="font-medium">-{formatCurrency(data.kwendaFees)}</span>

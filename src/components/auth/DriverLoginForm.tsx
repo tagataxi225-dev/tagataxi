@@ -129,7 +129,7 @@ export const DriverLoginForm = () => {
           <button type="button" onClick={() => setLegalSheet('privacy')} className="text-orange-500 font-medium hover:underline">
             politique de confidentialité
           </button>{' '}
-          de Tembea.
+          de TAGA.
         </Label>
       </div>
 
@@ -162,7 +162,7 @@ export const DriverLoginForm = () => {
             className="p-0 h-auto text-orange-500 hover:text-orange-600 font-medium"
             onClick={() => navigate('/driver/register')}
           >
-            Devenir chauffeur Tembea
+            Devenir chauffeur TAGA
           </Button>
         </p>
       </div>

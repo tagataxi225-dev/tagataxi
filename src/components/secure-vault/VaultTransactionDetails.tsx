@@ -238,7 +238,7 @@ export const VaultTransactionDetails: React.FC<VaultTransactionDetailsProps> = (
                   <div className="flex justify-between">
                     <span className="flex items-center gap-2 text-sm">
                       <Shield className="h-4 w-4" />
-                      Commission Tembea (5%)
+                      Commission TAGA (5%)
                     </span>
                     <span className="font-semibold text-muted-foreground">
                       {transaction.platform_fee.toLocaleString()} {transaction.currency}

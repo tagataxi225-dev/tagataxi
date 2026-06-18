@@ -21,7 +21,7 @@ const gradientPromos: GradientPromo[] = [
   { id: '1', title: 'Livraison express en 1h', subtitle: 'Sur Kinshasa, Lubumbashi et Kolwezi', gradient: 'from-emerald-600 via-emerald-500 to-teal-500', cta: 'Commander', action: 'free_delivery', icon: Truck },
   { id: '2', title: 'Nouveaux vendeurs chaque jour', subtitle: 'Découvrez les dernières boutiques', gradient: 'from-violet-600 via-purple-500 to-fuchsia-500', cta: 'Explorer', action: 'vendors', icon: Store },
   { id: '3', title: 'Payez avec Mobile Money', subtitle: 'Orange Money, M-Pesa, Airtel Money', gradient: 'from-blue-600 via-blue-500 to-cyan-500', cta: 'En savoir plus', action: 'mobile_money', icon: Zap },
-  { id: '4', title: 'Vendez sur Tembea', subtitle: 'Ouvrez votre boutique gratuitement', gradient: 'from-amber-600 via-orange-500 to-yellow-500', cta: 'Démarrer', action: 'become_vendor', icon: Gift },
+  { id: '4', title: 'Vendez sur TAGA', subtitle: 'Ouvrez votre boutique gratuitement', gradient: 'from-amber-600 via-orange-500 to-yellow-500', cta: 'Démarrer', action: 'become_vendor', icon: Gift },
 ];
 
 interface PromoSliderProps {

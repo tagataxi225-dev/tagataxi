@@ -233,7 +233,7 @@ export default function RestaurantMenuManager() {
 
         toast({
           title: '✅ Plat mis à jour',
-          description: 'En attente de validation par l\'équipe Tembea',
+          description: 'En attente de validation par l\'équipe TAGA',
         });
       } else {
         const { data, error } = await supabase

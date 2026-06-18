@@ -243,7 +243,7 @@ export const useRideDispatch = () => {
         if (!isCityCovered(cityName)) {
           return {
             success: false, booking, reason: 'no_coverage', errorCategory: 'no_drivers',
-            message: `Service non disponible dans votre zone. Tembea arrive bientôt à ${cityName} !`
+            message: `Service non disponible dans votre zone. TAGA arrive bientôt à ${cityName} !`
           };
         }
         return {

@@ -148,7 +148,7 @@ const MobileSplash: React.FC = () => {
           {/* Logo */}
           <motion.img
             src={kwendaLogo}
-            alt="Tembea Logo"
+            alt="TAGA Logo"
             className="relative z-10 w-56 h-56 object-contain drop-shadow-2xl"
             animate={{ 
               scale: [0.95, 1, 0.95],

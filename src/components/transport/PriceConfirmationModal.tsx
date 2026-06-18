@@ -18,9 +18,9 @@ interface PriceConfirmationModalProps {
 
 const VEHICLE_NAMES: Record<string, string> = {
   'taxi_moto': 'Moto-taxi',
-  'taxi_eco': 'Tembea Éco',
-  'taxi_confort': 'Tembea Confort',
-  'taxi_premium': 'Tembea Premium',
+  'taxi_eco': 'TAGA Éco',
+  'taxi_confort': 'TAGA Confort',
+  'taxi_premium': 'TAGA Premium',
 };
 
 const fmt = (n: number) => Math.round(n).toLocaleString('fr-FR');

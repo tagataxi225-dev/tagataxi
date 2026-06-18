@@ -29,7 +29,7 @@ export const InstallButton = ({
     if (success) {
       toast({
         title: "✅ Installation réussie !",
-        description: "Tembea Taxi a été ajouté à votre écran d'accueil.",
+        description: "TAGA Taxi a été ajouté à votre écran d'accueil.",
       });
     }
   };

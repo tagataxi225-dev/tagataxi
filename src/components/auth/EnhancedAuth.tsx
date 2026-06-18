@@ -191,7 +191,7 @@ export const EnhancedAuth = () => {
           </div>
           
           <h1 className="text-6xl font-bold animate-gradient bg-gradient-to-r from-red-700 via-red-600 to-red-500 dark:from-red-500 dark:via-red-400 dark:to-rose-400 bg-clip-text text-transparent mb-2 tracking-tight drop-shadow-lg">
-            Tembea
+            TAGA
           </h1>
           
           <p className="text-base text-gray-700 dark:text-gray-200 drop-shadow-sm">
@@ -326,7 +326,7 @@ export const EnhancedAuth = () => {
                   <div className="p-8 rounded-2xl bg-gradient-to-br from-red-50 via-rose-50 to-red-100 dark:from-red-900/25 dark:via-rose-900/25 dark:to-red-900/30 border-2 border-red-200 dark:border-red-800/60 backdrop-blur-sm">
                     <p className="text-base text-gray-800 dark:text-gray-100 font-semibold mb-6 leading-relaxed">
                       Choisissez votre profil et commencez<br/>
-                      votre aventure Tembea ! 🚀
+                      votre aventure TAGA ! 🚀
                     </p>
                     <Button
                       onClick={() => setStep('role-selection')}

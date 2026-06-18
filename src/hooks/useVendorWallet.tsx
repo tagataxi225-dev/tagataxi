@@ -59,7 +59,7 @@ export const useVendorWallet = () => {
       console.error('Erreur lors du chargement du wallet:', error);
       toast({
         title: "Erreur",
-        description: "Impossible de charger votre wallet Tembea Marchand",
+        description: "Impossible de charger votre wallet TAGA Marchand",
         variant: "destructive"
       });
     } finally {

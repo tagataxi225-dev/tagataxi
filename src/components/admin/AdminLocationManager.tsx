@@ -198,7 +198,7 @@ export function AdminLocationManager() {
             <CardHeader>
               <CardTitle>Zones de Service</CardTitle>
               <CardDescription>
-                Gérez les zones géographiques couvertes par Tembea
+                Gérez les zones géographiques couvertes par TAGA
               </CardDescription>
             </CardHeader>
             <CardContent>

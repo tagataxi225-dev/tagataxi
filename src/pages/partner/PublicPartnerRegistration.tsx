@@ -197,7 +197,7 @@ const PublicPartnerRegistration = () => {
       <div className="max-w-2xl mx-auto">
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-t-lg">
-            <CardTitle className="text-2xl">Devenir Partenaire Tembea</CardTitle>
+            <CardTitle className="text-2xl">Devenir Partenaire TAGA</CardTitle>
             <CardDescription className="text-blue-100">
               Rejoignez notre réseau de partenaires et développez votre activité
             </CardDescription>
@@ -474,7 +474,7 @@ const PublicPartnerRegistration = () => {
 
             {/* Info section */}
             <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-              <h4 className="font-medium mb-2">Avantages partenaire Tembea:</h4>
+              <h4 className="font-medium mb-2">Avantages partenaire TAGA:</h4>
               <ul className="text-sm text-gray-600 space-y-1">
                 <li>• Accès à notre plateforme de gestion complète</li>
                 <li>• Support technique 24/7</li>

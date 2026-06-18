@@ -17,14 +17,14 @@ const FALLBACK_HOME: PromoBanner[] = [
   {
     id: 'fallback-1',
     image: campaignClient,
-    alt: 'Tembea - Simplifiez vos trajets',
+    alt: 'TAGA - Simplifiez vos trajets',
     title: 'Simplifiez vos trajets',
     description: 'Profitez de chaque instant',
   },
   {
     id: 'fallback-2',
     image: campaignDelivery,
-    alt: 'Devenez livreur Tembea',
+    alt: 'Devenez livreur TAGA',
     title: 'Devenez livreur',
     description: 'Gagnez plus rapidement',
   },

@@ -36,7 +36,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto space-y-8">
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold text-primary mb-4">
-                Tembea Taxi AI Assistant Demo
+                TAGA Taxi AI Assistant Demo
               </h1>
               <p className="text-lg text-muted-foreground">
                 Assistant conversationnel avec GPT-4o Vision + ElevenLabs Turbo

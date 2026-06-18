@@ -227,7 +227,7 @@ export const ModernDriverWallet = ({ serviceType: propServiceType }: ModernDrive
           <Card className="p-4 bg-gradient-to-br from-purple-500/10 to-transparent border-purple-500/20">
             <div className="flex items-center gap-2 mb-2">
               <DollarSign className="w-5 h-5 text-purple-500" />
-              <p className="text-sm text-muted-foreground">Tembea Points</p>
+              <p className="text-sm text-muted-foreground">TAGA Points</p>
             </div>
             <p className="text-2xl font-bold text-foreground">
               {walletData.kwenda_points}

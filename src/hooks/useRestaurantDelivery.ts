@@ -26,7 +26,7 @@ export const useRestaurantDelivery = () => {
   ) => {
     setLoading(true);
     try {
-      console.log('🍽️ Requesting Tembea delivery for order:', orderId, 'service:', serviceType);
+      console.log('🍽️ Requesting TAGA delivery for order:', orderId, 'service:', serviceType);
 
       // ✅ Edge function avec support du type de service
       const { data, error } = await supabase.functions.invoke('request-food-delivery', {
@@ -43,7 +43,7 @@ export const useRestaurantDelivery = () => {
       }
 
       if (data.success) {
-        toast.success('🚚 Livreur Tembea recherché', {
+        toast.success('🚚 Livreur TAGA recherché', {
           description: `Frais estimés: ${data.estimatedDeliveryFee?.toLocaleString()} CDF`,
         });
         return { 

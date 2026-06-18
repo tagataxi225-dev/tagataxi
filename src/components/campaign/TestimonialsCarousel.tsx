@@ -18,14 +18,14 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Marie Kabila',
     location: 'Ngaliema',
     rating: 5,
-    comment: 'J\'ai économisé plus de 50,000 CDF ce mois grâce à Tembea. Service rapide et fiable !',
+    comment: 'J\'ai économisé plus de 50,000 CDF ce mois grâce à TAGA. Service rapide et fiable !',
     service: 'VTC'
   },
   {
     name: 'Jean Mutombo',
     location: 'Gombe',
     rating: 5,
-    comment: 'En tant que chauffeur, je gagne maintenant 180,000 CDF par mois. Merci Tembea !',
+    comment: 'En tant que chauffeur, je gagne maintenant 180,000 CDF par mois. Merci TAGA !',
     service: 'Chauffeur'
   },
   {

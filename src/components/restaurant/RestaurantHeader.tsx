@@ -45,7 +45,7 @@ export function RestaurantHeader() {
           </div>
           <div className="hidden sm:block">
             <h1 className="text-lg font-bold">Espace Restaurant</h1>
-            <p className="text-xs text-muted-foreground">Tembea Food</p>
+            <p className="text-xs text-muted-foreground">TAGA Food</p>
           </div>
         </div>
         

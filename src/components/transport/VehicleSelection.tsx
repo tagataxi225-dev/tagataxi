@@ -28,7 +28,7 @@ const VehicleSelection = ({ distance, onVehicleSelect, selectedVehicleId }: Vehi
   const [vehicles] = useState<Vehicle[]>([
     {
       id: 'eco',
-      name: 'Tembea Eco',
+      name: 'TAGA Eco',
       description: 'Voiture économique, parfait pour trajets quotidiens',
       basePrice: 500,
       price: 0,
@@ -42,7 +42,7 @@ const VehicleSelection = ({ distance, onVehicleSelect, selectedVehicleId }: Vehi
     },
     {
       id: 'standard',
-      name: 'Tembea Standard',
+      name: 'TAGA Standard',
       description: 'Voiture confortable avec climatisation',
       basePrice: 750,
       price: 0,
@@ -55,7 +55,7 @@ const VehicleSelection = ({ distance, onVehicleSelect, selectedVehicleId }: Vehi
     },
     {
       id: 'premium',
-      name: 'Tembea Premium',
+      name: 'TAGA Premium',
       description: 'Voiture haut de gamme avec WiFi',
       basePrice: 1200,
       price: 0,
@@ -68,7 +68,7 @@ const VehicleSelection = ({ distance, onVehicleSelect, selectedVehicleId }: Vehi
     },
     {
       id: 'moto',
-      name: 'Tembea Moto',
+      name: 'TAGA Moto',
       description: 'Moto rapide pour éviter les embouteillages',
       basePrice: 300,
       price: 0,

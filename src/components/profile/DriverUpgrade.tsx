@@ -130,7 +130,7 @@ export const DriverUpgrade = () => {
         <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
           <Car className="w-8 h-8 text-primary" />
         </div>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2">Devenir chauffeur Tembea</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">Devenir chauffeur TAGA</h2>
         <p className="text-muted-foreground mb-4">Transformez votre véhicule en source de revenus</p>
         {getStatusBadge()}
       </div>
@@ -146,7 +146,7 @@ export const DriverUpgrade = () => {
           {/* Benefits */}
           <Card>
             <CardHeader>
-              <CardTitle>Pourquoi devenir chauffeur Tembea ?</CardTitle>
+              <CardTitle>Pourquoi devenir chauffeur TAGA ?</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

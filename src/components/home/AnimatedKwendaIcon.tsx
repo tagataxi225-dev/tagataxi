@@ -50,7 +50,7 @@ export const AnimatedKwendaIcon: React.FC = () => {
         >
           <motion.img
             src={kwendaIcon}
-            alt="Tembea"
+            alt="TAGA"
             className="h-12 w-12 sm:h-14 sm:w-14 object-contain drop-shadow-lg"
             animate={{
               scale: [1, 1.05, 1],

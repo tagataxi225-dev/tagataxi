@@ -150,8 +150,8 @@ export const useClientReferral = () => {
     }
 
     const shareData = {
-      title: 'Rejoignez Tembea !',
-      text: `Utilisez mon code ${referralCode} pour vous inscrire sur Tembea et recevez ${REWARD_PER_REFERRAL} CDF de bonus ! 🎁`,
+      title: 'Rejoignez TAGA !',
+      text: `Utilisez mon code ${referralCode} pour vous inscrire sur TAGA et recevez ${REWARD_PER_REFERRAL} CDF de bonus ! 🎁`,
       url: getShareLink()
     };
 

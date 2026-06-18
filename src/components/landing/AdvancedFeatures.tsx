@@ -63,7 +63,7 @@ const AdvancedFeatures = () => {
     {
       id: "food",
       icon: <UtensilsCrossed className="w-8 h-8" />,
-      title: "Tembea Food - Restaurants locaux",
+      title: "TAGA Food - Restaurants locaux",
       description: "Découvrez et commandez auprès de restaurants vérifiés. Livraison rapide en 30-45 minutes.",
       benefits: [
         "Restaurants locaux vérifiés",
@@ -118,7 +118,7 @@ const AdvancedFeatures = () => {
             💡 Innovation Congolaise
           </Badge>
           <h2 className="text-display-lg bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent animate-gradient">
-            Pourquoi choisir Tembea Taxi ?
+            Pourquoi choisir TAGA Taxi ?
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Une application pensée spécifiquement pour les défis et opportunités du Congo RDC,

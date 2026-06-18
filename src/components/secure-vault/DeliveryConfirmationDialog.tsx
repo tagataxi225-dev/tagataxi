@@ -206,7 +206,7 @@ export const DeliveryConfirmationDialog: React.FC<DeliveryConfirmationDialogProp
 
           {/* Information sur la répartition */}
           <div className="text-xs text-muted-foreground p-3 bg-muted/20 rounded">
-            💡 <strong>Répartition automatique :</strong> Vendeur 80% • Livreur 15% • Commission Tembea 5%
+            💡 <strong>Répartition automatique :</strong> Vendeur 80% • Livreur 15% • Commission TAGA 5%
           </div>
 
           <div className="flex gap-3 pt-4">

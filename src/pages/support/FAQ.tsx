@@ -19,12 +19,12 @@ const FAQ = () => {
       icon: <HelpCircle className="w-5 h-5" />,
       questions: [
         {
-          q: "Comment créer un compte Tembea ?",
-          a: "Téléchargez l'app Tembea, choisissez votre type de compte (Client, Chauffeur, Partenaire) et suivez les étapes d'inscription. Vous devez fournir un numéro de téléphone valide et une pièce d'identité."
+          q: "Comment créer un compte TAGA ?",
+          a: "Téléchargez l'app TAGA, choisissez votre type de compte (Client, Chauffeur, Partenaire) et suivez les étapes d'inscription. Vous devez fournir un numéro de téléphone valide et une pièce d'identité."
         },
         {
-          q: "Tembea est-il disponible dans toute la RDC ?",
-          a: "Actuellement, Tembea est disponible à Kinshasa, Lubumbashi et Kolwezi. Nous prévoyons d'étendre à d'autres villes bientôt."
+          q: "TAGA est-il disponible dans toute la RDC ?",
+          a: "Actuellement, TAGA est disponible à Kinshasa, Lubumbashi et Kolwezi. Nous prévoyons d'étendre à d'autres villes bientôt."
         },
         {
           q: "Comment modifier mes informations personnelles ?",
@@ -94,7 +94,7 @@ const FAQ = () => {
         },
         {
           q: "Quels sont les frais de transaction ?",
-          a: "2% pour les rechargements par carte, 1% pour les retraits mobile money. Aucun frais entre portefeuilles Tembea."
+          a: "2% pour les rechargements par carte, 1% pour les retraits mobile money. Aucun frais entre portefeuilles TAGA."
         },
         {
           q: "Mon paiement a échoué, que faire ?",
@@ -107,7 +107,7 @@ const FAQ = () => {
       icon: <HelpCircle className="w-5 h-5" />,
       questions: [
         {
-          q: "Comment devenir chauffeur Tembea ?",
+          q: "Comment devenir chauffeur TAGA ?",
           a: "Vous devez avoir 21+ ans, un permis valide, un véhicule/moto en bon état et passer notre vérification de sécurité."
         },
         {
@@ -129,7 +129,7 @@ const FAQ = () => {
       icon: <HelpCircle className="w-5 h-5" />,
       questions: [
         {
-          q: "Comment Tembea assure la sécurité ?",
+          q: "Comment TAGA assure la sécurité ?",
           a: "Vérification de tous les chauffeurs, tracking GPS en temps réel, assurance courses, et support d'urgence 24h/24."
         },
         {
@@ -173,7 +173,7 @@ const FAQ = () => {
               Questions fréquemment posées
             </h1>
             <p className="text-body-lg text-muted-foreground">
-              Trouvez rapidement les réponses à vos questions sur Tembea
+              Trouvez rapidement les réponses à vos questions sur TAGA
             </p>
             
             {/* Search Bar */}

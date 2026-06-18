@@ -332,7 +332,7 @@ export const VendorOrderValidationPanel = ({ orders, onRefresh }: VendorOrderVal
                           </div>
                           <div>
                             <p className="font-semibold flex items-center gap-2">
-                              Livreur Tembea
+                              Livreur TAGA
                               {selectedMethod === 'kwenda' && (
                                 <CheckCircle2 className="h-4 w-4 text-primary" />
                               )}
