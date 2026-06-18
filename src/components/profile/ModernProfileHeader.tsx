@@ -48,7 +48,7 @@ export const ModernProfileHeader = ({
       case 'premium': 
         return { label: 'Premium', icon: Crown, color: 'text-amber-500', bg: 'bg-amber-400/10' };
       default:
-        return { label: 'Client', icon: User, color: 'text-white', bg: 'bg-rose-500' };
+        return { label: 'Client', icon: User, color: 'text-primary', bg: 'bg-primary/10' };
     }
   };
 
@@ -86,7 +86,7 @@ export const ModernProfileHeader = ({
             animate={{ opacity: 1, scale: 1 }}
             className="relative group shrink-0"
           >
-            <Avatar className="w-16 h-16 ring-2 ring-red-500 shadow-sm">
+            <Avatar className="w-16 h-16 ring-2 ring-primary shadow-sm">
               <AvatarImage src={currentAvatarUrl || ''} className="object-cover" />
               <AvatarFallback className="text-2xl font-bold bg-muted text-muted-foreground">
                 {profile.display_name?.charAt(0)?.toUpperCase() || user?.email?.charAt(0)?.toUpperCase()}

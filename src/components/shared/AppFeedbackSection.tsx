@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, Lightbulb, Send, Loader2 } from 'lucide-react';
+import { Lightbulb, Send, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Textarea } from '@/components/ui/textarea';
@@ -7,8 +7,6 @@ import { Label } from '@/components/ui/label';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/hooks/useAuth';
 import { toast } from 'sonner';
-
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=cd.kwenda.app';
 
 const CATEGORIES = [
   { value: 'feature', label: 'Nouvelle fonctionnalité' },
@@ -58,15 +56,6 @@ export const AppFeedbackSection = ({ userType }: AppFeedbackSectionProps) => {
   return (
     <>
       <div className="flex gap-2 px-4 py-1.5">
-        <a
-          href={PLAY_STORE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-muted/40 border border-border/40 text-sm font-medium text-foreground hover:bg-muted/60 transition-colors"
-        >
-          <Star className="h-4 w-4 text-amber-500" />
-          <span>Noter TAGA</span>
-        </a>
         <button
           onClick={() => setOpen(true)}
           className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-muted/40 border border-border/40 text-sm font-medium text-foreground hover:bg-muted/60 transition-colors"

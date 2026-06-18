@@ -102,7 +102,7 @@ export const UnifiedAuthPage = () => {
             </div>
 
             {/* Simple Title */}
-            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 via-rose-800 to-gray-900 dark:from-white dark:via-rose-200 dark:to-white bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 via-emerald-700 to-gray-900 dark:from-white dark:via-emerald-300 dark:to-white bg-clip-text text-transparent">
               Connexion
             </h1>
           </motion.div>

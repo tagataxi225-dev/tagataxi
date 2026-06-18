@@ -104,8 +104,8 @@ export const ClientLoginForm = () => {
           Téléphone ou Email
         </Label>
         <div className="relative group">
-          <div className={`absolute inset-0 bg-gradient-to-r from-rose-400 to-amber-400 rounded-xl opacity-0 blur transition-opacity duration-300 ${focusedField === 'identifier' ? 'opacity-20' : 'group-hover:opacity-10'}`} />
-          <IdentifierIcon className={`absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 transition-colors duration-300 ${focusedField === 'identifier' ? 'text-rose-500' : 'text-muted-foreground'}`} />
+          <div className={`absolute inset-0 bg-gradient-to-r from-primary to-primary/60 rounded-xl opacity-0 blur transition-opacity duration-300 ${focusedField === 'identifier' ? 'opacity-20' : 'group-hover:opacity-10'}`} />
+          <IdentifierIcon className={`absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 transition-colors duration-300 ${focusedField === 'identifier' ? 'text-primary' : 'text-muted-foreground'}`} />
           <Input
             id="client-identifier"
             type="text"
@@ -116,7 +116,7 @@ export const ClientLoginForm = () => {
             onBlur={() => setFocusedField(null)}
             required
             autoComplete="username"
-            className="relative h-12 pl-11 pr-4 bg-white/50 dark:bg-gray-800/50 border-border/50 rounded-xl focus:border-rose-400 focus:ring-2 focus:ring-rose-500/20 transition-all duration-300"
+            className="relative h-12 pl-11 pr-4 bg-white/50 dark:bg-gray-800/50 border-border/50 rounded-xl focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300"
           />
         </div>
       </motion.div>
@@ -132,8 +132,8 @@ export const ClientLoginForm = () => {
           {t('auth.password')}
         </Label>
         <div className="relative group">
-          <div className={`absolute inset-0 bg-gradient-to-r from-rose-400 to-amber-400 rounded-xl opacity-0 blur transition-opacity duration-300 ${focusedField === 'password' ? 'opacity-20' : 'group-hover:opacity-10'}`} />
-          <Lock className={`absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 transition-colors duration-300 ${focusedField === 'password' ? 'text-rose-500' : 'text-muted-foreground'}`} />
+          <div className={`absolute inset-0 bg-gradient-to-r from-primary to-primary/60 rounded-xl opacity-0 blur transition-opacity duration-300 ${focusedField === 'password' ? 'opacity-20' : 'group-hover:opacity-10'}`} />
+          <Lock className={`absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 transition-colors duration-300 ${focusedField === 'password' ? 'text-primary' : 'text-muted-foreground'}`} />
           <Input
             id="client-password"
             type={showPassword ? 'text' : 'password'}
@@ -143,7 +143,7 @@ export const ClientLoginForm = () => {
             onFocus={() => setFocusedField('password')}
             onBlur={() => setFocusedField(null)}
             required
-            className="relative h-12 pl-11 pr-12 bg-white/50 dark:bg-gray-800/50 border-border/50 rounded-xl focus:border-rose-400 focus:ring-2 focus:ring-rose-500/20 transition-all duration-300"
+            className="relative h-12 pl-11 pr-12 bg-white/50 dark:bg-gray-800/50 border-border/50 rounded-xl focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300"
           />
           <Button
             type="button"
@@ -187,15 +187,15 @@ export const ClientLoginForm = () => {
           id="terms-login"
           checked={acceptTerms}
           onCheckedChange={(checked) => setAcceptTerms(checked as boolean)}
-          className="mt-0.5 flex-shrink-0 data-[state=checked]:bg-rose-500 data-[state=checked]:border-rose-500"
+          className="mt-0.5 flex-shrink-0 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
         />
         <Label htmlFor="terms-login" className="text-xs text-muted-foreground cursor-pointer leading-snug">
           J'accepte les{' '}
-          <button type="button" onClick={() => setLegalSheet('terms')} className="text-rose-500 font-medium hover:underline">
+          <button type="button" onClick={() => setLegalSheet('terms')} className="text-primary font-medium hover:underline">
             conditions générales d'utilisation
           </button>{' '}
           et la{' '}
-          <button type="button" onClick={() => setLegalSheet('privacy')} className="text-rose-500 font-medium hover:underline">
+          <button type="button" onClick={() => setLegalSheet('privacy')} className="text-primary font-medium hover:underline">
             politique de confidentialité
           </button>{' '}
           de TAGA.
@@ -210,7 +210,7 @@ export const ClientLoginForm = () => {
       >
         <Button 
           type="submit" 
-          className="relative w-full h-12 rounded-xl bg-gradient-to-r from-rose-500 via-rose-600 to-rose-500 bg-[length:200%_100%] hover:bg-right text-white font-semibold shadow-lg shadow-rose-500/25 hover:shadow-xl hover:shadow-rose-500/30 transition-all duration-500 overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
+          className="relative w-full h-12 rounded-xl bg-gradient-to-r from-primary via-primary/80 to-primary bg-[length:200%_100%] hover:bg-right text-primary-foreground font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-500 overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed"
           disabled={loading || !acceptTerms}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -240,7 +240,7 @@ export const ClientLoginForm = () => {
         <Button
           type="button"
           variant="link"
-          className="text-sm text-rose-500 hover:text-rose-600 transition-colors p-0 h-auto"
+          className="text-sm text-primary hover:text-primary/80 transition-colors p-0 h-auto"
           onClick={() => setShowForgotPassword(true)}
         >
           {t('auth.forgot_password')}
@@ -270,7 +270,7 @@ export const ClientLoginForm = () => {
           <Button
             type="button"
             variant="link"
-            className="p-0 h-auto text-rose-500 hover:text-rose-600 font-semibold transition-colors"
+            className="p-0 h-auto text-primary hover:text-primary/80 font-semibold transition-colors"
             onClick={() => navigate('/app/register')}
           >
             {t('auth.create_client_account')}

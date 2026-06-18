@@ -186,7 +186,7 @@ const ClientRegister = () => {
                 <BrandLogo size={56} />
               </div>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 via-rose-800 to-gray-900 dark:from-white dark:via-rose-200 dark:to-white bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-gray-900 via-emerald-700 to-gray-900 dark:from-white dark:via-emerald-300 dark:to-white bg-clip-text text-transparent">
               Rejoignez TAGA
             </h1>
             <p className="text-sm text-muted-foreground">
@@ -203,7 +203,7 @@ const ClientRegister = () => {
                   Nom complet
                 </Label>
                 <div className="relative group">
-                  <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-red-600 transition-colors" />
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="name"
                     type="text"
@@ -222,7 +222,7 @@ const ClientRegister = () => {
                   Adresse email
                 </Label>
                 <div className="relative group">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-red-600 transition-colors" />
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="email"
                     type="email"
@@ -241,7 +241,7 @@ const ClientRegister = () => {
                   Mot de passe
                 </Label>
                 <div className="relative group">
-                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-red-600 transition-colors" />
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="password"
                     type="password"
@@ -260,7 +260,7 @@ const ClientRegister = () => {
                   Confirmer le mot de passe
                 </Label>
                 <div className="relative group">
-                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-red-600 transition-colors" />
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="confirmPassword"
                     type="password"
@@ -296,7 +296,7 @@ const ClientRegister = () => {
                 </div>
                 {referralValidated === true && (
                   <p className="text-xs text-green-600 flex items-center gap-1">
-                    <Gift className="h-3 w-3" /> Code valide — vous recevrez 500 CDF de bonus !
+                    <Gift className="h-3 w-3" /> Code valide — vous recevrez 500 XOF de bonus !
                   </p>
                 )}
                 {referralValidated === false && formData.referralCode && (
@@ -318,14 +318,14 @@ const ClientRegister = () => {
               <LegalAcceptanceCheckbox
                 checked={acceptTerms}
                 onCheckedChange={setAcceptTerms}
-                accentColor="red"
+                accentColor="emerald"
                 id="terms-register"
               />
 
               {/* Bouton d'inscription */}
               <Button 
                 type="submit" 
-                className="w-full h-12 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold"
+                className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
                 disabled={loading || !acceptTerms}
               >
                 {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
