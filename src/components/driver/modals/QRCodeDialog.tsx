@@ -16,7 +16,7 @@ export const QRCodeDialog: React.FC<QRCodeDialogProps> = ({ open, onOpenChange, 
       </DialogHeader>
       <div className="flex justify-center p-6 bg-background rounded-lg border">
         <QRCodeSVG 
-          value={`https://tembea.app/app/register?ref=${referralCode}`}
+          value={`https://tagago.app/app/register?ref=${referralCode}`}
           size={200}
           level="H"
           className="dark:bg-white dark:p-2 dark:rounded"

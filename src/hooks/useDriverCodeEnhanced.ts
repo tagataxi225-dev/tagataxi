@@ -139,7 +139,7 @@ export const useDriverCodeEnhanced = () => {
     if (!driverCode) return;
 
     const shareText = `Code Chauffeur TAGA: ${driverCode.code}`;
-    const shareUrl = `https://tembea.app/driver/join/${driverCode.code}`;
+    const shareUrl = `https://tagago.app/driver/join/${driverCode.code}`;
 
     if (navigator.share) {
       try {

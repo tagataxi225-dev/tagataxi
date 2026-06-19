@@ -68,7 +68,7 @@ export const useDriverRegistration = () => {
       // 2. Créer le compte Supabase Auth avec rôle normalisé
       // Compatible mobile Capacitor
       const isCapacitor = (window as any).Capacitor?.isNativePlatform?.() ?? false;
-      const redirectUrl = isCapacitor ? 'https://tembea.app/driver/verify-email' : `${window.location.origin}/driver/verify-email`;
+      const redirectUrl = isCapacitor ? 'https://tagago.app/driver/verify-email' : `${window.location.origin}/driver/verify-email`;
       
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email: data.email,

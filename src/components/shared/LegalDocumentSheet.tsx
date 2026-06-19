@@ -117,13 +117,13 @@ const PrivacyContent = () => (
       <p>Nous utilisons des protocoles de sécurité standards (SSL, chiffrement) pour protéger vos données. Aucune carte bancaire n'est stockée sur nos serveurs.</p>
     </Section>
     <Section title="6. Vos droits" icon={Shield}>
-      <p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Contactez-nous à support@tembea.app pour exercer ces droits.</p>
+      <p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Contactez-nous à support@tagago.app pour exercer ces droits.</p>
     </Section>
     <Section title="7. Cookies" icon={Cookie}>
       <p>TAGA utilise des cookies essentiels au fonctionnement du site (authentification, préférences). Aucun cookie publicitaire tiers n'est utilisé.</p>
     </Section>
     <Section title="8. Contact" icon={Mail}>
-      <p>Pour toute question relative à la protection de vos données, contactez-nous à privacy@tembea.app</p>
+      <p>Pour toute question relative à la protection de vos données, contactez-nous à privacy@tagago.app</p>
     </Section>
     <p className="text-xs text-muted-foreground/60 pt-3 border-t border-border/30">
       Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}

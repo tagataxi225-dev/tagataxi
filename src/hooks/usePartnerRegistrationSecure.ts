@@ -46,7 +46,7 @@ export const usePartnerRegistrationSecure = () => {
 
       // Compatible mobile Capacitor
       const isCapacitor = (window as any).Capacitor?.isNativePlatform?.() ?? false;
-      const redirectUrl = isCapacitor ? 'https://tembea.app/partner/auth' : `${window.location.origin}/partner/auth`;
+      const redirectUrl = isCapacitor ? 'https://tagago.app/partner/auth' : `${window.location.origin}/partner/auth`;
 
       // Créer le compte Auth avec métadonnées (alignement driver/client)
       const { data: authResult, error } = await supabase.auth.signUp({

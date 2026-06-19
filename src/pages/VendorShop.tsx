@@ -424,7 +424,7 @@ const VendorShop: React.FC = () => {
         <ShareMetaTags
           title={`Boutique ${profile.shop_name} | TAGA Shop`}
           description={`Découvrez ${products.length} produits disponibles - Note ${profile.average_rating?.toFixed(1) || 0}/5`}
-          image={profile.shop_logo_url || 'https://tembea.app/kwenda-splash-logo.png'}
+          image={profile.shop_logo_url || '/app-icon-512.png'}
           url={getVendorShopUrl(profile.user_id)}
         />
       )}

@@ -10,7 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 
 export const QRCodeGenerator = () => {
   const { toast } = useToast();
-  const [url, setUrl] = useState('https://tembea.app/install');
+  const [url, setUrl] = useState('https://tagago.app/install');
   const [size, setSize] = useState(512);
   const [copied, setCopied] = useState(false);
 
@@ -60,7 +60,7 @@ export const QRCodeGenerator = () => {
                 id="url"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="https://tembea.app/install?utm_source=custom"
+                placeholder="https://tagago.app/install?utm_source=custom"
               />
               <Button
                 onClick={handleCopyUrl}

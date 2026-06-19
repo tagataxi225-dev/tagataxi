@@ -3,7 +3,7 @@
  * Supprime toute dépendance à localhost pour Capacitor/Android/iOS
  */
 
-const PRODUCTION_URL = 'https://tembea.app';
+const PRODUCTION_URL = 'https://tagago.app';
 
 /**
  * Détecte si l'app tourne en mode Capacitor natif

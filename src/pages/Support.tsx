@@ -83,7 +83,7 @@ const SupportPage = () => {
                 Envoyez-nous un email
               </p>
               <Button variant="outline" className="w-full">
-                support@tembea.app
+                support@tagago.app
               </Button>
             </CardContent>
           </Card>

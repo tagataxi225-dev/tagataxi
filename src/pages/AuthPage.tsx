@@ -174,7 +174,7 @@ const AuthPage = ({ onAuthSuccess }: AuthPageProps) => {
     try {
       // Compatible mobile Capacitor
       const isCapacitor = (window as any).Capacitor?.isNativePlatform?.() ?? false;
-      const redirectUrl = isCapacitor ? 'https://tembea.app/' : `${window.location.origin}/`;
+      const redirectUrl = isCapacitor ? 'https://tagago.app/' : `${window.location.origin}/`;
       
       const { error } = await supabase.auth.signUp({
         email: signupForm.email,
@@ -390,7 +390,7 @@ const AuthPage = ({ onAuthSuccess }: AuthPageProps) => {
                       type="email"
                       value={adminForm.email}
                       onChange={(e) => setAdminForm({ email: e.target.value })}
-                      placeholder="admin@tembea.app"
+                      placeholder="admin@tagago.app"
                     />
                   </div>
                   

@@ -58,7 +58,7 @@ export const ProfileActionButtons = ({ onQuickAction, className }: ProfileAction
 
   return (
     <div className={cn("space-y-3", className)}>
-      {/* TembeaPay Wallet - Design soft */}
+      {/* TAGAPay Wallet - Design soft */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export const ProfileActionButtons = ({ onQuickAction, className }: ProfileAction
             <Wallet className="h-6 w-6 text-primary" />
           </div>
           <div className="flex-1">
-            <span className="text-primary text-lg font-bold">TembeaPay</span>
+            <span className="text-primary text-lg font-bold">TAGAPay</span>
             <div className="text-primary/70 text-sm">Mon portefeuille</div>
           </div>
           <div className="p-2 rounded-full">

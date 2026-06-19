@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { ResponsiveImage } from "@/components/common/ResponsiveImage";
-import brandLogo from "@/assets/kwenda-logo.png";
+import brandLogo from "@/assets/LOGO_TAGA.png";
 
 interface BrandLogoProps {
   size?: number | 'sm' | 'md' | 'lg' | 'xl';
@@ -57,7 +57,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           fetchPriority="high"
           widths={logoWidths}
           sizes={logoSizes}
-          useWebP={true}
+          useWebP={false}
         />
       </motion.div>
     );

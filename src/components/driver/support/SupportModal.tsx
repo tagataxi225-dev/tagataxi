@@ -205,14 +205,14 @@ export const SupportModal = ({ open, onOpenChange }: SupportModalProps) => {
               </Card>
 
               <Card className="p-4 hover:bg-accent cursor-pointer transition-colors">
-                <a href="mailto:support@tembea.app" className="flex items-center justify-between">
+                <a href="mailto:support@tagago.app" className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center">
                       <Mail className="w-5 h-5 text-blue-500" />
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-sm text-muted-foreground">support@tembea.app</p>
+                      <p className="text-sm text-muted-foreground">support@tagago.app</p>
                     </div>
                   </div>
                   <ChevronRight className="w-5 h-5 text-muted-foreground" />

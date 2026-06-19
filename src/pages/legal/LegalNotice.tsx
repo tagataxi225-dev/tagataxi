@@ -13,7 +13,7 @@ const LegalNotice = () => {
         { label: "Nom commercial", value: "TAGA Taxi" },
         { label: "Forme juridique", value: "Société à Responsabilité Limitée (SARL)" },
         { label: "Siège social", value: "Kinshasa, République Démocratique du Congo" },
-        { label: "Email", value: "legal@tembea.app" },
+        { label: "Email", value: "legal@tagago.app" },
         { label: "Téléphone", value: "+243 858 040 400" }
       ]
     },
@@ -106,7 +106,7 @@ const LegalNotice = () => {
               et des services proposés sur la plateforme.
             </p>
             <p className="font-medium text-foreground">
-              Contact : publication@tembea.app
+              Contact : publication@tagago.app
             </p>
           </CardContent>
         </Card>
@@ -216,8 +216,8 @@ const LegalNotice = () => {
                 <Mail className="w-5 h-5 text-primary mt-1" />
                 <div>
                   <p className="font-medium">Email légal</p>
-                  <a href="mailto:legal@tembea.app" className="text-sm text-primary hover:underline">
-                    legal@tembea.app
+                  <a href="mailto:legal@tagago.app" className="text-sm text-primary hover:underline">
+                    legal@tagago.app
                   </a>
                 </div>
               </div>

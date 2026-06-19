@@ -7,7 +7,7 @@ import type { CarouselApi } from "@/components/ui/carousel";
 import { OnboardingSlide } from "@/components/onboarding/OnboardingSlide";
 import { onboardingContent, type OnboardingContext } from "@/constants/onboardingContent";
 import { useHapticFeedback } from "@/hooks/useHapticFeedback";
-import kwendaLogoK from "@/assets/kwenda-logo.png";
+import kwendaLogoK from "@/assets/LOGO_TAGA.png";
 
 const useOnboardingContext = (): OnboardingContext => {
   const [params] = useSearchParams();

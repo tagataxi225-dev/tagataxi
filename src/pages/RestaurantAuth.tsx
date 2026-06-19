@@ -71,7 +71,7 @@ export default function RestaurantAuth() {
         }
 
         const isCapacitor = (window as any).Capacitor?.isNativePlatform?.() ?? false;
-        const redirectUrl = isCapacitor ? 'https://tembea.app/restaurant' : `${window.location.origin}/restaurant`;
+        const redirectUrl = isCapacitor ? 'https://tagago.app/restaurant' : `${window.location.origin}/restaurant`;
         
         const { error } = await supabase.auth.signUp({
           email: formData.email,

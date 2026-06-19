@@ -43,7 +43,7 @@ export const DualBalanceCard: React.FC<DualBalanceCardProps> = ({
                 <Wallet className="w-6 h-6 text-white" />
               </div>
               <div>
-                <p className="text-sm text-white/80 font-medium">TembeaPay</p>
+                <p className="text-sm text-white/80 font-medium">TAGAPay</p>
                 <p className="text-xs text-white/60">Mon Portefeuille</p>
               </div>
             </div>

@@ -99,31 +99,13 @@ export const ModernHeader = ({}: ModernHeaderProps) => {
   }, []);
 
   const firstName = profileLoading ? '...' : (displayName?.split(' ')[0] || '');
-  const initials = profileLoading
-    ? '…'
-    : ((displayName || '')
-        .split(' ')
-        .filter(Boolean)
-        .slice(0, 2)
-        .map((w) => w[0])
-        .join('')
-        .toUpperCase() || '?');
 
   return (
     <header ref={headerRef} id="main-header" className="fixed top-0 left-0 right-0 z-[150] bg-background/95 backdrop-blur-xl border-b border-border/20" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
       <div className="px-4 py-2.5">
         <div className="flex items-center justify-between gap-3 min-h-[48px]">
-          {/* Zone gauche: Avatar + Greeting + Nom + Position (app-top TAGA) */}
+          {/* Zone gauche: Greeting + Nom + Position */}
           <div className="flex items-center gap-3 min-w-0">
-            {/* Avatar initiales — dégradé navy (ancrage premium TAGA) */}
-            <div
-              className="flex items-center justify-center w-11 h-11 rounded-full text-white text-[13px] font-extrabold shrink-0 shadow-sm"
-              style={{ background: 'linear-gradient(135deg, hsl(var(--secondary-light)), hsl(var(--secondary)))' }}
-              aria-hidden="true"
-            >
-              {initials}
-            </div>
-
             <div className="flex flex-col items-start min-w-0">
               <span className="text-[11px] font-semibold text-muted-foreground whitespace-nowrap leading-tight">
                 {getGreeting()} 👋

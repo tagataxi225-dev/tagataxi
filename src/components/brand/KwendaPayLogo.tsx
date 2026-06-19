@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import tagaLogo from '@/assets/LOGO_TAGA.png';
 
 interface KwendaPayLogoProps {
   variant?: 'minimal' | 'full' | 'icon';
@@ -22,37 +23,13 @@ export const KwendaPayLogo: React.FC<KwendaPayLogoProps> = ({
   };
 
   const LogoIcon = () => (
-    <svg
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={cn(sizes[size], className)}
-    >
-      {/* K letter with Congo flag colors */}
-      <path
-        d="M8 8 L8 32 L12 32 L12 22 L20 32 L26 32 L16 20 L26 8 L20 8 L12 18 L12 8 Z"
-        fill="url(#congo-gradient)"
-      />
-      
-      {/* Coin circle outline */}
-      <circle
-        cx="20"
-        cy="20"
-        r="18"
-        stroke="url(#congo-gradient)"
-        strokeWidth="2"
-        fill="none"
-      />
-      
-      {/* Gradient definition using Congo colors */}
-      <defs>
-        <linearGradient id="congo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="hsl(357, 85%, 50%)" />
-          <stop offset="50%" stopColor="hsl(42, 100%, 60%)" />
-          <stop offset="100%" stopColor="hsl(142, 85%, 45%)" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <img
+      src={tagaLogo}
+      alt="TAGAPay"
+      className={cn(sizes[size], 'rounded-lg object-contain', className)}
+      loading="eager"
+      decoding="async"
+    />
   );
 
   if (variant === 'icon') {
@@ -89,7 +66,7 @@ export const KwendaPayLogo: React.FC<KwendaPayLogoProps> = ({
           <LogoIcon />
         )}
         <span className="font-bold text-lg bg-gradient-to-r from-congo-red via-congo-yellow to-congo-green bg-clip-text text-transparent">
-          TembeaPay
+          TAGAPay
         </span>
       </div>
     );
@@ -117,7 +94,7 @@ export const KwendaPayLogo: React.FC<KwendaPayLogoProps> = ({
       )}
       <div className="text-center">
         <p className="font-bold text-xl bg-gradient-to-r from-congo-red via-congo-yellow to-congo-green bg-clip-text text-transparent">
-          TembeaPay
+          TAGAPay
         </p>
         <p className="text-xs text-muted-foreground">Portefeuille Digital Congo</p>
       </div>

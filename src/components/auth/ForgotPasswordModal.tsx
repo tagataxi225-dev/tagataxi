@@ -29,7 +29,7 @@ export const ForgotPasswordModal = ({ isOpen, onClose }: ForgotPasswordModalProp
     setLoading(true);
     try {
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `https://tembea.app/reset-password`,
+      redirectTo: `https://tagago.app/reset-password`,
     });
 
       if (error) {

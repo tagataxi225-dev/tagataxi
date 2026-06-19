@@ -322,7 +322,7 @@ export const UserProfile = ({ onWalletAccess, onViewChange, onClose }: UserProfi
 
   const getOptionTitle = (option: string) => {
     const optionMap: Record<string, string> = {
-      'wallet': 'TembeaPay Wallet',
+      'wallet': 'TAGAPay Wallet',
       'referral': 'Réductions et cadeaux',
       'promocode': 'Codes promotionnels',
       'history': 'Historique des activités',

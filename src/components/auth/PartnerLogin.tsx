@@ -92,9 +92,9 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
             </div>
           </div>
           
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800">
-            <Briefcase className="w-4 h-4 text-emerald-500" />
-            <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 dark:bg-primary/15 border border-primary/20 dark:border-primary/30">
+            <Briefcase className="w-4 h-4 text-primary" />
+            <span className="text-xs font-medium text-primary dark:text-primary">
               {t('auth.partner_space')}
             </span>
           </div>
@@ -119,7 +119,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                   Téléphone ou Email
                 </Label>
                 <div className="relative group">
-                  <IdentifierIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-emerald-500 transition-colors" />
+                  <IdentifierIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="partner-identifier"
                     type="text"
@@ -128,7 +128,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                     onChange={(e) => setIdentifier(e.target.value)}
                     required
                     autoComplete="username"
-                    className="h-12 pl-10 pr-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-xl focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                    className="h-12 pl-10 pr-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-xl focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                   />
                 </div>
                 {isPhone && identifier.length > 2 && (
@@ -144,7 +144,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                   {t('auth.password')}
                 </Label>
                 <div className="relative group">
-                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-emerald-500 transition-colors" />
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-primary transition-colors" />
                   <Input
                     id="partner-password"
                     type={showPassword ? "text" : "password"}
@@ -152,7 +152,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                    className="h-12 pl-10 pr-12 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-xl focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                    className="h-12 pl-10 pr-12 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-xl focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                   />
                   <Button
                     type="button"
@@ -168,9 +168,9 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
 
               {/* Error */}
               {error && (
-                <Alert variant="destructive" className="bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800 rounded-xl animate-fade-in">
-                  <AlertCircle className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                  <AlertDescription className="text-sm text-emerald-700 dark:text-emerald-300">
+                <Alert variant="destructive" className="bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800 rounded-xl animate-fade-in">
+                  <AlertCircle className="h-4 w-4 text-rose-600 dark:text-rose-400" />
+                  <AlertDescription className="text-sm text-rose-700 dark:text-rose-300">
                     {error}
                   </AlertDescription>
                 </Alert>
@@ -182,15 +182,15 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                   id="terms-partner"
                   checked={acceptTerms}
                   onCheckedChange={(checked) => setAcceptTerms(checked as boolean)}
-                  className="mt-0.5 flex-shrink-0 data-[state=checked]:bg-emerald-500 data-[state=checked]:border-emerald-500"
+                  className="mt-0.5 flex-shrink-0 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                 />
                 <Label htmlFor="terms-partner" className="text-xs text-muted-foreground cursor-pointer leading-snug">
                   J'accepte les{' '}
-                  <button type="button" onClick={() => setLegalSheet('terms')} className="text-emerald-500 font-medium hover:underline">
+                  <button type="button" onClick={() => setLegalSheet('terms')} className="text-primary font-medium hover:underline">
                     conditions générales d'utilisation
                   </button>{' '}
                   et la{' '}
-                  <button type="button" onClick={() => setLegalSheet('privacy')} className="text-emerald-500 font-medium hover:underline">
+                  <button type="button" onClick={() => setLegalSheet('privacy')} className="text-primary font-medium hover:underline">
                     politique de confidentialité
                   </button>{' '}
                   de TAGA.
@@ -200,7 +200,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
               {/* Login Button */}
               <Button
                 type="submit"
-                className="w-full h-12 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
+                className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
                 disabled={loading || !acceptTerms}
               >
                 {loading && <Loader2 className="h-4 w-4 animate-spin" />}
@@ -213,7 +213,7 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
                 <Button
                   type="button"
                   variant="link"
-                  className="text-sm text-emerald-500 hover:text-emerald-600 p-0 h-auto"
+                  className="text-sm text-primary hover:text-primary/80 p-0 h-auto"
                   onClick={() => setShowForgotPassword(true)}
                 >
                   {t('auth.forgot_password')}
@@ -226,16 +226,16 @@ export const PartnerLogin = ({ onSuccess }: PartnerLoginProps) => {
               <Button
                 variant="outline"
                 onClick={() => navigate('/partner/register')}
-                className="w-full h-11 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 font-medium rounded-xl"
+                className="w-full h-11 text-primary dark:text-primary border-primary/30 dark:border-primary/40 hover:bg-primary/5 dark:hover:bg-primary/10 font-medium rounded-xl"
               >
                 {t('auth.become_partner')}
               </Button>
               
               <p className="text-sm text-gray-500">{t('auth.not_partner')}</p>
               <div className="flex flex-wrap justify-center items-center gap-2 text-sm">
-                <Link to="/app/auth" className="text-rose-500 hover:underline font-medium">Client</Link>
+                <Link to="/app/auth" className="text-primary hover:underline font-medium">Client</Link>
                 <span className="text-gray-300">•</span>
-                <Link to="/driver/auth" className="text-orange-500 hover:underline font-medium">Chauffeur</Link>
+                <Link to="/driver/auth" className="text-primary hover:underline font-medium">Chauffeur</Link>
               </div>
             </div>
           </CardContent>

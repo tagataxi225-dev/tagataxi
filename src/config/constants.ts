@@ -9,7 +9,7 @@
 export const SUPPORT_PHONE = '+243 858 040 400';
 export const SUPPORT_PHONE_RAW = '+243858040400';
 export const EMERGENCY_PHONE = '+243 999 999 999';
-export const SUPPORT_EMAIL = 'support@tembea.app';
+export const SUPPORT_EMAIL = 'support@tagago.app';
 export const SUPPORT_HOURS = '24h/7j';
 
 // ============================================

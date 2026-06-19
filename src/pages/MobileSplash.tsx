@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, useAnimationControls } from "framer-motion";
-import kwendaLogo from "@/assets/kwenda-logo.png";
+import kwendaLogo from "@/assets/LOGO_TAGA.png";
 import { APP_CONFIG } from "@/config/appConfig";
 import { logger } from "@/utils/logger";
 import { supabase } from "@/integrations/supabase/client";

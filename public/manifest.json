@@ -1,13 +1,13 @@
 {
-  "name": "Tembea",
-  "short_name": "Tembea",
+  "name": "TAGA",
+  "short_name": "TAGA",
   "description": "Application VTC multimodale pour l'Afrique francophone - Transport, Livraison, Marketplace",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "background_color": "#0B1220",
-  "theme_color": "#DC2626",
+  "theme_color": "#00A651",
   "orientation": "portrait",
   "categories": ["travel", "business"],
   "lang": "fr",
@@ -57,7 +57,7 @@
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Écran d'accueil Kwenda Taxi"
+      "label": "Écran d'accueil TAGA"
     }
   ],
   "shortcuts": [

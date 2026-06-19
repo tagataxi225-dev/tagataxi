@@ -147,7 +147,7 @@ export const ClientRegistrationForm = ({ onSuccess, onBack }: ClientRegistration
     try {
       // Compatible mobile Capacitor
       const isCapacitor = (window as any).Capacitor?.isNativePlatform?.() ?? false;
-      const redirectUrl = isCapacitor ? 'https://tembea.app/client/verify-email' : `${window.location.origin}/client/verify-email`;
+      const redirectUrl = isCapacitor ? 'https://tagago.app/client/verify-email' : `${window.location.origin}/client/verify-email`;
       
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email: formData.email,

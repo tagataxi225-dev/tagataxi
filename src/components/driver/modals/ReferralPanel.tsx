@@ -38,7 +38,7 @@ export const ReferralPanel: React.FC = () => {
     const shareData = {
       title: 'Rejoignez TAGA',
       text: `Utilisez mon code de parrainage ${referralCode.code} et gagnez 500 CDF !`,
-      url: `https://tembea.app/app/register?ref=${referralCode.code}`
+      url: `https://tagago.app/app/register?ref=${referralCode.code}`
     };
 
     if (navigator.share) {

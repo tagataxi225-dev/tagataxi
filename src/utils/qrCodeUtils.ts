@@ -25,7 +25,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'facebook',
     name: 'Facebook',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'facebook',
     utmMedium: 'social',
     utmCampaign: 'organic_post',
@@ -36,7 +36,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'instagram',
     name: 'Instagram',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'instagram',
     utmMedium: 'social',
     utmCampaign: 'stories',
@@ -47,7 +47,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'whatsapp',
     name: 'WhatsApp',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'whatsapp',
     utmMedium: 'messaging',
     utmCampaign: 'viral_share',
@@ -58,7 +58,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'twitter',
     name: 'Twitter/X',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'twitter',
     utmMedium: 'social',
     utmCampaign: 'tweet',
@@ -71,7 +71,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'poster_kinshasa',
     name: 'Affiches Kinshasa',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'poster',
     utmMedium: 'outdoor',
     utmCampaign: 'kinshasa_streets',
@@ -82,7 +82,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'poster_lubumbashi',
     name: 'Affiches Lubumbashi',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'poster',
     utmMedium: 'outdoor',
     utmCampaign: 'lubumbashi_streets',
@@ -93,7 +93,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'flyer',
     name: 'Flyers/Tracts',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'flyer',
     utmMedium: 'print',
     utmCampaign: 'distribution',
@@ -104,7 +104,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'business_card',
     name: 'Cartes de visite',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'business_card',
     utmMedium: 'print',
     utmCampaign: 'networking',
@@ -117,7 +117,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'partner_restaurant',
     name: 'Restaurants partenaires',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'partner',
     utmMedium: 'referral',
     utmCampaign: 'restaurant_table',
@@ -128,7 +128,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'partner_hotel',
     name: 'Hôtels partenaires',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'partner',
     utmMedium: 'referral',
     utmCampaign: 'hotel_reception',
@@ -139,7 +139,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'partner_shop',
     name: 'Boutiques partenaires',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'partner',
     utmMedium: 'referral',
     utmCampaign: 'shop_counter',
@@ -152,7 +152,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'event_booth',
     name: 'Stand événementiel',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'event',
     utmMedium: 'offline',
     utmCampaign: 'booth',
@@ -163,7 +163,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'event_conference',
     name: 'Conférence',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'event',
     utmMedium: 'offline',
     utmCampaign: 'conference_slide',
@@ -176,7 +176,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'vehicle_sticker',
     name: 'Sticker véhicule',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'vehicle',
     utmMedium: 'outdoor',
     utmCampaign: 'car_branding',
@@ -187,7 +187,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'driver_card',
     name: 'Carte chauffeur',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'driver',
     utmMedium: 'referral',
     utmCampaign: 'driver_card',
@@ -200,7 +200,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'sms_campaign',
     name: 'Campagne SMS',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'sms',
     utmMedium: 'messaging',
     utmCampaign: 'bulk_send',
@@ -211,7 +211,7 @@ export const DISTRIBUTION_CHANNELS: QRChannel[] = [
   {
     id: 'email_newsletter',
     name: 'Newsletter Email',
-    baseUrl: 'https://tembea.app/install',
+    baseUrl: 'https://tagago.app/install',
     utmSource: 'email',
     utmMedium: 'email',
     utmCampaign: 'newsletter',

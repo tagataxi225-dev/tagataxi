@@ -78,7 +78,7 @@ const DriverSupport = () => {
       type: "email",
       title: "Support Email",
       description: "Pour questions détaillées",
-      contact: "chauffeurs@tembea.app",
+      contact: "chauffeurs@tagago.app",
       availability: "Réponse sous 4h",
       icon: Mail,
       urgent: false

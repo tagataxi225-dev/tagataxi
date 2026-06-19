@@ -81,7 +81,7 @@ const PartnerSupport = () => {
       type: "email",
       title: "Email Partenaires",
       description: "Pour questions détaillées",
-      contact: "partenaires@tembea.app",
+      contact: "partenaires@tagago.app",
       availability: "Réponse sous 2h",
       icon: Mail,
       priority: false

@@ -155,7 +155,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       email: formData.email,
       password: formData.password,
       options: {
-        emailRedirectTo: `https://tembea.app/`,
+        emailRedirectTo: `https://tagago.app/`,
         data: {
           role: "chauffeur",
           display_name: formData.displayName,

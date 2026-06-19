@@ -37,7 +37,7 @@ export const EnhancedWalletCard: React.FC<EnhancedWalletCardProps> = ({
             <Wallet className="w-5 h-5 text-white" />
           </motion.div>
           <div className="flex-1 min-w-0">
-            <p className="text-xs text-white/70 font-medium">TembeaPay</p>
+            <p className="text-xs text-white/70 font-medium">TAGAPay</p>
             <p className="font-bold text-white text-sm truncate">
               {balance.toLocaleString('fr-FR')} {currency}
             </p>
@@ -91,7 +91,7 @@ export const EnhancedWalletCard: React.FC<EnhancedWalletCardProps> = ({
             </motion.div>
             <div>
               <p className="text-sm text-white/80 font-medium">Mon Portefeuille</p>
-              <p className="text-xs text-white/60">TembeaPay</p>
+              <p className="text-xs text-white/60">TAGAPay</p>
             </div>
           </div>
           

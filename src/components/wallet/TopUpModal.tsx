@@ -114,7 +114,7 @@ export const TopUpModal: React.FC<TopUpModalProps> = ({
           <SheetTitle className="text-lg font-bold text-foreground">
             Recharger
           </SheetTitle>
-          <p className="text-sm text-muted-foreground -mt-1">TembeaPay • Mobile Money</p>
+          <p className="text-sm text-muted-foreground -mt-1">TAGAPay • Mobile Money</p>
         </SheetHeader>
 
         <div className="space-y-5">

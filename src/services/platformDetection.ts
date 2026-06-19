@@ -97,7 +97,7 @@ export const logMobileUrlInfo = () => {
   if (typeof window === 'undefined') return;
   
   const isCapacitor = isMobileApp();
-  const baseUrl = isCapacitor ? 'https://tembea.app' : window.location.origin;
+  const baseUrl = isCapacitor ? 'https://tagago.app' : window.location.origin;
   
   console.log('🔗 [MobileUrl] Diagnostic:', {
     isCapacitor,

@@ -53,7 +53,7 @@ const ReferralSystem: React.FC = () => {
       navigator.share({
         title: 'TAGA Taxi - Code de parrainage',
         text: shareText,
-        url: `https://tembea.app/ref/${referralData.userCode}`
+        url: `https://tagago.app/ref/${referralData.userCode}`
       });
     } else {
       navigator.clipboard.writeText(shareText);

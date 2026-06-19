@@ -10,7 +10,7 @@ interface ShareMetaTagsProps {
 export const ShareMetaTags: React.FC<ShareMetaTagsProps> = ({ 
   title, 
   description, 
-  image = 'https://tembea.app/kwenda-splash-logo.png',
+  image = '/app-icon-512.png',
   url 
 }) => (
   <Helmet>

@@ -18,7 +18,7 @@ export const serviceWelcomeSlides: ServiceSlide[] = [
     service: 'food',
     title: 'TAGA Food',
     subtitle: 'Vos restaurants préférés livrés chez vous',
-    description: 'Découvrez les meilleurs plats de Kinshasa, Lubumbashi et Kolwezi.',
+    description: 'Découvrez les meilleurs plats d\'Abidjan.',
     lucideIcon: UtensilsCrossed,
     gradient: 'from-muted/30 to-background',
     ctaText: 'Commander maintenant',

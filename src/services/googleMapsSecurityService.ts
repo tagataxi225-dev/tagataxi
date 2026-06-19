@@ -132,7 +132,7 @@ class GoogleMapsSecurityService {
     const allowedOrigins = [
       'localhost',
       '127.0.0.1',
-      'tembea.app',
+      'tagago.app',
       
       window.location.hostname,
     ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import kwendaIcon from '@/assets/kwenda-icon.png';
+import kwendaIcon from '@/assets/LOGO_TAGA.png';
 
 export const AnimatedKwendaIcon: React.FC = () => {
   return (
