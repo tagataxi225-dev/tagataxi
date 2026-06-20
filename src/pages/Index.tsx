@@ -7,7 +7,6 @@ import ModernFooter from '@/components/landing/ModernFooter';
 import { PromoPopupOverlay } from '@/components/popups/PromoPopupOverlay';
 
 // Lazy load demo components — only used with ?query params
-const CongoColorShowcase = lazy(() => import('@/components/demo/CongoColorShowcase'));
 const DarkModeShowcase = lazy(() => import('@/components/demo/DarkModeShowcase').then(m => ({ default: m.DarkModeShowcase })));
 const VoiceConversationInterface = lazy(() => import('@/components/ai/VoiceConversationInterface').then(m => ({ default: m.VoiceConversationInterface })));
 const SmartAnalytics = lazy(() => import('@/components/ai/SmartAnalytics').then(m => ({ default: m.SmartAnalytics })));
@@ -16,14 +15,8 @@ const SmartAnalytics = lazy(() => import('@/components/ai/SmartAnalytics').then(
 
 
 const Index = () => {
-  // Temporary Congo color demo - remove in production
-  const showCongoDemo = window.location.search.includes('congo-demo');
   const showDarkModeDemo = window.location.search.includes('dark-mode-demo');
   const showAIDemo = window.location.search.includes('ai-demo');
-  
-  if (showCongoDemo) {
-    return <Suspense fallback={null}><CongoColorShowcase /></Suspense>;
-  }
 
   if (showDarkModeDemo) {
     return <Suspense fallback={null}><DarkModeShowcase /></Suspense>;
@@ -54,7 +47,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen" style={{ paddingTop: 'var(--header-height-safe)' }}>
+    <div className="min-h-screen w-full" style={{ paddingTop: 'var(--header-height-safe)' }}>
       <ModernHeroSimplified />
       <InteractiveServicesGridLite />
       <SocialProofSection />

@@ -16,9 +16,8 @@ const ModernFooter = () => {
       links: [
         { name: "Taxi VTC", href: "/app/auth?service=transport", icon: <Car className="w-4 h-4" /> },
         { name: "Livraison Express", href: "/app/auth?service=delivery", icon: <Package className="w-4 h-4" /> },
-        { name: "Location Véhicules", href: "/app/auth?service=rental", icon: <Car className="w-4 h-4" /> },
-        { name: "Marketplace", href: "/marketplace", icon: <Store className="w-4 h-4" /> },
-        { name: "TAGA Tombola", href: "/app/auth?service=lottery", icon: <Heart className="w-4 h-4" /> }
+        { name: "TAGA Food (bientôt)", href: "/support/contact", icon: <Store className="w-4 h-4" /> },
+        { name: "TAGA Shop (bientôt)", href: "/support/contact", icon: <Store className="w-4 h-4" /> }
       ]
     },
     {
@@ -44,10 +43,10 @@ const ModernFooter = () => {
     {
       title: "Zones de Service",
       links: [
-        { name: "Kinshasa", href: "/locations/kinshasa", icon: <MapPin className="w-4 h-4" /> },
-        { name: "Lubumbashi", href: "/locations/lubumbashi", icon: <MapPin className="w-4 h-4" /> },
-        { name: "Kolwezi", href: "/locations/kolwezi", icon: <MapPin className="w-4 h-4" /> },
-        { name: "Abidjan", href: "/locations/abidjan", icon: <MapPin className="w-4 h-4" /> },
+        { name: "Cocody", href: "/locations/coverage-map", icon: <MapPin className="w-4 h-4" /> },
+        { name: "Plateau", href: "/locations/coverage-map", icon: <MapPin className="w-4 h-4" /> },
+        { name: "Yopougon", href: "/locations/coverage-map", icon: <MapPin className="w-4 h-4" /> },
+        { name: "Marcory", href: "/locations/coverage-map", icon: <MapPin className="w-4 h-4" /> },
         { name: "Carte de couverture", href: "/locations/coverage-map", icon: <ExternalLink className="w-4 h-4" /> }
       ]
     }
@@ -71,27 +70,27 @@ const ModernFooter = () => {
     <footer className="bg-gradient-to-b from-muted/30 to-background border-t border-border/50">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* Brand Section */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-6 min-w-0">
             <div className="flex items-center gap-4">
               <BrandLogo size={48} />
               <div>
-                <h3 className="text-heading-sm">TAGA Taxi</h3>
-                <p className="text-sm text-muted-foreground">🇨🇩 Made in Congo</p>
+                <h3 className="text-heading-sm">TAGA</h3>
+                <p className="text-sm text-muted-foreground">🇨🇮 Made in Côte d'Ivoire</p>
               </div>
             </div>
-            
+
             <p className="text-sm text-muted-foreground leading-relaxed">
-              L'application de transport intelligent qui révolutionne la mobilité en Afrique. 
-              Transport avec enchères, livraison, marketplace et tombola en une seule plateforme.
+              L'application de transport intelligent qui révolutionne la mobilité à Abidjan.
+              Transport avec enchères et livraison express en une seule plateforme.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Kinshasa, République Démocratique du Congo</span>
+                <span>Abidjan, Côte d'Ivoire</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Clock className="w-4 h-4 text-secondary" />
@@ -99,7 +98,7 @@ const ModernFooter = () => {
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-accent" />
-                <span>08 58 04 04 00</span>
+                <span>+225 07 00 00 00 00</span>
               </div>
             </div>
 
@@ -125,7 +124,7 @@ const ModernFooter = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="lg:col-span-4 grid md:grid-cols-4 gap-8">
+          <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8 min-w-0">
             {footerSections.map((section) => (
               <div key={section.title} className="space-y-4">
                 <h4 className="text-heading-sm">{section.title}</h4>
@@ -157,10 +156,10 @@ const ModernFooter = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              © 2026 TAGA Taxi. Tous droits réservés.
+              © 2026 TAGA. Tous droits réservés.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              Conçu avec ❤️ pour l'Afrique
+              Conçu avec ❤️ pour la Côte d'Ivoire
             </p>
           </div>
 
@@ -179,8 +178,8 @@ const ModernFooter = () => {
           <div className="text-center md:text-right">
             <p className="text-xs text-muted-foreground">
               Version {APP_CONFIG.version} • Produit{" "}
-              <a href="https://itec-sarlu.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                ITEC
+              <a href="https://nta-ci.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                NTA Technologie
               </a>
             </p>
           </div>

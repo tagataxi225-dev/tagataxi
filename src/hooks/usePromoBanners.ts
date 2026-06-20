@@ -1,7 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
-import campaignClient from '@/assets/campaign-client.png';
-import campaignDelivery from '@/assets/campaign-delivery.png';
 
 export type BannerPlacement = 'home' | 'marketplace';
 
@@ -13,22 +11,10 @@ export interface PromoBanner {
   description: string;
 }
 
-const FALLBACK_HOME: PromoBanner[] = [
-  {
-    id: 'fallback-1',
-    image: campaignClient,
-    alt: 'TAGA - Simplifiez vos trajets',
-    title: 'Simplifiez vos trajets',
-    description: 'Profitez de chaque instant',
-  },
-  {
-    id: 'fallback-2',
-    image: campaignDelivery,
-    alt: 'Devenez livreur TAGA',
-    title: 'Devenez livreur',
-    description: 'Gagnez plus rapidement',
-  },
-];
+// Pas de bannière de repli : les visuels proviennent uniquement de la table
+// `promotional_ads` (Supabase). Le slider ne s'affiche pas tant qu'aucune
+// bannière TAGA active n'est configurée.
+const FALLBACK_HOME: PromoBanner[] = [];
 
 const FALLBACK_MARKETPLACE: PromoBanner[] = [];
 

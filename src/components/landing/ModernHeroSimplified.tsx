@@ -1,4 +1,4 @@
-import { UtensilsCrossed, Car } from "lucide-react";
+import { Package, Car } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { BrandLogo } from "@/components/brand/BrandLogo";
 import { useAuth } from "@/hooks/useAuth";
@@ -41,9 +41,9 @@ const ModernHeroSimplified = () => {
       </div>
       
       <div className="container-section py-8 lg:py-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Ultra-Épuré */}
-          <div className="space-y-6 text-center lg:text-left">
+          <div className="space-y-6 text-center lg:text-left min-w-0 w-full">
             {/* Logo + Slogan Modernisé */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -60,15 +60,19 @@ const ModernHeroSimplified = () => {
               
               {/* Slogan avec gradient */}
               <div className="space-y-3">
-                <h1 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
-                  Transport • Livraison • Marketplace
+                <h1 className="text-2xl lg:text-3xl font-bold break-words bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+                  Transport &amp; Livraison à Abidjan
                 </h1>
-                
+                <p className="text-sm text-muted-foreground max-w-md">
+                  Réservez une course ou faites livrer un colis. Tarifs transparents,
+                  chauffeurs proches de vous.
+                </p>
+
                 {/* Badge animé avec point vert */}
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
                   <span className="text-xs font-medium text-foreground">
-                    Kinshasa • Lubumbashi • Kolwezi
+                    Abidjan • Côte d'Ivoire
                   </span>
                 </div>
               </div>
@@ -82,38 +86,35 @@ const ModernHeroSimplified = () => {
               className="flex flex-col sm:flex-row gap-2 items-stretch sm:items-center justify-center lg:justify-start max-w-sm mx-auto lg:mx-0"
             >
               {/* Bouton Transport - Pill Design */}
-              <Link to="/app/auth">
+              <Link to="/app/auth?service=transport">
                 <motion.button
                   whileHover={{ scale: 1.03, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="group relative overflow-hidden rounded-full bg-gradient-to-r from-red-600 to-red-500 px-6 py-3.5 shadow-lg hover:shadow-red-500/50 transition-all duration-300 w-full sm:w-auto"
+                  className="group relative overflow-hidden rounded-full bg-gradient-to-r from-primary to-primary-glow px-6 py-3.5 shadow-lg hover:shadow-primary/50 transition-all duration-300 w-full sm:w-auto"
                 >
                   {/* Glassmorphism effect */}
                   <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
+
                   <div className="relative flex items-center justify-center gap-2">
                     <Car className="w-4 h-4 text-white flex-shrink-0" strokeWidth={2.5} />
                     <span className="text-[15px] font-semibold text-white tracking-tight">
-                      Réserver
+                      Réserver une course
                     </span>
                   </div>
                 </motion.button>
               </Link>
 
               {/* Bouton Livraison - Pill Design */}
-              <Link to="/food">
+              <Link to="/app/auth?service=delivery">
                 <motion.button
                   whileHover={{ scale: 1.03, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="group relative overflow-hidden rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-6 py-3.5 shadow-lg hover:shadow-orange-500/50 transition-all duration-300 w-full sm:w-auto"
+                  className="group relative overflow-hidden rounded-full bg-background px-6 py-3.5 border-2 border-primary/30 shadow-sm hover:border-primary/60 hover:shadow-md transition-all duration-300 w-full sm:w-auto"
                 >
-                  {/* Glassmorphism effect */}
-                  <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
                   <div className="relative flex items-center justify-center gap-2">
-                    <UtensilsCrossed className="w-4 h-4 text-white flex-shrink-0" strokeWidth={2.5} />
-                    <span className="text-[15px] font-semibold text-white tracking-tight">
-                      Commander
+                    <Package className="w-4 h-4 text-primary flex-shrink-0" strokeWidth={2.5} />
+                    <span className="text-[15px] font-semibold text-foreground tracking-tight">
+                      Livrer un colis
                     </span>
                   </div>
                 </motion.button>
@@ -132,7 +133,7 @@ const ModernHeroSimplified = () => {
           </div>
 
           {/* Campaign Slider */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center min-w-0 w-full">
             <HeroCampaignSlider />
           </div>
         </div>

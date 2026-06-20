@@ -3,9 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
 
 const TESTIMONIAL = {
-  name: "Marie K.",
+  name: "Awa K.",
   role: "Cliente régulière",
-  city: "Kinshasa",
+  city: "Cocody, Abidjan",
   text: "Avec le système d'enchères, je choisis le chauffeur qui me propose le meilleur tarif. Service transparent et fiable!",
   rating: 5,
 };
@@ -27,8 +27,8 @@ const SocialProofSection = () => {
             <div className="text-body-sm text-muted-foreground">Note moyenne</div>
           </div>
           <div className="text-center space-y-1">
-            <div className="text-display-sm text-primary font-bold">4</div>
-            <div className="text-body-sm text-muted-foreground">Villes actives</div>
+            <div className="text-display-sm text-primary font-bold">10</div>
+            <div className="text-body-sm text-muted-foreground">Communes desservies</div>
           </div>
           <div className="text-center space-y-1">
             <div className="text-display-sm text-primary font-bold">500+</div>

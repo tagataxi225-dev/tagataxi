@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Smartphone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { isMobileApp } from '@/services/platformDetection';
-import { PLAY_STORE_URL, APP_STORE_URL, getDevicePlatform } from '@/components/store/StoreButtons';
 
-const DISMISS_KEY = 'kwenda-top-banner-dismissed';
+const DISMISS_KEY = 'taga-top-banner-dismissed';
 const DISMISS_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 jours
 
 export const AppDownloadTopBanner = () => {
@@ -51,41 +49,38 @@ export const AppDownloadTopBanner = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -100, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          className="fixed top-0 left-0 right-0 z-[9999] bg-primary text-primary-foreground"
+          className="fixed top-0 left-0 right-0 z-[9999] w-full bg-primary text-primary-foreground"
         >
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between gap-4 py-2.5">
-              {/* Icône */}
-              <div className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-white/10">
+          <div className="mx-auto w-full max-w-5xl px-3 sm:px-4">
+            <div className="flex items-center gap-2 sm:gap-3 py-2 min-w-0">
+              {/* Icône (masquée sur mobile pour gagner de la place) */}
+              <div className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
                 <Smartphone className="w-4 h-4" />
               </div>
 
               {/* Contenu */}
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium truncate">
-                  📱 Téléchargez TAGA sur {getDevicePlatform() === 'ios' ? 'App Store' : 'Play Store'}
+                <p className="text-[13px] sm:text-sm font-medium truncate">
+                  📱 L'app TAGA arrive bientôt
                 </p>
               </div>
 
-              {/* CTA Button */}
-              <a
-                href={getDevicePlatform() === 'ios' ? APP_STORE_URL : PLAY_STORE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-black text-white text-xs font-medium rounded-lg hover:bg-gray-800 transition-colors"
-              >
-                Télécharger
-              </a>
+              {/* Badge "Bientôt" (pas de lien tant que l'app n'est pas publiée) */}
+              <span className="shrink-0 inline-flex items-center px-2.5 py-1 bg-white/15 text-white text-xs font-semibold rounded-lg select-none">
+                Bientôt
+              </span>
 
-              {/* Bouton fermer */}
-              <Button
+              {/* Bouton fermer — zone tactile suffisante, fiable sur mobile */}
+              <button
+                type="button"
                 onClick={handleDismiss}
-                variant="ghost"
-                size="icon"
-                className="h-7 w-7 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                onTouchEnd={(e) => { e.preventDefault(); handleDismiss(); }}
+                aria-label="Fermer la bannière"
+                style={{ touchAction: 'manipulation' }}
+                className="shrink-0 flex items-center justify-center h-9 w-9 -mr-1 rounded-full text-white/80 hover:text-white hover:bg-white/15 active:bg-white/25 transition-colors"
               >
-                <X className="w-4 h-4" />
-              </Button>
+                <X className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </motion.div>

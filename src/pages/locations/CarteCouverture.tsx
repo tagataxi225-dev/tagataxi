@@ -12,48 +12,23 @@ import { PageTransition } from "@/components/layout/PageTransition";
 import ModernFooter from "@/components/landing/ModernFooter";
 
 const CarteCouverture = () => {
-  const [selectedCity, setSelectedCity] = useState("kinshasa");
+  const [selectedCity, setSelectedCity] = useState("abidjan");
 
   const cities = {
-    kinshasa: {
-      name: "Kinshasa",
+    abidjan: {
+      name: "Abidjan",
       zones: [
-        { name: "Gombe", coverage: 100, vehicles: 45, avgTime: "5 min", status: "excellent" },
-        { name: "Limete", coverage: 95, vehicles: 38, avgTime: "7 min", status: "excellent" },
-        { name: "Kintambo", coverage: 90, vehicles: 32, avgTime: "8 min", status: "bon" },
-        { name: "Ngaliema", coverage: 88, vehicles: 28, avgTime: "10 min", status: "bon" },
-        { name: "Bandalungwa", coverage: 85, vehicles: 25, avgTime: "12 min", status: "bon" },
-        { name: "Kalamu", coverage: 80, vehicles: 22, avgTime: "15 min", status: "moyen" },
-        { name: "Kasa-Vubu", coverage: 75, vehicles: 20, avgTime: "18 min", status: "moyen" },
-        { name: "Lingwala", coverage: 70, vehicles: 18, avgTime: "20 min", status: "moyen" },
-        { name: "Barumbu", coverage: 65, vehicles: 15, avgTime: "25 min", status: "limite" },
-        { name: "Kinshasa", coverage: 60, vehicles: 12, avgTime: "30 min", status: "limite" }
+        { name: "Cocody", coverage: 95, vehicles: 60, avgTime: "5 min", status: "excellent" },
+        { name: "Plateau", coverage: 92, vehicles: 50, avgTime: "6 min", status: "excellent" },
+        { name: "Marcory", coverage: 88, vehicles: 42, avgTime: "8 min", status: "bon" },
+        { name: "Treichville", coverage: 85, vehicles: 35, avgTime: "9 min", status: "bon" },
+        { name: "Yopougon", coverage: 82, vehicles: 70, avgTime: "11 min", status: "bon" },
+        { name: "Adjamé", coverage: 80, vehicles: 48, avgTime: "12 min", status: "moyen" },
+        { name: "Koumassi", coverage: 76, vehicles: 30, avgTime: "14 min", status: "moyen" },
+        { name: "Abobo", coverage: 70, vehicles: 38, avgTime: "17 min", status: "moyen" },
+        { name: "Port-Bouët", coverage: 66, vehicles: 22, avgTime: "21 min", status: "limite" }
       ],
-      stats: { totalVehicles: 255, activeDrivers: 180, coverage: "85%" },
-      services: ["Transport VTC", "Livraison Express", "Marketplace", "Location Véhicules"]
-    },
-    lubumbashi: {
-      name: "Lubumbashi", 
-      zones: [
-        { name: "Centre-ville", coverage: 95, vehicles: 25, avgTime: "6 min", status: "excellent" },
-        { name: "Kampemba", coverage: 90, vehicles: 22, avgTime: "8 min", status: "excellent" },
-        { name: "Katuba", coverage: 85, vehicles: 18, avgTime: "10 min", status: "bon" },
-        { name: "Annexe", coverage: 80, vehicles: 15, avgTime: "12 min", status: "bon" },
-        { name: "Kenya", coverage: 75, vehicles: 12, avgTime: "15 min", status: "moyen" },
-        { name: "Kamalondo", coverage: 70, vehicles: 10, avgTime: "18 min", status: "moyen" }
-      ],
-      stats: { totalVehicles: 102, activeDrivers: 75, coverage: "82%" },
-      services: ["Transport VTC", "Livraison Express", "Marketplace"]
-    },
-    kolwezi: {
-      name: "Kolwezi",
-      zones: [
-        { name: "Centre", coverage: 90, vehicles: 15, avgTime: "8 min", status: "excellent" },
-        { name: "Dilala", coverage: 85, vehicles: 12, avgTime: "10 min", status: "bon" },
-        { name: "Manika", coverage: 80, vehicles: 10, avgTime: "12 min", status: "bon" },
-        { name: "Mutoshi", coverage: 75, vehicles: 8, avgTime: "15 min", status: "moyen" }
-      ],
-      stats: { totalVehicles: 45, activeDrivers: 32, coverage: "82%" },
+      stats: { totalVehicles: 395, activeDrivers: 270, coverage: "82%" },
       services: ["Transport VTC", "Livraison Express"]
     }
   };
@@ -88,18 +63,18 @@ const CarteCouverture = () => {
           <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
           <div className="container mx-auto max-w-7xl text-center relative z-10">
             <Badge variant="outline" className="border-white/30 text-white mb-6">
-              🗺️ Couverture TAGA Taxi
+              🗺️ Couverture TAGA
             </Badge>
             <h1 className="text-display-lg mb-6">
               Carte de Couverture
               <br />
               <span className="bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent">
-                Congo RDC
+                Abidjan, Côte d'Ivoire
               </span>
             </h1>
             <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Découvrez la disponibilité de nos services dans chaque zone de Kinshasa, 
-              Lubumbashi et Kolwezi avec des informations en temps réel.
+              Découvrez la disponibilité de nos services dans chaque commune d'Abidjan
+              (Cocody, Plateau, Yopougon, Marcory…) avec des informations en temps réel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
@@ -120,24 +95,16 @@ const CarteCouverture = () => {
             <Tabs value={selectedCity} onValueChange={setSelectedCity} className="w-full">
               <div className="text-center mb-12">
                 <h2 className="text-display-md mb-4 bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent">
-                  Sélectionnez Votre Ville
+                  Couverture par commune
                 </h2>
                 <p className="text-body-lg text-muted-foreground mb-8">
-                  Consultez la couverture détaillée par zone dans chaque ville
+                  Consultez la couverture détaillée de TAGA dans chaque commune d'Abidjan
                 </p>
-                
-                <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
-                  <TabsTrigger value="kinshasa" className="flex items-center gap-2">
+
+                <TabsList className="grid w-full max-w-xs mx-auto grid-cols-1">
+                  <TabsTrigger value="abidjan" className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    Kinshasa
-                  </TabsTrigger>
-                  <TabsTrigger value="lubumbashi" className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Lubumbashi
-                  </TabsTrigger>
-                  <TabsTrigger value="kolwezi" className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Kolwezi
+                    Abidjan
                   </TabsTrigger>
                 </TabsList>
               </div>

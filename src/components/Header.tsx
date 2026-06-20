@@ -23,8 +23,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <BrandLogo size={32} className="rounded-lg" alt="TAGA Taxi Congo — logo" />
-            <span className="sr-only">TAGA Taxi</span>
+            <BrandLogo size={32} className="rounded-lg" alt="TAGA — logo" />
+            <span className="sr-only">TAGA</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -86,7 +86,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border/50 space-y-3">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+243 XX XX XX XX</span>
+                  <span>+225 XX XX XX XX XX</span>
                 </div>
                 <StoreButtons size="sm" layout="vertical" />
               </div>

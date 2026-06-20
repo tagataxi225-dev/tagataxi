@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { isMobileApp } from "@/services/platformDetection";
 import { StoreButtons } from "@/components/store/StoreButtons";
 
-const BANNER_DISMISSED_KEY = 'kwenda-install-banner-dismissed';
+const BANNER_DISMISSED_KEY = 'taga-install-banner-dismissed';
 const BANNER_DISMISS_DAYS = 7;
 
 export const InstallBanner = () => {

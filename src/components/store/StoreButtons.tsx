@@ -7,9 +7,6 @@ interface StoreButtonsProps {
   className?: string;
 }
 
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=cd.kwenda.app";
-const APP_STORE_URL = "https://apps.apple.com/ci/app/kwenda-taxi/id6759842295";
-
 export const getDevicePlatform = (): 'ios' | 'android' | 'desktop' => {
   if (typeof window === 'undefined') return 'desktop';
   const ua = navigator.userAgent || (navigator as any).vendor || '';
@@ -45,32 +42,36 @@ const iconSizes = {
   lg: "w-6 h-6"
 };
 
-export const StoreButtons = ({ 
-  layout = 'horizontal', 
+/**
+ * Boutons "stores" en attente de publication.
+ * Affichés grisés et inactifs avec un badge "Bientôt" tant que les apps
+ * TAGA ne sont pas publiées sur les stores.
+ */
+export const StoreButtons = ({
+  layout = 'horizontal',
   size = 'md',
   showLabels = true,
-  className 
+  className
 }: StoreButtonsProps) => {
 
   const stores = [
-    { url: PLAY_STORE_URL, icon: PlayStoreIcon, topLabel: 'GET IT ON', label: 'Google Play' },
-    { url: APP_STORE_URL, icon: AppleIcon, topLabel: 'Download on the', label: 'App Store' },
+    { icon: PlayStoreIcon, topLabel: 'Bientôt sur', label: 'Google Play' },
+    { icon: AppleIcon, topLabel: 'Bientôt sur', label: 'App Store' },
   ];
 
   return (
     <div className={cn(
-      "flex gap-3",
-      layout === 'vertical' && "flex-col",
+      "flex flex-wrap gap-3 max-w-full",
+      layout === 'vertical' && "flex-col flex-nowrap",
       className
     )}>
       {stores.map((store) => (
-        <a
+        <div
           key={store.label}
-          href={store.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          aria-disabled="true"
+          title="Application bientôt disponible"
           className={cn(
-            "flex items-center gap-2 bg-black text-white rounded-xl hover:bg-gray-800 transition-all hover:scale-105",
+            "relative flex items-center gap-2 rounded-xl bg-muted text-muted-foreground border border-border opacity-70 cursor-not-allowed select-none",
             sizeClasses[size]
           )}
         >
@@ -81,10 +82,11 @@ export const StoreButtons = ({
               <div className="font-semibold leading-tight">{store.label}</div>
             </div>
           )}
-        </a>
+          <span className="ml-1 text-[9px] font-bold uppercase tracking-wide bg-foreground/10 text-foreground/70 px-1.5 py-0.5 rounded">
+            Bientôt
+          </span>
+        </div>
       ))}
     </div>
   );
 };
-
-export { PLAY_STORE_URL, APP_STORE_URL };
