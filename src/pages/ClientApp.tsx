@@ -558,6 +558,11 @@ const ClientApp = () => {
     }
 
     // ✅ Services principaux (transport, delivery, marketplace)
+    // Ouverture transport "classique" (pas via un lieu) → purge un éventuel
+    // prefill destination resté en mémoire, pour ne pas le ré-injecter.
+    if (service === "transport") {
+      setTaxiPrefill({});
+    }
     setServiceType(service as any);
     setCurrentView("service");
     setActiveTab("home");
@@ -975,8 +980,21 @@ const ClientApp = () => {
                     <TransportErrorBoundary>
                       <ModernTaxiInterface
                         onSubmit={handleTransportSubmit}
-                        onCancel={() => setCurrentView("home")}
+                        onCancel={() => {
+                          setTaxiPrefill({});
+                          setCurrentView("home");
+                        }}
                         onTrackDriver={(bookingId: string) => setTrackingBookingId(bookingId)}
+                        initialDestination={
+                          taxiPrefill.destination
+                            ? {
+                                address: taxiPrefill.destination.address,
+                                lat: taxiPrefill.destination.coordinates.lat,
+                                lng: taxiPrefill.destination.coordinates.lng,
+                                name: taxiPrefill.destination.address,
+                              }
+                            : null
+                        }
                       />
                     </TransportErrorBoundary>
                     {isTripChatOpen && activeBooking && (

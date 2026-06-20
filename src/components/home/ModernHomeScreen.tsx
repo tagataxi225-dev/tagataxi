@@ -6,6 +6,7 @@ import { ModernHeader } from './ModernHeader';
 
 import { HomeTrendsSheet } from './HomeTrendsSheet';
 import { HomeRecentPlacesSheet } from './HomeRecentPlacesSheet';
+import { HomePopularPlaces } from './HomePopularPlaces';
 import { MoreServicesSheet } from './MoreServicesSheet';
 import { useRealtimeNotifications } from '@/hooks/useRealtimeNotifications';
 import { useAuth } from '@/hooks/useAuth';
@@ -235,6 +236,9 @@ export const ModernHomeScreen = memo(({
 
         {/* Carrousel de bannières promo texte (auto-défilant) */}
         <PromoSlider />
+
+        {/* Lieux populaires : récents + lieux fixes Abidjan → taxi avec destination pré-remplie */}
+        <HomePopularPlaces onSelect={onSearch} />
 
         {/* Section suggestions en vedette */}
         <div className="px-4">
