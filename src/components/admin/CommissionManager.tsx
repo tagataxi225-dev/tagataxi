@@ -264,7 +264,7 @@ export const CommissionManager = () => {
                     }))}
                   />
                   <p className="text-sm text-muted-foreground">
-                    Frais prélevés sur chaque rechargement de wallet TembeaPay
+                    Frais prélevés sur chaque rechargement de wallet TAGAPay
                   </p>
                 </div>
               ) : (

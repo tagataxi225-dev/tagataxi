@@ -239,7 +239,7 @@ const DevenirChauffeur = () => {
               },
               {
                 q: "Comment suis-je payé ?",
-                a: "Paiement hebdomadaire direct sur votre portefeuille TembeaPay ou mobile money."
+                a: "Paiement hebdomadaire direct sur votre portefeuille TAGAPay ou mobile money."
               },
               {
                 q: "Y a-t-il des horaires imposés ?",

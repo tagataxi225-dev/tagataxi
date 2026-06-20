@@ -348,7 +348,7 @@ export const FlexibleOrderDialog: React.FC<FlexibleOrderDialogProps> = ({
                           <Wallet className="w-6 h-6 text-primary" />
                         </div>
                         <div className="flex-1">
-                          <p className="font-medium text-base">Portefeuille TembeaPay</p>
+                          <p className="font-medium text-base">Portefeuille TAGAPay</p>
                           <p className="text-sm text-muted-foreground">Paiement instantané depuis votre solde</p>
                         </div>
                         <Badge variant="secondary">Recommandé</Badge>

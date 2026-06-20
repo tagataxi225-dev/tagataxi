@@ -152,7 +152,7 @@ export const LoyaltyPointsWidget = () => {
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="wallet" id="wallet" />
                     <Label htmlFor="wallet" className="font-normal cursor-pointer">
-                      Crédit TembeaPay (disponible immédiatement)
+                      Crédit TAGAPay (disponible immédiatement)
                     </Label>
                   </div>
                   <div className="flex items-center space-x-2">

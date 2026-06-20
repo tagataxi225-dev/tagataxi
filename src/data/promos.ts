@@ -21,7 +21,7 @@ export const defaultPromos: Promo[] = [
   },
   {
     id: '3',
-    title: 'Tombola TembeaPay',
+    title: 'Tombola TAGAPay',
     description: 'Gagnez jusqu\'à 100 000 CDF',
     image: '',
     gradient: 'from-purple-500 via-pink-500 to-purple-600',

@@ -39,7 +39,7 @@ export const onboardingContent: Record<OnboardingContext, OnboardingSlideContent
     },
     {
       icon: Wallet,
-      title: "TembeaPay Wallet",
+      title: "TAGAPay Wallet",
       tagline: "Payez et gagnez à chaque course",
       benefits: [
         "Cashback instantané",
@@ -133,7 +133,7 @@ export const onboardingContent: Record<OnboardingContext, OnboardingSlideContent
     {
       icon: Lock,
       title: "Paiement sécurisé",
-      tagline: "TembeaPay 100% protégé",
+      tagline: "TAGAPay 100% protégé",
       benefits: [
         "Escrow automatique",
         "Mobile Money"

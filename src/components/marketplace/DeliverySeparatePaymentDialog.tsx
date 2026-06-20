@@ -140,7 +140,7 @@ export const DeliverySeparatePaymentDialog = ({
                 <Label htmlFor="kwenda" className="flex items-center gap-2 cursor-pointer flex-1">
                   <Wallet className="h-5 w-5 text-orange-500" />
                   <div>
-                    <p className="font-medium">TembeaPay</p>
+                    <p className="font-medium">TAGAPay</p>
                     <p className="text-xs text-muted-foreground">Paiement instantané depuis votre wallet</p>
                   </div>
                 </Label>
@@ -175,7 +175,7 @@ export const DeliverySeparatePaymentDialog = ({
             <p className="text-sm text-blue-800 dark:text-blue-300">
               {paymentMethod === 'kwenda_pay' && (
                 <>
-                  ℹ️ Le montant sera débité immédiatement de votre wallet TembeaPay
+                  ℹ️ Le montant sera débité immédiatement de votre wallet TAGAPay
                 </>
               )}
               {paymentMethod === 'cash' && (

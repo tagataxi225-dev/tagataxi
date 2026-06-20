@@ -63,7 +63,7 @@ const Demo = () => {
         },
         {
           title: "Paiement sécurisé",
-          description: "Payer avec TembeaPay ou Mobile Money",
+          description: "Payer avec TAGAPay ou Mobile Money",
           image: "/placeholder.svg",
           duration: 2
         }
@@ -155,7 +155,7 @@ const Demo = () => {
         },
         {
           title: "Paiement sécurisé",
-          description: "Payer avec TembeaPay, Mobile Money ou carte",
+          description: "Payer avec TAGAPay, Mobile Money ou carte",
           image: "/placeholder.svg",
           duration: 3
         },

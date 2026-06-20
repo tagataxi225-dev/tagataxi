@@ -50,7 +50,7 @@ input[type=range].kwenda-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 24px; height: 24px;
   border-radius: 50%;
-  background: #ef4444;
+  background: #00A651;
   border: 3px solid white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   cursor: pointer;
@@ -58,7 +58,7 @@ input[type=range].kwenda-slider::-webkit-slider-thumb {
 input[type=range].kwenda-slider::-moz-range-thumb {
   width: 24px; height: 24px;
   border-radius: 50%;
-  background: #ef4444;
+  background: #00A651;
   border: 3px solid white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   cursor: pointer;
@@ -117,7 +117,7 @@ export default function PriceConfirmationModal({
   const pct = maxPrice > minPrice
     ? Math.round(((bidPrice - minPrice) / (maxPrice - minPrice)) * 100)
     : 50;
-  const sliderGradient = `linear-gradient(to right, #ef4444 ${pct}%, #e5e7eb ${pct}%)`;
+  const sliderGradient = `linear-gradient(to right, #00A651 ${pct}%, #e5e7eb ${pct}%)`;
 
   return (
     <div
@@ -153,7 +153,7 @@ export default function PriceConfirmationModal({
               <div className="flex flex-col items-center pt-0.5 gap-0 flex-shrink-0">
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                 <div className="flex-1 w-px bg-gray-300 my-1" />
-                <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
+                <div className="w-2.5 h-2.5 rounded-full bg-primary" />
               </div>
               <div className="flex-1 min-w-0 space-y-3">
                 <div>
@@ -187,16 +187,16 @@ export default function PriceConfirmationModal({
           </div>
 
           {/* Price section */}
-          <div className="bg-red-50 rounded-2xl p-4">
+          <div className="bg-primary/10 rounded-2xl p-4">
             <div className="flex items-center justify-between mb-1">
-              <p className="text-xs text-red-400 font-semibold uppercase tracking-wider">Prix estimé</p>
+              <p className="text-xs text-primary font-semibold uppercase tracking-wider">Prix estimé</p>
               <p className="text-xs text-gray-400">Espèces · Mobile Money</p>
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-3xl font-black text-gray-900 tracking-tight">
                 {fmt(calculatedPrice)}
               </span>
-              <span className="text-sm font-bold text-red-500">{currency}</span>
+              <span className="text-sm font-bold text-primary">{currency}</span>
             </div>
           </div>
 
@@ -211,7 +211,7 @@ export default function PriceConfirmationModal({
               <div className="flex items-center gap-2">
                 <div
                   className="w-2 h-2 rounded-full flex-shrink-0"
-                  style={{ background: isBidding ? '#ef4444' : '#d1d5db' }}
+                  style={{ background: isBidding ? '#00A651' : '#d1d5db' }}
                 />
                 <span className="text-sm font-semibold text-gray-800">
                   {isBidding ? 'Prix proposé activé' : 'Proposer un autre prix'}
@@ -229,8 +229,8 @@ export default function PriceConfirmationModal({
                 <div className="flex items-baseline justify-between mt-3 mb-2">
                   <span className="text-xs text-gray-400">Min {fmt(minPrice)}</span>
                   <div className="text-center">
-                    <span className="text-xl font-black text-red-500">{fmt(bidPrice)}</span>
-                    <span className="text-xs font-bold text-red-400 ml-1">{currency}</span>
+                    <span className="text-xl font-black text-primary">{fmt(bidPrice)}</span>
+                    <span className="text-xs font-bold text-primary ml-1">{currency}</span>
                   </div>
                   <span className="text-xs text-gray-400">Max {fmt(maxPrice)}</span>
                 </div>
@@ -267,8 +267,8 @@ export default function PriceConfirmationModal({
           onClick={handleConfirm}
           className="w-full py-4 rounded-2xl text-white font-bold text-base"
           style={{
-            background: 'linear-gradient(135deg, #ef4444, #dc2626)',
-            boxShadow: '0 8px 24px rgba(239,68,68,0.25)',
+            background: 'linear-gradient(135deg, #00A651, #00813F)',
+            boxShadow: '0 8px 24px rgba(0,166,81,0.25)',
             touchAction: 'manipulation',
           }}
         >

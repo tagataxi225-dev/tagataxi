@@ -78,7 +78,7 @@ export const PointsConversion = () => {
               <span className="font-semibold">{pointsToConvert || 0}</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Crédits TembeaPay</span>
+              <span className="text-sm text-muted-foreground">Crédits TAGAPay</span>
               <span className="font-semibold text-primary">
                 {isNaN(creditsFromPoints) ? 0 : creditsFromPoints.toLocaleString()} CDF
               </span>

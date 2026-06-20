@@ -264,14 +264,14 @@ export const UnifiedShoppingCart: React.FC<UnifiedShoppingCartProps> = ({
 
           {/* Footer épuré avec wallet et action */}
           <div className="sticky bottom-0 border-t bg-background p-3 sm:p-4 space-y-3 z-50">
-            {/* Section TembeaPay */}
+            {/* Section TAGAPay */}
             <div className="rounded-2xl bg-muted/30 p-3 space-y-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="p-1.5 bg-primary/10 rounded-lg">
                     <Wallet className="w-4 h-4 text-primary" />
                   </div>
-                  <span className="text-sm font-medium">TembeaPay</span>
+                  <span className="text-sm font-medium">TAGAPay</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="font-semibold text-sm">
@@ -445,7 +445,7 @@ export const UnifiedShoppingCart: React.FC<UnifiedShoppingCartProps> = ({
             onClick={handleConfirmDelivery}
           >
             <Shield className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-            Payer avec TembeaPay
+            Payer avec TAGAPay
           </Button>
 
           <p className="text-[10px] sm:text-xs text-center text-muted-foreground">
@@ -466,7 +466,7 @@ export const UnifiedShoppingCart: React.FC<UnifiedShoppingCartProps> = ({
       <div className="space-y-2">
         <h3 className="text-base sm:text-lg font-semibold">Traitement en cours</h3>
         <p className="text-sm sm:text-base text-muted-foreground">Création de {vendorCount} commande{vendorCount > 1 ? 's' : ''}...</p>
-        <p className="text-xs sm:text-sm text-muted-foreground">Paiement sécurisé par TembeaPay</p>
+        <p className="text-xs sm:text-sm text-muted-foreground">Paiement sécurisé par TAGAPay</p>
         <p className="text-xs text-muted-foreground/70">Ne fermez pas cette fenêtre</p>
       </div>
       <Loader2 className="h-8 w-8 animate-spin text-primary" />

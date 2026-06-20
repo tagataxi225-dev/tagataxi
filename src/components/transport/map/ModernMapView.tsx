@@ -95,7 +95,7 @@ export default function ModernMapView({
           ? [userLocation.lng, userLocation.lat]
           : pickup 
           ? [pickup.lng, pickup.lat]
-          : [15.3069, -4.3217]; // Kinshasa (lng, lat inversé pour Mapbox)
+          : [-4.0083, 5.3600]; // Abidjan (lng, lat inversé pour Mapbox)
 
         console.log('🗺️ Initialisation Mapbox avec centre:', center);
 
@@ -178,10 +178,10 @@ export default function ModernMapView({
             el.style.cssText = `
               width: 40px;
               height: 40px;
-              background: linear-gradient(145deg, #DC2626, #EF4444);
+              background: linear-gradient(145deg, #00813F, #00A651);
               border: 3px solid white;
               border-radius: 50%;
-              box-shadow: 0 8px 20px rgba(239, 68, 68, 0.6);
+              box-shadow: 0 8px 20px rgba(0,166,81, 0.6);
               display: flex;
               align-items: center;
               justify-content: center;
@@ -225,14 +225,14 @@ export default function ModernMapView({
                 'line-cap': 'round'
               },
               paint: {
-                'line-color': '#EF4444',
+                'line-color': '#00A651',
                 'line-width': 5,
                 'line-gradient': [
                   'interpolate',
                   ['linear'],
                   ['line-progress'],
                   0, '#1A1A1A',
-                  1, '#EF4444'
+                  1, '#00A651'
                 ]
               }
             });
@@ -295,10 +295,10 @@ export default function ModernMapView({
           ? { lat: userLocation.lat, lng: userLocation.lng }
           : pickup 
           ? { lat: pickup.lat, lng: pickup.lng }
-          : { lat: -4.3217, lng: 15.3069 }; // Kinshasa en dernier recours
-        
-        console.log('📍 Centrage carte sur position réelle:', defaultCenter, 
-          userLocation ? '✅ POSITION UTILISATEUR DÉTECTÉE' : pickup ? '(pickup)' : '(Kinshasa default)');
+          : { lat: 5.3600, lng: -4.0083 }; // Abidjan en dernier recours
+
+        console.log('📍 Centrage carte sur position réelle:', defaultCenter,
+          userLocation ? '✅ POSITION UTILISATEUR DÉTECTÉE' : pickup ? '(pickup)' : '(Abidjan default)');
 
         // Récupérer le Map ID depuis le loader
         const { googleMapsLoader } = await import('@/services/googleMapsLoader');

@@ -138,7 +138,7 @@ const LegalNotice = () => {
               <ul className="mt-2 space-y-1 text-sm">
                 <li>• TAGA Taxi® - Marque déposée</li>
                 <li>• Logo TAGA - Droits réservés</li>
-                <li>• TembeaPay - Marque de service</li>
+                <li>• TAGAPay - Marque de service</li>
               </ul>
             </div>
           </CardContent>

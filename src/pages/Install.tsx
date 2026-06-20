@@ -11,7 +11,7 @@ const Install = () => {
     "Livraison express moto et véhicule",
     "Marketplace avec paiement sécurisé",
     "Loterie quotidienne avec récompenses",
-    "Wallet TembeaPay intégré"
+    "Wallet TAGAPay intégré"
   ];
 
   return (

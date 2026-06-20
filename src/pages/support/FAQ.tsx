@@ -54,7 +54,7 @@ const FAQ = () => {
         },
         {
           q: "Comment payer ma course ?",
-          a: "Vous pouvez payer en espèces, avec votre portefeuille TembeaPay ou via mobile money (Orange Money, Airtel Money)."
+          a: "Vous pouvez payer en espèces, avec votre portefeuille TAGAPay ou via mobile money (Orange Money, Airtel Money)."
         }
       ]
     },
@@ -85,7 +85,7 @@ const FAQ = () => {
       icon: <HelpCircle className="w-5 h-5" />,
       questions: [
         {
-          q: "Comment recharger mon portefeuille TembeaPay ?",
+          q: "Comment recharger mon portefeuille TAGAPay ?",
           a: "Via mobile money, carte bancaire, ou en espèces dans nos points de vente partenaires."
         },
         {
@@ -116,7 +116,7 @@ const FAQ = () => {
         },
         {
           q: "Quand suis-je payé ?",
-          a: "Paiements hebdomadaires chaque lundi dans votre portefeuille TembeaPay."
+          a: "Paiements hebdomadaires chaque lundi dans votre portefeuille TAGAPay."
         },
         {
           q: "Puis-je choisir mes horaires ?",

@@ -26,7 +26,7 @@ import {
 } from '@/components/ui/alert-dialog';
 
 // Hors composant — référence stable, pas recréée à chaque render
-const KINSHASA_FALLBACK = { lat: -4.3217, lng: 15.3069, name: 'Kinshasa' };
+const ABIDJAN_FALLBACK = { lat: 5.3600, lng: -4.0083, name: 'Abidjan' };
 
 const detectCityFromTimezone = () => {
   try {
@@ -146,8 +146,8 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
         if (!pickupLocation) {
           const tzCity = !currentCity ? detectCityFromTimezone() : null;
           const resolvedCity = currentCity || tzCity;
-          const fallbackCoords = resolvedCity?.defaultCoordinates ?? resolvedCity?.coordinates ?? KINSHASA_FALLBACK;
-          const fallbackName = resolvedCity?.name ?? KINSHASA_FALLBACK.name;
+          const fallbackCoords = resolvedCity?.defaultCoordinates ?? resolvedCity?.coordinates ?? ABIDJAN_FALLBACK;
+          const fallbackName = resolvedCity?.name ?? ABIDJAN_FALLBACK.name;
           setPickupLocation({
             address: `${fallbackName} (position approximative)`,
             lat: fallbackCoords.lat,
@@ -170,7 +170,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
     const initLocation = async () => {
       try {
         try {
-          const supportedCities = ['kinshasa', 'lubumbashi', 'kolwezi', 'abidjan'];
+          const supportedCities = ['abidjan'];
           localStorage.removeItem('kwenda_ip_location');
           
           const cachedRaw = localStorage.getItem('kwenda_ip_location_cache');
@@ -202,20 +202,8 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
               accuracy,
             };
 
-            const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-            const tzCityMap: Record<string, (typeof SUPPORTED_CITIES)[keyof typeof SUPPORTED_CITIES]> = {
-              'Africa/Abidjan': SUPPORTED_CITIES.abidjan,
-              'Africa/Lubumbashi': SUPPORTED_CITIES.lubumbashi,
-              'Africa/Kinshasa': SUPPORTED_CITIES.kinshasa,
-              'Africa/Dakar': SUPPORTED_CITIES.abidjan,
-              'Africa/Bamako': SUPPORTED_CITIES.abidjan,
-              'Africa/Ouagadougou': SUPPORTED_CITIES.abidjan,
-              'Africa/Lome': SUPPORTED_CITIES.abidjan,
-              'UTC': SUPPORTED_CITIES.kinshasa,
-            };
-            const cityBase = tzCityMap[tz]
-              ?? (lat > 0 ? SUPPORTED_CITIES.abidjan : SUPPORTED_CITIES.kinshasa)
-              ?? SUPPORTED_CITIES.kinshasa;
+            // TAGA mono-ville : toujours Abidjan
+            const cityBase = SUPPORTED_CITIES.abidjan;
 
             startTransition(() => {
               setPickupLocation(location);
@@ -259,11 +247,11 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
               ]);
               predictiveRouteCache.smartPreload(
                 { lat: position.lat, lng: position.lng },
-                currentCity?.name || 'Kinshasa'
+                currentCity?.name || 'Abidjan'
               );
               taxiMetrics.logBookingStarted({
                 pickup: { lat: position.lat, lng: position.lng },
-                city: currentCity?.name || 'Kinshasa'
+                city: currentCity?.name || 'Abidjan'
               });
             } catch {}
           };
@@ -274,7 +262,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
           }
           
           // Enrichir l'adresse si générique (background)
-          const cityName = currentCity?.name || 'Kinshasa';
+          const cityName = currentCity?.name || 'Abidjan';
           if (!position.address || position.address === 'Position actuelle' || position.address === 'Ma position') {
             import('@/services/geocoding').then(({ GeocodingService }) => {
               GeocodingService.reverseGeocode(position.lng, position.lat).then(address => {
@@ -312,8 +300,8 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
         {
           const tzCity = !currentCity ? detectCityFromTimezone() : null;
           const resolvedCity = currentCity || tzCity;
-          const fallbackCoords = resolvedCity?.defaultCoordinates ?? resolvedCity?.coordinates ?? KINSHASA_FALLBACK;
-          const fallbackName = resolvedCity?.name ?? KINSHASA_FALLBACK.name;
+          const fallbackCoords = resolvedCity?.defaultCoordinates ?? resolvedCity?.coordinates ?? ABIDJAN_FALLBACK;
+          const fallbackName = resolvedCity?.name ?? ABIDJAN_FALLBACK.name;
           setPickupLocation({
             address: `${fallbackName} (position approximative)`,
             lat: fallbackCoords.lat,
@@ -365,10 +353,10 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
     return () => clearTimeout(timer);
   }, [calculatingRoute]);
 
-  const currency = getCurrencyByCity(currentCity?.name || 'Kinshasa');
+  const currency = getCurrencyByCity(currentCity?.name || 'Abidjan');
 
   const { vehicles, isLoading: vehiclesLoading } = useVehicleTypes({ 
-    distance, city: currentCity?.name || 'Kinshasa' 
+    distance, city: currentCity?.name || 'Abidjan' 
   });
 
   // vehiclesWithPrices supprimé — useVehicleTypes calcule déjà calculatedPrice
@@ -539,7 +527,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
       destinationCoordinates: { lat: destinationLocation.lat, lng: destinationLocation.lng },
       vehicleType: selectedVehicle,
       estimatedPrice: calculatedPrice,
-      city: currentCity?.name || 'Kinshasa'
+      city: currentCity?.name || 'Abidjan'
     };
 
     const isBidding = proposedPrice !== undefined;
@@ -621,7 +609,7 @@ export default function ModernTaxiInterface({ onSubmit, onCancel, onTrackDriver,
       {/* TaxiBookingHome — interface principale plein-écran */}
       <div className="fixed inset-0 z-[220]">
         <TaxiBookingHome
-          cityLabel={currentCity?.name || 'Kinshasa'}
+          cityLabel={currentCity?.name || 'Abidjan'}
           currency={currency as 'XOF' | 'XOF'}
           pickupLabel={pickupLocation?.address || 'Position actuelle'}
           destinationLabel={destinationLocation?.address}

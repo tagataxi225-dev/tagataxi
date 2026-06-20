@@ -49,10 +49,10 @@ const makeDestinationIcon = () =>
     className: '',
     html: `<div style="
       width:20px;height:20px;border-radius:50%;
-      background:#fff;border:3px solid #DC2626;
+      background:#fff;border:3px solid #00813F;
       box-shadow:0 1px 6px rgba(0,0,0,.35);
       display:flex;align-items:center;justify-content:center;
-    "><div style="width:6px;height:6px;border-radius:50%;background:#DC2626;"></div></div>`,
+    "><div style="width:6px;height:6px;border-radius:50%;background:#00813F;"></div></div>`,
     iconSize: [20, 20],
     iconAnchor: [10, 10],
   });
@@ -62,8 +62,8 @@ const makeUserIcon = () =>
   L.divIcon({
     className: '',
     html: `<div style="width:40px;height:40px;position:relative;display:flex;align-items:center;justify-content:center;">
-      <div style="position:absolute;width:40px;height:40px;border-radius:50%;background:rgba(220,38,38,0.22);animation:map-pulse 1.4s ease-out infinite;"></div>
-      <div style="width:14px;height:14px;border-radius:50%;background:#DC2626;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);position:relative;"></div>
+      <div style="position:absolute;width:40px;height:40px;border-radius:50%;background:rgba(0,166,81,0.22);animation:map-pulse 1.4s ease-out infinite;"></div>
+      <div style="width:14px;height:14px;border-radius:50%;background:#00813F;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);position:relative;"></div>
     </div>`,
     iconSize: [40, 40],
     iconAnchor: [20, 20],

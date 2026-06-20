@@ -65,7 +65,7 @@ const VendreEnLigne = () => {
     { item: "Fournir photos de qualité des produits", checked: true },
     { item: "Respecter délais de livraison", checked: true },
     { item: "Service client réactif", checked: true },
-    { item: "Compte TembeaPay actif", checked: true }
+    { item: "Compte TAGAPay actif", checked: true }
   ];
 
   return (

@@ -20,7 +20,7 @@ export default function YangoVehicleSelector({
   distance,
   selectedVehicleId,
   onVehicleSelect,
-  city = 'Kinshasa',
+  city = 'Abidjan',
   calculatingRoute = false,
   onContinue
 }: YangoVehicleSelectorProps) {

@@ -27,7 +27,7 @@ const serviceSlides: Record<ServiceType, OnboardingSlide[]> = {
   lottery: [
     {
       title: 'Bienvenue dans la Tombola ! 🎟️',
-      description: 'Participez gratuitement et gagnez des récompenses en crédits TembeaPay.'
+      description: 'Participez gratuitement et gagnez des récompenses en crédits TAGAPay.'
     },
     {
       title: 'Gagnez des tickets',
@@ -54,7 +54,7 @@ const serviceSlides: Record<ServiceType, OnboardingSlide[]> = {
   ],
   wallet: [
     {
-      title: 'TembeaPay Wallet 💰',
+      title: 'TAGAPay Wallet 💰',
       description: 'Votre portefeuille électronique pour tous vos paiements sur TAGA.'
     },
     {

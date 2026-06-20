@@ -59,7 +59,7 @@ export default function PromotionPaymentSheet({
           <div className="bg-muted/50 rounded-xl p-4 space-y-2">
             <div className="flex items-center gap-2 text-sm font-medium text-foreground">
               <Wallet className="w-4 h-4" />
-              Solde TembeaPay
+              Solde TAGAPay
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-muted-foreground">Bonus</span>
@@ -119,7 +119,7 @@ export default function PromotionPaymentSheet({
             {isPurchasing ? (
               <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Traitement...</>
             ) : (
-              <><Sparkles className="w-5 h-5 mr-2" /> Payer avec TembeaPay</>
+              <><Sparkles className="w-5 h-5 mr-2" /> Payer avec TAGAPay</>
             )}
           </Button>
         </DrawerFooter>

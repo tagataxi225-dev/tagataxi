@@ -19,12 +19,10 @@ import {
   ProgressiveLoader,
   useDataCompression,
 } from "@/components/optimization/SlowConnectionComponents";
-import CongoVehicleSelection from "@/components/transport/CongoVehicleSelection";
 import SimplifiedInterface from "@/components/ui/SimplifiedInterface";
 import MobileMoneyPayment from "@/components/advanced/MobileMoneyPayment";
 // import { ReferralPanel } from '@/components/profile/ReferralPanel'; // Supprimé
 import NotificationCenter from "@/components/advanced/NotificationCenter";
-import SimpleTaxiBooking from "@/components/transport/SimpleTaxiBooking";
 import OfflineMode from "@/components/advanced/OfflineMode";
 import SecurityVerification from "@/components/advanced/SecurityVerification";
 import { ResponsiveUserProfile } from "@/components/profile/ResponsiveUserProfile";
@@ -861,7 +859,7 @@ const ClientApp = () => {
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <div className="flex-1">
-            <h1 className="text-lg font-semibold text-foreground">TembeaPay</h1>
+            <h1 className="text-lg font-semibold text-foreground">TAGAPay</h1>
           </div>
           <div className="p-2 rounded-xl bg-primary/10">
             <CreditCard className="h-4 w-4 text-primary" />

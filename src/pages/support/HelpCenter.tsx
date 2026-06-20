@@ -31,7 +31,7 @@ const HelpCenter = () => {
       color: "bg-accent/10 text-accent"
     },
     {
-      title: "TembeaPay",
+      title: "TAGAPay",
       description: "Gestion de votre portefeuille",
       icon: <Download className="w-6 h-6" />,
       articles: ["Recharger mon solde", "Historique transactions", "Mobile Money"],

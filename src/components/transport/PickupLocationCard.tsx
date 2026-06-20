@@ -9,7 +9,7 @@ const GENERIC_LABELS = ['Position actuelle', 'Ma position', 'Current position', 
 const isGenericLabel = (address: string): boolean => {
   if (GENERIC_LABELS.some(l => address.toLowerCase() === l.toLowerCase())) return true;
   if (/^-?\d+\.?\d*\s*,\s*-?\d+\.?\d*/.test(address.trim())) return true;
-  // "Position GPS" seul est générique, mais "Kinshasa - Position GPS" ou "📍 Kinshasa" sont des fallbacks finaux
+  // "Position GPS" seul est générique, mais "Abidjan - Position GPS" ou "📍 Abidjan" sont des fallbacks finaux
   if (address === 'Position GPS') return true;
   return false;
 };

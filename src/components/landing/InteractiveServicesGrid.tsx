@@ -79,7 +79,7 @@ const InteractiveServicesGrid = () => {
       gradient: "from-primary via-accent to-secondary",
       features: [
         { icon: <Store className="w-4 h-4" />, text: "Électronique, mode, maison" },
-        { icon: <CreditCard className="w-4 h-4" />, text: "Paiement TembeaPay" }
+        { icon: <CreditCard className="w-4 h-4" />, text: "Paiement TAGAPay" }
       ],
       stats: { products: "1K+", sellers: "200+", categories: "10+" }
     },

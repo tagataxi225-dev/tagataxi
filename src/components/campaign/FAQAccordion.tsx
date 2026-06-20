@@ -14,7 +14,7 @@ export const FAQAccordion = () => {
     },
     {
       question: 'Comment obtenir mes bonus ?',
-      answer: 'Dès que tu t\'inscris, tes bonus sont automatiquement ajoutés à ton portefeuille TembeaPay. Tu peux les utiliser immédiatement pour ta première course.'
+      answer: 'Dès que tu t\'inscris, tes bonus sont automatiquement ajoutés à ton portefeuille TAGAPay. Tu peux les utiliser immédiatement pour ta première course.'
     },
     {
       question: 'Quelles zones sont couvertes à Kinshasa ?',

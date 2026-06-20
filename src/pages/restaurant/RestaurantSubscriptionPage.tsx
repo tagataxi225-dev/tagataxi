@@ -172,7 +172,7 @@ export default function RestaurantSubscriptionPage() {
               </motion.p>
             </div>
             
-            {/* Solde TembeaPay mini-card */}
+            {/* Solde TAGAPay mini-card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -184,7 +184,7 @@ export default function RestaurantSubscriptionPage() {
                   <Wallet className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-xs text-white/70">Solde TembeaPay</p>
+                  <p className="text-xs text-white/70">Solde TAGAPay</p>
                   <p className="text-xl font-bold">{walletBalance.toLocaleString()} CDF</p>
                 </div>
               </div>

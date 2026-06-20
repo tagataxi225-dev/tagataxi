@@ -89,7 +89,7 @@ export const FoodCheckout = ({
     if (hasInsufficientFunds) {
       toast({
         title: 'Solde insuffisant',
-        description: 'Veuillez recharger votre compte TembeaPay',
+        description: 'Veuillez recharger votre compte TAGAPay',
         variant: 'destructive'
       });
       return;
@@ -251,7 +251,7 @@ export const FoodCheckout = ({
         />
       </div>
 
-      {/* Payment - TembeaPay Only */}
+      {/* Payment - TAGAPay Only */}
       <div className="bg-card rounded-2xl p-4 border border-border/40">
         <div className="flex items-center gap-2 mb-3">
           <Wallet className="h-4 w-4 text-primary" />
@@ -264,7 +264,7 @@ export const FoodCheckout = ({
               <Wallet className="h-4 w-4 text-primary" />
             </div>
             <div>
-              <p className="text-sm font-medium text-foreground">TembeaPay</p>
+              <p className="text-sm font-medium text-foreground">TAGAPay</p>
               <p className="text-xs text-muted-foreground">Solde: {formatPrice(walletBalance)}</p>
             </div>
           </div>

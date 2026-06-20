@@ -28,7 +28,7 @@ interface ReceiptData {
 
 const getPaymentMethodLabel = (method: string): string => {
   const labels: Record<string, string> = {
-    kwenda_pay: 'TembeaPay',
+    kwenda_pay: 'TAGAPay',
     cash: 'Espèces',
     card: 'Carte bancaire',
     mobile_money: 'Mobile Money'

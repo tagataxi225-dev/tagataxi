@@ -35,7 +35,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Quand reçois-je mes paiements?",
-    answer: "Les paiements sont crédités instantanément dans votre wallet TembeaPay après chaque course complétée."
+    answer: "Les paiements sont crédités instantanément dans votre wallet TAGAPay après chaque course complétée."
   },
   {
     question: "Comment recharger mon wallet?",

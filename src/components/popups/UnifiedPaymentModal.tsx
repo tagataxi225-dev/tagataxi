@@ -40,7 +40,7 @@ export const UnifiedPaymentModal = ({
   const paymentMethods = [
     {
       id: 'wallet' as PaymentMethod,
-      label: 'TembeaPay Wallet',
+      label: 'TAGAPay Wallet',
       icon: Wallet,
       color: 'text-primary',
       description: `Solde: ${walletBalance.toLocaleString()} ${currency}`,

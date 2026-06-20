@@ -90,7 +90,7 @@ export const useRestaurantSubscription = () => {
     }
   };
 
-  // Vérifier le solde TembeaPay
+  // Vérifier le solde TAGAPay
   const checkWalletBalance = async (): Promise<{ balance: number; wallet_id: string } | null> => {
     try {
       const { data: { user } } = await supabase.auth.getUser();
@@ -122,7 +122,7 @@ export const useRestaurantSubscription = () => {
       setSubscriptionStatus('checking_balance');
       console.log('🔄 Starting subscription process...', { planId, restaurantId, paymentMethod });
 
-      // Vérifier le solde si paiement TembeaPay
+      // Vérifier le solde si paiement TAGAPay
       if (paymentMethod === 'kwenda_pay') {
         const plan = plans.find(p => p.id === planId);
         if (!plan) throw new Error('Plan non trouvé');
@@ -131,7 +131,7 @@ export const useRestaurantSubscription = () => {
         if (!wallet) {
           toast({
             title: 'Erreur',
-            description: 'Portefeuille TembeaPay non trouvé',
+            description: 'Portefeuille TAGAPay non trouvé',
             variant: 'destructive',
           });
           return { success: false, needsTopUp: true };

@@ -29,7 +29,7 @@ const YangoVerticalVehicleCards = memo<YangoVerticalVehicleCardsProps>(({
   distance,
   selectedVehicleId,
   onVehicleSelect,
-  city = 'Kinshasa'
+  city = 'Abidjan'
 }) => {
   const { availableServices, loading } = useAvailableTaxiServices(city);
 

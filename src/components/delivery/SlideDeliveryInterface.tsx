@@ -254,20 +254,20 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
 
       {/* Séparateur */}
       <div className="flex justify-start pl-[5px] py-1">
-        <div className="w-0.5 h-6 bg-gradient-to-b from-green-300 to-red-300 rounded-full" />
+        <div className="w-0.5 h-6 bg-gradient-to-b from-green-300 to-primary rounded-full" />
       </div>
 
       {/* Livraison */}
       <div className="space-y-1.5">
         <div className="flex items-center gap-2.5">
-          <div className="w-3 h-3 rounded-full bg-red-500 ring-4 ring-red-100 shrink-0" />
+          <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-primary/15 shrink-0" />
           <Label className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Livraison</Label>
         </div>
         <button type="button" onClick={() => setSearchOpen('delivery')}
           style={{ touchAction: 'manipulation' }}
           className="w-full flex items-center gap-3.5 p-4 rounded-2xl bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)] text-left active:scale-[0.99] transition-all">
-          <div className="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center shrink-0">
-            <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
+          <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <div className="w-2.5 h-2.5 rounded-full bg-primary/100" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="text-[11px] font-medium text-gray-400">Point de livraison</div>
@@ -284,7 +284,7 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
           animate={{ opacity: 1, scale: 1 }}
           className="flex items-center justify-center gap-2 py-3 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)] rounded-2xl"
         >
-          <MapPin className="w-4 h-4 text-red-500" />
+          <MapPin className="w-4 h-4 text-primary" />
           <p className="text-sm text-muted-foreground">
             Distance : <span className="font-semibold text-foreground">
               {formatDistance(calculateDistance(deliveryData.pickupLocation, deliveryData.deliveryLocation))}
@@ -330,9 +330,9 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
                 onClick={() => setDeliveryData(prev => ({ ...prev, serviceType: key as any }))}
                 style={{ touchAction: 'manipulation' }}
                 className={cn("flex items-center gap-3 p-3 rounded-2xl text-left transition-all border bg-white active:scale-[0.98]",
-                  isSelected ? "border-red-500 shadow-[0_2px_12px_rgba(239,68,68,0.15)]" : "border-gray-200 shadow-sm")}
+                  isSelected ? "border-primary shadow-[0_2px_12px_rgba(0,166,81,0.15)]" : "border-gray-200 shadow-sm")}
               >
-                <div className={cn("w-14 h-14 rounded-xl flex items-center justify-center shrink-0", isSelected ? "bg-red-50" : "bg-gray-50")}>
+                <div className={cn("w-14 h-14 rounded-xl flex items-center justify-center shrink-0", isSelected ? "bg-primary/10" : "bg-gray-50")}>
                   <img src={service.icon3d} alt={service.name} className="w-10 h-10 object-contain" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -343,7 +343,7 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
                   <div className="font-bold text-[15px] text-gray-900">{getServicePricing(key as 'flash' | 'flex' | 'maxicharge').basePrice.toLocaleString()}</div>
                   <div className="text-[10px] text-gray-400">{currency}</div>
                 </div>
-                {isSelected && <div className="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center shrink-0"><Check className="w-3 h-3 text-white" /></div>}
+                {isSelected && <div className="w-5 h-5 rounded-full bg-primary/100 flex items-center justify-center shrink-0"><Check className="w-3 h-3 text-white" /></div>}
               </button>
             );
           })}
@@ -512,7 +512,7 @@ export default function SlideDeliveryInterface({ onSubmit, onCancel }: SlideDeli
                 className={cn(
                   "h-1.5 rounded-full transition-all duration-300",
                   index <= currentStepIndex 
-                    ? "w-6 bg-red-500"
+                    ? "w-6 bg-primary/100"
                     : "w-1.5 bg-gray-200"
                 )}
               />

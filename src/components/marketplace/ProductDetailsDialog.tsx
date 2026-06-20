@@ -103,7 +103,7 @@ export const ProductDetailsDialog: React.FC<ProductDetailsDialogProps> = ({
 
   const handleBuyNow = async () => {
     if (!canAfford) {
-      toast.error('Solde insuffisant. Veuillez recharger votre wallet TembeaPay.');
+      toast.error('Solde insuffisant. Veuillez recharger votre wallet TAGAPay.');
       return;
     }
 
@@ -376,7 +376,7 @@ export const ProductDetailsDialog: React.FC<ProductDetailsDialogProps> = ({
               {/* Wallet balance inline si insuffisant */}
               {wallet && !canAfford && (
                 <div className="mt-2 flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Solde TembeaPay</span>
+                  <span className="text-muted-foreground">Solde TAGAPay</span>
                   <span className="font-medium">{formatCurrency(wallet.balance)}</span>
                 </div>
               )}

@@ -155,7 +155,7 @@ export default function DriverSearchScreen({
             </div>
             <div className="w-px h-3 bg-white/20 ml-1 mb-2" />
             <div className="flex items-center gap-2 text-white/80 text-xs">
-              <div className="w-2 h-2 rounded-full bg-red-400 flex-shrink-0" />
+              <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
               <span className="truncate">{destinationLabel || 'Destination'}</span>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function DriverSearchScreen({
             {[0, 1, 2].map(i => (
               <div
                 key={i}
-                className="absolute inset-0 rounded-full border border-red-500/40"
+                className="absolute inset-0 rounded-full border border-primary/40"
                 style={{
                   animation: `kwenda-radar 2.4s ease-out ${i * 0.8}s infinite`,
                 }}
@@ -177,7 +177,7 @@ export default function DriverSearchScreen({
             {/* Center circle */}
             <div
               className="w-20 h-20 rounded-full flex items-center justify-center"
-              style={{ background: 'rgba(239,68,68,0.15)', boxShadow: '0 0 32px rgba(239,68,68,0.25)' }}
+              style={{ background: 'rgba(0,166,81,0.15)', boxShadow: '0 0 32px rgba(0,166,81,0.25)' }}
             >
               <img
                 src={carSvg}
@@ -203,7 +203,7 @@ export default function DriverSearchScreen({
               Rayon {searchProgress.radius} km
             </div>
             {searchProgress.driversFound > 0 && (
-              <div className="bg-red-500/15 border border-red-500/30 rounded-full px-4 py-1.5 text-xs text-red-300">
+              <div className="bg-primary/15 border border-primary/30 rounded-full px-4 py-1.5 text-xs text-primary">
                 {searchProgress.driversFound} chauffeur{searchProgress.driversFound > 1 ? 's' : ''} trouvé{searchProgress.driversFound > 1 ? 's' : ''}
               </div>
             )}
@@ -279,7 +279,7 @@ export default function DriverSearchScreen({
                 ) : (
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center text-white text-xl font-bold flex-shrink-0 shadow-md"
-                    style={{ background: 'linear-gradient(135deg, #ef4444, #dc2626)' }}
+                    style={{ background: 'linear-gradient(135deg, #00A651, #00813F)' }}
                   >
                     {initials(assignedDriver.driver_name)}
                   </div>
@@ -311,8 +311,8 @@ export default function DriverSearchScreen({
               {/* Vehicle info */}
               <div className="bg-gray-50 rounded-3xl p-5 mb-4">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0">
-                    <Car className="w-4 h-4 text-red-500" />
+                  <div className="w-8 h-8 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Car className="w-4 h-4 text-primary" />
                   </div>
                   <span className="text-sm font-semibold text-gray-700">Véhicule</span>
                 </div>
@@ -338,12 +338,12 @@ export default function DriverSearchScreen({
               {assignedDriver.distance_km > 0 && eta !== null && (
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="bg-gray-50 rounded-2xl p-4 flex flex-col items-center">
-                    <Clock className="w-5 h-5 text-red-500 mb-1" />
+                    <Clock className="w-5 h-5 text-primary mb-1" />
                     <span className="text-xs text-gray-400 mb-1">Arrivée dans</span>
                     <span className="text-xl font-bold text-gray-900">{eta} min</span>
                   </div>
                   <div className="bg-gray-50 rounded-2xl p-4 flex flex-col items-center">
-                    <MapPin className="w-5 h-5 text-red-500 mb-1" />
+                    <MapPin className="w-5 h-5 text-primary mb-1" />
                     <span className="text-xs text-gray-400 mb-1">Distance</span>
                     <span className="text-xl font-bold text-gray-900">{assignedDriver.distance_km.toFixed(1)} km</span>
                   </div>
@@ -365,8 +365,8 @@ export default function DriverSearchScreen({
             onClick={() => { if (bookingId) { onTrackDriver?.(bookingId); } }}
             className="w-full py-4 rounded-2xl text-white font-bold text-base"
             style={{
-              background: 'linear-gradient(135deg, #ef4444, #dc2626)',
-              boxShadow: '0 8px 24px rgba(239,68,68,0.3)',
+              background: 'linear-gradient(135deg, #00A651, #00813F)',
+              boxShadow: '0 8px 24px rgba(0,166,81,0.3)',
               touchAction: 'manipulation',
             }}
           >
@@ -412,7 +412,7 @@ export default function DriverSearchScreen({
           type="button"
           onClick={onRetry}
           className="w-full py-4 rounded-2xl text-white font-bold text-sm flex items-center justify-center gap-2"
-          style={{ background: 'linear-gradient(135deg, #ef4444, #dc2626)', touchAction: 'manipulation' }}
+          style={{ background: 'linear-gradient(135deg, #00A651, #00813F)', touchAction: 'manipulation' }}
         >
           <RefreshCw className="w-4 h-4" />
           Réessayer
@@ -421,7 +421,7 @@ export default function DriverSearchScreen({
           <button
             type="button"
             onClick={onModifyPrice}
-            className="w-full py-4 rounded-2xl border-2 border-red-200 text-red-500 font-semibold text-sm"
+            className="w-full py-4 rounded-2xl border-2 border-primary/30 text-primary font-semibold text-sm"
             style={{ touchAction: 'manipulation' }}
           >
             Modifier le prix

@@ -26,7 +26,7 @@ export const POSCart = ({ cart, onUpdateQuantity, onCheckout, session }: POSCart
     { id: 'cash' as const, label: 'Espèces', icon: Banknote },
     { id: 'card' as const, label: 'Carte', icon: CreditCard },
     { id: 'mobile_money' as const, label: 'Mobile Money', icon: Smartphone },
-    { id: 'kwenda_pay' as const, label: 'TembeaPay', icon: Wallet },
+    { id: 'kwenda_pay' as const, label: 'TAGAPay', icon: Wallet },
   ];
 
   return (

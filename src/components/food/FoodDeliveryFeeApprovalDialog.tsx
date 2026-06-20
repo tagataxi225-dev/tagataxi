@@ -148,7 +148,7 @@ export const FoodDeliveryFeeApprovalDialog = ({
                 disabled={!canPayWithWallet}
               >
                 <Wallet className="h-5 w-5 mb-1" />
-                <span className="text-xs">TembeaPay</span>
+                <span className="text-xs">TAGAPay</span>
                 <span className="text-[10px] text-muted-foreground">
                   {formatCurrency(walletBalance)}
                   {bonusBalance > 0 && ` (dont ${formatCurrency(bonusBalance)} bonus)`}

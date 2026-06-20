@@ -97,7 +97,7 @@ export function GainsTab({
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-6 -translate-x-6" />
 
         <div className="relative z-10">
-          <p className="text-xs text-white/70 font-medium">Solde TembeaPay</p>
+          <p className="text-xs text-white/70 font-medium">Solde TAGAPay</p>
           <p className="text-3xl font-bold mt-1">{formatPrice(walletBalance)} <span className="text-lg text-white/70">{currency}</span></p>
           {bonusBalance > 0 && (
             <p className="text-xs text-white/60 mt-0.5">+ {formatPrice(bonusBalance)} bonus</p>

@@ -80,7 +80,7 @@ export const RideConfirmationSheet = ({
                 <span>Paiement</span>
               </div>
               <span className="font-semibold capitalize">
-                {paymentMethod === 'wallet' ? 'TembeaPay' : 
+                {paymentMethod === 'wallet' ? 'TAGAPay' : 
                  paymentMethod === 'mobile_money' ? 'Mobile Money' : 'Espèces'}
               </span>
             </div>

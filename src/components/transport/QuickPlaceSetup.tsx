@@ -166,7 +166,7 @@ export default function QuickPlaceSetup({ open, onOpenChange, onComplete }: Quic
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') handleHomeSearch();
                 }}
-                placeholder="Gombe, Kinshasa..."
+                placeholder="Cocody, Abidjan..."
                 className="flex-1 px-3 py-2 rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 text-sm"
               />
               <Button

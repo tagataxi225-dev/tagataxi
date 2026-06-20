@@ -22,7 +22,7 @@ export const LotteryServiceTab = ({ services, onToggleStatus }: LotteryServiceTa
           <CardHeader>
             <div className="flex items-center gap-2">
               <Zap className="h-5 w-5 text-purple-500" />
-              <CardTitle>Loterie TembeaPay</CardTitle>
+              <CardTitle>Loterie TAGAPay</CardTitle>
             </div>
             <CardDescription>
               Système de récompenses avec tickets gratuits
@@ -111,7 +111,7 @@ export const LotteryServiceTab = ({ services, onToggleStatus }: LotteryServiceTa
                 <div className="flex items-center justify-between p-3 border rounded-lg">
                   <div>
                     <div className="font-medium">Récompense minimum</div>
-                    <div className="text-sm text-muted-foreground">Crédits TembeaPay</div>
+                    <div className="text-sm text-muted-foreground">Crédits TAGAPay</div>
                   </div>
                   <Badge variant="outline">1,000 CDF</Badge>
                 </div>

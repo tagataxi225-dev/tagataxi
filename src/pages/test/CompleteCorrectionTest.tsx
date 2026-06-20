@@ -390,7 +390,7 @@ export default function CompleteCorrectionTest() {
             <div className="space-y-2">
               <h4 className="font-medium">✅ Système de Paiement</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• TembeaPay wallet intégré</li>
+                <li>• TAGAPay wallet intégré</li>
                 <li>• Mobile Money support</li>
                 <li>• Paiement espèces</li>
                 <li>• Pourboires et évaluations</li>

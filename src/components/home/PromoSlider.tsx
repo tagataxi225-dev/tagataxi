@@ -296,7 +296,7 @@ export const PromoSlider = ({ onServiceSelect }: PromoSliderProps) => {
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ delay: 0.1, duration: 0.3 }}
                         >
-                          Tombola TembeaPay
+                          Tombola TAGAPay
                         </motion.h3>
                         <motion.p 
                           className="text-yellow-300/90 text-xs sm:text-sm font-bold"

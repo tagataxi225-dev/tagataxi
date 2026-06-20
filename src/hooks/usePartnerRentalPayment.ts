@@ -41,7 +41,7 @@ export const usePartnerRentalPayment = () => {
       if (error.message?.includes('insuffisant')) {
         toast({
           title: "💰 Solde insuffisant",
-          description: "Veuillez recharger votre wallet TembeaPay pour souscrire à ce plan",
+          description: "Veuillez recharger votre wallet TAGAPay pour souscrire à ce plan",
           variant: "destructive",
         });
       } else {

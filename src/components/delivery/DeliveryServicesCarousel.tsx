@@ -29,7 +29,7 @@ const SLIDES: Slide[] = [
     tagline: 'Express 5-15 min',
     description: 'Livraison ultra-rapide en moto pour petits colis urgents.',
     icon3d: flashIcon,
-    gradient: 'from-amber-50 via-orange-50 to-rose-50 dark:from-amber-500/10 dark:via-orange-500/5 dark:to-rose-500/10',
+    gradient: 'from-amber-50 via-orange-50 to-white dark:from-amber-500/10 dark:via-orange-500/5 dark:to-white0/10',
     accent: 'text-amber-600 dark:text-amber-400',
     perks: [
       { icon: Bike, label: 'Moto express' },
@@ -42,8 +42,8 @@ const SLIDES: Slide[] = [
     tagline: 'Camionnette 30-60 min',
     description: 'Pour colis moyens et courses du quotidien, livrés en confort.',
     icon3d: flexIcon,
-    gradient: 'from-rose-50 via-red-50 to-white dark:from-red-500/10 dark:via-rose-500/5 dark:to-background',
-    accent: 'text-red-600 dark:text-red-400',
+    gradient: 'from-emerald-50 via-green-50 to-white dark:from-primary/10 dark:via-primary/5 dark:to-background',
+    accent: 'text-primary dark:text-primary',
     perks: [
       { icon: Package, label: 'Jusqu’à 200 kg' },
       { icon: Clock, label: 'Créneau flexible' },
@@ -55,7 +55,7 @@ const SLIDES: Slide[] = [
     tagline: 'Gros colis 1-3 h',
     description: 'Camion dédié pour déménagements et charges volumineuses.',
     icon3d: maxiIcon,
-    gradient: 'from-violet-50 via-purple-50 to-rose-50 dark:from-violet-500/10 dark:via-purple-500/5 dark:to-rose-500/10',
+    gradient: 'from-violet-50 via-purple-50 to-white dark:from-violet-500/10 dark:via-purple-500/5 dark:to-white0/10',
     accent: 'text-purple-600 dark:text-purple-400',
     perks: [
       { icon: Truck, label: 'Volumineux' },
@@ -111,7 +111,7 @@ export const DeliveryServicesCarousel: React.FC<DeliveryServicesCarouselProps> =
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="relative overflow-hidden rounded-3xl">
+      <div className="relative overflow-hidden rounded-2xl">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={slide.id}
@@ -131,7 +131,7 @@ export const DeliveryServicesCarousel: React.FC<DeliveryServicesCarouselProps> =
             className={cn(
               'relative cursor-pointer bg-gradient-to-br p-6 sm:p-7',
               'border border-white/60 dark:border-white/5',
-              'shadow-[0_8px_32px_-12px_rgba(220,38,38,0.18)]',
+              'shadow-[0_8px_32px_-12px_rgba(0,166,81,0.12)]',
               slide.gradient
             )}
           >
@@ -193,7 +193,7 @@ export const DeliveryServicesCarousel: React.FC<DeliveryServicesCarouselProps> =
               onClick={() => goTo(i)}
               className={cn(
                 'h-2 rounded-full transition-all duration-300',
-                active ? 'w-6 bg-red-500' : 'w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                active ? 'w-6 bg-primary' : 'w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
               )}
             />
           );

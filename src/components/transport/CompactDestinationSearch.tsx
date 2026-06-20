@@ -14,7 +14,7 @@ export default function CompactDestinationSearch({
   destination,
   onOpenSearch,
   onSelectQuick,
-  city = "Kinshasa",
+  city = "Abidjan",
   className,
 }: CompactDestinationSearchProps) {
   const { homePlace, workPlace, loading } = usePlaces();

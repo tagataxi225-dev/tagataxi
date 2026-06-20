@@ -27,11 +27,11 @@ const AdvancedFeatures = () => {
     {
       id: "payment",
       icon: <CreditCard className="w-8 h-8" />,
-      title: "TembeaPay & Mobile Money",
+      title: "TAGAPay & Mobile Money",
       description: "Paiement intégré avec Mobile Money congolais",
       benefits: [
         "Airtel, Orange, M-Pesa",
-        "Portefeuille TembeaPay"
+        "Portefeuille TAGAPay"
       ],
       gradient: "from-secondary to-accent",
       stats: { methods: "5+", security: "256-bit", instant: "Immédiat" }

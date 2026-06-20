@@ -75,7 +75,7 @@ export const DeliveryConfirmationDialog: React.FC<DeliveryConfirmationDialogProp
             Libération du coffre sécurisé
           </DialogTitle>
           <DialogDescription>
-            Confirmez la réception pour libérer les fonds vers les portefeuilles TembeaPay
+            Confirmez la réception pour libérer les fonds vers les portefeuilles TAGAPay
           </DialogDescription>
         </DialogHeader>
 
@@ -84,7 +84,7 @@ export const DeliveryConfirmationDialog: React.FC<DeliveryConfirmationDialogProp
           <div className="flex items-start gap-3 p-4 bg-primary/10 border border-primary/20 rounded-lg">
             <Shield className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
             <div className="text-sm">
-              <p className="font-medium text-primary">Protection TembeaPay</p>
+              <p className="font-medium text-primary">Protection TAGAPay</p>
               <p className="text-primary/80">
                 Vos fonds sont sécurisés jusqu'à confirmation complète de votre satisfaction.
               </p>
@@ -173,7 +173,7 @@ export const DeliveryConfirmationDialog: React.FC<DeliveryConfirmationDialogProp
                     🔓 J'autorise la libération immédiate des fonds
                   </Label>
                   <p className="text-xs text-muted-foreground">
-                    Le paiement sera transféré automatiquement aux portefeuilles TembeaPay
+                    Le paiement sera transféré automatiquement aux portefeuilles TAGAPay
                   </p>
                 </div>
               </div>

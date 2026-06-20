@@ -445,7 +445,7 @@ export const ScratchTicket: React.FC<ScratchTicketProps> = ({
         {/* Footer */}
         <div className="px-4 py-2.5 bg-muted/30 border-t border-dashed border-border/50">
           <p className="text-center text-[10px] text-muted-foreground">
-            Valable 24h • Crédité automatiquement sur votre wallet TembeaPay
+            Valable 24h • Crédité automatiquement sur votre wallet TAGAPay
           </p>
         </div>
       </div>

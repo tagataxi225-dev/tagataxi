@@ -26,7 +26,7 @@ const InteractiveMap = ({
   const [userLocation, setUserLocation] = useState<[number, number] | null>(null);
   const [isLocating, setIsLocating] = useState(false);
 
-  const kinshasaCenter: [number, number] = [-15.3094, 4.3276];
+  const abidjanCenter: [number, number] = [-4.0083, 5.3600];
 
   useEffect(() => {
     nativeGeolocationService.getCurrentPosition({
@@ -37,7 +37,7 @@ const InteractiveMap = ({
       setUserLocation([position.lng, position.lat]);
     }).catch((error) => {
       console.log('Geolocation error:', error);
-      setUserLocation(kinshasaCenter);
+      setUserLocation(abidjanCenter);
     });
   }, []);
 
@@ -163,7 +163,7 @@ const InteractiveMap = ({
 
       {userLocation && (
         <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-2 rounded-lg">
-          <p className="text-xs font-medium text-grey-900">Kinshasa, RDC</p>
+          <p className="text-xs font-medium text-grey-900">Abidjan, Côte d'Ivoire</p>
         </div>
       )}
     </div>

@@ -63,7 +63,7 @@ export const useFoodOrders = () => {
       } else if (data.needsTopUp) {
         toast({
           title: 'Solde insuffisant',
-          description: `Rechargez votre compte TembeaPay (${data.required} CDF requis)`,
+          description: `Rechargez votre compte TAGAPay (${data.required} CDF requis)`,
           variant: 'destructive',
         });
 

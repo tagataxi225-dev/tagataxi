@@ -89,7 +89,7 @@ export const SmartBookingForm: React.FC<SmartBookingFormProps> = ({
       const distanceKm = distanceMeters / 1000;
       setDistance(distanceKm);
 
-      // Calculer prix estimé (tarification Kinshasa)
+      // Calculer prix estimé (tarification Abidjan)
       const basePrice = 2000; // CDF
       const pricePerKm = 500; // CDF
       const calculatedPrice = basePrice + (distanceKm * pricePerKm);

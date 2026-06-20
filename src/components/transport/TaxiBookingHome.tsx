@@ -20,7 +20,7 @@ interface VehicleOption {
 }
 
 interface TaxiBookingHomeProps {
-  cityLabel: string;           // "Abidjan" | "Kinshasa" etc
+  cityLabel: string;           // "Abidjan" | "Abidjan" etc
   currency: 'XOF' | 'XOF';
   pickupLabel: string;         // "Position actuelle" ou adresse
   destinationLabel?: string;   // null si pas encore choisi
@@ -188,7 +188,7 @@ export default function TaxiBookingHome({
         >
           <LocateFixed
             size={22}
-            className={isMapCentered ? 'text-red-500' : 'text-gray-400'}
+            className={isMapCentered ? 'text-primary' : 'text-gray-400'}
           />
         </button>
       </div>
@@ -226,7 +226,7 @@ export default function TaxiBookingHome({
               className="w-full flex items-center gap-3 bg-gray-50 hover:bg-gray-100 rounded-2xl px-4 py-3.5 mb-4 transition-colors active:bg-gray-100"
               style={{ touchAction: 'manipulation' }}
             >
-              <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                 <Search size={14} className="text-white" />
               </div>
               <div className="flex-1 text-left">
@@ -285,7 +285,7 @@ export default function TaxiBookingHome({
                     onClick={() => onSelectVehicle(v.id)}
                     className={`w-full flex items-center gap-3 px-3 py-3 rounded-2xl transition-all active:scale-[0.98] ${
                       isSelected
-                        ? 'bg-red-50 shadow-[0_0_0_2px_rgb(239,68,68)]'
+                        ? 'bg-primary/10 shadow-[0_0_0_2px_hsl(var(--primary))]'
                         : 'bg-gray-50 hover:bg-gray-100'
                     }`}
                     style={{ touchAction: 'manipulation' }}
@@ -304,9 +304,9 @@ export default function TaxiBookingHome({
                     {/* Infos */}
                     <div className="flex-1 min-w-0 text-left">
                       <div className="flex items-center gap-2">
-                        <span className={`text-sm font-bold ${isSelected ? 'text-red-600' : 'text-gray-900'}`}>{v.label}</span>
+                        <span className={`text-sm font-bold ${isSelected ? 'text-primary' : 'text-gray-900'}`}>{v.label}</span>
                         {v.popular && (
-                          <span className="text-[9px] font-bold text-white bg-red-500 rounded-full px-1.5 py-0.5 uppercase tracking-wider">
+                          <span className="text-[9px] font-bold text-white bg-primary rounded-full px-1.5 py-0.5 uppercase tracking-wider">
                             Top
                           </span>
                         )}
@@ -320,7 +320,7 @@ export default function TaxiBookingHome({
                     {/* Prix */}
                     <div className="text-right flex-shrink-0">
                       {v.basePrice !== null ? (
-                        <p className={`text-sm font-bold ${isSelected ? 'text-red-600' : 'text-gray-900'}`}>
+                        <p className={`text-sm font-bold ${isSelected ? 'text-primary' : 'text-gray-900'}`}>
                           {formatPrice(v.basePrice)} {currency}
                         </p>
                       ) : (
@@ -330,7 +330,7 @@ export default function TaxiBookingHome({
 
                     {/* Check */}
                     {isSelected && (
-                      <div className="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                         <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                           <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
@@ -353,7 +353,7 @@ export default function TaxiBookingHome({
             disabled={hasDestination && !selectedVehicleId}
             className={`w-full py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 transition-all active:scale-[0.98] disabled:opacity-40 ${
               hasDestination
-                ? 'bg-red-500 text-white shadow-lg shadow-red-500/25'
+                ? 'bg-primary text-white shadow-lg shadow-primary/25'
                 : 'bg-gray-900 text-white'
             }`}
             style={{ touchAction: 'manipulation' }}

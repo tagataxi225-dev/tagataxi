@@ -45,7 +45,7 @@ export const ModernPartnerWallet = () => {
               </div>
               <div>
                 <p className="text-white/70 text-xs font-medium">Solde disponible</p>
-                <p className="text-[10px] text-white/50">TembeaPay Partner</p>
+                <p className="text-[10px] text-white/50">TAGAPay Partner</p>
               </div>
             </div>
 

@@ -9,23 +9,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // ✅ PHASE C: Points populaires par ville pour fallback
 const POPULAR_POINTS: Record<string, Array<{ name: string; address: string; lat: number; lng: number }>> = {
-  kinshasa: [
-    { name: 'Gare Centrale', address: 'Gare Centrale de Kinshasa', lat: -4.3176, lng: 15.3136 },
-    { name: 'Aéroport N\'Djili', address: 'Aéroport International de N\'Djili', lat: -4.3855, lng: 15.4446 },
-    { name: 'Marché Central', address: 'Grand Marché de Kinshasa', lat: -4.3246, lng: 15.3125 },
-    { name: 'UPN', address: 'Université Pédagogique Nationale', lat: -4.3833, lng: 15.3167 },
-    { name: 'Rond-point Ngaba', address: 'Rond-point Ngaba, Kinshasa', lat: -4.3574, lng: 15.3081 },
-  ],
-  lubumbashi: [
-    { name: 'Aéroport Luano', address: 'Aéroport de Lubumbashi-Luano', lat: -11.5913, lng: 27.5309 },
-    { name: 'Gare SNCC', address: 'Gare SNCC Lubumbashi', lat: -11.6683, lng: 27.4789 },
-    { name: 'Place de la Poste', address: 'Place de la Poste, Lubumbashi', lat: -11.6639, lng: 27.4794 },
-    { name: 'Golf Hôtel', address: 'Grand Karavia Hôtel, Lubumbashi', lat: -11.6517, lng: 27.4831 },
-  ],
-  kolwezi: [
-    { name: 'Aéroport Kolwezi', address: 'Aéroport de Kolwezi', lat: -10.7659, lng: 25.5057 },
-    { name: 'Centre-ville', address: 'Centre-ville Kolwezi', lat: -10.7167, lng: 25.4667 },
-  ],
   abidjan: [
     { name: 'Aéroport FHB', address: 'Aéroport Félix Houphouët-Boigny', lat: 5.2614, lng: -3.9262 },
     { name: 'Plateau', address: 'Le Plateau, Abidjan', lat: 5.3220, lng: -4.0166 },
@@ -69,8 +52,8 @@ export default function PickupLocationDialog({
 
   // ✅ PHASE C: Points populaires pour la ville courante
   const popularPoints = useMemo(() => {
-    const cityKey = (currentCity || 'kinshasa').toLowerCase().trim();
-    return POPULAR_POINTS[cityKey] || POPULAR_POINTS.kinshasa;
+    const cityKey = (currentCity || 'abidjan').toLowerCase().trim();
+    return POPULAR_POINTS[cityKey] || POPULAR_POINTS.abidjan;
   }, [currentCity]);
 
   // Charger les recherches récentes au montage

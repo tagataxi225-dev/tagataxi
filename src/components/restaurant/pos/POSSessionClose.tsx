@@ -100,7 +100,7 @@ export const POSSessionClose = ({ session, restaurantId, onClose, onCancel }: PO
     cash: 'Espèces',
     card: 'Carte bancaire',
     mobile_money: 'Mobile Money',
-    kwenda_pay: 'TembeaPay',
+    kwenda_pay: 'TAGAPay',
   };
 
   return (

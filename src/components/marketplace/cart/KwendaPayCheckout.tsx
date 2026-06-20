@@ -94,7 +94,7 @@ export const KwendaPayCheckout: React.FC<KwendaPayCheckoutProps> = ({
         ) : (
           <>
             <Wallet className="w-4 h-4" />
-            Payer avec TembeaPay
+            Payer avec TAGAPay
           </>
         )}
       </Button>
@@ -107,12 +107,12 @@ export const KwendaPayCheckout: React.FC<KwendaPayCheckoutProps> = ({
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Wallet className="w-5 h-5 text-primary" />
-            Paiement TembeaPay
+            Paiement TAGAPay
           </DialogTitle>
         </DialogHeader>
 
         <div className="space-y-4">
-          {/* Solde TembeaPay */}
+          {/* Solde TAGAPay */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

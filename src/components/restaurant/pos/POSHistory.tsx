@@ -257,7 +257,7 @@ export const POSHistory = ({ restaurantId, onBack }: POSHistoryProps) => {
                           <Badge variant="outline" className="text-xs">
                             {tx.payment_method === 'cash' ? 'Espèces' :
                              tx.payment_method === 'card' ? 'Carte' :
-                             tx.payment_method === 'mobile_money' ? 'Mobile' : 'TembeaPay'}
+                             tx.payment_method === 'mobile_money' ? 'Mobile' : 'TAGAPay'}
                           </Badge>
                           <span className="font-bold">{tx.total_amount.toLocaleString()} CDF</span>
                         </div>

@@ -187,7 +187,7 @@ export const DepositPaymentSheet: React.FC<DepositPaymentSheetProps> = ({
                   <Wallet className={`h-5 w-5 ${selectedMethod === 'wallet' && canPayWithWallet ? 'text-primary' : 'text-muted-foreground'}`} />
                 </div>
                 <div className="text-left">
-                  <p className="font-medium">Wallet TembeaPay</p>
+                  <p className="font-medium">Wallet TAGAPay</p>
                   <p className="text-sm text-muted-foreground">
                     Solde: {walletBalance.toLocaleString()} CDF
                     {!canPayWithWallet && <span className="text-red-500 ml-1">(insuffisant)</span>}

@@ -98,9 +98,9 @@ export const UserGuides: React.FC = () => {
         {
           id: 'payment',
           title: 'Paiement et Portefeuille',
-          content: 'Gérez vos paiements avec TembeaPay.',
+          content: 'Gérez vos paiements avec TAGAPay.',
           steps: [
-            'Accédez à votre portefeuille TembeaPay dans l\'application',
+            'Accédez à votre portefeuille TAGAPay dans l\'application',
             'Rechargez via Airtel Money, Orange Money ou M-Pesa',
             'Confirmez le paiement via votre opérateur mobile',
             'Vérifiez que le solde a été ajouté à votre compte',

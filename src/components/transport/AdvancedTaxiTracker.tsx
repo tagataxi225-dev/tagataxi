@@ -158,7 +158,7 @@ export default function AdvancedTaxiTracker({ bookingId, onBack }: AdvancedTaxiT
     const t = setInterval(() => {
       const sec = Math.floor((Date.now() - new Date(driverArrivedAt).getTime()) / 1000);
       const min = Math.floor(sec / 60);
-      const currency = getCurrencyByCity(booking?.city || 'Kinshasa');
+      const currency = getCurrencyByCity(booking?.city || 'Abidjan');
       setWaitingFee(Math.max(0, min - 5) * (currency === 'XOF' ? 100 : 500));
     }, 1000);
     return () => clearInterval(t);
@@ -559,7 +559,7 @@ export default function AdvancedTaxiTracker({ bookingId, onBack }: AdvancedTaxiT
         destinationLabel={booking.destination}
         fareAmount={(booking.actual_price || booking.final_agreed_price || booking.client_proposed_price || booking.estimated_price || 0) + waitingFee}
         driverArrivedAt={driverArrivedAt}
-        fareCurrency={getCurrencyByCity(booking.city || 'Kinshasa') as 'XOF' | 'XOF'}
+        fareCurrency={getCurrencyByCity(booking.city || 'Abidjan') as 'XOF' | 'XOF'}
         driver={{
           name: booking.driver_name || 'Chauffeur',
           rating: booking.driver_rating || 0,
@@ -605,7 +605,7 @@ export default function AdvancedTaxiTracker({ bookingId, onBack }: AdvancedTaxiT
             driverId: booking.driver_id || '',
             driverName: booking.driver_name || 'Chauffeur',
             driverRating: booking.driver_rating || 0,
-            currency: getCurrencyByCity(booking.city || 'Kinshasa'),
+            currency: getCurrencyByCity(booking.city || 'Abidjan'),
           }}
           onPaymentComplete={onBack}
         />

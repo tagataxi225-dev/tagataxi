@@ -218,7 +218,7 @@ export const SecureVaultDashboard: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center space-x-2">
               <CreditCard className="h-5 w-5 text-green-600" />
-              <span className="text-sm font-medium text-muted-foreground">Solde TembeaPay</span>
+              <span className="text-sm font-medium text-muted-foreground">Solde TAGAPay</span>
             </div>
             <p className="text-2xl font-bold text-green-600 mt-2">
               {walletInfo ? formatAmount(walletInfo.balance) : '0 CDF'}

@@ -83,7 +83,7 @@ export const ModernShoppingCart: React.FC<ModernShoppingCartProps> = ({
       if (!wallet || wallet.balance < totalPrice) {
         toast({
           title: "Solde insuffisant",
-          description: "Votre solde TembeaPay est insuffisant pour cette commande.",
+          description: "Votre solde TAGAPay est insuffisant pour cette commande.",
           variant: "destructive",
         });
         setIsProcessing(false);
@@ -113,7 +113,7 @@ export const ModernShoppingCart: React.FC<ModernShoppingCartProps> = ({
         if (error.message?.includes('Solde insuffisant') || error.message?.includes('Insufficient balance')) {
           toast({
             title: "Solde insuffisant",
-            description: "Votre solde TembeaPay est insuffisant pour cette commande.",
+            description: "Votre solde TAGAPay est insuffisant pour cette commande.",
             variant: "destructive",
           });
         } else {
@@ -146,7 +146,7 @@ export const ModernShoppingCart: React.FC<ModernShoppingCartProps> = ({
             delivery_method: 'pickup',
             payment_status: 'paid',
             status: 'pending_confirmation',
-            notes: `Payé via TembeaPay - Transaction ${transaction.id}`,
+            notes: `Payé via TAGAPay - Transaction ${transaction.id}`,
           });
         }
       });

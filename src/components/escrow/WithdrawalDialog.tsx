@@ -149,7 +149,7 @@ export const WithdrawalDialog: React.FC<WithdrawalDialogProps> = ({
                 <SelectItem value="kwenda_pay">
                   <div className="flex items-center gap-2">
                     <Wallet className="h-4 w-4" />
-                    TembeaPay
+                    TAGAPay
                   </div>
                 </SelectItem>
                 <SelectItem value="mobile_money">
@@ -180,7 +180,7 @@ export const WithdrawalDialog: React.FC<WithdrawalDialogProps> = ({
 
           <div className="space-y-2">
             <Label htmlFor="phone">
-              {withdrawalMethod === 'kwenda_pay' ? 'Numéro TembeaPay' : 'Numéro Mobile Money'}
+              {withdrawalMethod === 'kwenda_pay' ? 'Numéro TAGAPay' : 'Numéro Mobile Money'}
             </Label>
             <Input
               id="phone"

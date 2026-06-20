@@ -1,5 +1,5 @@
 /**
- * 💰 Modal de recharge TembeaPay
+ * 💰 Modal de recharge TAGAPay
  */
 
 import { useState } from 'react';

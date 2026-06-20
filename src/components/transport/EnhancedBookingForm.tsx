@@ -252,11 +252,11 @@ export const EnhancedBookingForm: React.FC<EnhancedBookingFormProps> = ({
       </Button>
 
       {/* Info ville */}
-      {selectedCity && selectedCity.name !== 'Kinshasa' && (
+      {selectedCity && selectedCity.name !== 'Abidjan' && (
         <div className="text-xs text-center text-muted-foreground">
           💡 Tarifs adaptés pour {selectedCity.name}
-          {selectedCity.name === 'Lubumbashi' && ' (+20%)'}
-          {selectedCity.name === 'Kolwezi' && ' (+10%)'}
+          {selectedCity.name === 'Abidjan' && ' (+20%)'}
+          {selectedCity.name === 'Abidjan' && ' (+10%)'}
         </div>
       )}
     </Card>

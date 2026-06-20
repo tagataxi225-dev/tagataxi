@@ -247,7 +247,7 @@ export const CheckoutFlow = ({ cartItems, onComplete, onClose }: CheckoutFlowPro
             </div>
             
             <Badge variant="outline" className="w-full justify-center py-2">
-              Paiement via TembeaPay
+              Paiement via TAGAPay
             </Badge>
           </div>
         )}

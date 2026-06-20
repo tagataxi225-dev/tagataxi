@@ -174,7 +174,7 @@ export const ModernDriverWallet = ({ serviceType: propServiceType }: ModernDrive
                 <Wallet className="w-6 h-6 text-white" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">TembeaPay</p>
+                <p className="text-sm text-muted-foreground">TAGAPay</p>
                 <h3 className="text-xl font-bold text-foreground">
                   {getServiceTitle()}
                 </h3>

@@ -78,7 +78,7 @@ export const PurchaseCard: React.FC<PurchaseCardProps> = ({
         <div className="flex items-center justify-between p-3 bg-primary/5 rounded-lg">
           <div className="flex items-center gap-2">
             <Wallet className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium">Solde TembeaPay</span>
+            <span className="text-sm font-medium">Solde TAGAPay</span>
           </div>
           <span className="font-bold">{formatPrice(walletBalance)}</span>
         </div>

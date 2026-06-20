@@ -250,7 +250,7 @@ const LiveTracking: React.FC<LiveTrackingProps> = ({
             <div className="ml-1 border-l-2 border-dashed border-muted-foreground/30 h-4" />
             
             <div className="flex items-start gap-3">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2" />
+              <div className="w-2 h-2 bg-primary rounded-full mt-2" />
               <div className="flex-1">
                 <p className="text-sm font-medium">Destination</p>
                 <p className="text-sm text-muted-foreground">{tripInfo.destination}</p>

@@ -117,7 +117,7 @@ export const PartnerRentalSubscriptionManagement = () => {
         amount: sub.plan?.monthly_price || 0,
         currency: 'XOF',
         payment_date: sub.start_date,
-        payment_method: 'TembeaPay',
+        payment_method: 'TAGAPay',
         status: 'completed'
       }));
 

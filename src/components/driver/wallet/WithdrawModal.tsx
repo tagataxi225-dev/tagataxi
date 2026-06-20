@@ -1,5 +1,5 @@
 /**
- * 💸 Modal de retrait TembeaPay avec Stepper UX (100% manuel)
+ * 💸 Modal de retrait TAGAPay avec Stepper UX (100% manuel)
  */
 
 import { useState } from 'react';

@@ -40,7 +40,7 @@ export const PaymentFlowTesting: React.FC = () => {
   
   const [testSuites, setTestSuites] = useState<Record<string, TestSuite>>({
     wallet: {
-      name: 'Portefeuille TembeaPay',
+      name: 'Portefeuille TAGAPay',
       progress: 0,
       tests: [
         { id: 'wallet-balance', name: 'Vérification du solde', status: 'pending' },

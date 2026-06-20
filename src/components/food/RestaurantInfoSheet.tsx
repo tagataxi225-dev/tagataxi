@@ -223,7 +223,7 @@ export const RestaurantInfoSheet: React.FC<RestaurantInfoSheetProps> = ({
                 Mobile Money
               </Badge>
               <Badge variant="outline" className="gap-1.5 py-1.5">
-                💳 TembeaPay
+                💳 TAGAPay
               </Badge>
             </div>
           </div>

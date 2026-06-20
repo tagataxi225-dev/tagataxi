@@ -13,35 +13,10 @@ import { cn } from '@/lib/utils';
 import { getCityConfigFromName } from '@/types/unifiedLocation';
 
 const CITY_DEFAULTS: Record<string, { lat: number; lng: number }> = {
-  Kinshasa: { lat: -4.3217, lng: 15.3069 },
-  Lubumbashi: { lat: -11.6792, lng: 27.4716 },
-  Kolwezi: { lat: -10.7147, lng: 25.4665 },
   Abidjan: { lat: 5.3497, lng: -3.9923 }
 };
 
 const POPULAR_PLACES_BY_CITY = {
-  Kinshasa: [
-    { name: 'Aéroport N\'Djili', district: 'Njili', lat: -4.3858, lng: 15.4446, category: 'transport' },
-    { name: 'Centre-ville', district: 'Gombe', lat: -4.3276, lng: 15.3136, category: 'business' },
-    { name: 'Hôtel Memling', district: 'Gombe', lat: -4.3201, lng: 15.3078, category: 'hotel' },
-    { name: 'Marché Central', district: 'Kinshasa', lat: -4.3190, lng: 15.3092, category: 'shopping' },
-    { name: 'Matonge', district: 'Kalamu', lat: -4.3310, lng: 15.3210, category: 'culture' },
-    { name: 'Stade des Martyrs', district: 'Lingwala', lat: -4.3290, lng: 15.2980, category: 'sport' }
-  ],
-  Lubumbashi: [
-    { name: 'Aéroport La Luano', district: 'Luano', lat: -11.5913, lng: 27.5309, category: 'transport' },
-    { name: 'Centre-ville', district: 'Lubumbashi', lat: -11.6792, lng: 27.4716, category: 'business' },
-    { name: 'Galerie Uganda', district: 'Lubumbashi', lat: -11.6750, lng: 27.4800, category: 'shopping' },
-    { name: 'Stade TP Mazembe', district: 'Kamalondo', lat: -11.6400, lng: 27.4500, category: 'sport' },
-    { name: 'Hôtel Karavia', district: 'Lubumbashi', lat: -11.6700, lng: 27.4650, category: 'hotel' },
-    { name: 'Marché Kenya', district: 'Kenya', lat: -11.6500, lng: 27.4400, category: 'shopping' }
-  ],
-  Kolwezi: [
-    { name: 'Aéroport de Kolwezi', district: 'Centre', lat: -10.7658, lng: 25.5056, category: 'transport' },
-    { name: 'Centre-ville', district: 'Kolwezi', lat: -10.7147, lng: 25.4665, category: 'business' },
-    { name: 'Marché Central', district: 'Dilala', lat: -10.7100, lng: 25.4700, category: 'shopping' },
-    { name: 'Hôtel Kolwezi', district: 'Centre', lat: -10.7200, lng: 25.4600, category: 'hotel' }
-  ],
   Abidjan: [
     { name: 'Aéroport FHB', district: 'Port-Bouët', lat: 5.2539, lng: -3.9263, category: 'transport' },
     { name: 'Plateau', district: 'Centre d\'affaires', lat: 5.3200, lng: -4.0100, category: 'business' },
@@ -76,8 +51,8 @@ const getCategoryIcon = (category: string) => {
 
 const KNOWN_CITIES = Object.keys(POPULAR_PLACES_BY_CITY);
 
-const getPopularPlacesForCity = (cityName?: string): typeof POPULAR_PLACES_BY_CITY['Kinshasa'] => {
-  // ✅ PHASE 4: No default to Kinshasa — return empty if no city detected
+const getPopularPlacesForCity = (cityName?: string): typeof POPULAR_PLACES_BY_CITY['Abidjan'] => {
+  // ✅ PHASE 4: No default city (TAGA mono-ville Abidjan) — return empty if no city detected
   if (!cityName) return [];
   const city = cityName as keyof typeof POPULAR_PLACES_BY_CITY;
   // If city is not in our known list (e.g. "Position actuelle"), return empty array
@@ -162,9 +137,9 @@ export default function DestinationSearchDialog({
   const geocodeAddress = async (addressText: string): Promise<{ lat: number; lng: number } | null> => {
     try {
       const regionCode = (() => {
-        if (!currentCity || currentCity === 'Position actuelle') return 'CD';
+        if (!currentCity || currentCity === 'Position actuelle') return 'CI';
         const config = getCityConfigFromName(currentCity);
-        return config?.countryCode || 'CD';
+        return config?.countryCode || 'CI';
       })();
       const { data, error } = await supabase.functions.invoke('geocode-proxy', {
         body: { query: addressText, region: regionCode }
@@ -256,7 +231,7 @@ export default function DestinationSearchDialog({
     }
   };
 
-  const handleSelectPopularPlace = (place: typeof POPULAR_PLACES_BY_CITY['Kinshasa'][0]) => {
+  const handleSelectPopularPlace = (place: typeof POPULAR_PLACES_BY_CITY['Abidjan'][0]) => {
     onSelectDestination({
       address: place.name,
       lat: place.lat,
